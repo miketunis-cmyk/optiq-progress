@@ -20,14 +20,14 @@ function renderLabQuestions(){document.querySelector('#lab-questions').innerHTML
 // Milestone positions are categorical, not estimates of work completed.
 // Foundation credit is tied to an existing capability recorded in the evidence.
 const foundations={
-  "coa-summary-layout": "Multi-page COAs and the detailed Conformity layout are already available; combining the new tests remains.",
+  "coa-summary-layout": "Multi-page COA tools and the detailed Conformity layout are built; combining and releasing the new tests remains.",
   "requested-white-label-photo": "Photo selection exists for eligible private drafts; customer requests awaiting approval need a separate fix.",
   "batch-templates": "Some tools are already available; the lab’s preparation sheet and vial order are still needed.",
   "inspection-checks": "Receiving checks already exist; seal observations still need to save correctly.",
   "frozen-sort": "Rows can already be sorted; keeping them still while editing is planned.",
   "printed-labels": "Label printing already exists; separate symbol and test-name choices are planned.",
   "manufacturer-profiles": "Manufacturer names can be entered by hand; saved choices are planned.",
-  "client-bulk-white-label": "Staff have a bulk white-label table; the client option is being checked.",
+  "client-bulk-white-label": "The client bulk white-label request screen is built and tested; current Optiq availability is not confirmed.",
   "blend-potency": "The COA layout is ready; entering each peptide’s result still needs work.",
   "certified-imports": "Values can be entered by hand; spreadsheet export and document import are planned."
 };
@@ -35,6 +35,7 @@ function engineeringProgress(r){
   if(r.id==='multi-lab-login')return {label:'Plan ready',fill:55,basis:r.evidence};
   if(r.status==='complete')return {label:'Delivered / resolved',fill:100,basis:r.evidence};
   if(r.id==='universal-import')return {label:'Some parts built',fill:76,basis:'Importing exists for chemistry panels and Net Content; the remaining peptide tests are being checked.'};
+  if(r.status==='partial')return {label:'Some parts built',fill:76,basis:r.evidence};
   if(r.stage===2)return {label:'Feature built',fill:92,basis:r.evidence};
   if(foundations[r.id])return {label:'Starting tools ready',fill:55,basis:foundations[r.id]};
   if(r.stage===1)return {label:'Work in progress',fill:76,basis:r.evidence};

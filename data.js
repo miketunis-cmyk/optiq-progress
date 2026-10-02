@@ -1,4 +1,3 @@
-/* Curated client snapshot. Decision holds and private evidence are omitted before publication. */
 window.OPTIQ_REQUESTS = [
   {
     "id": "conformity",
@@ -70,9 +69,9 @@ window.OPTIQ_REQUESTS = [
     "stage": 2,
     "title": "Mass spectra on COAs",
     "description": "Choose one or more measured spectra and show them with the sample’s chromatogram, including blends.",
-    "detail": "The spectrum picker, saved selections, and separate labeled COA pages have been built and tested. Staff can preview peaks and choose which spectra to include. The September 30 meeting discussed choosing peaks from the chromatogram and including several spectra for a blend. Complete availability at Optiq, instrument imports, and final COA generation still need confirmation; the earlier release records do not establish all three.",
+    "detail": "The spectrum picker, saved selections, and separate labeled COA pages are built and tested. The default for choosing peaks was changed to PDA in the recorded 1 October release and is listed separately. Complete instrument imports and final COA generation at Optiq still need matching proof. Multiple spectra can be selected for a blend; that alone does not establish complete delivery.",
     "evidence": "Spectrum selection and multi-spectrum COA pages built and tested.",
-    "nextStep": "Confirm instrument imports and test selected spectra through to the finished COA.",
+    "nextStep": "Confirm the full import → selected spectra → generated COA journey at Optiq.",
     "area": "Reports & analyses",
     "meetingDate": "2026-09-30"
   },
@@ -84,7 +83,7 @@ window.OPTIQ_REQUESTS = [
     "description": "Keep the lab’s reference spectra in a library and compare samples against them.",
     "detail": "The September 30 meeting requested a standards selector and a reusable library. A lab-owned library with draft standards, source records, and saved comparisons has since been built and tested. It is not released at Optiq. These comparisons do not automatically confirm Identity or change a released COA; the lab must establish the standards and method used.",
     "evidence": "Library and comparison screens built and tested; not released.",
-    "nextStep": "Prepare the library for Optiq and confirm the lab’s standards and comparison method.",
+    "nextStep": "Finish the current build checks and merge steps, then release and validate the library with the lab’s chosen standards.",
     "area": "Reports & analyses",
     "meetingDate": "2026-09-30"
   },
@@ -130,22 +129,22 @@ window.OPTIQ_REQUESTS = [
     "status": "built",
     "title": "Sample-received emails",
     "description": "Tell customers when all or some of their samples have arrived.",
-    "detail": "The emails have been built and tested using a test inbox. Today’s call made them a priority and discussed a same-day release. We still need to confirm availability at Optiq and delivery to the right customers; the call did not confirm a release.",
+    "detail": "Receipt emails are built and tested with a test inbox. The 2 October call made release a priority, but did not establish that customers received them. The approved photo-and-answer flow is a separate item. A complete two-stage drop-off and verification message sequence is not established by these email tests.",
     "evidence": "Built and tested; checking availability and delivery.",
     "stage": 2,
-    "nextStep": "Check that receiving samples sends the right customer email.",
+    "nextStep": "Confirm the release and delivery of receipt emails to the correct customers at Optiq.",
     "discussedDate": "2026-10-02"
   },
   {
     "id": "customer-photos",
     "area": "Receiving",
-    "status": "working",
+    "status": "built",
     "title": "Customer photo requests and replies",
     "description": "Send a customer a photo when the lab cannot identify a sample, then review their answer.",
-    "detail": "Today’s call reaffirmed the need to send a photo when the lab cannot match a received item to the order. The customer chooses the matching sample, or says none match, in the portal. Staff review the answer before closing the request. This is being built and checked.",
-    "evidence": "Work in progress.",
-    "stage": 1,
-    "nextStep": "Finish and test the photo request, customer reply, and staff review.",
+    "detail": "The approved photo-and-answer flow is built and has passed real browser tests with test accounts. Staff choose the customer, order, and photo; the customer picks the matching sample or “None of these samples.” Staff review the reply before closing the request. Final checks and release are still pending.",
+    "evidence": "Built and browser-tested · 2 Oct 2026; not released.",
+    "stage": 2,
+    "nextStep": "Finish the remaining checks and release the approved flow to Optiq.",
     "discussedDate": "2026-10-02"
   },
   {
@@ -166,10 +165,10 @@ window.OPTIQ_REQUESTS = [
     "status": "built",
     "title": "Invoice status",
     "description": "See and update invoice status in Reporting Hub.",
-    "detail": "Earlier feedback said this was fixed. We are checking that the current screen still supports the requested way of editing it.",
+    "detail": "The Invoiced, Paid, and Unpaid dropdown, saving, paste/fill, and undo/redo are built and have recorded screen-test proof. Earlier feedback said this was fixed. The current Optiq screen and matching delivery evidence have not been independently confirmed by this audit.",
     "evidence": "Built; use at Optiq still needs confirmation.",
     "stage": 2,
-    "nextStep": "Check that invoice status can be viewed and changed as requested."
+    "nextStep": "Confirm the requested dropdown and editing behavior on the current Optiq screen."
   },
   {
     "id": "frozen-sort",
@@ -222,10 +221,10 @@ window.OPTIQ_REQUESTS = [
     "status": "built",
     "title": "Net Content copy, paste, and fill",
     "description": "Enter Net Content amounts and units, or copy them across several rows.",
-    "detail": "The feature has been built and tested on screen. We still need to confirm the requested copy, paste, and fill actions work at Optiq.",
-    "evidence": "Built and tested; use at Optiq still needs confirmation.",
+    "detail": "Value-only and value-with-unit copy, paste, and fill are built and have recorded save-and-reload screen tests. This is separate from adding IU and changing the lab’s allowed units. Current availability at Optiq still needs confirmation; reliable undo of a drag-fill is a separate follow-up.",
+    "evidence": "Built and tested; current Optiq use not confirmed.",
     "stage": 2,
-    "nextStep": "Check copy, paste, and fill in Optiq’s Net Content table."
+    "nextStep": "Confirm copy, paste, and drag-fill on the current Optiq screen."
   },
   {
     "id": "universal-import",
@@ -338,7 +337,7 @@ window.OPTIQ_REQUESTS = [
     "detail": "The changes are built and have passed software checks. The screens still need to be tested, and availability at Optiq has not been confirmed. This covers eligible private drafts; changing the photo on a customer request still awaiting approval is a separate item below.",
     "evidence": "Built; screen checks and release still needed.",
     "stage": 2,
-    "nextStep": "Test the draft-editing screens, then make the changes available."
+    "nextStep": "Complete the real screen test, finish the review and merge steps, and confirm release to Optiq."
   },
   {
     "id": "blend-potency",
@@ -369,10 +368,10 @@ window.OPTIQ_REQUESTS = [
     "status": "working",
     "title": "Scan, review, and receive samples",
     "description": "Scan an order, review and correct its sample list, then confirm what arrived.",
-    "detail": "Staff search and order-form scanning are built and listed separately. The complete receiving process still needs work and testing.",
+    "detail": "The requested intake-station scan must open an order for manual review, with staff able to add, remove, rename, or confirm samples before recording receipt. Scanning must not automatically receive samples. Separate physical drop-off and verified-intake steps were also requested; the existing receipt email does not prove that complete two-stage flow. Staff search and order-form scanning are built and listed separately.",
     "evidence": "Partly built; complete receiving process still needs work.",
     "stage": 1,
-    "nextStep": "Finish and test scanning, reviewing, and confirming receipt."
+    "nextStep": "Finish and test stationary scanning, manual sample review, and separate drop-off and verified-intake steps."
   },
   {
     "id": "certified-imports",
@@ -403,10 +402,10 @@ window.OPTIQ_REQUESTS = [
     "status": "built",
     "title": "Empower run lists and source files",
     "description": "Prepare instrument run lists and keep track of the original data and where it came from.",
-    "detail": "The software is built. We still need to confirm it is available and working with the lab’s instrument computer.",
+    "detail": "Run-list and source-file provenance tools have been built. Their use on the lab’s instrument computer is not yet confirmed. Automatic native Empower collection and the released native-chart display repair are separate items in this list.",
     "evidence": "Built; instrument setup and use not yet confirmed.",
     "stage": 2,
-    "nextStep": "Check the setup and test the complete process on the instrument computer."
+    "nextStep": "Confirm the run-list and source-file workflow works with the lab’s instrument computer."
   },
   {
     "id": "retained-intent",
@@ -469,13 +468,14 @@ window.OPTIQ_REQUESTS = [
   {
     "id": "reporting-method-drafts",
     "area": "Reports & analyses",
-    "status": "built",
+    "status": "complete",
     "title": "Draft method setup",
     "description": "Use existing report fields to prepare a draft method in Analysis Settings.",
-    "detail": "Creating and saving these drafts has been built and tested. A saved draft does not start a new test method. Availability at Optiq still needs confirmation.",
-    "evidence": "Draft setup built and tested; availability not confirmed.",
-    "stage": 2,
-    "nextStep": "Check that draft method setup is available at Optiq."
+    "detail": "Creating and saving inactive method drafts was built and tested, then included in the recorded Optiq release on 1 October 2026. A saved draft does not activate a test method or complete its result-entry and COA workflow. The signed-in live draft screen has not been separately verified.",
+    "evidence": "Recorded release · 1 Oct 2026; signed-in live use not confirmed.",
+    "stage": 3,
+    "nextStep": "Confirm signed-in use at Optiq; full testing workflows remain a separate item.",
+    "completed": "Recorded release"
   },
   {
     "id": "staff-scan-access",
@@ -526,5 +526,151 @@ window.OPTIQ_REQUESTS = [
     "stage": 3,
     "completed": "Reported resolved",
     "resolvedDate": "2026-10-02"
+  },
+  {
+    "id": "net-content-undo",
+    "area": "Reports & analyses",
+    "status": "built",
+    "title": "Undo a Net Content drag-fill",
+    "description": "Undo a fill across several samples and keep the restored values after saving.",
+    "detail": "The follow-up fix is written and has passed software tests. Its real screen test and independent review are still pending. It has not been released; the existing copy, paste, and fill feature is listed separately.",
+    "evidence": "Fix built; screen test and review pending.",
+    "nextStep": "Test undo and reload on the real screen, complete review, and confirm release.",
+    "stage": 2,
+    "addedDate": "2026-10-02"
+  },
+  {
+    "id": "bulk-coa-amendments",
+    "area": "Reports & analyses",
+    "status": "built",
+    "title": "Correct several COAs together",
+    "description": "Prepare corrected COAs for several selected samples while preserving the earlier released certificates.",
+    "detail": "The bulk amendment fix is built and has recorded software checks. It checks which samples can be amended and preserves the prior released COA until a replacement is released. Current availability at Optiq and a complete amendment journey have not been confirmed here. This is separate from bulk white-label requests.",
+    "evidence": "Built; current Optiq availability and full journey not confirmed.",
+    "nextStep": "Confirm the complete select → generate → review → replacement-release journey at Optiq.",
+    "stage": 2,
+    "addedDate": "2026-10-02"
+  },
+  {
+    "id": "pda-peak-default",
+    "area": "Reports & analyses",
+    "status": "complete",
+    "title": "Use PDA first when choosing spectrum peaks",
+    "description": "Start peak selection from the PDA chromatogram while using the mass-spectrum data for the spectrum.",
+    "detail": "The PDA default was built and tested, then included in the recorded Optiq release on 1 October 2026. Staff can still explicitly choose the other supported peak source, and the existing fallback remains when PDA is unavailable. The signed-in live picker has not been separately verified.",
+    "evidence": "Recorded release · 1 Oct 2026; signed-in live picker not confirmed.",
+    "nextStep": "Confirm the PDA default in the signed-in Optiq picker.",
+    "stage": 3,
+    "addedDate": "2026-10-02",
+    "completed": "Recorded release"
+  },
+  {
+    "id": "native-empower-charts",
+    "area": "Reports & analyses",
+    "status": "complete",
+    "title": "Display charts from native Empower source data",
+    "description": "Show charts when retained native Empower evidence is available.",
+    "detail": "The chart display repair was included in the recorded Optiq release on 1 October 2026. Stored-trace rendering was tested locally, and release and health checks were recorded. This repairs how available evidence is displayed; it does not prove every run has been imported or that automatic collection is active.",
+    "evidence": "Recorded release · 1 Oct 2026; complete collection remains separate.",
+    "nextStep": "Confirm the affected sample charts during normal lab use.",
+    "stage": 3,
+    "addedDate": "2026-10-02",
+    "completed": "Recorded release"
+  },
+  {
+    "id": "empower-native-collection",
+    "area": "Reports & analyses",
+    "status": "built",
+    "title": "Automatic Empower imports and recovery",
+    "description": "Collect completed Empower runs without a manual export and recover interrupted imports.",
+    "detail": "The source collector, retained data, sample matching, recovery tools, and local status screen are built with recorded tests. Installation, secure setup, and activation at Optiq remain separate release steps. A normal subsequent lab run, live interruption recovery, and import timing still need acceptance proof. No complete instrument delivery is claimed.",
+    "evidence": "Built and tested; installation, activation, and live acceptance pending.",
+    "nextStep": "Prepare and release the collector, then verify a normal run and interrupted-import recovery.",
+    "stage": 2,
+    "addedDate": "2026-10-02"
+  },
+  {
+    "id": "inventory-follow-ups",
+    "area": "Inventory & operations",
+    "status": "partial",
+    "title": "Remaining Inventory screens and AI tools",
+    "description": "Finish the remaining Inventory redesign and assisted entry tools.",
+    "detail": "The earlier Inventory bundle is released. New Vendors, Equipment, and Composites screens have since been built, while the wider redesign and AI tools remain incomplete. Purchasing, certified-value import, and reorder suggestions have their own rows so completed pieces are not hidden inside this larger request.",
+    "evidence": "Some later screens built; full redesign and AI scope incomplete.",
+    "nextStep": "Finish the remaining screens and AI tools, validate each piece, and confirm release.",
+    "stage": 1,
+    "addedDate": "2026-10-02"
+  },
+  {
+    "id": "purchasing-status-words",
+    "area": "Inventory & operations",
+    "status": "built",
+    "title": "Use the lab’s own purchasing status words",
+    "description": "Show familiar status words on purchase-order lines and retain them in history.",
+    "detail": "Lab-specific words and their saved history are built and tested on a private screen. They describe the existing purchasing steps; they do not replace the underlying order status. Current availability at Optiq is not confirmed.",
+    "evidence": "Built and screen-tested; current Optiq availability not confirmed.",
+    "nextStep": "Confirm the status-word settings and saved history are available at Optiq.",
+    "stage": 2,
+    "addedDate": "2026-10-02"
+  },
+  {
+    "id": "purchase-history-forecast",
+    "area": "Inventory & operations",
+    "status": "built",
+    "title": "Reorder suggestions from purchase history",
+    "description": "See when regularly purchased items are usually due for another order.",
+    "detail": "The history-based suggestions are built and tested on a private screen. They show typical ordering patterns, rather than claiming that stock is low. They do not automatically place an order. Current availability at Optiq is not confirmed.",
+    "evidence": "Built and screen-tested; current Optiq availability not confirmed.",
+    "nextStep": "Confirm the suggestions are available at Optiq and useful with the lab’s purchase history.",
+    "stage": 2,
+    "addedDate": "2026-10-02"
+  },
+  {
+    "id": "water-sample-type",
+    "area": "Receiving",
+    "status": "built",
+    "title": "Water sample type and clear sample symbols",
+    "description": "Offer Water during submission and show consistent symbols for sample types.",
+    "detail": "The Water option has recorded software tests, and the shared sample-type symbols have recorded screen checks. The Water option also requires its reviewed setup before release. These changes remain open build candidates; current Optiq availability is not confirmed. This does not settle the separate non-peptide or B12 identity question.",
+    "evidence": "Built candidates; final checks, setup, and release pending.",
+    "nextStep": "Finish the candidates’ checks and setup, then confirm the options on the Optiq submission screen.",
+    "stage": 2,
+    "addedDate": "2026-10-02"
+  },
+  {
+    "id": "saved-order-selections",
+    "area": "Receiving",
+    "status": "built",
+    "title": "Restore the selected tests in saved orders",
+    "description": "Reload a saved order with its chosen tests shown on the correct tiles.",
+    "detail": "The fix is built and has software checks and recorded review. It reconciles saved choices with the tests the lab actually offers and warns about unavailable selections. Remaining review follow-ups and the current Optiq screen outcome are not confirmed complete.",
+    "evidence": "Fix built; remaining follow-ups and Optiq availability not confirmed.",
+    "nextStep": "Finish the recorded follow-ups and validate a saved order after reload at Optiq.",
+    "stage": 2,
+    "addedDate": "2026-10-02"
+  },
+  {
+    "id": "order-submit-retry",
+    "area": "Receiving",
+    "status": "built",
+    "title": "Recognize an order already submitted",
+    "description": "After a retry or reload, show the order that was already placed.",
+    "detail": "The fix is built and tested in software for the saved-order path. A real screen test with the running system is still needed. It does not cover submissions where no saved order was opened. It remains an open candidate and is not a confirmed Optiq release.",
+    "evidence": "Fix built; real screen test and release pending.",
+    "nextStep": "Test submission retry and reload, finish review, and confirm release.",
+    "stage": 2,
+    "addedDate": "2026-10-02"
+  },
+  {
+    "id": "configured-sample-actions",
+    "area": "Reports & analyses",
+    "status": "built",
+    "title": "Lab-configured Sample Details and repeat-work actions",
+    "description": "Show the lab’s actual tests and supported repeat-work actions on Sample Details.",
+    "detail": "The candidate uses the lab’s configured tests and permissions for result views, re-run, re-prep, confirmation, and cancel. Recorded real browser tests used test samples. Final merge and release are still pending, and unsupported testing workflows remain unavailable. This is a built part of the wider lab-specific testing framework.",
+    "evidence": "Built and browser-tested candidate; release pending.",
+    "nextStep": "Finish the candidate’s remaining checks and confirm release and use at Optiq.",
+    "stage": 2,
+    "addedDate": "2026-10-02"
   }
 ];
