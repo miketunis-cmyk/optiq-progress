@@ -33,7 +33,8 @@ const foundations={
 };
 function engineeringProgress(r){
   if(r.id==='multi-lab-login')return {label:'Plan ready',fill:55,basis:r.evidence};
-  if(r.status==='complete')return {label:'Delivered / resolved',fill:100,basis:r.evidence};
+  if(r.id==='grid-widths')return {label:'Readability released; width choices built',fill:92,basis:r.evidence};
+  if(r.status==='complete')return {label:'Released / resolved',fill:100,basis:r.evidence};
   if(r.id==='universal-import')return {label:'Some parts built',fill:76,basis:'Importing exists for chemistry panels and Net Content; the remaining peptide tests are being checked.'};
   if(r.status==='partial')return {label:'Some parts built',fill:76,basis:r.evidence};
   if(r.stage===2)return {label:'Feature built',fill:92,basis:r.evidence};
