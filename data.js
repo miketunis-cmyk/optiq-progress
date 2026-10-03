@@ -126,13 +126,13 @@ window.OPTIQ_REQUESTS = [
   {
     "id": "receipt-emails",
     "area": "Receiving",
-    "status": "built",
+    "status": "complete",
     "title": "Sample-received emails",
     "description": "Tell customers when all or some of their samples have arrived.",
-    "detail": "Receipt emails are built and tested with a test inbox. The 2 October call made release a priority, but did not establish that customers received them. The approved photo-and-answer flow is a separate item. A complete two-stage drop-off and verification message sequence is not established by these email tests.",
-    "evidence": "Built and tested; checking availability and delivery.",
-    "stage": 2,
-    "nextStep": "Confirm the release and delivery of receipt emails to the correct customers at Optiq.",
+    "detail": "Receipt emails are included in the current Optiq release and have been tested with a test inbox. Delivery to the correct customer inboxes still needs confirmation from delivery records. The approved photo-and-answer flow is a separate item; a complete two-stage drop-off and verification message sequence is not established by these email tests.",
+    "evidence": "Included in the current Optiq release · checked 3 Oct 2026. Customer inbox delivery remains to be confirmed.",
+    "stage": 3,
+    "nextStep": "Confirm the intended recipients and inbox delivery from receipt-email records.",
     "discussedDate": "2026-10-02"
   },
   {
@@ -162,13 +162,13 @@ window.OPTIQ_REQUESTS = [
   {
     "id": "invoice-status",
     "area": "Reports & analyses",
-    "status": "built",
+    "status": "complete",
     "title": "Invoice status",
     "description": "See and update invoice status in Reporting Hub.",
-    "detail": "The Invoiced, Paid, and Unpaid dropdown, saving, paste/fill, and undo/redo are built and have recorded screen-test proof. Earlier feedback said this was fixed. The current Optiq screen and matching delivery evidence have not been independently confirmed by this audit.",
-    "evidence": "Built; use at Optiq still needs confirmation.",
-    "stage": 2,
-    "nextStep": "Confirm the requested dropdown and editing behavior on the current Optiq screen."
+    "detail": "The Invoiced, Paid, and Unpaid dropdown, saving, paste/fill, and undo/redo were released to Optiq and have recorded screen-test proof. The current release still includes them. This is invoice record-keeping; it does not take payments.",
+    "evidence": "Included in the current Optiq release · checked 3 Oct 2026. Invoice record-keeping, with recorded screen tests.",
+    "stage": 3,
+    "nextStep": "No new release needed. Report an example if the dropdown or saving does not work as expected."
   },
   {
     "id": "frozen-sort",
@@ -218,13 +218,13 @@ window.OPTIQ_REQUESTS = [
   {
     "id": "net-content-editing",
     "area": "Reports & analyses",
-    "status": "built",
+    "status": "complete",
     "title": "Net Content copy, paste, and fill",
     "description": "Enter Net Content amounts and units, or copy them across several rows.",
-    "detail": "Value-only and value-with-unit copy, paste, and fill are built and have recorded save-and-reload screen tests. This is separate from adding IU and changing the lab’s allowed units. Current availability at Optiq still needs confirmation; reliable undo of a drag-fill is a separate follow-up.",
-    "evidence": "Built and tested; current Optiq use not confirmed.",
-    "stage": 2,
-    "nextStep": "Confirm copy, paste, and drag-fill on the current Optiq screen."
+    "detail": "Value-only and value-with-unit copy, paste, and fill are included in the current Optiq release, with recorded save-and-reload screen tests. Adding IU and choosing the lab’s allowed units are separate items. Reliable undo of a drag-fill remains a separate follow-up.",
+    "evidence": "Included in the current Optiq release · checked 3 Oct 2026. Drag-fill undo is tracked separately.",
+    "stage": 3,
+    "nextStep": "Use the existing copy, paste, and fill tools; the separate drag-fill undo follow-up remains open."
   },
   {
     "id": "universal-import",
@@ -240,13 +240,13 @@ window.OPTIQ_REQUESTS = [
   {
     "id": "grid-widths",
     "area": "Reports & analyses",
-    "status": "built",
+    "status": "partial",
     "title": "Readable columns and width choices",
     "description": "Let columns widen to fit their contents, or keep a width you choose.",
-    "detail": "Both options are built. We have not yet confirmed they have been made available at Optiq.",
-    "evidence": "Built; waiting to be made available.",
+    "detail": "Readable Reporting Hub columns were released to Optiq on 3 October 2026. Columns grow when newly shown values need more room, while saved and manual widths remain respected. The separate Auto / Fixed choices in Settings are built but were not included in that release; their remaining screen checks and release preparation are still open.",
+    "evidence": "Readable columns released 3 Oct 2026. Auto / Fixed settings remain built, not released.",
     "stage": 2,
-    "nextStep": "Make the column improvements available at Optiq and check them."
+    "nextStep": "Finish the Auto / Fixed settings checks and release preparation. The readability improvement is already available."
   },
   {
     "id": "inventory-release",
@@ -457,13 +457,13 @@ window.OPTIQ_REQUESTS = [
   {
     "id": "purchasing-core",
     "area": "Inventory & operations",
-    "status": "built",
+    "status": "complete",
     "title": "Purchasing history, imports, and tracking",
     "description": "Track each purchase order, import earlier orders, and see which orders need attention.",
-    "detail": "These features are built and have been checked. We still need to confirm that everything required is installed and available at Optiq.",
-    "evidence": "Built and checked; availability at Optiq not confirmed.",
-    "stage": 2,
-    "nextStep": "Check that the purchasing features are installed and available at Optiq."
+    "detail": "Purchase-order tracking, earlier-order imports, and the needs-attention list are included in the current Optiq release and have recorded checks. The lab’s access, setup, and everyday use still need confirmation; this item no longer awaits a new software release.",
+    "evidence": "Included in the current Optiq release · checked 3 Oct 2026. Lab access and setup checks remain.",
+    "stage": 3,
+    "nextStep": "Confirm the lab can open the purchasing tools and that the required setup is in place."
   },
   {
     "id": "reporting-method-drafts",
@@ -604,25 +604,25 @@ window.OPTIQ_REQUESTS = [
   {
     "id": "purchasing-status-words",
     "area": "Inventory & operations",
-    "status": "built",
+    "status": "complete",
     "title": "Use the lab’s own purchasing status words",
     "description": "Show familiar status words on purchase-order lines and retain them in history.",
-    "detail": "Lab-specific words and their saved history are built and tested on a private screen. They describe the existing purchasing steps; they do not replace the underlying order status. Current availability at Optiq is not confirmed.",
-    "evidence": "Built and screen-tested; current Optiq availability not confirmed.",
-    "nextStep": "Confirm the status-word settings and saved history are available at Optiq.",
-    "stage": 2,
+    "detail": "Lab-specific purchasing status words and their saved history are included in the current Optiq release, with recorded screen and database tests. They describe the existing purchasing steps; they do not replace the underlying order status. The lab’s access and saved settings still need confirmation.",
+    "evidence": "Included in the current Optiq release · checked 3 Oct 2026. Lab settings and access checks remain.",
+    "nextStep": "Confirm the lab’s saved status words appear in purchasing settings and order history.",
+    "stage": 3,
     "addedDate": "2026-10-02"
   },
   {
     "id": "purchase-history-forecast",
     "area": "Inventory & operations",
-    "status": "built",
+    "status": "complete",
     "title": "Reorder suggestions from purchase history",
     "description": "See when regularly purchased items are usually due for another order.",
-    "detail": "The history-based suggestions are built and tested on a private screen. They show typical ordering patterns, rather than claiming that stock is low. They do not automatically place an order. Current availability at Optiq is not confirmed.",
-    "evidence": "Built and screen-tested; current Optiq availability not confirmed.",
-    "nextStep": "Confirm the suggestions are available at Optiq and useful with the lab’s purchase history.",
-    "stage": 2,
+    "detail": "History-based reorder suggestions are included in the current Optiq release, with recorded screen and database tests. They show typical ordering patterns rather than claiming stock is low, and do not automatically place an order. Usefulness depends on sufficient purchase history.",
+    "evidence": "Included in the current Optiq release · checked 3 Oct 2026. Purchase-history usefulness still needs confirmation.",
+    "nextStep": "Confirm the suggestions are useful with the lab’s existing purchase history.",
+    "stage": 3,
     "addedDate": "2026-10-02"
   },
   {
