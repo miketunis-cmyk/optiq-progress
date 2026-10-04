@@ -11,7 +11,8 @@ window.OPTIQ_REQUESTS = [
     "stage": 1,
     "nextStep": "Finish the remaining lab criteria, ordering and pricing setup; preserve the agreed names and repeat routes.",
     "discussedDate": "2026-10-02",
-    "meetingDate": "2026-09-30"
+    "meetingDate": "2026-09-30",
+    "meetingPriority": true
   },
   {
     "id": "inspection-rules",
@@ -24,7 +25,9 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Starting checks agreed; final inspection and COA rules still needed.",
     "stage": 0,
     "nextStep": "The lab shares other labs’ inspection examples and finalizes what to record and what belongs on the COA; implement the three agreed starting checks separately.",
-    "discussedDate": "2026-10-02"
+    "discussedDate": "2026-10-02",
+    "meetingPriority": true,
+    "meetingDate": "2026-10-02"
   },
   {
     "id": "batch-templates",
@@ -37,7 +40,9 @@ window.OPTIQ_REQUESTS = [
     "question": "Share your current preparation sheet and the order vials should run in.",
     "evidence": "Starting tools available; lab details needed.",
     "stage": 0,
-    "nextStep": "Share your current preparation sheet and the order vials should run in."
+    "nextStep": "Share your current preparation sheet and the order vials should run in.",
+    "meetingPriority": true,
+    "meetingDate": "2026-09-30"
   },
   {
     "id": "verify-results",
@@ -59,10 +64,11 @@ window.OPTIQ_REQUESTS = [
     "description": "Show different fonts on the document-style record returned by Verify Results, using the same content and layout for a fair comparison.",
     "detail": "The September 30 meeting requested a font change and an example before publication. On October 4 Mike clarified that the next action is to mock up different fonts on the returned Verification Record. The working certificate lookup is already released; these record-font examples and the chosen typography are a separate unfinished action.",
     "evidence": "Example requested · 30 Sep; multiple-font comparison clarified · 4 Oct 2026.",
-    "nextStep": "Show font options on the same Verification Record, review the examples, then publish the chosen typography.",
+    "nextStep": "Work next: mock up font options on the same Verification Record, review the examples, then publish the chosen typography.",
     "area": "Reports & analyses",
     "meetingDate": "2026-09-30",
-    "nextReview": true
+    "nextReview": true,
+    "meetingPriority": true
   },
   {
     "id": "coa-mass-spectra",
@@ -74,7 +80,8 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Spectrum selection and multi-spectrum COA pages built and tested.",
     "nextStep": "Confirm the full import → selected spectra → generated COA journey at Optiq.",
     "area": "Reports & analyses",
-    "meetingDate": "2026-09-30"
+    "meetingDate": "2026-09-30",
+    "meetingPriority": true
   },
   {
     "id": "spectral-reference-library",
@@ -86,7 +93,8 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Library and comparison screens built and tested; not released.",
     "nextStep": "Finish the current build checks and merge steps, then release and validate the library with the lab’s chosen standards.",
     "area": "Reports & analyses",
-    "meetingDate": "2026-09-30"
+    "meetingDate": "2026-09-30",
+    "meetingPriority": true
   },
   {
     "id": "fentanyl-results",
@@ -98,7 +106,8 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Requested · 30 Sep 2026; implementation planned.",
     "nextStep": "Add the result entry and COA display, then check them against the lab’s reporting rules.",
     "area": "Reports & analyses",
-    "meetingDate": "2026-09-30"
+    "meetingDate": "2026-09-30",
+    "meetingPriority": true
   },
   {
     "id": "requested-white-label-photo",
@@ -110,7 +119,8 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Specific photo-selection problem recorded · 30 Sep 2026.",
     "nextStep": "Fix photo selection during lab review and test it before approval.",
     "area": "Reports & analyses",
-    "meetingDate": "2026-09-30"
+    "meetingDate": "2026-09-30",
+    "meetingPriority": true
   },
   {
     "id": "coa-summary-layout",
@@ -122,7 +132,8 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Page structure agreed · 30 Sep 2026; existing layouts available.",
     "nextStep": "Show first-page and extra-page examples, review readability, then qualify the supported results through final COA generation.",
     "area": "Reports & analyses",
-    "meetingDate": "2026-09-30"
+    "meetingDate": "2026-09-30",
+    "meetingPriority": true
   },
   {
     "id": "receipt-emails",
@@ -146,7 +157,9 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Software deployed · 4 Oct 2026; feature remains off.",
     "stage": 2,
     "nextStep": "Keep off until separate approval and the required customer-access, private-photo, and notification checks are complete.",
-    "discussedDate": "2026-10-02"
+    "discussedDate": "2026-10-02",
+    "meetingPriority": true,
+    "meetingDate": "2026-10-02"
   },
   {
     "id": "inspection-checks",
@@ -158,7 +171,9 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Three starting checks agreed · 2 Oct 2026; remaining work planned.",
     "stage": 0,
     "nextStep": "Add the three agreed checks, make sure they save, and test them.",
-    "discussedDate": "2026-10-02"
+    "discussedDate": "2026-10-02",
+    "meetingPriority": true,
+    "meetingDate": "2026-10-02"
   },
   {
     "id": "invoice-status",
@@ -250,7 +265,8 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Partly built; the remaining peptide tests still need to be checked.",
     "stage": 2,
     "nextStep": "Check each requested peptide test and its sample matching, units, preview and row-level error handling.",
-    "meetingDate": "2026-08-20"
+    "meetingDate": "2026-08-20",
+    "meetingPriority": true
   },
   {
     "id": "grid-widths",
@@ -309,7 +325,8 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Built and tested; waiting to be made available.",
     "stage": 2,
     "nextStep": "Finish the release checks and make these features available at Optiq.",
-    "meetingDate": "2026-08-27"
+    "meetingDate": "2026-08-27",
+    "meetingPriority": true
   },
   {
     "id": "partner-inventory",
@@ -320,7 +337,9 @@ window.OPTIQ_REQUESTS = [
     "detail": "Work has started on choosing what to share. Requests, transfers, receiving, and handling missing or damaged items are not yet complete.",
     "evidence": "Partly built; partner-lab process still needs work.",
     "stage": 1,
-    "nextStep": "Finish how partner labs request, transfer, and receive stock."
+    "nextStep": "Finish how partner labs request, transfer, and receive stock.",
+    "meetingPriority": true,
+    "meetingDate": "2026-09-16"
   },
   {
     "id": "manufacturer-profiles",
@@ -332,7 +351,8 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Planned; manual name entry already available.",
     "stage": 0,
     "nextStep": "Finish saved manufacturer choices and early white-label requests; check the complete Manufactured By field journey.",
-    "meetingDate": "2026-08-20"
+    "meetingDate": "2026-08-20",
+    "meetingPriority": true
   },
   {
     "id": "client-bulk-white-label",
@@ -343,7 +363,9 @@ window.OPTIQ_REQUESTS = [
     "detail": "The client bulk-request screen and the steps for saving and submitting several white-label COAs are built. Screen tests and software checks are recorded. We have not confirmed current availability for Optiq’s client accounts.",
     "evidence": "Built and tested; client availability at Optiq still needs confirmation.",
     "stage": 2,
-    "nextStep": "Confirm that Optiq clients can open and use the bulk-request screen."
+    "nextStep": "Confirm that Optiq clients can open and use the bulk-request screen.",
+    "meetingPriority": true,
+    "meetingDate": "2026-08-20"
   },
   {
     "id": "white-label-drafts",
@@ -354,7 +376,9 @@ window.OPTIQ_REQUESTS = [
     "detail": "The changes are built and have passed software checks. The screens still need to be tested, and availability at Optiq has not been confirmed. This covers eligible private drafts; changing the photo on a customer request still awaiting approval is a separate item below.",
     "evidence": "Built; screen checks and release still needed.",
     "stage": 2,
-    "nextStep": "Complete the real screen test, finish the review and merge steps, and confirm release to Optiq."
+    "nextStep": "Complete the real screen test, finish the review and merge steps, and confirm release to Optiq.",
+    "meetingPriority": true,
+    "meetingDate": "2026-09-30"
   },
   {
     "id": "blend-potency",
@@ -366,7 +390,8 @@ window.OPTIQ_REQUESTS = [
     "evidence": "COA layout ready; result entry planned.",
     "stage": 1,
     "nextStep": "Finish per-peptide result entry and prove four-component PDF and digital reports remain readable.",
-    "meetingDate": "2026-08-20"
+    "meetingDate": "2026-08-20",
+    "meetingPriority": true
   },
   {
     "id": "photo-reliability",
@@ -390,7 +415,8 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Partly built; complete receiving process still needs work.",
     "stage": 1,
     "nextStep": "Finish and prove fixed-station scan → manual review → receipt, with separate drop-off and verified-intake outcomes.",
-    "meetingDate": "2026-08-27"
+    "meetingDate": "2026-08-27",
+    "meetingPriority": true
   },
   {
     "id": "certified-imports",
@@ -460,7 +486,9 @@ window.OPTIQ_REQUESTS = [
     "detail": "The first method-setup tools are built and listed separately. The full process still needs to carry the correct results from entry through review to the COA.",
     "evidence": "Setup tools partly ready; complete testing process still needs work.",
     "stage": 1,
-    "nextStep": "Finish and test the steps from preparation and result entry through to the COA."
+    "nextStep": "Finish and test the steps from preparation and result entry through to the COA.",
+    "meetingPriority": true,
+    "meetingDate": "2026-09-30"
   },
   {
     "id": "document-release",
@@ -472,7 +500,8 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Planned follow-up to the document editor.",
     "stage": 0,
     "nextStep": "Finish document approval, signing, and shared templates.",
-    "meetingDate": "2026-08-27"
+    "meetingDate": "2026-08-27",
+    "meetingPriority": true
   },
   {
     "id": "purchasing-core",
@@ -520,7 +549,9 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Build and test personal logins with a lab selector and separate permissions for each lab.",
     "stage": 0,
     "addedDate": "2026-10-02",
-    "discussedDate": "2026-10-02"
+    "discussedDate": "2026-10-02",
+    "meetingPriority": true,
+    "meetingDate": "2026-10-02"
   },
   {
     "id": "shared-feature-tracker",
@@ -570,7 +601,9 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Built; current Optiq availability and full journey not confirmed.",
     "nextStep": "Confirm the complete select → generate → review → replacement-release journey at Optiq.",
     "stage": 2,
-    "addedDate": "2026-10-02"
+    "addedDate": "2026-10-02",
+    "meetingPriority": true,
+    "meetingDate": "2026-09-30"
   },
   {
     "id": "pda-peak-default",
@@ -620,7 +653,9 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Some later screens built; full redesign and AI scope incomplete.",
     "nextStep": "Finish the remaining screens and AI tools, validate each piece, and confirm release.",
     "stage": 1,
-    "addedDate": "2026-10-02"
+    "addedDate": "2026-10-02",
+    "meetingPriority": true,
+    "meetingDate": "2026-08-27"
   },
   {
     "id": "purchasing-status-words",
@@ -707,7 +742,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Check current parent/brand management, selected-brand ownership and team permissions; record any remaining work.",
     "stage": 0,
     "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "white-label-attestation",
@@ -720,7 +756,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Check the approved wording, acknowledgement flow and retained evidence before marking it delivered.",
     "stage": 0,
     "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "white-label-photo-vials",
@@ -733,7 +770,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Check the per-brand vial rule, required counts, received-vial/photo links and final white-label output.",
     "stage": 0,
     "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "white-label-missing-vials",
@@ -746,7 +784,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Check the checklist, hold, override, later receipt and notification journey with test records before any activation.",
     "stage": 0,
     "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "white-label-required-lot",
@@ -759,7 +798,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Check white-label submission validation and the saved sample/COA value; preserve controlled corrections.",
     "stage": 0,
     "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "client-create-invite",
@@ -772,7 +812,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Check creation, invitation, roles, skipped invitation, resend and acceptance; record any remaining steps.",
     "stage": 0,
     "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "public-signup-approval",
@@ -785,7 +826,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Verify approval and invited-user journeys, company membership and access boundaries with test accounts.",
     "stage": 0,
     "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "portal-price-visibility",
@@ -798,7 +840,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Check current public/portal price visibility, order estimates and retained quotes before claiming completion.",
     "stage": 0,
     "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "rush-surcharge",
@@ -811,7 +854,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Check the configured surcharge and retained quote; settle the service promise before showing a guaranteed turnaround.",
     "stage": 0,
     "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "panel-presets",
@@ -824,7 +868,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Check the lab’s configured package definitions, included tests, bulk application and individual exceptions.",
     "stage": 0,
     "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "live-vial-count",
@@ -837,7 +882,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Check live counts and extra-service requirements across the supported test selections and final review.",
     "stage": 0,
     "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "unresolved-client-orders",
@@ -850,7 +896,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Check existing unresolved-client views and preserve the current resolution process; keep any remaining work in backlog.",
     "stage": 0,
     "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "digital-coa-verification",
@@ -863,7 +910,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Check the digital COA’s real verification state, scrolling behavior and desktop/phone readability.",
     "stage": 0,
     "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "net-content-per-vial",
@@ -876,7 +924,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Check the recorded units, per-vial basis and wording through the complete supported reporting journey.",
     "stage": 0,
     "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "coa-status-language",
@@ -889,7 +938,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Match each requested wording rule to current PDF/digital output and release evidence; preserve the lab’s approved criteria.",
     "stage": 0,
     "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "intercompany-supplies",
@@ -902,7 +952,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Review the partner supply and invoicing contract, then check what current software actually supports.",
     "stage": 0,
     "meetingDate": "2026-08-27",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "partner-sample-routing",
@@ -915,7 +966,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Define the permitted partner workflow and check assignment, custody, result return and settlement support.",
     "stage": 0,
     "meetingDate": "2026-08-27",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "intake-attention-notices",
@@ -928,7 +980,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Check the general attention-reason workflow and approve the intended notice behavior before enabling customer messages.",
     "stage": 0,
     "meetingDate": "2026-08-27",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "public-coa-boundaries",
@@ -941,7 +994,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Check the public/private field contract and permitted white-label changes; preserve the agreed QR destination.",
     "stage": 0,
     "meetingDate": "2026-09-16",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "shared-lims-priorities",
@@ -954,7 +1008,8 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Reconcile the catalog, complete release checks and confirm the signed-in workflow at Optiq.",
     "stage": 2,
     "meetingDate": "2026-10-02",
-    "addedDate": "2026-10-04"
+    "addedDate": "2026-10-04",
+    "meetingPriority": true
   },
   {
     "id": "hubspot-onboarding",
