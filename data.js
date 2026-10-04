@@ -5,7 +5,7 @@ window.OPTIQ_REQUESTS = [
     "status": "optiq",
     "title": "Conformity testing",
     "description": "Compare several vials for Net Content, Purity, or Identity, with repeat results and a summary on the COA.",
-    "detail": "The repeat-vial workflow and a detailed COA layout have been built in parts. The September 30 meeting agreed to use full test names, allow a suitable original result to count as the first repeat, and put the detailed results on an extra page. The lab still needs to confirm the standard, acceptable variation, which tests the customer can order, and pricing before the final setup can be finished.",
+    "detail": "The repeat-vial workflow and a detailed COA layout have been built in parts. The September 30 meeting agreed to use full test names, allow a suitable original result to count as the first repeat, and put the detailed results on an extra page. The lab still needs to confirm the standard, acceptable variation, which tests the customer can order, and pricing before the final setup can be finished. It is not available and was explicitly excluded from the 4 October receiving release.",
     "question": "Confirm the standard and acceptable variation for each test, which tests customers can order, and the repeat-vial price.",
     "evidence": "Work started; lab pricing and pass/fail rules still needed.",
     "stage": 1,
@@ -141,10 +141,10 @@ window.OPTIQ_REQUESTS = [
     "status": "built",
     "title": "Customer photo requests and replies",
     "description": "Send a customer a photo when the lab cannot identify a sample, then review their answer.",
-    "detail": "The approved photo-and-answer flow is built and has passed real browser tests with test accounts. Staff choose the customer, order, and photo; the customer picks the matching sample or “None of these samples.” Staff review the reply before closing the request. Final checks and release are still pending.",
-    "evidence": "Built and browser-tested · 2 Oct 2026; not released.",
+    "detail": "The photo-and-answer software was deployed at Optiq on 4 October 2026, but the feature is still switched off. It passed browser tests with test accounts: staff select the order and received-item photo, the customer chooses a matching sample or “None of these samples,” and staff independently review the answer. Turning it on remains separately held; deploying the software does not enable customer requests or notifications.",
+    "evidence": "Software deployed · 4 Oct 2026; feature remains off.",
     "stage": 2,
-    "nextStep": "Finish the remaining checks and release the approved flow to Optiq.",
+    "nextStep": "Keep off until separate approval and the required customer-access, private-photo, and notification checks are complete.",
     "discussedDate": "2026-10-02"
   },
   {
@@ -182,15 +182,28 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Add the option to keep rows still and sort again when finished."
   },
   {
+    "id": "receiving-tables",
+    "area": "Receiving",
+    "status": "complete",
+    "title": "Updated receiving order and sample tables",
+    "description": "Use the updated order and sample tables for submission and accessioning.",
+    "detail": "Released at Optiq on 4 October 2026. The submission and accessioning screens now use the updated receiving tables. Editing, permissions, selection, grouping, search, paste and undo, and screen layouts were checked in the running system before release. Existing saved layouts are preserved. This does not complete the separate intake-station scanning or drop-off and verified-intake workflow.",
+    "evidence": "Released at Optiq · 4 Oct 2026; receiving tables browser-tested before release.",
+    "stage": 3,
+    "nextStep": "Available now. Check the updated tables during normal submission and accessioning.",
+    "completed": "Recorded release"
+  },
+  {
     "id": "lot-number",
     "area": "Receiving",
-    "status": "built",
+    "status": "complete",
     "title": "Lot / Batch number",
     "description": "Show the Lot / Batch number automatically in the sample receiving table.",
-    "detail": "The change is built and has been checked on screen. We still need to confirm it is available at Optiq. Saved layouts may need “Reset to Lab Default.”",
-    "evidence": "Built and tested; checking availability at Optiq.",
-    "stage": 2,
-    "nextStep": "Confirm the Lot / Batch column appears at Optiq."
+    "detail": "Released at Optiq on 4 October 2026. Lot / Batch is shown in the default sample receiving layout. Existing saved layouts stay intact; use “Reset to Lab Default” if an older saved layout hides the column.",
+    "evidence": "Released at Optiq · 4 Oct 2026.",
+    "stage": 3,
+    "nextStep": "Available now. Use “Reset to Lab Default” if a saved layout hides Lot / Batch.",
+    "completed": "Recorded release"
   },
   {
     "id": "printed-labels",
@@ -480,13 +493,14 @@ window.OPTIQ_REQUESTS = [
   {
     "id": "staff-scan-access",
     "area": "Receiving",
-    "status": "built",
-    "title": "Staff search and order-form scanning",
-    "description": "Let signed-in lab staff search and use “Scan label” on the order form.",
-    "detail": "This change is built. Saving, photo uploads, and editing locks still need their existing permissions. Scanning on the separate intake screen is not covered by this change. Availability at Optiq is not yet confirmed.",
-    "evidence": "Built · 2 Oct 2026; availability not confirmed.",
-    "stage": 2,
-    "nextStep": "Check that staff can search and scan labels on Optiq’s order form."
+    "status": "complete",
+    "title": "Staff search, scanning, and protected edits",
+    "description": "Let signed-in staff search and scan labels while protecting sample saves, editing locks, and stored-photo changes.",
+    "detail": "Released at Optiq on 4 October 2026. Existing staff search and label extraction remain available. Sample saves, editing locks, and changes to stored photos now enforce the existing permissions. This does not complete the separate intake-station scanning and two-stage receiving request.",
+    "evidence": "Staff editing protections released at Optiq · 4 Oct 2026; browser-tested before release.",
+    "stage": 3,
+    "nextStep": "Available now. Saves, locks, and stored-photo changes require the existing editing permissions.",
+    "completed": "Recorded release"
   },
   {
     "id": "multi-lab-login",
@@ -628,26 +642,28 @@ window.OPTIQ_REQUESTS = [
   {
     "id": "water-sample-type",
     "area": "Receiving",
-    "status": "built",
+    "status": "complete",
     "title": "Water sample type and clear sample symbols",
-    "description": "Offer Water during submission and show consistent symbols for sample types.",
-    "detail": "The Water option has recorded software tests, and the shared sample-type symbols have recorded screen checks. The Water option also requires its reviewed setup before release. These changes remain open build candidates; current Optiq availability is not confirmed. This does not settle the separate non-peptide or B12 identity question.",
-    "evidence": "Built candidates; final checks, setup, and release pending.",
-    "nextStep": "Finish the candidates’ checks and setup, then confirm the options on the Optiq submission screen.",
-    "stage": 2,
-    "addedDate": "2026-10-02"
+    "description": "Offer Water during peptide submission, use consistent sample-type symbols, and show the minimum volume for the selected tests.",
+    "detail": "Released at Optiq on 4 October 2026, including the reviewed Water setup and sample-type symbol. The intake form shows Water and its minimum-volume guidance. This is sample classification and intake guidance; it does not introduce a validated water-testing service or settle the separate non-peptide or B12 identity question.",
+    "evidence": "Released at Optiq · 4 Oct 2026; Water guidance confirmed in the live intake configuration.",
+    "nextStep": "Available on the submission form. Validated water testing remains outside this release.",
+    "stage": 3,
+    "addedDate": "2026-10-02",
+    "completed": "Recorded release"
   },
   {
     "id": "saved-order-selections",
     "area": "Receiving",
-    "status": "built",
-    "title": "Restore the selected tests in saved orders",
-    "description": "Reload a saved order with its chosen tests shown on the correct tiles.",
-    "detail": "The fix is built and has software checks and recorded review. It reconciles saved choices with the tests the lab actually offers and warns about unavailable selections. Remaining review follow-ups and the current Optiq screen outcome are not confirmed complete.",
-    "evidence": "Fix built; remaining follow-ups and Optiq availability not confirmed.",
-    "nextStep": "Finish the recorded follow-ups and validate a saved order after reload at Optiq.",
-    "stage": 2,
-    "addedDate": "2026-10-02"
+    "status": "complete",
+    "title": "Restore selected tests in saved order drafts",
+    "description": "Restore available test selections when reopening a saved draft and warn when a selected test is no longer offered.",
+    "detail": "Released at Optiq on 4 October 2026. Reopened drafts restore the available test selections and show a warning for a previously selected test that is no longer offered. Re-saving the draft removes unavailable selections. The reopen, warning, re-save, and reload flow was checked in the running system with test accounts before release. Recognizing an already-submitted order after a retry is a separate request.",
+    "evidence": "Released at Optiq · 4 Oct 2026; saved-draft flow browser-tested before release.",
+    "nextStep": "Available now. Check a reopened draft’s test selections during normal use.",
+    "stage": 3,
+    "addedDate": "2026-10-02",
+    "completed": "Recorded release"
   },
   {
     "id": "order-submit-retry",
