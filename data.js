@@ -26,20 +26,6 @@ window.OPTIQ_REQUESTS = [
     "meetingPriority": true
   },
   {
-    "id": "batch-templates",
-    "ref": "R31",
-    "area": "Inventory & operations",
-    "status": "optiq",
-    "title": "Batch and preparation sheets",
-    "description": "Use repeatable daily preparation sheets and put vials in the correct instrument order.",
-    "detail": "Some of the tools are already available. We need the lab’s worksheet and vial order to tailor them to Optiq.",
-    "question": "Share your current preparation sheet and the order vials should run in.",
-    "evidence": "Starting tools available; lab details needed.",
-    "stage": 0,
-    "nextStep": "Share your current preparation sheet and the order vials should run in.",
-    "meetingPriority": true
-  },
-  {
     "id": "verify-results",
     "status": "complete",
     "stage": 3,
