@@ -10,8 +10,6 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Work started; lab pricing and pass/fail rules still needed.",
     "stage": 1,
     "nextStep": "Finish the remaining lab criteria, ordering and pricing setup; preserve the agreed names and repeat routes.",
-    "discussedDate": "2026-10-02",
-    "meetingDate": "2026-09-30",
     "meetingPriority": true
   },
   {
@@ -25,9 +23,7 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Starting checks agreed; final inspection and COA rules still needed.",
     "stage": 0,
     "nextStep": "The lab shares other labs’ inspection examples and finalizes what to record and what belongs on the COA; implement the three agreed starting checks separately.",
-    "discussedDate": "2026-10-02",
-    "meetingPriority": true,
-    "meetingDate": "2026-10-02"
+    "meetingPriority": true
   },
   {
     "id": "batch-templates",
@@ -41,8 +37,7 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Starting tools available; lab details needed.",
     "stage": 0,
     "nextStep": "Share your current preparation sheet and the order vials should run in.",
-    "meetingPriority": true,
-    "meetingDate": "2026-09-30"
+    "meetingPriority": true
   },
   {
     "id": "verify-results",
@@ -50,11 +45,10 @@ window.OPTIQ_REQUESTS = [
     "stage": 3,
     "title": "Verify Results — real certificate lookup",
     "description": "Look up a certificate on the Optiq website and compare it with the lab’s released record.",
-    "detail": "The website was connected to real released COAs and tested with an older printed certificate number, the sample photo, and a phone-sized screen. The recorded release was September 27. The September 30 font adjustment is listed separately. The meeting agreed to keep the COA’s QR code opening its digital version.",
+    "detail": "The website was connected to real released COAs and tested with an older printed certificate number, the sample photo, and a phone-sized screen. The recorded release was September 27. The font adjustment is listed separately. The meeting agreed to keep the COA’s QR code opening its digital version.",
     "evidence": "Released and checked on the Optiq website · 27 Sep 2026.",
     "nextStep": "Available on the website; keep the QR code opening the digital COA.",
-    "area": "Reports & analyses",
-    "meetingDate": "2026-09-30"
+    "area": "Reports & analyses"
   },
   {
     "id": "verify-results-font",
@@ -62,11 +56,10 @@ window.OPTIQ_REQUESTS = [
     "stage": 0,
     "title": "Verification Record — compare font options",
     "description": "Show different fonts on the document-style record returned by Verify Results, using the same content and layout for a fair comparison.",
-    "detail": "The September 30 meeting requested a font change and an example before publication. On October 4 Mike clarified that the next action is to mock up different fonts on the returned Verification Record. The working certificate lookup is already released; these record-font examples and the chosen typography are a separate unfinished action.",
-    "evidence": "Example requested · 30 Sep; multiple-font comparison clarified · 4 Oct 2026.",
+    "detail": "Compare font options on the document-style Verification Record and review examples before choosing the typography for publication. Use identical content and layout for each option. The working certificate lookup is already released; the font comparison is the next work item.",
+    "evidence": "Font comparison planned; review examples before publication.",
     "nextStep": "Work next: mock up font options on the same Verification Record, review the examples, then publish the chosen typography.",
     "area": "Reports & analyses",
-    "meetingDate": "2026-09-30",
     "nextReview": true,
     "meetingPriority": true
   },
@@ -80,7 +73,6 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Spectrum selection and multi-spectrum COA pages built and tested.",
     "nextStep": "Confirm the full import → selected spectra → generated COA journey at Optiq.",
     "area": "Reports & analyses",
-    "meetingDate": "2026-09-30",
     "meetingPriority": true
   },
   {
@@ -89,11 +81,10 @@ window.OPTIQ_REQUESTS = [
     "stage": 2,
     "title": "Reference standards for spectrum comparisons",
     "description": "Keep the lab’s reference spectra in a library and compare samples against them.",
-    "detail": "The September 30 meeting requested a standards selector and a reusable library. A lab-owned library with draft standards, source records, and saved comparisons has since been built and tested. It is not released at Optiq. These comparisons do not automatically confirm Identity or change a released COA; the lab must establish the standards and method used.",
+    "detail": "The meeting requested a standards selector and a reusable library. A lab-owned library with draft standards, source records, and saved comparisons has since been built and tested. It is not released at Optiq. These comparisons do not automatically confirm Identity or change a released COA; the lab must establish the standards and method used.",
     "evidence": "Library and comparison screens built and tested; not released.",
     "nextStep": "Finish the current build checks and merge steps, then release and validate the library with the lab’s chosen standards.",
     "area": "Reports & analyses",
-    "meetingDate": "2026-09-30",
     "meetingPriority": true
   },
   {
@@ -102,11 +93,10 @@ window.OPTIQ_REQUESTS = [
     "stage": 0,
     "title": "Fentanyl test results",
     "description": "Record the fentanyl test outcome and show it clearly on the COA.",
-    "detail": "The September 30 meeting requested a simple outcome such as detected or not detected, with an agreed pass/fail presentation. That display request is recorded. A matching completed feature or release record was not found. Final wording must follow the lab’s actual test and reporting rules.",
-    "evidence": "Requested · 30 Sep 2026; implementation planned.",
+    "detail": "The meeting requested a simple outcome such as detected or not detected, with an agreed pass/fail presentation. That display request is recorded. A matching completed feature or release record was not found. Final wording must follow the lab’s actual test and reporting rules.",
+    "evidence": "Requested; implementation planned.",
     "nextStep": "Add the result entry and COA display, then check them against the lab’s reporting rules.",
     "area": "Reports & analyses",
-    "meetingDate": "2026-09-30",
     "meetingPriority": true
   },
   {
@@ -115,11 +105,10 @@ window.OPTIQ_REQUESTS = [
     "stage": 0,
     "title": "Choose the photo on a customer’s white-label request",
     "description": "Let authorized lab staff change the selected photo while reviewing a customer-requested white-label COA.",
-    "detail": "On September 30 the lab reported that the photo could not be changed when the customer had requested the COA. The existing private-draft editor does not cover requests still awaiting customer-request approval. This specific case needs a fix and a screen test. Changes must keep the previously released certificate intact.",
-    "evidence": "Specific photo-selection problem recorded · 30 Sep 2026.",
+    "detail": "The lab reported that the photo could not be changed when the customer had requested the COA. The existing private-draft editor does not cover requests still awaiting customer-request approval. This specific case needs a fix and a screen test. Changes must keep the previously released certificate intact.",
+    "evidence": "Specific photo-selection problem recorded.",
     "nextStep": "Fix photo selection during lab review and test it before approval.",
     "area": "Reports & analyses",
-    "meetingDate": "2026-09-30",
     "meetingPriority": true
   },
   {
@@ -128,11 +117,10 @@ window.OPTIQ_REQUESTS = [
     "stage": 0,
     "title": "COA summary with extra test pages",
     "description": "Show a readable first-page snapshot, followed by separate detailed test pages.",
-    "detail": "The September 30 meeting agreed on a useful first-page snapshot, then detailed Conformity, visual inspection, chromatogram and mass-spectrum pages. A blend may need several separately labeled spectra. The concrete next action is to show representative layout examples, retaining full test names and the distinction between Tested, Pass and failed outcomes. Existing multi-page tools do not establish that the combined new layout or unfinished tests are available.",
-    "evidence": "Page structure agreed · 30 Sep 2026; existing layouts available.",
+    "detail": "The meeting agreed on a useful first-page snapshot, then detailed Conformity, visual inspection, chromatogram and mass-spectrum pages. A blend may need several separately labeled spectra. The concrete next action is to show representative layout examples, retaining full test names and the distinction between Tested, Pass and failed outcomes. Existing multi-page tools do not establish that the combined new layout or unfinished tests are available.",
+    "evidence": "Page structure agreed; existing layouts available.",
     "nextStep": "Show first-page and extra-page examples, review readability, then qualify the supported results through final COA generation.",
     "area": "Reports & analyses",
-    "meetingDate": "2026-09-30",
     "meetingPriority": true
   },
   {
@@ -144,8 +132,7 @@ window.OPTIQ_REQUESTS = [
     "detail": "Receipt emails are included in the current Optiq release and have been tested with a test inbox. Delivery to the correct customer inboxes still needs confirmation from delivery records. The approved photo-and-answer flow is a separate item; a complete two-stage drop-off and verification message sequence is not established by these email tests.",
     "evidence": "Included in the current Optiq release · checked 3 Oct 2026. Customer inbox delivery remains to be confirmed.",
     "stage": 3,
-    "nextStep": "Confirm the intended recipients and inbox delivery from receipt-email records.",
-    "discussedDate": "2026-10-02"
+    "nextStep": "Confirm the intended recipients and inbox delivery from receipt-email records."
   },
   {
     "id": "customer-photos",
@@ -157,9 +144,7 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Software deployed · 4 Oct 2026; feature remains off.",
     "stage": 2,
     "nextStep": "Keep off until separate approval and the required customer-access, private-photo, and notification checks are complete.",
-    "discussedDate": "2026-10-02",
-    "meetingPriority": true,
-    "meetingDate": "2026-10-02"
+    "meetingPriority": true
   },
   {
     "id": "inspection-checks",
@@ -168,12 +153,10 @@ window.OPTIQ_REQUESTS = [
     "title": "Seal integrity, cap color, and intact vials",
     "description": "Record three checks when samples arrive: whether the seal is intact, the cap color, and whether the vial is intact or broken.",
     "detail": "Today’s call agreed these three checks as the starting point. Some receiving checks exist already, but seal observations still need to save correctly. All three checks then need testing.",
-    "evidence": "Three starting checks agreed · 2 Oct 2026; remaining work planned.",
+    "evidence": "Three starting checks agreed; remaining work planned.",
     "stage": 0,
     "nextStep": "Add the three agreed checks, make sure they save, and test them.",
-    "discussedDate": "2026-10-02",
-    "meetingPriority": true,
-    "meetingDate": "2026-10-02"
+    "meetingPriority": true
   },
   {
     "id": "invoice-status",
@@ -261,11 +244,10 @@ window.OPTIQ_REQUESTS = [
     "status": "partial",
     "title": "Import results by Sample ID",
     "description": "Upload result files and match each result to the correct Sample ID.",
-    "detail": "Importing exists for chemistry panels and Net Content. The August 20 deliverable also included sample/analyte matching, units, applicable action limits and LOD/LOQ, an import preview, row-level errors and avoiding accidental assignment to similarly named repeat samples. Coverage for every requested peptide test and those detailed acceptance checks still needs confirmation.",
+    "detail": "Importing exists for chemistry panels and Net Content. The request also included sample/analyte matching, units, applicable action limits and LOD/LOQ, an import preview, row-level errors and avoiding accidental assignment to similarly named repeat samples. Coverage for every requested peptide test and those detailed acceptance checks still needs confirmation.",
     "evidence": "Partly built; the remaining peptide tests still need to be checked.",
     "stage": 2,
     "nextStep": "Check each requested peptide test and its sample matching, units, preview and row-level error handling.",
-    "meetingDate": "2026-08-20",
     "meetingPriority": true
   },
   {
@@ -321,11 +303,10 @@ window.OPTIQ_REQUESTS = [
     "status": "built",
     "title": "Documents, Forms, Logs, and NCRs",
     "description": "Edit documents, keep earlier versions, correct forms and logs, and track quality issues such as nonconformance reports (NCRs).",
-    "detail": "These features have been built and tested on screen. Making them available at Optiq is still pending. Document signing and shared templates are listed separately. The August 27 meeting separately called for one accessible controlled master SOP, assisted import of existing drafts, reusable templates and a chronological record of what changed, when, by whom, why and under which change request. Those complete outcomes require their own qualification; an editor alone does not establish them.",
+    "detail": "These features have been built and tested on screen. Making them available at Optiq is still pending. Document signing and shared templates are listed separately. The meeting separately called for one accessible controlled master SOP, assisted import of existing drafts, reusable templates and a chronological record of what changed, when, by whom, why and under which change request. Those complete outcomes require their own qualification; an editor alone does not establish them.",
     "evidence": "Built and tested; waiting to be made available.",
     "stage": 2,
     "nextStep": "Finish the release checks and make these features available at Optiq.",
-    "meetingDate": "2026-08-27",
     "meetingPriority": true
   },
   {
@@ -338,8 +319,7 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Partly built; partner-lab process still needs work.",
     "stage": 1,
     "nextStep": "Finish how partner labs request, transfer, and receive stock.",
-    "meetingPriority": true,
-    "meetingDate": "2026-09-16"
+    "meetingPriority": true
   },
   {
     "id": "manufacturer-profiles",
@@ -347,11 +327,10 @@ window.OPTIQ_REQUESTS = [
     "status": "queued",
     "title": "Saved manufacturers and early white-label requests",
     "description": "Choose a saved manufacturer and request a white-label COA when submitting samples.",
-    "detail": "Manufacturer names can already be entered by hand. The August 20 meetings also called for keeping client/brand and manufacturer separate, saving reusable manufacturer choices, and carrying Manufactured By through submission, stored sample details, lab tables, imports/exports and the released COA. Saved choices and early white-label requests still need work; the complete end-to-end field journey needs its own evidence check.",
+    "detail": "Manufacturer names can already be entered by hand. The meeting also called for keeping client/brand and manufacturer separate, saving reusable manufacturer choices, and carrying Manufactured By through submission, stored sample details, lab tables, imports/exports and the released COA. Saved choices and early white-label requests still need work; the complete end-to-end field journey needs its own evidence check.",
     "evidence": "Planned; manual name entry already available.",
     "stage": 0,
     "nextStep": "Finish saved manufacturer choices and early white-label requests; check the complete Manufactured By field journey.",
-    "meetingDate": "2026-08-20",
     "meetingPriority": true
   },
   {
@@ -364,8 +343,7 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Built and tested; client availability at Optiq still needs confirmation.",
     "stage": 2,
     "nextStep": "Confirm that Optiq clients can open and use the bulk-request screen.",
-    "meetingPriority": true,
-    "meetingDate": "2026-08-20"
+    "meetingPriority": true
   },
   {
     "id": "white-label-drafts",
@@ -377,8 +355,7 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Built; screen checks and release still needed.",
     "stage": 2,
     "nextStep": "Complete the real screen test, finish the review and merge steps, and confirm release to Optiq.",
-    "meetingPriority": true,
-    "meetingDate": "2026-09-30"
+    "meetingPriority": true
   },
   {
     "id": "blend-potency",
@@ -386,11 +363,10 @@ window.OPTIQ_REQUESTS = [
     "status": "queued",
     "title": "Results for each peptide in a blend",
     "description": "Enter a separate result for each peptide in a blend and show those results on the COA.",
-    "detail": "The COA layout is ready, while separate result entry and report integration still need work. The August 20 meeting also requested a structured multi-component display rather than slash-separated values, with each identity and Net Content value kept with its component. Check four-component mixtures, long names, page breaks and stable signature placement in both PDF and digital reports.",
+    "detail": "The COA layout is ready, while separate result entry and report integration still need work. The meeting also requested a structured multi-component display rather than slash-separated values, with each identity and Net Content value kept with its component. Check four-component mixtures, long names, page breaks and stable signature placement in both PDF and digital reports.",
     "evidence": "COA layout ready; result entry planned.",
     "stage": 1,
     "nextStep": "Finish per-peptide result entry and prove four-component PDF and digital reports remain readable.",
-    "meetingDate": "2026-08-20",
     "meetingPriority": true
   },
   {
@@ -411,11 +387,10 @@ window.OPTIQ_REQUESTS = [
     "status": "working",
     "title": "Scan, review, and receive samples",
     "description": "Scan an order, review and correct its sample list, then confirm what arrived.",
-    "detail": "At a fixed intake station, scanning must open the matching order for manual staff review; it must not automatically receive samples. Staff need to add, remove, rename or confirm physical samples before receipt. The August 27 meeting separately requested provisional drop-off confirmation and a later verified-intake outcome. Existing scanning and a received email do not prove that complete two-stage process. A dedicated intake workstation remains a setup dependency.",
+    "detail": "At a fixed intake station, scanning must open the matching order for manual staff review; it must not automatically receive samples. Staff need to add, remove, rename or confirm physical samples before receipt. The meeting separately requested provisional drop-off confirmation and a later verified-intake outcome. Existing scanning and a received email do not prove that complete two-stage process. A dedicated intake workstation remains a setup dependency.",
     "evidence": "Partly built; complete receiving process still needs work.",
     "stage": 1,
     "nextStep": "Finish and prove fixed-station scan → manual review → receipt, with separate drop-off and verified-intake outcomes.",
-    "meetingDate": "2026-08-27",
     "meetingPriority": true
   },
   {
@@ -487,8 +462,7 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Setup tools partly ready; complete testing process still needs work.",
     "stage": 1,
     "nextStep": "Finish and test the steps from preparation and result entry through to the COA.",
-    "meetingPriority": true,
-    "meetingDate": "2026-09-30"
+    "meetingPriority": true
   },
   {
     "id": "document-release",
@@ -500,7 +474,6 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Planned follow-up to the document editor.",
     "stage": 0,
     "nextStep": "Finish document approval, signing, and shared templates.",
-    "meetingDate": "2026-08-27",
     "meetingPriority": true
   },
   {
@@ -548,10 +521,7 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Design ready; building is planned.",
     "nextStep": "Build and test personal logins with a lab selector and separate permissions for each lab.",
     "stage": 0,
-    "addedDate": "2026-10-02",
-    "discussedDate": "2026-10-02",
-    "meetingPriority": true,
-    "meetingDate": "2026-10-02"
+    "meetingPriority": true
   },
   {
     "id": "shared-feature-tracker",
@@ -559,12 +529,10 @@ window.OPTIQ_REQUESTS = [
     "status": "complete",
     "title": "Shared feature list and questions",
     "description": "Share one list of requests, progress, and questions for the lab.",
-    "detail": "This public list is published and checked. Anyone with the link can search requests, open details and copy the lab questions. The October 2 call also asked for owners, blockers, next steps and rollout priorities. A separate signed-in LIMS tracker has been built for saved shared priorities; it is not established as available at Optiq. Publishing this page does not deliver that separate collaborative workflow.",
+    "detail": "This public list is published and checked. Anyone with the link can search requests, open details and copy the lab questions. The discussion also asked for owners, blockers, next steps and rollout priorities. A separate signed-in LIMS tracker has been built for saved shared priorities; it is not established as available at Optiq. Publishing this page does not deliver that separate collaborative workflow.",
     "evidence": "Published and checked · 2 Oct 2026.",
     "nextStep": "Use this list for discussion; check the separate signed-in shared-priority workflow and keep owners, blockers and next steps current.",
-    "stage": 3,
-    "addedDate": "2026-10-02",
-    "discussedDate": "2026-10-02"
+    "stage": 3
   },
   {
     "id": "missing-order-recovery",
@@ -588,8 +556,7 @@ window.OPTIQ_REQUESTS = [
     "detail": "The follow-up fix is written and has passed software tests. Its real screen test and independent review are still pending. It has not been released; the existing copy, paste, and fill feature is listed separately.",
     "evidence": "Fix built; screen test and review pending.",
     "nextStep": "Test undo and reload on the real screen, complete review, and confirm release.",
-    "stage": 2,
-    "addedDate": "2026-10-02"
+    "stage": 2
   },
   {
     "id": "bulk-coa-amendments",
@@ -601,9 +568,7 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Built; current Optiq availability and full journey not confirmed.",
     "nextStep": "Confirm the complete select → generate → review → replacement-release journey at Optiq.",
     "stage": 2,
-    "addedDate": "2026-10-02",
-    "meetingPriority": true,
-    "meetingDate": "2026-09-30"
+    "meetingPriority": true
   },
   {
     "id": "pda-peak-default",
@@ -615,7 +580,6 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Recorded release · 1 Oct 2026; signed-in live picker not confirmed.",
     "nextStep": "Confirm the PDA default in the signed-in Optiq picker.",
     "stage": 3,
-    "addedDate": "2026-10-02",
     "completed": "Recorded release"
   },
   {
@@ -628,7 +592,6 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Recorded release · 1 Oct 2026; complete collection remains separate.",
     "nextStep": "Confirm the affected sample charts during normal lab use.",
     "stage": 3,
-    "addedDate": "2026-10-02",
     "completed": "Recorded release"
   },
   {
@@ -640,8 +603,7 @@ window.OPTIQ_REQUESTS = [
     "detail": "The source collector, retained data, sample matching, recovery tools, and local status screen are built with recorded tests. Installation, secure setup, and activation at Optiq remain separate release steps. A normal subsequent lab run, live interruption recovery, and import timing still need acceptance proof. No complete instrument delivery is claimed.",
     "evidence": "Built and tested; installation, activation, and live acceptance pending.",
     "nextStep": "Prepare and release the collector, then verify a normal run and interrupted-import recovery.",
-    "stage": 2,
-    "addedDate": "2026-10-02"
+    "stage": 2
   },
   {
     "id": "inventory-follow-ups",
@@ -653,9 +615,7 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Some later screens built; full redesign and AI scope incomplete.",
     "nextStep": "Finish the remaining screens and AI tools, validate each piece, and confirm release.",
     "stage": 1,
-    "addedDate": "2026-10-02",
-    "meetingPriority": true,
-    "meetingDate": "2026-08-27"
+    "meetingPriority": true
   },
   {
     "id": "purchasing-status-words",
@@ -666,8 +626,7 @@ window.OPTIQ_REQUESTS = [
     "detail": "Lab-specific purchasing status words and their saved history are included in the current Optiq release, with recorded screen and database tests. They describe the existing purchasing steps; they do not replace the underlying order status. The lab’s access and saved settings still need confirmation.",
     "evidence": "Included in the current Optiq release · checked 3 Oct 2026. Lab settings and access checks remain.",
     "nextStep": "Confirm the lab’s saved status words appear in purchasing settings and order history.",
-    "stage": 3,
-    "addedDate": "2026-10-02"
+    "stage": 3
   },
   {
     "id": "purchase-history-forecast",
@@ -678,8 +637,7 @@ window.OPTIQ_REQUESTS = [
     "detail": "History-based reorder suggestions are included in the current Optiq release, with recorded screen and database tests. They show typical ordering patterns rather than claiming stock is low, and do not automatically place an order. Usefulness depends on sufficient purchase history.",
     "evidence": "Included in the current Optiq release · checked 3 Oct 2026. Purchase-history usefulness still needs confirmation.",
     "nextStep": "Confirm the suggestions are useful with the lab’s existing purchase history.",
-    "stage": 3,
-    "addedDate": "2026-10-02"
+    "stage": 3
   },
   {
     "id": "water-sample-type",
@@ -691,7 +649,6 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Released at Optiq · 4 Oct 2026; Water guidance confirmed in the live intake configuration.",
     "nextStep": "Available on the submission form. Validated water testing remains outside this release.",
     "stage": 3,
-    "addedDate": "2026-10-02",
     "completed": "Recorded release"
   },
   {
@@ -704,7 +661,6 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Released at Optiq · 4 Oct 2026; saved-draft flow browser-tested before release.",
     "nextStep": "Available now. Check a reopened draft’s test selections during normal use.",
     "stage": 3,
-    "addedDate": "2026-10-02",
     "completed": "Recorded release"
   },
   {
@@ -716,8 +672,7 @@ window.OPTIQ_REQUESTS = [
     "detail": "The fix is built and tested in software for the saved-order path. A real screen test with the running system is still needed. It does not cover submissions where no saved order was opened. It remains an open candidate and is not a confirmed Optiq release.",
     "evidence": "Fix built; real screen test and release pending.",
     "nextStep": "Test submission retry and reload, finish review, and confirm release.",
-    "stage": 2,
-    "addedDate": "2026-10-02"
+    "stage": 2
   },
   {
     "id": "configured-sample-actions",
@@ -728,8 +683,7 @@ window.OPTIQ_REQUESTS = [
     "detail": "The candidate uses the lab’s configured tests and permissions for result views, re-run, re-prep, confirmation, and cancel. Recorded real browser tests used test samples. Final merge and release are still pending, and unsupported testing workflows remain unavailable. This is a built part of the wider lab-specific testing framework.",
     "evidence": "Built and browser-tested candidate; release pending.",
     "nextStep": "Finish the candidate’s remaining checks and confirm release and use at Optiq.",
-    "stage": 2,
-    "addedDate": "2026-10-02"
+    "stage": 2
   },
   {
     "id": "managed-brand-accounts",
@@ -737,12 +691,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "One parent account managing several brands",
     "description": "Manage several client or brand identities through one parent portal account.",
-    "detail": "The August 20 meeting described one parent account with managed brands, each retaining its own orders, samples, results, invoices and COAs. Brand/client identity and manufacturer are separate. This is different from switching between independent laboratories. Current delivery of the complete managed-brand and permission workflow has not been checked here.",
+    "detail": "The meeting described one parent account with managed brands, each retaining its own orders, samples, results, invoices and COAs. Brand/client identity and manufacturer are separate. This is different from switching between independent laboratories. Current delivery of the complete managed-brand and permission workflow has not been checked here.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Check current parent/brand management, selected-brand ownership and team permissions; record any remaining work.",
     "stage": 0,
-    "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -751,12 +703,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "White-label acknowledgement and retained consent",
     "description": "Record the customer’s acknowledgement of the approved white-label terms.",
-    "detail": "The August 20 deliverable called for an affirmative acknowledgement or signature with the accepted wording version, time, user, company and related request retained. Later wording changes must not replace what was accepted. Existing white-label editing does not establish this complete consent record.",
+    "detail": "The request called for an affirmative acknowledgement or signature with the accepted wording version, time, user, company and related request retained. Later wording changes must not replace what was accepted. Existing white-label editing does not establish this complete consent record.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Check the approved wording, acknowledgement flow and retained evidence before marking it delivered.",
     "stage": 0,
-    "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -765,12 +715,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Photography vials for each white-label brand",
     "description": "Keep each required photography vial and photo linked to the intended brand and COA.",
-    "detail": "The August 20 meeting recorded a one-supplied-photography-vial-per-brand requirement, with a traceable link from brand to received vial, photograph and white-label COA. This is separate from the deployed-but-off customer photo-identification feature. Its present implementation and availability need checking.",
+    "detail": "The meeting recorded a one-supplied-photography-vial-per-brand requirement, with a traceable link from brand to received vial, photograph and white-label COA. This is separate from the deployed-but-off customer photo-identification feature. Its present implementation and availability need checking.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Check the per-brand vial rule, required counts, received-vial/photo links and final white-label output.",
     "stage": 0,
-    "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -779,12 +727,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Missing photography vials and white-label holds",
     "description": "Identify which expected brand vial is missing and keep the related white-label work on hold.",
-    "detail": "The August 20 deliverable included an expected-vial checklist, missing or damaged observations, a customer notice identifying the affected request, and a controlled override with a reason. Clearing a hold on receipt must retain the record. The existing received email and photo reply workflow do not prove these requirements. No new customer notifications are enabled by this list update.",
+    "detail": "The request included an expected-vial checklist, missing or damaged observations, a customer notice identifying the affected request, and a controlled override with a reason. Clearing a hold on receipt must retain the record. The existing received email and photo reply workflow do not prove these requirements. No new customer notifications are enabled by this list update.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Check the checklist, hold, override, later receipt and notification journey with test records before any activation.",
     "stage": 0,
-    "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -793,12 +739,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Require Lot / Batch for white-label submissions",
     "description": "Require and retain Lot / Batch when the customer requests a white-label COA.",
-    "detail": "The August 20 meeting required Lot / Batch for white-label requests. Showing the Lot / Batch column in the released receiving tables does not prove submission validation or the value’s path into the released white-label COA. A blanket requirement for ordinary submissions was not settled by that decision.",
+    "detail": "The meeting required Lot / Batch for white-label requests. Showing the Lot / Batch column in the released receiving tables does not prove submission validation or the value’s path into the released white-label COA. A blanket requirement for ordinary submissions was not settled by that decision.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Check white-label submission validation and the saved sample/COA value; preserve controlled corrections.",
     "stage": 0,
-    "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -807,12 +751,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Create a client and send the first portal invitation",
     "description": "Reuse entered contact details and make invitation status and resend easy to find.",
-    "detail": "The August 20 deliverable called for one guided client-create/invite flow, a deliberate option to create a company without inviting anyone, clear role selection, invitation status, resend and correctly branded links. The Manage Clients scrolling fix does not establish this workflow.",
+    "detail": "The request called for one guided client-create/invite flow, a deliberate option to create a company without inviting anyone, clear role selection, invitation status, resend and correctly branded links. The Manage Clients scrolling fix does not establish this workflow.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Check creation, invitation, roles, skipped invitation, resend and acceptance; record any remaining steps.",
     "stage": 0,
-    "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -821,12 +763,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Keep public signup approval separate from invitations",
     "description": "Approve public signup requests while allowing invited users to join the correct company.",
-    "detail": "The August 20 meeting retained public-signup approval and distinguished it from staff-created invitations. Approved applicants must link to the correct membership, and an invited user should not need a duplicate signup flow. Current delivery and access behavior need checking.",
+    "detail": "The meeting retained public-signup approval and distinguished it from staff-created invitations. Approved applicants must link to the correct membership, and an invited user should not need a duplicate signup flow. Current delivery and access behavior need checking.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Verify approval and invited-user journeys, company membership and access boundaries with test accounts.",
     "stage": 0,
-    "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -835,12 +775,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Public and signed-in order pricing",
     "description": "Keep public submission prices hidden and show the configured estimate during signed-in ordering.",
-    "detail": "The August 20 meeting recorded public pricing hidden and authenticated portal pricing visible, with the quote retained on the submitted order. Later price changes must not rewrite earlier quotes. This historical request has not been matched to the current configuration and release here.",
+    "detail": "The meeting recorded public pricing hidden and authenticated portal pricing visible, with the quote retained on the submitted order. Later price changes must not rewrite earlier quotes. This historical request has not been matched to the current configuration and release here.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Check current public/portal price visibility, order estimates and retained quotes before claiming completion.",
     "stage": 0,
-    "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -849,12 +787,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Check the agreed 25% rush surcharge",
     "description": "Check that the rush option uses the recorded surcharge and shows the added amount clearly.",
-    "detail": "The August 20 meeting recorded replacing doubled pricing with a 25% surcharge. Whether Rush promises a guaranteed turnaround or needs lab acceptance remained a separate decision. This entry records the request; it does not change prices or establish the current live setting.",
+    "detail": "The meeting recorded replacing doubled pricing with a 25% surcharge. Whether Rush promises a guaranteed turnaround or needs lab acceptance remained a separate decision. This entry records the request; it does not change prices or establish the current live setting.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Check the configured surcharge and retained quote; settle the service promise before showing a guaranteed turnaround.",
     "stage": 0,
-    "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -863,12 +799,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Standard and Extended test-panel choices",
     "description": "Offer the configured test packages clearly while preserving individual test selection.",
-    "detail": "The August 20 meeting requested Standard and Extended presets, visible included tests and applying a package to selected samples. Reopening saved test selections is a separate released fix. The complete preset behavior still needs a current evidence check.",
+    "detail": "The meeting requested Standard and Extended presets, visible included tests and applying a package to selected samples. Reopening saved test selections is a separate released fix. The complete preset behavior still needs a current evidence check.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Check the lab’s configured package definitions, included tests, bulk application and individual exceptions.",
     "stage": 0,
-    "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -877,12 +811,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Show vial requirements while choosing tests",
     "description": "Update required vial counts as customers select tests, panels and additional services.",
-    "detail": "The August 20 meeting requested immediate vial-count feedback before the final review, plus the same calculation in the order summary. Water volume guidance and Conformity components do not establish all dynamic vial requirements.",
+    "detail": "The meeting requested immediate vial-count feedback before the final review, plus the same calculation in the order summary. Water volume guidance and Conformity components do not establish all dynamic vial requirements.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Check live counts and extra-service requirements across the supported test selections and final review.",
     "stage": 0,
-    "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -891,12 +823,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Find orders still needing a client match",
     "description": "Provide a clear queue or filter for orders that need the existing Resolve Client workflow.",
-    "detail": "The August 20 deliverable retained the Resolve Client workflow and recorded better unresolved-order visibility as backlog work. This is separate from fixing a particular missing order. Current queue/filter availability has not been checked.",
+    "detail": "The request retained the Resolve Client workflow and recorded better unresolved-order visibility as backlog work. This is separate from fixing a particular missing order. Current queue/filter availability has not been checked.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Check existing unresolved-client views and preserve the current resolution process; keep any remaining work in backlog.",
     "stage": 0,
-    "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -905,12 +835,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Visible verification on the digital COA",
     "description": "Make certificate verification obvious at the top and while scrolling.",
-    "detail": "The August 20 meeting requested a prominent verified-certificate block and a compact indicator that remains visible while reviewing the digital COA. Invalid, revoked or unavailable records must not appear verified. The public Verify Results lookup and its font mockup are separate surfaces.",
+    "detail": "The meeting requested a prominent verified-certificate block and a compact indicator that remains visible while reviewing the digital COA. Invalid, revoked or unavailable records must not appear verified. The public Verify Results lookup and its font mockup are separate surfaces.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Check the digital COA’s real verification state, scrolling behavior and desktop/phone readability.",
     "stage": 0,
-    "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -919,12 +847,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Report Net Content per vial",
     "description": "Check that peptide Net Content has the agreed per-vial meaning and wording.",
-    "detail": "The August 20 deliverable requested per-vial Net Content reporting and consistent Net Content terminology across ordering, result views, reports and imports. Released IU/unit support does not establish the reporting basis or every label. No result conversion is authorized by this entry.",
+    "detail": "The request covers per-vial Net Content reporting and consistent Net Content terminology across ordering, result views, reports and imports. Released IU/unit support does not establish the reporting basis or every label. No result conversion is authorized by this entry.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Check the recorded units, per-vial basis and wording through the complete supported reporting journey.",
     "stage": 0,
-    "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -933,12 +859,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Consistent test specifications and status wording",
     "description": "Keep Tested, Pass, Within Limits and Identity outcomes distinct where applicable.",
-    "detail": "The August 20 deliverable described the Purity minimum specification and green Tested treatment, distinct Identity outcomes and limits-based wording, consistently across PDF and digital COAs. Some related corrections have release records, but the whole requested wording contract has not been checked here. The September 30 meeting again retained Tested versus Pass and visible failures.",
+    "detail": "The request described the Purity minimum specification and green Tested treatment, distinct Identity outcomes and limits-based wording, consistently across PDF and digital COAs. Some related corrections have release records, but the whole requested wording contract has not been checked here. The meeting again retained Tested versus Pass and visible failures.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Match each requested wording rule to current PDF/digital output and release evidence; preserve the lab’s approved criteria.",
     "stage": 0,
-    "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -947,12 +871,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Partner supplies, running balances and month-end invoices",
     "description": "Track supplies bought for a partner company and keep a reviewable running obligation.",
-    "detail": "The August 27 meeting requested vendor/package/paid-price history, mid-month visibility, a complete month-end intercompany invoice and review of older purchases. Existing purchasing history does not prove intercompany settlement or historical backfill. Company roles, accounting rules and approval boundaries need a settled contract before execution.",
+    "detail": "The meeting requested vendor/package/paid-price history, mid-month visibility, a complete month-end intercompany invoice and review of older purchases. Existing purchasing history does not prove intercompany settlement or historical backfill. Company roles, accounting rules and approval boundaries need a settled contract before execution.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Review the partner supply and invoicing contract, then check what current software actually supports.",
     "stage": 0,
-    "meetingDate": "2026-08-27",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -961,12 +883,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Send samples to a partner lab and receive the results",
     "description": "Track partner assignment, custody handoff, returned results and related settlement.",
-    "detail": "The August 27 meeting requested associated-lab sharing so work such as metals or solvents could be routed to a partner. Selective permissions are required; an association must not expose every lab or partner. Sharing stock information is a separate request and does not establish sample referral or result return.",
+    "detail": "The meeting requested associated-lab sharing so work such as metals or solvents could be routed to a partner. Selective permissions are required; an association must not expose every lab or partner. Sharing stock information is a separate request and does not establish sample referral or result return.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Define the permitted partner workflow and check assignment, custody, result return and settlement support.",
     "stage": 0,
-    "meetingDate": "2026-08-27",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -975,12 +895,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Customer follow-up for intake problems",
     "description": "Let staff record an attention reason and follow up on the affected sample.",
-    "detail": "The August 27 meeting requested comments or predefined attention reasons to reduce routine phone calls. This broader follow-up is separate from a received email, the two-stage receipt process, missing white-label vials and customer photo identification. Message scope, wording and complete availability remain unconfirmed.",
+    "detail": "The meeting requested comments or predefined attention reasons to reduce routine phone calls. This broader follow-up is separate from a received email, the two-stage receipt process, missing white-label vials and customer photo identification. Message scope, wording and complete availability remain unconfirmed.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Check the general attention-reason workflow and approve the intended notice behavior before enabling customer messages.",
     "stage": 0,
-    "meetingDate": "2026-08-27",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -989,12 +907,10 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Public authenticity details and private full COAs",
     "description": "Keep the public verification record and the full certificate’s sharing rules clear.",
-    "detail": "The September 16 and later conversations retained a distinct public authenticity experience, full-COA sharing boundaries and controlled correction of issued artifacts. A working lookup does not settle every public field or white-label editing rule. The September 30 decision keeps existing PDF QR links opening the digital COA.",
+    "detail": "The discussions retained a distinct public authenticity experience, full-COA sharing boundaries and controlled correction of issued artifacts. A working lookup does not settle every public field or white-label editing rule. The agreed decision keeps existing PDF QR links opening the digital COA.",
     "evidence": "Meeting request recorded; current implementation and release need checking.",
     "nextStep": "Check the public/private field contract and permitted white-label changes; preserve the agreed QR destination.",
     "stage": 0,
-    "meetingDate": "2026-09-16",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -1007,8 +923,6 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Built and tested native candidate; Optiq release and full availability remain unconfirmed.",
     "nextStep": "Reconcile the catalog, complete release checks and confirm the signed-in workflow at Optiq.",
     "stage": 2,
-    "meetingDate": "2026-10-02",
-    "addedDate": "2026-10-04",
     "meetingPriority": true
   },
   {
@@ -1017,12 +931,10 @@ window.OPTIQ_REQUESTS = [
     "status": "deferred",
     "title": "HubSpot-to-client onboarding",
     "description": "Avoid entering the same onboarding information in HubSpot and the LIMS.",
-    "detail": "The August 20 meeting explicitly deferred this behind urgent sample and COA work. The proposed flow creates a reviewable client draft and keeps staff in control of company matching, recipients and access. No completed integration is claimed.",
+    "detail": "The meeting explicitly deferred this behind urgent sample and COA work. The proposed flow creates a reviewable client draft and keeps staff in control of company matching, recipients and access. No completed integration is claimed.",
     "evidence": "Discussed as later work; no current delivery claimed.",
     "nextStep": "Keep deferred; check existing integration work before prioritizing a reviewed onboarding flow.",
-    "stage": 0,
-    "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04"
+    "stage": 0
   },
   {
     "id": "client-specific-pricing",
@@ -1030,12 +942,10 @@ window.OPTIQ_REQUESTS = [
     "status": "deferred",
     "title": "Client-specific prices and discounts",
     "description": "Support configured customer prices without exposing another customer’s pricing.",
-    "detail": "The August 20 meeting described this as future architecture rather than immediate launch scope. List prices, discounts and the submitted quote need separate retained values. It should not delay more urgent sample and COA work.",
+    "detail": "The meeting described this as future architecture rather than immediate launch scope. List prices, discounts and the submitted quote need separate retained values. It should not delay more urgent sample and COA work.",
     "evidence": "Discussed as later work; no current delivery claimed.",
     "nextStep": "Keep deferred and check existing pricing capabilities before scheduling remaining work.",
-    "stage": 0,
-    "meetingDate": "2026-08-20",
-    "addedDate": "2026-10-04"
+    "stage": 0
   },
   {
     "id": "customer-qr-labels",
@@ -1043,12 +953,10 @@ window.OPTIQ_REQUESTS = [
     "status": "proposed",
     "title": "Explore customer vial QR labels",
     "description": "Consider printable vial labels linked to the certificate or verification experience.",
-    "detail": "The September 30 meeting explored customer vial labels and a possible external printing service. This is different from the existing internal printed-label choices. No provider, spending decision or committed delivery was established.",
+    "detail": "The meeting explored customer vial labels and a possible external printing service. This is different from the existing internal printed-label choices. No provider, spending decision or committed delivery was established.",
     "evidence": "Exploratory idea recorded; scope and approval remain separate.",
     "nextStep": "Decide whether to pursue customer labels; retain this as an idea until the scope is agreed.",
-    "stage": 0,
-    "meetingDate": "2026-09-30",
-    "addedDate": "2026-10-04"
+    "stage": 0
   },
   {
     "id": "watched-folder-documents",
@@ -1056,12 +964,10 @@ window.OPTIQ_REQUESTS = [
     "status": "proposed",
     "title": "Explore a watched folder for business documents",
     "description": "Consider dropping invoices, packing slips and photographed documents into a local collection folder.",
-    "detail": "The August 27 meeting explored extending low-friction collection beyond instrument files. The wider business-document scope and speaker commitment were uncertain. Existing Empower source collection does not establish this separate workflow.",
+    "detail": "The meeting explored extending low-friction collection beyond instrument files. The wider business-document scope and speaker commitment were uncertain. Existing Empower source collection does not establish this separate workflow.",
     "evidence": "Exploratory idea recorded; scope and approval remain separate.",
     "nextStep": "Keep as an idea; define the document scope and approved handling before any build or activation.",
-    "stage": 0,
-    "meetingDate": "2026-08-27",
-    "addedDate": "2026-10-04"
+    "stage": 0
   },
   {
     "id": "coa-tamper-evidence",
@@ -1069,11 +975,9 @@ window.OPTIQ_REQUESTS = [
     "status": "proposed",
     "title": "Evaluate tamper evidence for issued COAs",
     "description": "Explore a defensible link between an issued certificate and its retained source evidence.",
-    "detail": "The August 27 and September 30 discussions raised tamper evidence and possible blockchain anchoring. Those conversations do not settle a technology, public claim, timing or activation policy. Legitimate lab corrections and controlled reissue must remain possible.",
+    "detail": "The discussions raised tamper evidence and possible blockchain anchoring. Those conversations do not settle a technology, public claim, timing or activation policy. Legitimate lab corrections and controlled reissue must remain possible.",
     "evidence": "Exploratory idea recorded; scope and approval remain separate.",
     "nextStep": "Evaluate the required evidence and lifecycle contract first; do not treat a technology idea as an approved build.",
-    "stage": 0,
-    "meetingDate": "2026-08-27",
-    "addedDate": "2026-10-04"
+    "stage": 0
   }
 ];
