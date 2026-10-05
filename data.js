@@ -48,7 +48,8 @@ window.OPTIQ_REQUESTS = [
     "area": "Reports & analyses",
     "nextReview": true,
     "meetingPriority": true,
-    "question": "Confirm Mulish for the record contents, keeping OCR A in the header and footer and the adjusted spacing."
+    "question": "Confirm Mulish for the record contents, keeping OCR A in the header and footer and the adjusted spacing.",
+    "reviewPreview": "#verification-design-preview"
   },
   {
     "id": "coa-mass-spectra",
