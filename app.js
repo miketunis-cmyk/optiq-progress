@@ -23,7 +23,6 @@ function renderLabQuestions(){document.querySelector('#lab-questions').innerHTML
 const foundations={
   "coa-summary-layout": "Multi-page COA tools and the detailed Conformity layout are built; combining and releasing the new tests remains.",
   "requested-white-label-photo": "Photo selection exists for eligible private drafts; customer requests awaiting approval need a separate fix.",
-  "batch-templates": "Some tools are already available; the lab’s preparation sheet and vial order are still needed.",
   "inspection-checks": "Receiving checks already exist; seal observations still need to save correctly.",
   "frozen-sort": "Rows can already be sorted; keeping them still while editing is planned.",
   "printed-labels": "Label printing already exists; separate symbol and test-name choices are planned.",
