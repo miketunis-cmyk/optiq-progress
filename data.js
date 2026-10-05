@@ -52,16 +52,17 @@ window.OPTIQ_REQUESTS = [
   },
   {
     "id": "verify-results-font",
-    "status": "queued",
-    "stage": 0,
-    "title": "Verification Record — compare font options",
-    "description": "Show different fonts on the document-style record returned by Verify Results, using the same content and layout for a fair comparison.",
-    "detail": "Compare font options on the document-style Verification Record and review examples before choosing the typography for publication. Use identical content and layout for each option. The working certificate lookup is already released; the font comparison is the next work item.",
-    "evidence": "Font comparison planned; review examples before publication.",
-    "nextStep": "Work next: mock up font options on the same Verification Record, review the examples, then publish the chosen typography.",
+    "status": "optiq",
+    "stage": 2,
+    "title": "Verification Record — confirm Mulish typography",
+    "description": "The font comparison and selected record design are ready for lab confirmation.",
+    "detail": "The font comparison is complete. The selected design uses Mulish for the record contents and retains OCR A for the header and footer, with the adjusted content spacing. Desktop and phone views have been checked, and the design review is complete. The existing certificate lookup is already released; the revised design still needs final lab confirmation and publication.",
+    "evidence": "Design built, browser-checked and reviewed; revised typography not yet published.",
+    "nextStep": "Confirm the selected typography with the lab, then complete publication approval and release.",
     "area": "Reports & analyses",
     "nextReview": true,
-    "meetingPriority": true
+    "meetingPriority": true,
+    "question": "Confirm Mulish for the record contents, keeping OCR A in the header and footer and the adjusted spacing."
   },
   {
     "id": "coa-mass-spectra",
