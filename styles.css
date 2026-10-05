@@ -24,3 +24,17 @@
 .progress-filter[aria-pressed="true"] .filter-count{background:rgba(255,255,255,.18);color:#fff}
 @media(max-width:660px){.progress-filters{gap:7px}.progress-filter{padding:8px 10px;font-size:.8125rem}}
 @media print{.progress-filters{display:none}}
+
+/* Record design review supplied for lab approval. */
+.review-preview-link{display:inline-block;margin-top:10px;color:var(--blue);font-size:.875rem;font-weight:650;text-underline-offset:3px}
+.approval-preview{border:1px solid var(--line);border-radius:12px;padding:25px;margin-bottom:36px;scroll-margin-top:24px}
+.approval-preview-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.approval-preview-heading .mini-label{margin:0 0 9px;color:var(--amber)}
+.preview-full-size{color:var(--blue);font-size:.875rem;font-weight:650;white-space:nowrap;text-underline-offset:3px}
+.approval-request{color:var(--muted);line-height:1.6;margin:17px 0 24px}
+.approval-request strong{color:var(--ink);font-weight:650}
+.approval-preview figure{margin:0;max-width:960px;margin-inline:auto}
+.approval-preview img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:9px}
+.approval-preview figcaption{font-size:.8125rem;line-height:1.5;color:var(--muted);margin-top:12px}
+@media(max-width:660px){.approval-preview{padding:18px;margin-bottom:28px}.approval-preview-heading{flex-direction:column;gap:14px}.approval-preview-heading h2{font-size:1.3rem}.approval-request{font-size:.9375rem}}
+@media print{.approval-preview{break-before:page}.preview-full-size,.review-preview-link{display:none}.approval-preview figure{max-width:700px}}
