@@ -2,7 +2,7 @@
 const requests=window.OPTIQ_REQUESTS;
 const statuses={complete:{label:'Completed',rank:5},built:{label:'Built',rank:2},working:{label:'In progress',rank:1},optiq:{label:'Needs Optiq input',rank:0},queued:{label:'Planned',rank:4},partial:{label:'Partly built',rank:2.5},check:{label:'Needs checking',rank:1.5},deferred:{label:'Deferred',rank:6},proposed:{label:'Idea',rank:7}};
 let selectedStatus='all',query='';
-const expandedRequests=new Set(['verify-results-font']);
+const expandedRequests=new Set();
 const escapeHtml=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const icon=status=>status==='complete'?'<svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8"/></svg>':status==='optiq'?'<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M10 5.8v4.7m0 2.5v1"/></svg>':status==='built'?'<svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8"/></svg>':'<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l3 2"/></svg>';
 function renderSummary(){document.querySelector('#summary').innerHTML=['complete','built','working','optiq'].map(status=>`<button class="summary-button" type="button" data-status="${status}" aria-pressed="${selectedStatus===status}"><span class="summary-number">${requests.filter(r=>r.status===status).length}</span><span class="summary-label">${statuses[status].label}</span></button>`).join('');}
@@ -33,7 +33,7 @@ const foundations={
   "certified-imports": "Values can be entered by hand; spreadsheet export and document import are planned."
 };
 function engineeringProgress(r){
-  if(r.id==='verify-results-font')return {label:'Design ready',fill:92,basis:r.evidence};
+  if(r.id==='verify-results-font'&&r.status!=='complete')return {label:'Design ready',fill:92,basis:r.evidence};
   if(r.status==='check')return {label:'Delivery needs checking',fill:28,basis:r.evidence};
   if(r.status==='deferred')return {label:'Deferred request',fill:28,basis:r.evidence};
   if(r.status==='proposed')return {label:'Idea recorded',fill:28,basis:r.evidence};
