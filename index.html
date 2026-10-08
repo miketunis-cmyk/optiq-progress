@@ -9,14 +9,14 @@
   <meta property="og:title" content="Optiq progress · Smpltrax">
   <meta property="og:description" content="Feature progress and the next steps for the Optiq team.">
   <title>Optiq progress · Smpltrax</title>
-  <link rel="stylesheet" href="styles.css?v=20261007-progress-refresh">
-  <script defer src="data.js?v=20261007-progress-refresh"></script>
-  <script defer src="app.js?v=20261007-progress-refresh"></script>
+  <link rel="stylesheet" href="styles.css?v=20261007-coa-completion">
+  <script defer src="data.js?v=20261007-coa-completion"></script>
+  <script defer src="app.js?v=20261007-coa-completion"></script>
 </head>
 <body>
   <header class="masthead"><div class="shell masthead-inner"><a class="brand" href="./" aria-label="Optiq progress home"><img class="optiq-logo" src="assets/optiq.svg" alt="Optiq"><span class="brand-divider" aria-hidden="true"></span><img class="smpltrax-logo" src="assets/smpltrax.svg" alt="Smpltrax"></a><span class="snapshot">Updated <time datetime="2026-10-07">7 Oct 2026</time></span></div></header>
   <main class="shell">
-    <div class="intro"><div><p class="eyebrow">FEATURE PROGRESS</p><h1>A clear view of what’s next.</h1><p class="intro-copy">Meeting requests, release evidence, and the next steps for the lab. Verification Record typography is released. Newer Tablet, COA and import improvements are shown with their remaining release steps. Unfinished requests raised in meetings come first.</p></div><button class="print-button" id="print-button" type="button">Print / save PDF</button></div>
+    <div class="intro"><div><p class="eyebrow">FEATURE PROGRESS</p><h1>A clear view of what’s next.</h1><p class="intro-copy">Meeting requests, release evidence, and the next steps for the lab. Verification Record typography and the requested Dalton summaries, COA editing and chart sorting are released. Newer Tablet, COA and import improvements are shown with their remaining release steps. Unfinished requests raised in meetings come first.</p></div><button class="print-button" id="print-button" type="button">Print / save PDF</button></div>
     <section class="summary" aria-label="Filter by progress" id="summary"></section>
     <section class="lab-panel" aria-labelledby="lab-heading"><div class="lab-panel-top"><div><span class="mini-label">NEXT STEPS FOR THE LAB</span><h2 id="lab-heading">A few details will move these forward.</h2></div><button id="copy-questions" class="copy-button" type="button">Copy questions</button></div><div id="lab-questions" class="lab-questions"></div><p class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></p></section>
     <section class="work-section" aria-labelledby="work-heading"><div class="work-heading"><div><h2 id="work-heading">The request list</h2><p id="results-count" role="status" aria-live="polite"></p></div><label class="search"><span class="sr-only">Search requests</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="search" type="search" placeholder="Find a request…" autocomplete="off"></label></div><div class="progress-filters" id="progress-filters" role="group" aria-label="Filter requests by priority or progress"></div><div class="view-line" id="filter-actions" hidden><button id="reset-filters" type="button" hidden>Clear filters</button></div><div id="request-grid" class="request-table"></div><div id="empty-state" class="empty-state" hidden><h3>No matching requests</h3><p>Try another search or clear the filters.</p><button id="empty-reset" type="button">Clear filters</button></div></section>

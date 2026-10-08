@@ -979,13 +979,13 @@ window.OPTIQ_REQUESTS = [
   {
     "id": "coa-spectrum-interpretation",
     "area": "Reports & analyses",
-    "status": "partial",
-    "title": "Mass-spectrum evidence and interpretation",
-    "description": "Save observed ions, supporting evidence and each component’s interpretation with a COA preview.",
-    "detail": "The interpretation editor, saved spectrum summaries and COA cards were included in the recorded 5 October release. The later correction preserves entered free-text Identity. Follow-up work remains to remove unrequested default review and evidence restrictions and make additional scientific review rules a lab choice. A newer ions-first interface is a design prototype, not a released feature.",
-    "evidence": "Interpretation tools released · 5 Oct 2026; further workflow and design corrections remain.",
-    "nextStep": "Finish the lab-configured review rules and prove the corrected COA journey; review the newer interface before implementation.",
-    "stage": 2
+    "status": "complete",
+    "title": "Edit mass-spectrum interpretations from COA cards",
+    "description": "Edit each component’s saved interpretation and molecular-mass summary directly from its COA card.",
+    "detail": "The requested interpretation editor, saved per-component summaries, supporting-evidence fields and COA card editing were built and released in the recorded 5 October update. The later free-text correction preserves the entered Identity. This completed request credits those delivered editing tools. Further changes to default review restrictions and the newer ions-first interface remain separate follow-up work; they do not undo this delivery.",
+    "evidence": "Requested COA interpretation and card editing released · 5 Oct 2026.",
+    "nextStep": "Available in the released editor. Keep further review-rule and interface changes separate from this completed request.",
+    "stage": 3
   },
   {
     "id": "coa-chart-page-filling",
@@ -1041,5 +1041,49 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Stable-link fixes built; complete release and availability proof remain unfinished.",
     "nextStep": "Finish the release continuity checks, then deploy the approved fix and verify the affected links.",
     "stage": 2
+  },
+  {
+    "id": "coa-manual-dalton-summaries",
+    "area": "Reports & analyses",
+    "status": "complete",
+    "stage": 3,
+    "title": "Molecular mass in Daltons on COAs",
+    "description": "Save a spectrum’s molecular mass and interpretation and show them on the COA.",
+    "detail": "The requested manual per-spectrum summaries were delivered, including molecular mass in Da, entered ion assignments, mass basis and the explicit interpretation. The shared preview, PDF and digital card uses the Molecular Mass label. The recorded 5 October release generated a four-spectrum certificate with the saved summaries. Automatic ion matching and later changes to callout size are separate requests.",
+    "evidence": "Manual molecular-mass summaries and COA labels released · 5 Oct 2026.",
+    "nextStep": "Available in the released COA tools; automatic interpretation and smaller callouts are tracked separately."
+  },
+  {
+    "id": "coa-saved-spectrum-callouts",
+    "area": "Reports & analyses",
+    "status": "complete",
+    "stage": 3,
+    "title": "Keep saved spectrum callouts visible",
+    "description": "Keep saved molecular-mass and interpretation cards visible when navigating or refreshing.",
+    "detail": "The reported disappearance of saved callouts was corrected. The release preserves the saved cards through preview navigation and refresh. This fix was included in the recorded 5 October COA release; the separate newer change to callout size remains built without release confirmation.",
+    "evidence": "Saved-callout navigation and refresh fix released · 5 Oct 2026.",
+    "nextStep": "Resolved in the recorded release. Report a reproducible example if a saved card disappears."
+  },
+  {
+    "id": "coa-chromatogram-spectrum-order",
+    "area": "Reports & analyses",
+    "status": "complete",
+    "stage": 3,
+    "title": "COA chart sorting and grouped spectrum pages",
+    "description": "Put chromatograms first, then group mass spectra in a clear order under one heading per page.",
+    "detail": "The requested chromatogram-first ordering, two-spectrum page groups, compact interpretation cards, continuous group border and shared Mass Spectrum headings were included in the recorded 5 October release. This credits the delivered ordering and grouping. Later work to measure unused page space and fit more complete evidence sections is a separate built refinement.",
+    "evidence": "Chromatogram-first sorting and grouped spectrum pages released · 5 Oct 2026.",
+    "nextStep": "Available in the recorded COA release; the later page-filling refinement is tracked separately."
+  },
+  {
+    "id": "coa-automatic-ion-interpretation",
+    "area": "Reports & analyses",
+    "status": "built",
+    "stage": 2,
+    "title": "Automatic ion interpretation for COA cards",
+    "description": "Use the entered molecular mass to populate matching observed ions from the selected spectrum.",
+    "detail": "Automatic interpretation from the ten most abundant acquired spectrum bars, mass edits, custom overrides, saved-card updates and server rechecking are built, browser-tested and merged. Existing saved manual interpretations are retained until matching inputs change. Automatic matches do not confirm Identity or finish scientific review. No Optiq release of this newer feature is established by the inspected records. The later ions-first interface remains a prototype.",
+    "evidence": "Automatic ion interpretation built, browser-tested and merged; not confirmed released.",
+    "nextStep": "Prepare the approved release and verify the actual saved-spectrum → automatic card → COA journey at Optiq."
   }
 ];
