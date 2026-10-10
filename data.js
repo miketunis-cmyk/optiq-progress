@@ -4186,14 +4186,14 @@ window.OPTIQ_REQUESTS = [
   {
     "id": "public-coa-boundaries",
     "area": "Reports & analyses",
-    "status": "optiq",
-    "title": "Public verification details and private certificates",
-    "description": "Make clear which verification details are public and who may view the full certificate.",
-    "detail": "The certificate-verification connection is present. Optiq's approval of its appearance and which details should be public is still pending.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
-    "nextStep": "Optiq: approve the existing verification design and confirm which details are public and which need private access.",
-    "stage": 2,
-    "meetingPriority": true,
+    "status": "complete",
+    "title": "Public verification website widget",
+    "description": "Let customers look up and verify a certificate on the Optiq website.",
+    "detail": "Mike confirmed that the public verification website widget is complete on 10 October 2026.",
+    "evidence": "Completion confirmed by Mike on 10 October 2026; no new website or lab test was performed for this tracker update.",
+    "nextStep": "Complete. No further action needed for the website widget.",
+    "stage": 3,
+    "meetingPriority": false,
     "historicalSnapshots": [
       {
         "asOf": "2026-10-07",
@@ -4231,15 +4231,36 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Existing coordinator; internal appearance/input custody",
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
         }
+      },
+      {
+        "asOf": "2026-10-10",
+        "record": {
+          "id": "public-coa-boundaries",
+          "area": "Reports & analyses",
+          "status": "optiq",
+          "title": "Public verification details and private certificates",
+          "description": "Make clear which verification details are public and who may view the full certificate.",
+          "detail": "The certificate-verification connection is present. Optiq's approval of its appearance and which details should be public is still pending.",
+          "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+          "nextStep": "Optiq: approve the existing verification design and confirm which details are public and which need private access.",
+          "stage": 2,
+          "meetingPriority": true,
+          "recordedProgressCredit": 28,
+          "recordedProgressLabel": "Wiring reported done — appearance approval pending",
+          "currentAsOf": "2026-10-10",
+          "question": "Please approve the existing verification-page design and confirm which details should be public and which should require private access.",
+          "currentDisposition": "The certificate-verification connection is present. Optiq's approval of its appearance and which details should be public is still pending.",
+          "currentOwner": "Existing coordinator; internal appearance/input custody",
+          "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+        }
       }
     ],
-    "recordedProgressCredit": 28,
-    "recordedProgressLabel": "Wiring reported done — appearance approval pending",
+    "recordedProgressCredit": 100,
+    "recordedProgressLabel": "Recorded as complete",
     "currentAsOf": "2026-10-10",
-    "question": "Please approve the existing verification-page design and confirm which details should be public and which should require private access.",
-    "currentDisposition": "The certificate-verification connection is present. Optiq's approval of its appearance and which details should be public is still pending.",
-    "currentOwner": "Existing coordinator; internal appearance/input custody",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "currentDisposition": "Mike confirmed that the public verification website widget is complete.",
+    "currentOwner": "Closed request",
+    "currentEvidenceBoundary": "Direct completion confirmation from Mike; this tracker update changes no website access or certificate-sharing settings."
   },
   {
     "id": "shared-lims-priorities",
