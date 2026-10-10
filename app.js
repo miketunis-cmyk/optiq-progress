@@ -25,7 +25,7 @@ const icon=status=>status==='complete'?'<svg viewBox="0 0 20 20" aria-hidden="tr
 function renderSummary(){
   document.querySelector('#summary').innerHTML=['queued','working','built','complete'].map(status=>`<button class="summary-button" type="button" data-status="${status}" aria-pressed="${selectedStatus===status}"><span class="summary-number">${requests.filter(r=>progressStage(r)===status).length}</span><span class="summary-label">${statuses[status].label}</span></button>`).join('');
   const context=document.querySelector('#stage-context');
-  if(context)context.textContent=`Counts cover recorded progress stages. ${requests.filter(r=>progressStage(r)==='unverified').length} statuses remain unverified; ${requests.filter(r=>r.status==='deferred').length} requests are deferred and ${requests.filter(r=>r.status==='proposed').length} are ideas.`;
+  if(context)context.textContent=`Progress is based on saved records. ${requests.filter(r=>progressStage(r)==='unverified').length} requests still need an availability check; ${requests.filter(r=>r.status==='deferred').length} requests are deferred and ${requests.filter(r=>r.status==='proposed').length} are ideas.`;
 }
 function renderProgressFilters(){
   const container=document.querySelector('#progress-filters');
@@ -59,19 +59,19 @@ const foundations={
   "certified-imports": "Values can be entered by hand; spreadsheet export and document import are planned."
 };
 function engineeringProgress(r){
-  if(r.id==='verify-results-font'&&r.status!=='complete')return {label:'Design ready',fill:92,basis:r.evidence};
-  if(r.status==='check')return {label:'Delivery needs checking',fill:28,basis:r.evidence};
-  if(r.status==='deferred')return {label:'Deferred request',fill:28,basis:r.evidence};
-  if(r.status==='proposed')return {label:'Idea recorded',fill:28,basis:r.evidence};
-  if(r.id==='multi-lab-login')return {label:'Plan ready',fill:55,basis:r.evidence};
-  if(r.id==='grid-widths')return {label:'Readability released; width choices built',fill:92,basis:r.evidence};
-  if(r.status==='complete')return {label:'Released / resolved',fill:100,basis:r.evidence};
-  if(r.id==='universal-import')return {label:'Some parts built',fill:76,basis:'Importing exists for chemistry panels and Net Content; the remaining peptide tests are being checked.'};
-  if(r.status==='partial')return {label:'Partly delivered',fill:76,basis:r.evidence};
-  if(r.stage===2)return {label:'Feature built',fill:92,basis:r.evidence};
-  if(foundations[r.id])return {label:'Starting tools ready',fill:55,basis:foundations[r.id]};
-  if(r.stage===1)return {label:'Work in progress',fill:76,basis:r.evidence};
-  return {label:'Request recorded',fill:28,basis:r.evidence};
+  if(r.id==='verify-results-font'&&r.status!=='complete')return {label:'Design ready',fill:92,basis:r.currentDisposition||r.evidence};
+  if(r.status==='check')return {label:'Delivery needs checking',fill:28,basis:r.currentDisposition||r.evidence};
+  if(r.status==='deferred')return {label:'Deferred request',fill:28,basis:r.currentDisposition||r.evidence};
+  if(r.status==='proposed')return {label:'Idea recorded',fill:28,basis:r.currentDisposition||r.evidence};
+  if(r.id==='multi-lab-login')return {label:'Plan ready',fill:55,basis:r.currentDisposition||r.evidence};
+  if(r.id==='grid-widths')return {label:'Readability released; width choices built',fill:92,basis:r.currentDisposition||r.evidence};
+  if(r.status==='complete')return {label:'Recorded as complete',fill:100,basis:r.currentDisposition||r.evidence};
+  if(r.id==='universal-import')return {label:'Some parts built',fill:76,basis:r.currentDisposition||r.evidence};
+  if(r.status==='partial')return {label:'Partly delivered',fill:76,basis:r.currentDisposition||r.evidence};
+  if(r.stage===2)return {label:'Feature built',fill:92,basis:r.currentDisposition||r.evidence};
+  if(foundations[r.id])return {label:'Starting tools ready',fill:55,basis:r.currentDisposition||r.evidence};
+  if(r.stage===1)return {label:'Work in progress',fill:76,basis:r.currentDisposition||r.evidence};
+  return {label:'Request recorded',fill:28,basis:r.currentDisposition||r.evidence};
 }
 function progressBar(r){if(['unverified','deferred','proposed'].includes(progressStage(r)))return '';const p=engineeringProgress(r);return `<div class="engineering-progress" title="${escapeHtml(p.basis)}"><div class="milestone-track" role="img" aria-label="Progress: ${escapeHtml(p.label)}. ${escapeHtml(p.basis)}"><span style="width:${p.fill}%"></span><i></i><i></i><i></i></div><span class="milestone-label">${escapeHtml(p.label)}</span></div>`;}
 function requestReference(r){return [r.area,r.nextReview?'Next review':r.meetingPriority?'Meeting priority':''].filter(Boolean).join(' · ');}
