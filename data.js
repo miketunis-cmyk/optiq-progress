@@ -1216,10 +1216,10 @@ window.OPTIQ_REQUESTS = [
     "status": "queued",
     "title": "Recover archived portal request details",
     "description": "Keep the original details of older portal requests so they can be found and recovered.",
-    "detail": "Current review, 9 October 2026: The read-only investigation recovered the original retained-request reference. Its underlying decision ledger, original custodian and implementation receipt remain missing. Owner: Investigator retains provenance; implementation owner unresolved. Keep the specific underlying-ledger recovery hold. A separate archive feature is not evidence this request was satisfied; no repeat product question is needed. Evidence boundary: Current source/proof and installed release remain separately verified stages. Earlier published record, 7 October 2026 (historical): This request is on the planned list. A matching finished feature has not been verified. The next step is to match the original request to the existing archive tools, then finish and test any missing recovery steps.",
-    "evidence": "Current 9 Oct: The read-only investigation recovered the original retained-request reference. Its underlying decision ledger, original custodian and implementation receipt remain missing. Current source/proof and installed release remain separately verified stages. Historical record: Planned; no matching completed feature verified.",
+    "detail": "Current review, 9 October 2026: The original September 10 request is recovered. Portal requests still lack automatic removal from the active queue after 30 days and an archive view for inspection and recovery. Related unreceived orders already have a 30-day queue filter and client order-history retrieval in source, but this is partial support: history is capped at 500 rows and the age clock uses the order date. No matching archive/recovery screen test has run. The current implementation owner remains unconfirmed. Earlier published records are retained below.",
+    "evidence": "Source inspection confirms partial order-history support and missing portal-request archive/recovery. An existing test expects 90 days while the shared limit is 30; this mismatch was observed in source, not executed as a test. No R03 runtime acceptance is verified.",
     "stage": 0,
-    "nextStep": "Current 9 Oct: The read-only investigation recovered the original retained-request reference. Its underlying decision ledger, original custodian and implementation receipt remain missing. Owner: Investigator retains provenance; implementation owner unresolved. Next: Keep the specific underlying-ledger recovery hold. A separate archive feature is not evidence this request was satisfied; no repeat product question is needed.",
+    "nextStep": "Confirm the existing portal/Receiving source owner, finish the missing portal archive/recovery behavior, and prove 29/30/31-day boundaries, retention and recovery through the real interface. Verify the order age clock and discoverability beyond the current history limit.",
     "historicalSnapshots": [
       {
         "asOf": "2026-10-07",
@@ -1235,14 +1235,35 @@ window.OPTIQ_REQUESTS = [
           "stage": 0,
           "nextStep": "Match the original request to the archive tools, then finish and test the missing steps."
         }
+      },
+      {
+        "asOf": "2026-10-09",
+        "record": {
+          "id": "retained-intent",
+          "ref": "R03",
+          "area": "Receiving",
+          "status": "queued",
+          "title": "Recover archived portal request details",
+          "description": "Keep the original details of older portal requests so they can be found and recovered.",
+          "detail": "Current review, 9 October 2026: The read-only investigation recovered the original retained-request reference. Its underlying decision ledger, original custodian and implementation receipt remain missing. Owner: Investigator retains provenance; implementation owner unresolved. Keep the specific underlying-ledger recovery hold. A separate archive feature is not evidence this request was satisfied; no repeat product question is needed. Evidence boundary: Current source/proof and installed release remain separately verified stages. Earlier published record, 7 October 2026 (historical): This request is on the planned list. A matching finished feature has not been verified. The next step is to match the original request to the existing archive tools, then finish and test any missing recovery steps.",
+          "evidence": "Current 9 Oct: The read-only investigation recovered the original retained-request reference. Its underlying decision ledger, original custodian and implementation receipt remain missing. Current source/proof and installed release remain separately verified stages. Historical record: Planned; no matching completed feature verified.",
+          "stage": 0,
+          "nextStep": "Current 9 Oct: The read-only investigation recovered the original retained-request reference. Its underlying decision ledger, original custodian and implementation receipt remain missing. Owner: Investigator retains provenance; implementation owner unresolved. Next: Keep the specific underlying-ledger recovery hold. A separate archive feature is not evidence this request was satisfied; no repeat product question is needed.",
+          "recordedProgressCredit": 28,
+          "recordedProgressLabel": "Request recorded",
+          "currentAsOf": "2026-10-09",
+          "currentDisposition": "The read-only investigation recovered the original retained-request reference. Its underlying decision ledger, original custodian and implementation receipt remain missing.",
+          "currentOwner": "Investigator retains provenance; implementation owner unresolved",
+          "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
+        }
       }
     ],
     "recordedProgressCredit": 28,
-    "recordedProgressLabel": "Request recorded",
+    "recordedProgressLabel": "Request recovered; implementation gaps verified",
     "currentAsOf": "2026-10-09",
-    "currentDisposition": "The read-only investigation recovered the original retained-request reference. Its underlying decision ledger, original custodian and implementation receipt remain missing.",
-    "currentOwner": "Investigator retains provenance; implementation owner unresolved",
-    "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
+    "currentDisposition": "Original request recovered; partial order-history source support. Portal-request archive and recovery remain missing.",
+    "currentOwner": "Implementation owner unresolved; existing manager owns follow-through",
+    "currentEvidenceBoundary": "Source inspection only; no archive/recovery runtime acceptance. The stale test expectation was not executed."
   },
   {
     "id": "intake-identity",
