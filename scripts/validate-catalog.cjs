@@ -26,12 +26,13 @@ for (const item of items.filter(row => row.consolidatedSources)) {
     assert(item.consolidatedSources.every(row => row.status === 'deferred'), `Active work deferred: ${item.id}`);
   }
 }
-const first = items.find(row => row.id === 'quickbooks-status-sync');
-const second = items.find(row => row.id === 'optiq-billing-rules');
-assert(first.topPriority && first.priorityOrder === 1, 'Invoice/payment sync must stay first');
-assert(second.topPriority && second.priorityOrder === 2, 'Invoice rules must follow sync');
-assert.equal(items.filter(row => row.topPriority).length, 2, 'Only the two billing increments have top priority');
+const priorityIds = ['conformity', 'quickbooks-status-sync', 'optiq-billing-rules'];
+for (const [index, id] of priorityIds.entries()) {
+  const item = items.find(row => row.id === id);
+  assert(item?.topPriority && item.priorityOrder === index + 1, `Priority order must put Conformity first and preserve the billing sequence: ${id}`);
+}
+assert.equal(items.filter(row => row.topPriority).length, priorityIds.length, 'Only Conformity and the two billing increments have explicit priority');
 assert(items.some(row => row.id === 'immunoassay-method-wording'), 'Unconfirmed test association must stay independently visible');
 assert(items.some(row => row.id === 'conformity'), 'Conformity keeps its own Sample Details scope');
 assert(items.some(row => row.id === 'white-label-attestation'), 'Consent capture remains distinct from document retrieval');
-console.log(`PASS: ${originals.length} original records preserved exactly once in ${items.length} work items; ${groups.length} overlap groups; billing first; completion boundaries retained.`);
+console.log(`PASS: ${originals.length} original records preserved exactly once in ${items.length} work items; ${groups.length} overlap groups; Conformity first; billing sequence and completion boundaries retained.`);
