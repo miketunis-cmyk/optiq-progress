@@ -5707,19 +5707,40 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
   },
   {
-    "status": "queued",
-    "stage": 0,
+    "status": "built",
+    "stage": 2,
     "meetingPriority": true,
     "id": "chemical-components-grid-stability",
     "area": "Inventory & operations",
     "title": "Fix the unstable Create Chemical Components grid",
     "description": "Stop the shaking, seizing or repeated layout movement reported in Create Chemical Components.",
-    "detail": "The morning recording identifies visible instability but does not establish its cause or exact trigger. Reproduce the affected interaction, retain enough evidence to repeat it, then fix the root cause. Proposed completion check: the same interaction remains stable and allows uninterrupted data entry.",
-    "nextStep": "Smpltrax: reproduce the affected action, identify the cause and verify the correction against that reproduction.",
+    "detail": "A matching Chemical Components grid fix was merged on 12 October in PR #5494. Fractional browser zoom could make the grid repeatedly resize; the fix stabilizes fit-to-width behavior and makes the empty-grid message readable. Recorded browser proof used the real component with visible scrollbars and covered adding rows, editing, tabbing, hovering and empty/nonempty transitions across multiple zoom levels and widths. The original meeting did not establish the exact trigger, so verify that its reported interaction is covered and check which Optiq release contains the fix before closing this item. The fix is built; current Optiq availability has not been newly verified.",
+    "nextStep": "Smpltrax: verify the reported Chemical Components interaction against the merged fix and confirm its availability in the Optiq release; prepare the reviewed release if needed.",
     "currentAsOf": "2026-10-12",
-    "currentDisposition": "The morning recording identifies visible instability but does not establish its cause or exact trigger. Reproduce the affected interaction, retain enough evidence to repeat it, then fix the root cause. Proposed completion check: the same interaction remains stable and allows uninterrupted data entry.",
-    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
-    "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
+    "currentDisposition": "A matching Chemical Components grid fix was merged on 12 October in PR #5494. Fractional browser zoom could make the grid repeatedly resize; the fix stabilizes fit-to-width behavior and makes the empty-grid message readable. Recorded browser proof used the real component with visible scrollbars and covered adding rows, editing, tabbing, hovering and empty/nonempty transitions across multiple zoom levels and widths. The original meeting did not establish the exact trigger, so verify that its reported interaction is covered and check which Optiq release contains the fix before closing this item. The fix is built; current Optiq availability has not been newly verified.",
+    "currentEvidenceBoundary": "Merged source and recorded component proof; no fresh Optiq installation, runtime check or deployment was performed by this todo review.",
+    "evidence": "PR #5494, merged 12 October 2026: https://github.com/himmapan-lab/smpltrax-v2/pull/5494. The PR records real-component browser proof and focused regression checks. Earlier meeting requirements remain in history.",
+    "historicalSnapshots": [
+      {
+        "asOf": "2026-10-12",
+        "record": {
+          "status": "queued",
+          "stage": 0,
+          "meetingPriority": true,
+          "id": "chemical-components-grid-stability",
+          "area": "Inventory & operations",
+          "title": "Fix the unstable Create Chemical Components grid",
+          "description": "Stop the shaking, seizing or repeated layout movement reported in Create Chemical Components.",
+          "detail": "The morning recording identifies visible instability but does not establish its cause or exact trigger. Reproduce the affected interaction, retain enough evidence to repeat it, then fix the root cause. Proposed completion check: the same interaction remains stable and allows uninterrupted data entry.",
+          "nextStep": "Smpltrax: reproduce the affected action, identify the cause and verify the correction against that reproduction.",
+          "currentAsOf": "2026-10-12",
+          "currentDisposition": "The morning recording identifies visible instability but does not establish its cause or exact trigger. Reproduce the affected interaction, retain enough evidence to repeat it, then fix the root cause. Proposed completion check: the same interaction remains stable and allows uninterrupted data entry.",
+          "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+          "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
+        }
+      }
+    ],
+    "currentOwner": "Smpltrax"
   },
   {
     "status": "queued",
