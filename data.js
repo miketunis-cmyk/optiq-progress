@@ -4,11 +4,11 @@ window.OPTIQ_REQUESTS = [
     "area": "Reports & analyses",
     "status": "working",
     "title": "Conformity testing",
-    "description": "Test several vials for Net Content, Purity or Identity and show the individual results and summary on the certificate of analysis (COA).",
-    "detail": "Parts of the repeat-vial testing process are built. The complete process, from entering results to the final certificate, is still unfinished. Keep the full Net Content, Purity and Identity names, an extra detail page, and both agreed repeat routes: fresh independent vials, or a suitable original result as the first repeat. Conformity is not yet available at Optiq.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+    "description": "Compare several vials for Net Content, Purity or Identity, with a Conformity section inside the individual sample’s Sample Details and results on the COA.",
+    "detail": "Conformity was the highest-priority item on the product list reviewed in the meeting; billing was elevated to the top of the implementation list in the closing discussion. Put Conformity in Sample Details, presented similarly to label-claim information. Parts of the repeat-vial process are built, but the complete result-to-COA process remains unfinished and is not confirmed available at Optiq. Preserve the full Net Content, Purity and Identity names, the extra detail page and both agreed repeat routes: fresh independent vials, or a suitable original result as the first repeat. The 12 October meeting did not redefine calculations, vial counts, statistics or acceptance limits. The separate Reporting Hub columns are for visual inspection and fentanyl. No firm Conformity completion date was agreed.",
+    "evidence": "Requirements updated from the 12 October meeting summary. Earlier delivery status is retained; no new implementation or release check was performed.",
     "stage": 1,
-    "nextStep": "Smpltrax: finish result entry and certificate checks. Optiq: confirm pass/fail limits, repeat-vial pricing and ordering details.",
+    "nextStep": "Smpltrax: finish Conformity in Sample Details and verify results through the final COA. Optiq: confirm the outstanding acceptance limits, repeat-vial pricing and ordering details.",
     "meetingPriority": true,
     "historicalSnapshots": [
       {
@@ -47,25 +47,46 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Conformity owner",
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
         }
+      },
+      {
+        "asOf": "2026-10-10",
+        "record": {
+          "id": "conformity",
+          "area": "Reports & analyses",
+          "status": "working",
+          "title": "Conformity testing",
+          "description": "Test several vials for Net Content, Purity or Identity and show the individual results and summary on the certificate of analysis (COA).",
+          "detail": "Parts of the repeat-vial testing process are built. The complete process, from entering results to the final certificate, is still unfinished. Keep the full Net Content, Purity and Identity names, an extra detail page, and both agreed repeat routes: fresh independent vials, or a suitable original result as the first repeat. Conformity is not yet available at Optiq.",
+          "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+          "stage": 1,
+          "nextStep": "Smpltrax: finish result entry and certificate checks. Optiq: confirm pass/fail limits, repeat-vial pricing and ordering details.",
+          "meetingPriority": true,
+          "recordedProgressCredit": 76,
+          "recordedProgressLabel": "Work in progress",
+          "currentAsOf": "2026-10-10",
+          "currentDisposition": "Parts of the repeat-vial testing process are built. The complete process, from entering results to the final certificate, is still unfinished.",
+          "currentOwner": "Conformity owner",
+          "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+        }
       }
     ],
     "recordedProgressCredit": 76,
     "recordedProgressLabel": "Work in progress",
-    "currentAsOf": "2026-10-10",
-    "currentDisposition": "Parts of the repeat-vial testing process are built. The complete process, from entering results to the final certificate, is still unfinished.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Conformity was the highest-priority item on the product list reviewed in the meeting; billing was elevated to the top of the implementation list in the closing discussion. Put Conformity in Sample Details, presented similarly to label-claim information. Parts of the repeat-vial process are built, but the complete result-to-COA process remains unfinished and is not confirmed available at Optiq. Preserve the full Net Content, Purity and Identity names, the extra detail page and both agreed repeat routes: fresh independent vials, or a suitable original result as the first repeat. The 12 October meeting did not redefine calculations, vial counts, statistics or acceptance limits. The separate Reporting Hub columns are for visual inspection and fentanyl. No firm Conformity completion date was agreed.",
     "currentOwner": "Conformity owner",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
   },
   {
     "id": "inspection-rules",
     "area": "Receiving",
     "status": "optiq",
     "title": "Visual inspection and COA rules",
-    "description": "Agree what the visual check records and which findings should appear on the COA.",
-    "detail": "Recording vial checks is built. Showing those observations correctly on the certificate still needs work, and the lab's final reporting rules are awaiting confirmation.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+    "description": "Record vial and cap condition and colors, with visual inspection on the COA’s first page and its own Reporting Hub column.",
+    "detail": "Recording vial checks is built; the final COA display remains unfinished. The 12 October direction calls for vial integrity (intact or cracked), cap integrity, vial color and cap color on the first page. Prepare the display in the 14 October mockups, agree on appearance, then connect stored observations. Input controls, controlled vocabulary, final header and page breaks remain open. Earlier questions about powder appearance, visible amount and handling damaged or empty vials remain unresolved; the meeting did not settle those policies.",
+    "evidence": "Requirements updated from the 12 October meeting summary. Earlier delivery status is retained; no new implementation or release check was performed.",
     "stage": 1,
-    "nextStep": "Optiq: confirm which observations belong on the certificate. Smpltrax: finish the certificate display and check missing information and page breaks.",
+    "nextStep": "Smpltrax: prepare the first-page inspection mockup and separate Reporting Hub column, then verify saved observations, missing information and page breaks after layout approval.",
     "meetingPriority": true,
     "historicalSnapshots": [
       {
@@ -105,15 +126,37 @@ window.OPTIQ_REQUESTS = [
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages.",
           "question": "Awaiting the lab’s response to its existing inspection requirements and COA wording; intake source is already merged."
         }
+      },
+      {
+        "asOf": "2026-10-10",
+        "record": {
+          "id": "inspection-rules",
+          "area": "Receiving",
+          "status": "optiq",
+          "title": "Visual inspection and COA rules",
+          "description": "Agree what the visual check records and which findings should appear on the COA.",
+          "detail": "Recording vial checks is built. Showing those observations correctly on the certificate still needs work, and the lab's final reporting rules are awaiting confirmation.",
+          "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+          "stage": 1,
+          "nextStep": "Optiq: confirm which observations belong on the certificate. Smpltrax: finish the certificate display and check missing information and page breaks.",
+          "meetingPriority": true,
+          "recordedProgressCredit": 28,
+          "recordedProgressLabel": "Request recorded",
+          "currentAsOf": "2026-10-10",
+          "currentDisposition": "Recording vial checks is built. Showing those observations correctly on the certificate still needs work, and the lab's final reporting rules are awaiting confirmation.",
+          "currentOwner": "Inspection and COA layout owners",
+          "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release.",
+          "question": "Please confirm which vial observations should appear on the certificate, including powder appearance, visible amount and damaged or empty vials."
+        }
       }
     ],
     "recordedProgressCredit": 28,
     "recordedProgressLabel": "Request recorded",
-    "currentAsOf": "2026-10-10",
-    "currentDisposition": "Recording vial checks is built. Showing those observations correctly on the certificate still needs work, and the lab's final reporting rules are awaiting confirmation.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Recording vial checks is built; the final COA display remains unfinished. The 12 October direction calls for vial integrity (intact or cracked), cap integrity, vial color and cap color on the first page. Prepare the display in the 14 October mockups, agree on appearance, then connect stored observations. Input controls, controlled vocabulary, final header and page breaks remain open. Earlier questions about powder appearance, visible amount and handling damaged or empty vials remain unresolved; the meeting did not settle those policies.",
     "currentOwner": "Inspection and COA layout owners",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release.",
-    "question": "Please confirm which vial observations should appear on the certificate, including powder appearance, visible amount and damaged or empty vials."
+    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified.",
+    "question": "Please review the 14 October inspection mockup and confirm the final input vocabulary and any outstanding rules for damaged or empty vials and powder observations."
   },
   {
     "id": "verify-results",
@@ -341,10 +384,10 @@ window.OPTIQ_REQUESTS = [
     "status": "built",
     "stage": 2,
     "title": "Fentanyl test results",
-    "description": "Record the fentanyl test outcome and show it clearly on the COA.",
-    "detail": "The changes for recording and reporting Fentanyl results are built. Saving a result and showing it correctly on the final certificate still need a complete check.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
-    "nextStep": "Smpltrax: test result entry through to the certificate. Optiq's test method and reporting requirements still need confirmation before release.",
+    "description": "Finish fentanyl result entry, its own Reporting Hub column and the lab-approved COA presentation.",
+    "detail": "The existing result and reporting changes are built, but saving through the final certificate still needs a complete check. Customers are asking for this service and test strips were on the way. Fentanyl is higher priority than QR drop-off. Include its proposed COA appearance in the Wednesday, 14 October mockups and approve the look before finishing the application wiring. The 12 October meeting did not specify result vocabulary, invalid-result handling, detection threshold or exact COA wording; use the lab’s actual method and reporting rules. No firm release date was agreed.",
+    "evidence": "Requirements updated from the 12 October meeting summary. Earlier delivery status is retained; no new implementation or release check was performed.",
+    "nextStep": "Smpltrax: prepare the mockup, finish the separate Reporting Hub column and prove result entry through the approved COA. Optiq: confirm method-specific vocabulary, invalid-result handling, threshold and wording.",
     "area": "Reports & analyses",
     "meetingPriority": true,
     "historicalSnapshots": [
@@ -383,14 +426,35 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Fentanyl and COA layout owners",
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
         }
+      },
+      {
+        "asOf": "2026-10-10",
+        "record": {
+          "id": "fentanyl-results",
+          "status": "built",
+          "stage": 2,
+          "title": "Fentanyl test results",
+          "description": "Record the fentanyl test outcome and show it clearly on the COA.",
+          "detail": "The changes for recording and reporting Fentanyl results are built. Saving a result and showing it correctly on the final certificate still need a complete check.",
+          "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+          "nextStep": "Smpltrax: test result entry through to the certificate. Optiq's test method and reporting requirements still need confirmation before release.",
+          "area": "Reports & analyses",
+          "meetingPriority": true,
+          "recordedProgressCredit": 92,
+          "recordedProgressLabel": "Built locally — STOPPED on owned test hold",
+          "currentAsOf": "2026-10-10",
+          "currentDisposition": "The changes for recording and reporting Fentanyl results are built. Saving a result and showing it correctly on the final certificate still need a complete check.",
+          "currentOwner": "Fentanyl and COA layout owners",
+          "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+        }
       }
     ],
     "recordedProgressCredit": 92,
     "recordedProgressLabel": "Built locally — STOPPED on owned test hold",
-    "currentAsOf": "2026-10-10",
-    "currentDisposition": "The changes for recording and reporting Fentanyl results are built. Saving a result and showing it correctly on the final certificate still need a complete check.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "The existing result and reporting changes are built, but saving through the final certificate still needs a complete check. Customers are asking for this service and test strips were on the way. Fentanyl is higher priority than QR drop-off. Include its proposed COA appearance in the Wednesday, 14 October mockups and approve the look before finishing the application wiring. The 12 October meeting did not specify result vocabulary, invalid-result handling, detection threshold or exact COA wording; use the lab’s actual method and reporting rules. No firm release date was agreed.",
     "currentOwner": "Fentanyl and COA layout owners",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
   },
   {
     "id": "requested-white-label-photo",
@@ -510,10 +574,10 @@ window.OPTIQ_REQUESTS = [
     "status": "complete",
     "title": "Sample-received emails",
     "description": "Tell customers when all or some of their samples have arrived.",
-    "detail": "Earlier progress records mark this request complete. The supporting release or check record still needs to be linked; this is a record-keeping follow-up. Earlier list: Included in the current Optiq release · checked 3 Oct 2026. Customer inbox delivery remains to be confirmed.",
-    "evidence": "Earlier completed entry; supporting record still to be linked. No new lab check was performed for this update.",
+    "detail": "Receiving notifications were confirmed working well in the 12 October meeting. Recipient management already exists under Lab Settings → Notifications. Keep the existing working notifications; no notification rebuild was requested.",
+    "evidence": "Confirmed working in the supplied 12 October meeting summary. This page update performed no new notification test.",
     "stage": 3,
-    "nextStep": "Smpltrax: link the earlier supporting record. The request remains closed.",
+    "nextStep": "No rebuild needed. Manage recipients under Lab Settings → Notifications.",
     "historicalSnapshots": [
       {
         "asOf": "2026-10-07",
@@ -548,14 +612,34 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Closed request",
           "currentEvidenceBoundary": "Historical assertion only; no fresh delivery or live proof."
         }
+      },
+      {
+        "asOf": "2026-10-10",
+        "record": {
+          "id": "receipt-emails",
+          "area": "Receiving",
+          "status": "complete",
+          "title": "Sample-received emails",
+          "description": "Tell customers when all or some of their samples have arrived.",
+          "detail": "Earlier progress records mark this request complete. The supporting release or check record still needs to be linked; this is a record-keeping follow-up. Earlier list: Included in the current Optiq release · checked 3 Oct 2026. Customer inbox delivery remains to be confirmed.",
+          "evidence": "Earlier completed entry; supporting record still to be linked. No new lab check was performed for this update.",
+          "stage": 3,
+          "nextStep": "Smpltrax: link the earlier supporting record. The request remains closed.",
+          "recordedProgressCredit": 100,
+          "recordedProgressLabel": "Released / resolved",
+          "currentAsOf": "2026-10-10",
+          "currentDisposition": "Earlier progress records mark this request complete. The supporting release or check record still needs to be linked; this is a record-keeping follow-up.",
+          "currentOwner": "Closed request",
+          "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+        }
       }
     ],
     "recordedProgressCredit": 100,
     "recordedProgressLabel": "Released / resolved",
-    "currentAsOf": "2026-10-10",
-    "currentDisposition": "Earlier progress records mark this request complete. The supporting release or check record still needs to be linked; this is a record-keeping follow-up.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Receiving notifications were confirmed working well; recipient management is already in Lab Settings → Notifications.",
     "currentOwner": "Closed request",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "currentEvidenceBoundary": "Meeting confirmation; no new runtime test or release performed."
   },
   {
     "id": "customer-photos",
@@ -617,12 +701,12 @@ window.OPTIQ_REQUESTS = [
     "id": "inspection-checks",
     "area": "Receiving",
     "status": "built",
-    "title": "Seal integrity, cap color, and intact vials",
-    "description": "Record three checks when samples arrive: whether the seal is intact, the cap color, and whether the vial is intact or broken.",
-    "detail": "The screen for recording each vial's seal, cap color and condition is built and checked. Connecting those observations to the certificate remains unfinished.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+    "title": "Vial and cap integrity and colors",
+    "description": "Record whether the vial is intact or cracked, cap integrity, vial color and cap color.",
+    "detail": "Earlier records describe the receiving checks as built with saved seal observations still needing verification. The 12 October meeting adds explicit vial color and cap-integrity content to the requested presentation. Verify these fields against the existing controls rather than assuming all are delivered. Show the observations on the COA’s first page and in a separate visual-inspection Reporting Hub column. The final input controls and vocabulary still need confirmation.",
+    "evidence": "Requirements updated from the 12 October meeting summary. Earlier delivery status is retained; no new implementation or release check was performed.",
     "stage": 2,
-    "nextStep": "Smpltrax: finish the certificate connection as part of the existing inspection work and confirm availability at Optiq.",
+    "nextStep": "Smpltrax: verify and complete saving the requested observations, then connect them to the lab-approved COA presentation.",
     "meetingPriority": true,
     "historicalSnapshots": [
       {
@@ -660,14 +744,35 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Inspection owner; consolidated with inspection rules",
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
         }
+      },
+      {
+        "asOf": "2026-10-10",
+        "record": {
+          "id": "inspection-checks",
+          "area": "Receiving",
+          "status": "built",
+          "title": "Seal integrity, cap color, and intact vials",
+          "description": "Record three checks when samples arrive: whether the seal is intact, the cap color, and whether the vial is intact or broken.",
+          "detail": "The screen for recording each vial's seal, cap color and condition is built and checked. Connecting those observations to the certificate remains unfinished.",
+          "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+          "stage": 2,
+          "nextStep": "Smpltrax: finish the certificate connection as part of the existing inspection work and confirm availability at Optiq.",
+          "meetingPriority": true,
+          "recordedProgressCredit": 92,
+          "recordedProgressLabel": "Merged — not live",
+          "currentAsOf": "2026-10-10",
+          "currentDisposition": "The screen for recording each vial's seal, cap color and condition is built and checked. Connecting those observations to the certificate remains unfinished.",
+          "currentOwner": "Inspection owner; consolidated with inspection rules",
+          "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+        }
       }
     ],
     "recordedProgressCredit": 92,
     "recordedProgressLabel": "Merged — not live",
-    "currentAsOf": "2026-10-10",
-    "currentDisposition": "The screen for recording each vial's seal, cap color and condition is built and checked. Connecting those observations to the certificate remains unfinished.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Earlier records describe the receiving checks as built with saved seal observations still needing verification. The 12 October meeting adds explicit vial color and cap-integrity content to the requested presentation. Verify these fields against the existing controls rather than assuming all are delivered. Show the observations on the COA’s first page and in a separate visual-inspection Reporting Hub column. The final input controls and vocabulary still need confirmation.",
     "currentOwner": "Inspection owner; consolidated with inspection rules",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
   },
   {
     "id": "invoice-status",
@@ -1724,11 +1829,11 @@ window.OPTIQ_REQUESTS = [
     "status": "working",
     "title": "Scan, review, and receive samples",
     "description": "Scan an order, review and correct its sample list, then confirm what arrived.",
-    "detail": "Some mobile receiving tools exist. Scanning an order, reviewing its samples, confirming what arrived and sending the right messages still need a complete check.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+    "detail": "Continue the existing fixed-station scan → manual staff review → receipt work, preserving separate provisional drop-off and verified-intake outcomes and the dedicated-workstation dependency. The 12 October meeting explicitly placed QR drop-off below fentanyl reporting. Scanning must not automatically receive samples. No new detailed specification was added, and the working receiving notifications do not need rebuilding.",
+    "evidence": "Requirements updated from the 12 October meeting summary. Earlier delivery status is retained; no new implementation or release check was performed.",
     "stage": 1,
-    "nextStep": "Smpltrax: finish the full scan-to-receipt process and check that customer messages are sent at the correct step.",
-    "meetingPriority": true,
+    "nextStep": "Smpltrax: continue the existing scan, review and receipt workflow after the higher-priority fentanyl work.",
+    "meetingPriority": false,
     "historicalSnapshots": [
       {
         "asOf": "2026-10-07",
@@ -1765,14 +1870,35 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "QR intake owner",
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
         }
+      },
+      {
+        "asOf": "2026-10-10",
+        "record": {
+          "id": "scan-intake",
+          "area": "Receiving",
+          "status": "working",
+          "title": "Scan, review, and receive samples",
+          "description": "Scan an order, review and correct its sample list, then confirm what arrived.",
+          "detail": "Some mobile receiving tools exist. Scanning an order, reviewing its samples, confirming what arrived and sending the right messages still need a complete check.",
+          "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+          "stage": 1,
+          "nextStep": "Smpltrax: finish the full scan-to-receipt process and check that customer messages are sent at the correct step.",
+          "meetingPriority": true,
+          "recordedProgressCredit": 76,
+          "recordedProgressLabel": "Work in progress",
+          "currentAsOf": "2026-10-10",
+          "currentDisposition": "Some mobile receiving tools exist. Scanning an order, reviewing its samples, confirming what arrived and sending the right messages still need a complete check.",
+          "currentOwner": "QR intake owner",
+          "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+        }
       }
     ],
     "recordedProgressCredit": 76,
     "recordedProgressLabel": "Work in progress",
-    "currentAsOf": "2026-10-10",
-    "currentDisposition": "Some mobile receiving tools exist. Scanning an order, reviewing its samples, confirming what arrived and sending the right messages still need a complete check.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Continue the existing fixed-station scan → manual staff review → receipt work, preserving separate provisional drop-off and verified-intake outcomes and the dedicated-workstation dependency. The 12 October meeting explicitly placed QR drop-off below fentanyl reporting. Scanning must not automatically receive samples. No new detailed specification was added, and the working receiving notifications do not need rebuilding.",
     "currentOwner": "QR intake owner",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
   },
   {
     "id": "certified-imports",
@@ -3566,14 +3692,14 @@ window.OPTIQ_REQUESTS = [
   {
     "id": "portal-price-visibility",
     "area": "Orders & pricing",
-    "status": "optiq",
+    "status": "deferred",
     "title": "Public and signed-in order pricing",
     "description": "Keep public submission prices hidden and show the configured estimate during signed-in ordering.",
-    "detail": "The existing question about public prices, signed-in estimates and rush pricing is awaiting Optiq's answer.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
-    "nextStep": "Optiq: confirm the agreed price-visibility and rush-pricing rules in the existing request. Smpltrax will then apply and check them.",
+    "detail": "Publicly posted pricing remains lower priority after the 12 October meeting. It is separate from the minimum customer rates required for billing and is not a prerequisite for QuickBooks invoice/payment status syncing. Earlier questions about public prices and signed-in estimates remain for later confirmation; no new visibility rule was agreed.",
+    "evidence": "Requirements updated from the 12 October meeting summary. Earlier delivery status is retained; no new implementation or release check was performed.",
+    "nextStep": "Keep public pricing and signed-in estimate presentation for later; implement Optiq billing first.",
     "stage": 0,
-    "meetingPriority": true,
+    "meetingPriority": false,
     "historicalSnapshots": [
       {
         "asOf": "2026-10-07",
@@ -3611,15 +3737,37 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Existing coordinator; internal lab-input custody",
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
         }
+      },
+      {
+        "asOf": "2026-10-10",
+        "record": {
+          "id": "portal-price-visibility",
+          "area": "Orders & pricing",
+          "status": "optiq",
+          "title": "Public and signed-in order pricing",
+          "description": "Keep public submission prices hidden and show the configured estimate during signed-in ordering.",
+          "detail": "The existing question about public prices, signed-in estimates and rush pricing is awaiting Optiq's answer.",
+          "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+          "nextStep": "Optiq: confirm the agreed price-visibility and rush-pricing rules in the existing request. Smpltrax will then apply and check them.",
+          "stage": 0,
+          "meetingPriority": true,
+          "recordedProgressCredit": 28,
+          "recordedProgressLabel": "Needs Optiq input — one pricing ask",
+          "currentAsOf": "2026-10-10",
+          "question": "Please confirm which prices customers should see before and after signing in, plus the rush surcharge and when it applies.",
+          "currentDisposition": "The existing question about public prices, signed-in estimates and rush pricing is awaiting Optiq's answer.",
+          "currentOwner": "Existing coordinator; internal lab-input custody",
+          "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+        }
       }
     ],
     "recordedProgressCredit": 28,
     "recordedProgressLabel": "Needs Optiq input — one pricing ask",
-    "currentAsOf": "2026-10-10",
-    "question": "Please confirm which prices customers should see before and after signing in, plus the rush surcharge and when it applies.",
-    "currentDisposition": "The existing question about public prices, signed-in estimates and rush pricing is awaiting Optiq's answer.",
+    "currentAsOf": "2026-10-12",
+    "question": "",
+    "currentDisposition": "Publicly posted pricing remains lower priority after the 12 October meeting. It is separate from the minimum customer rates required for billing and is not a prerequisite for QuickBooks invoice/payment status syncing. Earlier questions about public prices and signed-in estimates remain for later confirmation; no new visibility rule was agreed.",
     "currentOwner": "Existing coordinator; internal lab-input custody",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
   },
   {
     "id": "rush-surcharge",
@@ -3627,9 +3775,9 @@ window.OPTIQ_REQUESTS = [
     "status": "queued",
     "title": "Confirm and check the rush surcharge",
     "description": "Check that the rush option uses the recorded surcharge and shows the added amount clearly.",
-    "detail": "The rush-pricing question is tracked with price visibility. The surcharge amount and whether it is enabled are not yet confirmed.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
-    "nextStep": "Optiq: confirm the surcharge with the existing pricing request. Smpltrax: check the displayed extra amount once agreed.",
+    "detail": "Capture actual customer and order rush rules with the billing lead for the invoicing increment after status sync. The 12 October examples of $50 and $100 were not approved surcharges. The earlier price-visibility question does not establish a universal rush rate; public pricing remains lower priority.",
+    "evidence": "Requirements updated from the 12 October meeting summary. Earlier delivery status is retained; no new implementation or release check was performed.",
+    "nextStep": "Optiq billing lead: supply the real rush rules and exceptions. Smpltrax: encode and verify them in reviewed billing dry runs after status sync.",
     "stage": 0,
     "meetingPriority": true,
     "historicalSnapshots": [
@@ -3668,26 +3816,47 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Existing coordinator; internal lab-input custody",
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
         }
+      },
+      {
+        "asOf": "2026-10-10",
+        "record": {
+          "id": "rush-surcharge",
+          "area": "Orders & pricing",
+          "status": "queued",
+          "title": "Confirm and check the rush surcharge",
+          "description": "Check that the rush option uses the recorded surcharge and shows the added amount clearly.",
+          "detail": "The rush-pricing question is tracked with price visibility. The surcharge amount and whether it is enabled are not yet confirmed.",
+          "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+          "nextStep": "Optiq: confirm the surcharge with the existing pricing request. Smpltrax: check the displayed extra amount once agreed.",
+          "stage": 0,
+          "meetingPriority": true,
+          "recordedProgressCredit": 28,
+          "recordedProgressLabel": "Same Optiq pricing ask as item 31",
+          "currentAsOf": "2026-10-10",
+          "currentDisposition": "The rush-pricing question is tracked with price visibility. The surcharge amount and whether it is enabled are not yet confirmed.",
+          "currentOwner": "Existing coordinator; internal lab-input custody",
+          "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+        }
       }
     ],
     "recordedProgressCredit": 28,
     "recordedProgressLabel": "Same Optiq pricing ask as item 31",
-    "currentAsOf": "2026-10-10",
-    "currentDisposition": "The rush-pricing question is tracked with price visibility. The surcharge amount and whether it is enabled are not yet confirmed.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Capture actual customer and order rush rules with the billing lead for the invoicing increment after status sync. The 12 October examples of $50 and $100 were not approved surcharges. The earlier price-visibility question does not establish a universal rush rate; public pricing remains lower priority.",
     "currentOwner": "Existing coordinator; internal lab-input custody",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
   },
   {
     "id": "panel-presets",
     "area": "Receiving",
-    "status": "optiq",
+    "status": "deferred",
     "title": "Standard and Extended test-panel choices",
     "description": "Offer the configured test packages clearly while preserving individual test selection.",
-    "detail": "The proposed Standard and Extended test packages have already been sent to the lab for confirmation. The lab's response is still needed.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
-    "nextStep": "Optiq: confirm the tests included in each package in the existing request.",
+    "detail": "Submission-form package conveniences remain lower priority than billing. The core panel is Content, Purity and Identity. A common five-panel adds Endotoxins and Sterility, but this was not a final universal catalog. Seven-panel and eleven-panel contents were not defined enough to implement. Prefer manageable generic packages and preserve mix-and-match tests. Earlier Standard/Extended proposals remain unconfirmed; the 12 October discussion does not finalize their names or contents.",
+    "evidence": "Requirements updated from the 12 October meeting summary. Earlier delivery status is retained; no new implementation or release check was performed.",
+    "nextStep": "Capture only package rules needed for actual billing first. Resolve final catalog names, broader panel contents and submission-form conveniences separately.",
     "stage": 0,
-    "meetingPriority": true,
+    "meetingPriority": false,
     "historicalSnapshots": [
       {
         "asOf": "2026-10-07",
@@ -3725,15 +3894,37 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Existing preset/document custodian",
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
         }
+      },
+      {
+        "asOf": "2026-10-10",
+        "record": {
+          "id": "panel-presets",
+          "area": "Receiving",
+          "status": "optiq",
+          "title": "Standard and Extended test-panel choices",
+          "description": "Offer the configured test packages clearly while preserving individual test selection.",
+          "detail": "The proposed Standard and Extended test packages have already been sent to the lab for confirmation. The lab's response is still needed.",
+          "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+          "nextStep": "Optiq: confirm the tests included in each package in the existing request.",
+          "stage": 0,
+          "meetingPriority": true,
+          "recordedProgressCredit": 28,
+          "recordedProgressLabel": "ASAP — supplied document needs confirmation",
+          "currentAsOf": "2026-10-10",
+          "question": "Please confirm the tests included in the Standard and Extended packages already sent for your review.",
+          "currentDisposition": "The proposed Standard and Extended test packages have already been sent to the lab for confirmation. The lab's response is still needed.",
+          "currentOwner": "Existing preset/document custodian",
+          "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+        }
       }
     ],
     "recordedProgressCredit": 28,
     "recordedProgressLabel": "ASAP — supplied document needs confirmation",
-    "currentAsOf": "2026-10-10",
-    "question": "Please confirm the tests included in the Standard and Extended packages already sent for your review.",
-    "currentDisposition": "The proposed Standard and Extended test packages have already been sent to the lab for confirmation. The lab's response is still needed.",
+    "currentAsOf": "2026-10-12",
+    "question": "",
+    "currentDisposition": "Submission-form package conveniences remain lower priority than billing. The core panel is Content, Purity and Identity. A common five-panel adds Endotoxins and Sterility, but this was not a final universal catalog. Seven-panel and eleven-panel contents were not defined enough to implement. Prefer manageable generic packages and preserve mix-and-match tests. Earlier Standard/Extended proposals remain unconfirmed; the 12 October discussion does not finalize their names or contents.",
     "currentOwner": "Existing preset/document custodian",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
   },
   {
     "id": "live-vial-count",
@@ -4267,10 +4458,10 @@ window.OPTIQ_REQUESTS = [
     "area": "Planning & communication",
     "status": "built",
     "title": "Save shared priorities inside the LIMS",
-    "description": "Let authorized lab users save priorities in the signed-in request list.",
-    "detail": "The public list has all 93 requests. Saving shared priorities inside the signed-in LIMS is a separate built feature whose availability at Optiq remains unconfirmed.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
-    "nextStep": "Smpltrax: verify that priorities save and reopen correctly, then confirm release of the signed-in list.",
+    "description": "Let authorized lab staff view the work list and save changes to priorities inside the LIMS.",
+    "detail": "The signed-in shared-priority feature is built and previously tested, but availability at Optiq remains unconfirmed. The 12 October meeting asks for staff to see the list, assign or change priority and tell Smpltrax they reordered it. This public page remains separate from that editable LIMS workflow. A full ticketing system and automatic notifications were not requested. No delivery date was agreed.",
+    "evidence": "Requirements updated from the 12 October meeting summary. Earlier delivery status is retained; no new implementation or release check was performed.",
+    "nextStep": "Smpltrax: reconcile the updated catalog, verify staff priority changes save and reopen, and confirm availability at Optiq.",
     "stage": 2,
     "meetingPriority": true,
     "historicalSnapshots": [
@@ -4309,14 +4500,35 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Sole shared-priorities catalog owner",
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
         }
+      },
+      {
+        "asOf": "2026-10-10",
+        "record": {
+          "id": "shared-lims-priorities",
+          "area": "Planning & communication",
+          "status": "built",
+          "title": "Save shared priorities inside the LIMS",
+          "description": "Let authorized lab users save priorities in the signed-in request list.",
+          "detail": "The public list has all 93 requests. Saving shared priorities inside the signed-in LIMS is a separate built feature whose availability at Optiq remains unconfirmed.",
+          "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+          "nextStep": "Smpltrax: verify that priorities save and reopen correctly, then confirm release of the signed-in list.",
+          "stage": 2,
+          "meetingPriority": true,
+          "recordedProgressCredit": 92,
+          "recordedProgressLabel": "Feature built",
+          "currentAsOf": "2026-10-10",
+          "currentDisposition": "The public list has all 93 requests. Saving shared priorities inside the signed-in LIMS is a separate built feature whose availability at Optiq remains unconfirmed.",
+          "currentOwner": "Sole shared-priorities catalog owner",
+          "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+        }
       }
     ],
     "recordedProgressCredit": 92,
     "recordedProgressLabel": "Feature built",
-    "currentAsOf": "2026-10-10",
-    "currentDisposition": "The public list has all 93 requests. Saving shared priorities inside the signed-in LIMS is a separate built feature whose availability at Optiq remains unconfirmed.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "The signed-in shared-priority feature is built and previously tested, but availability at Optiq remains unconfirmed. The 12 October meeting asks for staff to see the list, assign or change priority and tell Smpltrax they reordered it. This public page remains separate from that editable LIMS workflow. A full ticketing system and automatic notifications were not requested. No delivery date was agreed.",
     "currentOwner": "Sole shared-priorities catalog owner",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
   },
   {
     "id": "hubspot-onboarding",
@@ -4376,12 +4588,12 @@ window.OPTIQ_REQUESTS = [
   {
     "id": "client-specific-pricing",
     "area": "Orders & pricing",
-    "status": "deferred",
+    "status": "queued",
     "title": "Client-specific prices and discounts",
-    "description": "Support configured customer prices without exposing another customer’s pricing.",
-    "detail": "Customer-specific prices and discounts were placed outside the current launch work. This is separate from deciding which prices are visible.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
-    "nextStep": "Keep for later with the planned pricing work.",
+    "description": "Capture the customer-specific rates and invoice exceptions needed for Optiq billing.",
+    "detail": "The closing 12 October discussion elevates the real rates and exceptions needed for invoicing from the earlier deferred pricing work. Collect them from QuickBooks notes and the billing lead; use explicit configuration and human-reviewed dry runs. Preserve sample IDs, names, quantities and customer-specific formats. Broader package naming and volume-discount policy remain separate lower-priority work. No volume thresholds, missed-commitment penalties or illustrative 10% discount were approved. This rule capture follows the first invoice/payment status-sync increment.",
+    "evidence": "Requirements updated from the 12 October meeting summary. Earlier delivery status is retained; no new implementation or release check was performed.",
+    "nextStep": "Optiq billing lead: supply rates and exceptions. Smpltrax: capture the minimum rules for reviewed invoice generation after status sync.",
     "stage": 0,
     "historicalSnapshots": [
       {
@@ -4418,15 +4630,36 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Existing consolidated scope / no new required owner",
           "currentEvidenceBoundary": "Priority/scope decision; no feature delivery or activation inferred."
         }
+      },
+      {
+        "asOf": "2026-10-10",
+        "record": {
+          "id": "client-specific-pricing",
+          "area": "Orders & pricing",
+          "status": "deferred",
+          "title": "Client-specific prices and discounts",
+          "description": "Support configured customer prices without exposing another customer’s pricing.",
+          "detail": "Customer-specific prices and discounts were placed outside the current launch work. This is separate from deciding which prices are visible.",
+          "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+          "nextStep": "Keep for later with the planned pricing work.",
+          "stage": 0,
+          "recordedProgressCredit": 28,
+          "recordedProgressLabel": "Deferred request",
+          "currentAsOf": "2026-10-10",
+          "meetingPriority": false,
+          "currentDisposition": "Customer-specific prices and discounts were placed outside the current launch work. This is separate from deciding which prices are visible.",
+          "currentOwner": "Existing consolidated scope / no new required owner",
+          "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+        }
       }
     ],
     "recordedProgressCredit": 28,
-    "recordedProgressLabel": "Deferred request",
-    "currentAsOf": "2026-10-10",
-    "meetingPriority": false,
-    "currentDisposition": "Customer-specific prices and discounts were placed outside the current launch work. This is separate from deciding which prices are visible.",
-    "currentOwner": "Existing consolidated scope / no new required owner",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "recordedProgressLabel": "Billing rules requested",
+    "currentAsOf": "2026-10-12",
+    "meetingPriority": true,
+    "currentDisposition": "The closing 12 October discussion elevates the real rates and exceptions needed for invoicing from the earlier deferred pricing work. Collect them from QuickBooks notes and the billing lead; use explicit configuration and human-reviewed dry runs. Preserve sample IDs, names, quantities and customer-specific formats. Broader package naming and volume-discount policy remain separate lower-priority work. No volume thresholds, missed-commitment penalties or illustrative 10% discount were approved. This rule capture follows the first invoice/payment status-sync increment.",
+    "currentOwner": "Smpltrax; Optiq billing lead for rates",
+    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
   },
   {
     "id": "customer-qr-labels",
@@ -5173,5 +5406,95 @@ window.OPTIQ_REQUESTS = [
     "currentDisposition": "Automatic ion suggestions from a saved spectrum are built and have earlier checks. Saving them, reopening them and carrying them through to the certificate still need a complete installed check.",
     "currentOwner": "Original scientific source custodian and separate release planning owner",
     "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+  },
+  {
+    "status": "queued",
+    "stage": 0,
+    "meetingPriority": true,
+    "id": "quickbooks-status-sync",
+    "area": "Billing",
+    "title": "QuickBooks invoice and payment status — Optiq first",
+    "topPriority": true,
+    "priorityLabel": "Top implementation priority · First increment",
+    "description": "Bring QuickBooks invoice and payment information into the matching Smpltrax order so staff do not update both systems manually.",
+    "detail": "Billing moved to the top of the implementation list at the end of the 12 October discussion. Start with invoiced and paid status synchronization at Optiq. An order number was proposed for matching; confirm how the actual records identify each order. Investigate the real QuickBooks connection and authorization requirements: the meeting suggestion to get an API key was not a verified access specification. Public pricing, package selection and discount policies do not block this first increment. No completion date was agreed.",
+    "nextStep": "Smpltrax: investigate the connection, confirm order-to-invoice matching and verify status updates without manual duplication. Optiq billing lead: provide account access through the approved connection process.",
+    "currentOwner": "Smpltrax; Optiq billing lead for access",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Billing moved to the top of the implementation list at the end of the 12 October discussion. Start with invoiced and paid status synchronization at Optiq. An order number was proposed for matching; confirm how the actual records identify each order. Investigate the real QuickBooks connection and authorization requirements: the meeting suggestion to get an API key was not a verified access specification. Public pricing, package selection and discount policies do not block this first increment. No completion date was agreed.",
+    "evidence": "Recorded from the 12 October meeting summary. This new scope has not been verified as implemented or released.",
+    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified.",
+    "priorityOrder": 1
+  },
+  {
+    "status": "optiq",
+    "stage": 0,
+    "meetingPriority": true,
+    "id": "optiq-billing-rules",
+    "area": "Billing",
+    "title": "Optiq invoicing with customer-specific rules",
+    "topPriority": true,
+    "priorityLabel": "Top implementation priority · After status sync",
+    "description": "Let staff choose “invoice this” with the customer’s agreed rates, sample references and invoice format applied.",
+    "detail": "Follow the status-sync increment with explicit billing configuration and human-reviewed dry runs. Retain sample IDs, sample names and quantities; support grouped lines where wanted and different layouts for customers who need them. The current grouped format is a starting point, not a universal preference. Collect rates, QuickBooks notes, exceptions and rush rules from the billing lead. The examples of $50 or $100 rush charges and a 10% discount are not approved policies. Use testable rules rather than AI deciding each invoice at runtime; sending every invoice unattended was not agreed. Prove the Optiq pilot before adapting it to ExcelBIS.",
+    "question": "Billing lead: please supply customer rates, QuickBooks pricing notes, invoice-format preferences, known exceptions and agreed rush rules, along with access for the connection.",
+    "nextStep": "Smpltrax: turn the supplied information into configuration and reviewed dry runs that reproduce rates, sample references, quantities and customer-specific formats.",
+    "currentOwner": "Smpltrax; Optiq billing lead for pricing and rules",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Follow the status-sync increment with explicit billing configuration and human-reviewed dry runs. Retain sample IDs, sample names and quantities; support grouped lines where wanted and different layouts for customers who need them. The current grouped format is a starting point, not a universal preference. Collect rates, QuickBooks notes, exceptions and rush rules from the billing lead. The examples of $50 or $100 rush charges and a 10% discount are not approved policies. Use testable rules rather than AI deciding each invoice at runtime; sending every invoice unattended was not agreed. Prove the Optiq pilot before adapting it to ExcelBIS.",
+    "evidence": "Recorded from the 12 October meeting summary. This new scope has not been verified as implemented or released.",
+    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified.",
+    "priorityOrder": 2
+  },
+  {
+    "status": "deferred",
+    "stage": 0,
+    "meetingPriority": false,
+    "id": "excelbis-billing-follow-on",
+    "area": "Billing",
+    "title": "ExcelBIS billing after the Optiq pilot",
+    "description": "Adapt the proven Optiq billing workflow to ExcelBIS and its existing Confident Cannabis order intake.",
+    "detail": "Sequence ExcelBIS after Optiq. Map incoming tests and packages into DCC flower, concentrate, pre-roll or formulated billing categories; both infused and non-infused pre-rolls use pre-roll billing. Support mixed R&D test combinations and the customer’s full-panel price when it is cheaper, once eligibility rules are captured. Glasshouse requires one line per sample and the PO reference from the notes. Preserve other customer-specific rates and formats. Keep billing and revenue in Smpltrax and QuickBooks; Confident order data is input, and the lab does not want revenue exposed to Confident Cannabis. These follow-on requirements do not delay the first Optiq status-sync increment.",
+    "nextStep": "Smpltrax and the billing lead: validate Optiq first, then capture and test ExcelBIS mapping, full-panel eligibility, PO references and customer exceptions.",
+    "currentOwner": "Smpltrax; lab billing lead for rules",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Sequence ExcelBIS after Optiq. Map incoming tests and packages into DCC flower, concentrate, pre-roll or formulated billing categories; both infused and non-infused pre-rolls use pre-roll billing. Support mixed R&D test combinations and the customer’s full-panel price when it is cheaper, once eligibility rules are captured. Glasshouse requires one line per sample and the PO reference from the notes. Preserve other customer-specific rates and formats. Keep billing and revenue in Smpltrax and QuickBooks; Confident order data is input, and the lab does not want revenue exposed to Confident Cannabis. These follow-on requirements do not delay the first Optiq status-sync increment.",
+    "evidence": "Recorded from the 12 October meeting summary. This new scope has not been verified as implemented or released.",
+    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
+  },
+  {
+    "status": "queued",
+    "stage": 0,
+    "meetingPriority": true,
+    "id": "coa-oct14-mockups",
+    "area": "Reports & analyses",
+    "title": "Revised COA and table mockups for 14 October",
+    "nextReview": true,
+    "priorityLabel": "Design review · Wednesday 14 October",
+    "description": "Prepare the table version and an all-inclusive COA mockup with first-page vial inspection and the fentanyl presentation.",
+    "detail": "The Wednesday, 14 October 2026 target is a mockup and layout review, not a production-release deadline. Show the COA number in the relevant header instead of the test type. Revisit section sizes and page breaks and explore the discussed top-border/header cleanup. Put vial and cap integrity, intact or cracked condition, vial color and cap color on the first page. “Brown vial, red cap; vial and cap intact” is an example, not a fixed approved template. Include fentanyl and both new Reporting Hub columns in the design package. Final header appearance, page breaks and inspection input vocabulary remain open. Agree on appearance before wiring the approved design to stored results, while preserving the existing COA workflow. The earlier completed summary layout remains a separate closed request.",
+    "nextStep": "Smpltrax: prepare the revised table and complete mockups for Wednesday. Optiq reviewers: approve the appearance before application wiring and rollout.",
+    "currentOwner": "Smpltrax; Optiq reviewers for appearance",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "The Wednesday, 14 October 2026 target is a mockup and layout review, not a production-release deadline. Show the COA number in the relevant header instead of the test type. Revisit section sizes and page breaks and explore the discussed top-border/header cleanup. Put vial and cap integrity, intact or cracked condition, vial color and cap color on the first page. “Brown vial, red cap; vial and cap intact” is an example, not a fixed approved template. Include fentanyl and both new Reporting Hub columns in the design package. Final header appearance, page breaks and inspection input vocabulary remain open. Agree on appearance before wiring the approved design to stored results, while preserving the existing COA workflow. The earlier completed summary layout remains a separate closed request.",
+    "evidence": "Recorded from the 12 October meeting summary. This new scope has not been verified as implemented or released.",
+    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
+  },
+  {
+    "status": "queued",
+    "stage": 0,
+    "meetingPriority": true,
+    "id": "sample-details-documents",
+    "area": "Receiving",
+    "title": "Sample Details refresh and submission documents",
+    "priorityLabel": "Initial page update · Tentatively 13–14 October",
+    "description": "Open the submitted digital slip, annotated paper scans and signed white-label attestation from the sample’s Documents section.",
+    "detail": "Refresh Optiq’s older Sample Details page and keep the digital submission slip accessible after submission. Attach and retrieve scans or photos of annotated paperwork, including useful receiving notes such as expected milligrams or identities, and keep signed white-label attestations with the related sample/order documents. An unmodified paper slip can use the existing digital version; photographing every blank slip was not required. Keep vial and sample photos in Sample Photos. Staff should find the relevant sample and paperwork inside the LIMS. Order Details may also provide access, but a second implementation was not required. OCR, handwriting recognition and full-text search inside scans were not specified. The 13–14 October timing was tentative for the initial page refresh, not a promise to complete all documents and conformity work.",
+    "nextStep": "Smpltrax: expose the original digital slip and attach/retrieve annotated paperwork and attestations; verify staff can reopen them from the sample. Keep Conformity inside Sample Details.",
+    "currentOwner": "Smpltrax",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Refresh Optiq’s older Sample Details page and keep the digital submission slip accessible after submission. Attach and retrieve scans or photos of annotated paperwork, including useful receiving notes such as expected milligrams or identities, and keep signed white-label attestations with the related sample/order documents. An unmodified paper slip can use the existing digital version; photographing every blank slip was not required. Keep vial and sample photos in Sample Photos. Staff should find the relevant sample and paperwork inside the LIMS. Order Details may also provide access, but a second implementation was not required. OCR, handwriting recognition and full-text search inside scans were not specified. The 13–14 October timing was tentative for the initial page refresh, not a promise to complete all documents and conformity work.",
+    "evidence": "Recorded from the 12 October meeting summary. This new scope has not been verified as implemented or released.",
+    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
   }
 ];

@@ -43,7 +43,7 @@ function renderProgressFilters(){
   if(!notes.childElementCount)notes.innerHTML=Object.keys(noteLabels).map(note=>`<button class="progress-filter" type="button" data-note="${note}" aria-pressed="false"><span>${escapeHtml(noteLabels[note])}</span><span class="filter-count">${requests.filter(r=>requestNotes(r).includes(note)).length}</span></button>`).join('');
   notes.querySelectorAll('[data-note]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.note===selectedNote)));
 }
-function labQuestions(){return requests.filter(r=>r.status==='optiq').sort((a,b)=>Number(Boolean(b.nextReview))-Number(Boolean(a.nextReview)));}
+function labQuestions(){return requests.filter(r=>r.status==='optiq').sort((a,b)=>Number(Boolean(b.topPriority))-Number(Boolean(a.topPriority))||(a.priorityOrder||0)-(b.priorityOrder||0)||Number(Boolean(b.nextReview))-Number(Boolean(a.nextReview)));}
 function renderLabQuestions(){document.querySelector('#lab-questions').innerHTML=labQuestions().map((r,i)=>`<article class="question"><div class="question-label"><span class="question-number">${i+1}</span><h3>${escapeHtml(r.title)}</h3></div><div><p>${escapeHtml(r.question)}</p>${r.reviewPreview?`<a class="review-preview-link" href="${escapeHtml(r.reviewPreview)}">View approval preview</a>`:''}</div></article>`).join('');}
 // Milestone positions are categorical, not estimates of work completed.
 // Foundation credit is tied to an existing capability recorded in the evidence.
@@ -74,7 +74,7 @@ function engineeringProgress(r){
   return {label:'Request recorded',fill:28,basis:r.currentDisposition||r.evidence};
 }
 function progressBar(r){if(['unverified','deferred','proposed'].includes(progressStage(r)))return '';const p=engineeringProgress(r);return `<div class="engineering-progress" title="${escapeHtml(p.basis)}"><div class="milestone-track" role="img" aria-label="Progress: ${escapeHtml(p.label)}. ${escapeHtml(p.basis)}"><span style="width:${p.fill}%"></span><i></i><i></i><i></i></div><span class="milestone-label">${escapeHtml(p.label)}</span></div>`;}
-function requestReference(r){return [r.area,r.nextReview?'Next review':r.meetingPriority?'Meeting priority':''].filter(Boolean).join(' · ');}
+function requestReference(r){return [r.area,r.priorityLabel||(r.nextReview?'Next review':r.meetingPriority?'Meeting priority':'')].filter(Boolean).join(' · ');}
 function row(r){
   const expanded=expandedRequests.has(r.id);
   const stage=progressStage(r);
@@ -83,7 +83,7 @@ function row(r){
 }
 function visibleRequests(){
   const terms=query.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
-  return requests.filter(r=>matchesStatus(r,selectedStatus)&&(!selectedNote||requestNotes(r).includes(selectedNote))&&terms.every(term=>[r.title,r.description,r.detail,r.ref||'',r.area,statuses[progressStage(r)].label,...requestNotes(r).map(note=>noteLabels[note]),r.meetingPriority?'meeting priority':'',r.nextReview?'next review':''].join(' ').toLocaleLowerCase().includes(term))).sort((a,b)=>Number(Boolean(b.nextReview))-Number(Boolean(a.nextReview))||Number(Boolean(b.meetingPriority))-Number(Boolean(a.meetingPriority))||Number(requestNotes(b).includes('optiq'))-Number(requestNotes(a).includes('optiq'))||statuses[progressStage(a)].rank-statuses[progressStage(b)].rank);
+  return requests.filter(r=>matchesStatus(r,selectedStatus)&&(!selectedNote||requestNotes(r).includes(selectedNote))&&terms.every(term=>[r.title,r.description,r.detail,r.ref||'',r.priorityLabel||'',r.area,statuses[progressStage(r)].label,...requestNotes(r).map(note=>noteLabels[note]),r.meetingPriority?'meeting priority':'',r.nextReview?'next review':''].join(' ').toLocaleLowerCase().includes(term))).sort((a,b)=>Number(Boolean(b.topPriority))-Number(Boolean(a.topPriority))||(a.priorityOrder||0)-(b.priorityOrder||0)||Number(Boolean(b.nextReview))-Number(Boolean(a.nextReview))||Number(Boolean(b.meetingPriority))-Number(Boolean(a.meetingPriority))||Number(requestNotes(b).includes('optiq'))-Number(requestNotes(a).includes('optiq'))||statuses[progressStage(a)].rank-statuses[progressStage(b)].rank);
 }
 function render(){renderSummary();renderProgressFilters();const visible=visibleRequests();document.querySelector('#request-grid').innerHTML=`<table><caption class="sr-only">Optiq feature requests, progress, and next steps</caption><thead><tr><th scope="col">Request</th><th scope="col">Progress / notes</th><th scope="col">Next step</th></tr></thead><tbody>${visible.map(row).join('')}</tbody></table>`;document.querySelector('#results-count').textContent=`${visible.length} of ${requests.length} requests`;const filtered=selectedStatus!=='all'||selectedNote||query.trim();document.querySelector('#reset-filters').hidden=!filtered;document.querySelector('#filter-actions').hidden=!filtered;document.querySelector('#empty-state').hidden=visible.length>0;document.querySelector('#request-grid').hidden=!visible.length;}
 function showApprovalPreview(){if(location.hash!=='#verification-design-preview')return;selectedStatus='all';selectedNote=null;query='';document.querySelector('#search').value='';expandedRequests.add('verify-results-font');render();document.querySelector('#verification-design-preview').scrollIntoView({block:'start'});}
