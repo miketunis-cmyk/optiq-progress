@@ -5772,21 +5772,5 @@ window.OPTIQ_REQUESTS = [
     "currentDisposition": "Use shared LIMS functionality to reduce manual CSV handling where the agreed process permits it. The role of Confident Cannabis remains unclear; eliminating it entirely was not approved. Work out instrument/analytical automation at Optiq, refine the cannabis workflow at Mammoth, then bring the proven workflow to the busier existing lab. This analytical rollout direction is separate from the later billing decision to pilot Optiq billing before ExcelBIS. Inventory and quality adoption can proceed separately. Late October 2026 inspection was an operational milestone, not a software-release deadline; first samples by January 2027 was an estimate, not a confirmed launch. Proposed completion check: a representative Mammoth submission reaches the intended report through the agreed workflow and staff understand the remaining external steps.",
     "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
     "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
-  },
-  {
-    "status": "optiq",
-    "stage": 0,
-    "meetingPriority": false,
-    "id": "package-quantity-clarification",
-    "area": "Administrative follow-ups",
-    "title": "Clarify the package quantity adjustment",
-    "description": "Identify the screen, record and expected quantity behavior behind the closing request.",
-    "detail": "The request is too unclear to assign to inventory, submissions, packaging or shipping. Keep the unresolved intent visible without inventing an implementation ticket or default quantity.",
-    "question": "Which screen and record need the package quantity adjustment, and what should the quantity do?",
-    "nextStep": "Capture the affected record and expected behavior before assigning implementation scope.",
-    "currentAsOf": "2026-10-12",
-    "currentDisposition": "The request is too unclear to assign to inventory, submissions, packaging or shipping. Keep the unresolved intent visible without inventing an implementation ticket or default quantity.",
-    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
-    "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
   }
 ];
