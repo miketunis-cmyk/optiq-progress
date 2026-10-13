@@ -4,11 +4,11 @@ window.OPTIQ_REQUESTS = [
     "area": "Reports & analyses",
     "status": "working",
     "title": "Conformity testing",
-    "description": "Compare several vials for Net Content, Purity or Identity, with a Conformity section inside the individual sample’s Sample Details and results on the COA.",
-    "detail": "Conformity was the highest-priority item on the product list reviewed in the meeting; billing was elevated to the top of the implementation list in the closing discussion. Put Conformity in Sample Details, presented similarly to label-claim information. Parts of the repeat-vial process are built, but the complete result-to-COA process remains unfinished and is not confirmed available at Optiq. Preserve the full Net Content, Purity and Identity names, the extra detail page and both agreed repeat routes: fresh independent vials, or a suitable original result as the first repeat. The 12 October meeting did not redefine calculations, vial counts, statistics or acceptance limits. The separate Reporting Hub columns are for visual inspection and fentanyl. No firm Conformity completion date was agreed.",
-    "evidence": "Requirements updated from the 12 October meeting summary. Earlier delivery status is retained; no new implementation or release check was performed.",
+    "description": "Keep one client-facing parent sample and track each conformity vial and its Purity, Identity or Net Content results inside the parent’s Sample Details.",
+    "detail": "The final correction is explicit: staff manage Conformity inside Sample Details. Do not build the rejected dedicated expandable Conformity result columns after metals and solvents in Reporting Hub. Keep one organizing parent and client-facing parent ID; automatically create distinct linked internal vial IDs so each physical vial’s results can be traced. Hide conformity inputs until the client selects the service, then reveal the applicable tests and vial-count controls. Support Purity, Identity and Net Content, including combinations. Receiving staff must see the requested tests and count, verify what arrived and match vials to IDs or labels. Enter and review each vial/test result in Sample Details. Parts are built, but the full workflow and availability remain unfinished. Preserve prior agreed test names, repeat routes and reporting requirements pending reconciliation; this meeting did not define calculations, acceptance limits or final COA presentation. Open: client versus assigned labels; count bounds (three was only an example); sharing physical vials across multiple tests; how the existing name/lot uniqueness rule applies to children; and selecting reportable results from multiple injections, repreparations or reruns. Three intended tests may produce five instrument records: extra instrument records must not become extra physical vials. The exact Sample Details arrangement remains open. Conformity is a high product priority; the later discussion made billing the top implementation priority. The rejected temporary-grid estimate of two months is not a deadline. Proposed completion check: receive three distinguishable example vials, associate their results with the parent in Sample Details, and retain an extra injection as an instrument record without creating a fourth vial or a Reporting Hub Conformity group.",
+    "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification.",
     "stage": 1,
-    "nextStep": "Smpltrax: finish Conformity in Sample Details and verify results through the final COA. Optiq: confirm the outstanding acceptance limits, repeat-vial pricing and ordering details.",
+    "nextStep": "Smpltrax: verify child IDs and links, conditional submission inputs, receiving counts and Sample Details results. Lab operations: confirm label/count/shared-test rules, child uniqueness and reportable-run selection; retain the separate outstanding analytical and pricing questions.",
     "meetingPriority": true,
     "historicalSnapshots": [
       {
@@ -68,14 +68,35 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Conformity owner",
           "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
         }
+      },
+      {
+        "asOf": "2026-10-12",
+        "record": {
+          "id": "conformity",
+          "area": "Reports & analyses",
+          "status": "working",
+          "title": "Conformity testing",
+          "description": "Compare several vials for Net Content, Purity or Identity, with a Conformity section inside the individual sample’s Sample Details and results on the COA.",
+          "detail": "Conformity was the highest-priority item on the product list reviewed in the meeting; billing was elevated to the top of the implementation list in the closing discussion. Put Conformity in Sample Details, presented similarly to label-claim information. Parts of the repeat-vial process are built, but the complete result-to-COA process remains unfinished and is not confirmed available at Optiq. Preserve the full Net Content, Purity and Identity names, the extra detail page and both agreed repeat routes: fresh independent vials, or a suitable original result as the first repeat. The 12 October meeting did not redefine calculations, vial counts, statistics or acceptance limits. The separate Reporting Hub columns are for visual inspection and fentanyl. No firm Conformity completion date was agreed.",
+          "evidence": "Requirements updated from the 12 October meeting summary. Earlier delivery status is retained; no new implementation or release check was performed.",
+          "stage": 1,
+          "nextStep": "Smpltrax: finish Conformity in Sample Details and verify results through the final COA. Optiq: confirm the outstanding acceptance limits, repeat-vial pricing and ordering details.",
+          "meetingPriority": true,
+          "recordedProgressCredit": 76,
+          "recordedProgressLabel": "Work in progress",
+          "currentAsOf": "2026-10-12",
+          "currentDisposition": "Conformity was the highest-priority item on the product list reviewed in the meeting; billing was elevated to the top of the implementation list in the closing discussion. Put Conformity in Sample Details, presented similarly to label-claim information. Parts of the repeat-vial process are built, but the complete result-to-COA process remains unfinished and is not confirmed available at Optiq. Preserve the full Net Content, Purity and Identity names, the extra detail page and both agreed repeat routes: fresh independent vials, or a suitable original result as the first repeat. The 12 October meeting did not redefine calculations, vial counts, statistics or acceptance limits. The separate Reporting Hub columns are for visual inspection and fentanyl. No firm Conformity completion date was agreed.",
+          "currentOwner": "Conformity owner",
+          "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
+        }
       }
     ],
     "recordedProgressCredit": 76,
     "recordedProgressLabel": "Work in progress",
     "currentAsOf": "2026-10-12",
-    "currentDisposition": "Conformity was the highest-priority item on the product list reviewed in the meeting; billing was elevated to the top of the implementation list in the closing discussion. Put Conformity in Sample Details, presented similarly to label-claim information. Parts of the repeat-vial process are built, but the complete result-to-COA process remains unfinished and is not confirmed available at Optiq. Preserve the full Net Content, Purity and Identity names, the extra detail page and both agreed repeat routes: fresh independent vials, or a suitable original result as the first repeat. The 12 October meeting did not redefine calculations, vial counts, statistics or acceptance limits. The separate Reporting Hub columns are for visual inspection and fentanyl. No firm Conformity completion date was agreed.",
+    "currentDisposition": "The final correction is explicit: staff manage Conformity inside Sample Details. Do not build the rejected dedicated expandable Conformity result columns after metals and solvents in Reporting Hub. Keep one organizing parent and client-facing parent ID; automatically create distinct linked internal vial IDs so each physical vial’s results can be traced. Hide conformity inputs until the client selects the service, then reveal the applicable tests and vial-count controls. Support Purity, Identity and Net Content, including combinations. Receiving staff must see the requested tests and count, verify what arrived and match vials to IDs or labels. Enter and review each vial/test result in Sample Details. Parts are built, but the full workflow and availability remain unfinished. Preserve prior agreed test names, repeat routes and reporting requirements pending reconciliation; this meeting did not define calculations, acceptance limits or final COA presentation. Open: client versus assigned labels; count bounds (three was only an example); sharing physical vials across multiple tests; how the existing name/lot uniqueness rule applies to children; and selecting reportable results from multiple injections, repreparations or reruns. Three intended tests may produce five instrument records: extra instrument records must not become extra physical vials. The exact Sample Details arrangement remains open. Conformity is a high product priority; the later discussion made billing the top implementation priority. The rejected temporary-grid estimate of two months is not a deadline. Proposed completion check: receive three distinguishable example vials, associate their results with the parent in Sample Details, and retain an extra injection as an instrument record without creating a fourth vial or a Reporting Hub Conformity group.",
     "currentOwner": "Conformity owner",
-    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed."
   },
   {
     "id": "inspection-rules",
@@ -385,9 +406,9 @@ window.OPTIQ_REQUESTS = [
     "stage": 2,
     "title": "Fentanyl test results",
     "description": "Finish fentanyl result entry, its own Reporting Hub column and the lab-approved COA presentation.",
-    "detail": "The existing result and reporting changes are built, but saving through the final certificate still needs a complete check. Customers are asking for this service and test strips were on the way. Fentanyl is higher priority than QR drop-off. Include its proposed COA appearance in the Wednesday, 14 October mockups and approve the look before finishing the application wiring. The 12 October meeting did not specify result vocabulary, invalid-result handling, detection threshold or exact COA wording; use the lab’s actual method and reporting rules. No firm release date was agreed.",
-    "evidence": "Requirements updated from the 12 October meeting summary. Earlier delivery status is retained; no new implementation or release check was performed.",
-    "nextStep": "Smpltrax: prepare the mockup, finish the separate Reporting Hub column and prove result entry through the approved COA. Optiq: confirm method-specific vocabulary, invalid-result handling, threshold and wording.",
+    "detail": "The existing result and reporting changes are built, but saving through the final certificate still needs a complete check. Customers are asking for this service and test strips were on the way. Fentanyl is higher priority than QR drop-off. Include its proposed COA appearance in the Wednesday, 14 October mockups and approve the look before finishing the application wiring. The 12 October meeting did not specify result vocabulary, invalid-result handling, detection threshold or exact COA wording; use the lab’s actual method and reporting rules. No firm release date was agreed. The morning discussion calls for the customer-facing term Immunoassay instead of strip and a prominent fentanyl callout. A stated value changed from 50 to 10 ng/mL, but the test name is garbled; Leslie must confirm which test it applies to, the units and whether it describes sensitivity, cutoff or another approved term. This is not validated performance or an approved fentanyl threshold. That confirmation is tracked separately in the method-wording request.",
+    "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification.",
+    "nextStep": "Smpltrax: finish result entry and Reporting Hub/COA proof after layout approval. Confirm method wording and the stated 10 ng/mL claim with Leslie before putting a numerical claim on reports.",
     "area": "Reports & analyses",
     "meetingPriority": true,
     "historicalSnapshots": [
@@ -447,14 +468,35 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Fentanyl and COA layout owners",
           "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
         }
+      },
+      {
+        "asOf": "2026-10-12",
+        "record": {
+          "id": "fentanyl-results",
+          "status": "built",
+          "stage": 2,
+          "title": "Fentanyl test results",
+          "description": "Finish fentanyl result entry, its own Reporting Hub column and the lab-approved COA presentation.",
+          "detail": "The existing result and reporting changes are built, but saving through the final certificate still needs a complete check. Customers are asking for this service and test strips were on the way. Fentanyl is higher priority than QR drop-off. Include its proposed COA appearance in the Wednesday, 14 October mockups and approve the look before finishing the application wiring. The 12 October meeting did not specify result vocabulary, invalid-result handling, detection threshold or exact COA wording; use the lab’s actual method and reporting rules. No firm release date was agreed.",
+          "evidence": "Requirements updated from the 12 October meeting summary. Earlier delivery status is retained; no new implementation or release check was performed.",
+          "nextStep": "Smpltrax: prepare the mockup, finish the separate Reporting Hub column and prove result entry through the approved COA. Optiq: confirm method-specific vocabulary, invalid-result handling, threshold and wording.",
+          "area": "Reports & analyses",
+          "meetingPriority": true,
+          "recordedProgressCredit": 92,
+          "recordedProgressLabel": "Built locally — STOPPED on owned test hold",
+          "currentAsOf": "2026-10-12",
+          "currentDisposition": "The existing result and reporting changes are built, but saving through the final certificate still needs a complete check. Customers are asking for this service and test strips were on the way. Fentanyl is higher priority than QR drop-off. Include its proposed COA appearance in the Wednesday, 14 October mockups and approve the look before finishing the application wiring. The 12 October meeting did not specify result vocabulary, invalid-result handling, detection threshold or exact COA wording; use the lab’s actual method and reporting rules. No firm release date was agreed.",
+          "currentOwner": "Fentanyl and COA layout owners",
+          "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
+        }
       }
     ],
     "recordedProgressCredit": 92,
     "recordedProgressLabel": "Built locally — STOPPED on owned test hold",
     "currentAsOf": "2026-10-12",
-    "currentDisposition": "The existing result and reporting changes are built, but saving through the final certificate still needs a complete check. Customers are asking for this service and test strips were on the way. Fentanyl is higher priority than QR drop-off. Include its proposed COA appearance in the Wednesday, 14 October mockups and approve the look before finishing the application wiring. The 12 October meeting did not specify result vocabulary, invalid-result handling, detection threshold or exact COA wording; use the lab’s actual method and reporting rules. No firm release date was agreed.",
+    "currentDisposition": "The existing result and reporting changes are built, but saving through the final certificate still needs a complete check. Customers are asking for this service and test strips were on the way. Fentanyl is higher priority than QR drop-off. Include its proposed COA appearance in the Wednesday, 14 October mockups and approve the look before finishing the application wiring. The 12 October meeting did not specify result vocabulary, invalid-result handling, detection threshold or exact COA wording; use the lab’s actual method and reporting rules. No firm release date was agreed. The morning discussion calls for the customer-facing term Immunoassay instead of strip and a prominent fentanyl callout. A stated value changed from 50 to 10 ng/mL, but the test name is garbled; Leslie must confirm which test it applies to, the units and whether it describes sensitivity, cutoff or another approved term. This is not validated performance or an approved fentanyl threshold. That confirmation is tracked separately in the method-wording request.",
     "currentOwner": "Fentanyl and COA layout owners",
-    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed."
   },
   {
     "id": "requested-white-label-photo",
@@ -1437,10 +1479,10 @@ window.OPTIQ_REQUESTS = [
     "status": "built",
     "title": "Lab documents, forms, logs and quality-issue reports",
     "description": "Create and edit lab documents, forms and logs, keep earlier versions, and record quality issues such as nonconformance reports.",
-    "detail": "Parts of the lab-document tools are built. Importing, editing, saving, viewing earlier versions and using forms, logs and quality-issue reports still need complete checks.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+    "detail": "Parts of the lab-document tools are built. Importing, editing, saving, viewing earlier versions and using forms, logs and quality-issue reports still need complete checks. The morning meeting names nonconformance records, CAPAs, SOPs and document control for use across all three labs, reducing parallel manual tracking. Audit the existing modules and reusable documents before introducing duplicate tools. Configuration, migration of current trackers, approval roles, permissions, lifecycle and sign-off still need agreement. Cross-lab adoption can proceed without waiting for the complete analytical migration; no new signature or approval policy was settled.",
+    "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification.",
     "stage": 2,
-    "nextStep": "Smpltrax: finish saving, permissions, simultaneous-edit and recovery checks. Electronic signatures and shared templates come after the usable core tools.",
+    "nextStep": "Smpltrax: verify usable document and quality modules and the remaining checks. Lab quality owners: choose adoption and tracker transition details, including approval roles and lifecycle.",
     "meetingPriority": true,
     "historicalSnapshots": [
       {
@@ -1478,14 +1520,35 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Lab-document owner",
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
         }
+      },
+      {
+        "asOf": "2026-10-10",
+        "record": {
+          "id": "sop-documents",
+          "area": "Inventory & operations",
+          "status": "built",
+          "title": "Lab documents, forms, logs and quality-issue reports",
+          "description": "Create and edit lab documents, forms and logs, keep earlier versions, and record quality issues such as nonconformance reports.",
+          "detail": "Parts of the lab-document tools are built. Importing, editing, saving, viewing earlier versions and using forms, logs and quality-issue reports still need complete checks.",
+          "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+          "stage": 2,
+          "nextStep": "Smpltrax: finish saving, permissions, simultaneous-edit and recovery checks. Electronic signatures and shared templates come after the usable core tools.",
+          "meetingPriority": true,
+          "recordedProgressCredit": 92,
+          "recordedProgressLabel": "Feature built",
+          "currentAsOf": "2026-10-10",
+          "currentDisposition": "Parts of the lab-document tools are built. Importing, editing, saving, viewing earlier versions and using forms, logs and quality-issue reports still need complete checks.",
+          "currentOwner": "Lab-document owner",
+          "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+        }
       }
     ],
     "recordedProgressCredit": 92,
     "recordedProgressLabel": "Feature built",
-    "currentAsOf": "2026-10-10",
-    "currentDisposition": "Parts of the lab-document tools are built. Importing, editing, saving, viewing earlier versions and using forms, logs and quality-issue reports still need complete checks.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Parts of the lab-document tools are built. Importing, editing, saving, viewing earlier versions and using forms, logs and quality-issue reports still need complete checks. The morning meeting names nonconformance records, CAPAs, SOPs and document control for use across all three labs, reducing parallel manual tracking. Audit the existing modules and reusable documents before introducing duplicate tools. Configuration, migration of current trackers, approval roles, permissions, lifecycle and sign-off still need agreement. Cross-lab adoption can proceed without waiting for the complete analytical migration; no new signature or approval policy was settled.",
     "currentOwner": "Lab-document owner",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed."
   },
   {
     "id": "partner-inventory",
@@ -2013,10 +2076,10 @@ window.OPTIQ_REQUESTS = [
     "status": "built",
     "title": "Instrument run lists and original data",
     "description": "Prepare the list of samples for an instrument run and keep the original result files linked to that run.",
-    "detail": "The requested instrument run-list process is separate from the existing sample actions. Its original implementation, owner and current use still need confirmation.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+    "detail": "The requested instrument run-list process is separate from the existing sample actions. Its original implementation, owner and current use still need confirmation. Separately scope LIMS-generated instrument batches and explicit repreparation/rerun handling. The morning meeting discussed these as improvements to identifier clarity, not completed features. Distinguish physical conformity vials from instrument injections and preparation records, and define how the analyst selects the reportable result. Batch-generation details, ownership and rerun-selection behavior remain open.",
+    "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification.",
     "stage": 2,
-    "nextStep": "Smpltrax: recover the saved implementation and installation records, then establish what remains. Availability is not confirmed.",
+    "nextStep": "Smpltrax: recover the existing implementation and proof, then scope batch generation and vial/injection/preparation links with analysts. Do not assume extra injections are extra physical vials.",
     "historicalSnapshots": [
       {
         "asOf": "2026-10-07",
@@ -2053,14 +2116,35 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Original instrument-workflow ownership unverified",
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
         }
+      },
+      {
+        "asOf": "2026-10-10",
+        "record": {
+          "id": "instrument-workflow",
+          "ref": "R02",
+          "area": "Reports & analyses",
+          "status": "built",
+          "title": "Instrument run lists and original data",
+          "description": "Prepare the list of samples for an instrument run and keep the original result files linked to that run.",
+          "detail": "The requested instrument run-list process is separate from the existing sample actions. Its original implementation, owner and current use still need confirmation.",
+          "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+          "stage": 2,
+          "nextStep": "Smpltrax: recover the saved implementation and installation records, then establish what remains. Availability is not confirmed.",
+          "recordedProgressCredit": 92,
+          "recordedProgressLabel": "Feature built",
+          "currentAsOf": "2026-10-10",
+          "currentDisposition": "The requested instrument run-list process is separate from the existing sample actions. Its original implementation, owner and current use still need confirmation.",
+          "currentOwner": "Original instrument-workflow ownership unverified",
+          "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+        }
       }
     ],
     "recordedProgressCredit": 92,
     "recordedProgressLabel": "Feature built",
-    "currentAsOf": "2026-10-10",
-    "currentDisposition": "The requested instrument run-list process is separate from the existing sample actions. Its original implementation, owner and current use still need confirmation.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "The requested instrument run-list process is separate from the existing sample actions. Its original implementation, owner and current use still need confirmation. Separately scope LIMS-generated instrument batches and explicit repreparation/rerun handling. The morning meeting discussed these as improvements to identifier clarity, not completed features. Distinguish physical conformity vials from instrument injections and preparation records, and define how the analyst selects the reportable result. Batch-generation details, ownership and rerun-selection behavior remain open.",
     "currentOwner": "Original instrument-workflow ownership unverified",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed."
   },
   {
     "id": "retained-intent",
@@ -2204,10 +2288,10 @@ window.OPTIQ_REQUESTS = [
     "status": "working",
     "title": "Lab-specific testing steps",
     "description": "Set up the lab’s preparation, result entry, and review steps for each test.",
-    "detail": "Preparation, instrument results, result history, staff review and the final certificate still need to work together as one complete testing process.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+    "detail": "Preparation, instrument results, result history, staff review and the final certificate still need to work together as one complete testing process. The morning meeting highlights native peak integration and calculations currently done manually as useful near-term work for Optiq and potentially Mammoth. Inspect incoming injections and mass spectra, and connect collection, analysis and human review. Exact calculations, preliminary QC rules, monitoring thresholds and rerun-selection behavior remain undefined; do not infer automatic result release. Proposed completion check: a representative authorized run supports the intended integration and calculations and can be processed by another analyst using the documented steps.",
+    "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification.",
     "stage": 1,
-    "nextStep": "Smpltrax: finish and check the connected process for each lab test, including result changes and required scientific review.",
+    "nextStep": "Smpltrax: finish the connected native analysis workflow. Analysts/method owners: define the exact calculations, QC and reportable-run rules; confirm them before implementation and analytical acceptance.",
     "meetingPriority": true,
     "historicalSnapshots": [
       {
@@ -2245,14 +2329,35 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Existing lab-testing owner",
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
         }
+      },
+      {
+        "asOf": "2026-10-10",
+        "record": {
+          "id": "analysis-framework",
+          "area": "Reports & analyses",
+          "status": "working",
+          "title": "Lab-specific testing steps",
+          "description": "Set up the lab’s preparation, result entry, and review steps for each test.",
+          "detail": "Preparation, instrument results, result history, staff review and the final certificate still need to work together as one complete testing process.",
+          "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+          "stage": 1,
+          "nextStep": "Smpltrax: finish and check the connected process for each lab test, including result changes and required scientific review.",
+          "meetingPriority": true,
+          "recordedProgressCredit": 76,
+          "recordedProgressLabel": "Work in progress",
+          "currentAsOf": "2026-10-10",
+          "currentDisposition": "Preparation, instrument results, result history, staff review and the final certificate still need to work together as one complete testing process.",
+          "currentOwner": "Existing lab-testing owner",
+          "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+        }
       }
     ],
     "recordedProgressCredit": 76,
     "recordedProgressLabel": "Work in progress",
-    "currentAsOf": "2026-10-10",
-    "currentDisposition": "Preparation, instrument results, result history, staff review and the final certificate still need to work together as one complete testing process.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Preparation, instrument results, result history, staff review and the final certificate still need to work together as one complete testing process. The morning meeting highlights native peak integration and calculations currently done manually as useful near-term work for Optiq and potentially Mammoth. Inspect incoming injections and mass spectra, and connect collection, analysis and human review. Exact calculations, preliminary QC rules, monitoring thresholds and rerun-selection behavior remain undefined; do not infer automatic result release. Proposed completion check: a representative authorized run supports the intended integration and calculations and can be processed by another analyst using the documented steps.",
     "currentOwner": "Existing lab-testing owner",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed."
   },
   {
     "id": "document-release",
@@ -2870,9 +2975,9 @@ window.OPTIQ_REQUESTS = [
     "status": "built",
     "title": "Automatic Empower imports and recovery",
     "description": "Collect completed Empower runs without a manual export and recover interrupted imports.",
-    "detail": "The sample-ID matching fix was installed and verified on 9 October. Automatic collection of all completed Empower runs, interrupted-import recovery and previously held runs still need confirmation. Conflicting sample IDs stay unmatched. Staff must still enter the correct sample ID; the product name is not a second check.",
-    "evidence": "Saved release record: installed 9 October; server and certificate-worker checks passed. Real instrument-result acceptance and held-run recovery were not tested.",
-    "nextStep": "Smpltrax: confirm the installed collection process, import coverage and recovery checks. The matching release did not retry held runs or test a real instrument-result journey.",
+    "detail": "The sample-ID matching fix was installed and verified on 9 October. Automatic collection of all completed Empower runs, interrupted-import recovery and previously held runs still need confirmation. Conflicting sample IDs stay unmatched. Staff must still enter the correct sample ID; the product name is not a second check. The morning meeting requests finishing the collector on the new computer so completed instrument runs arrive automatically and staff can inspect injections and mass-spectral data. Participants described work underway; that does not verify installation or usability. Complete a representative instrument-to-correct-record journey and document the practical workflow for Brian and other analysts once reliable. Define preliminary sample/QC checks and conditions for notifications when a run is expected but no results arrive. “Over an hour” is an example, not an approved alarm setting. No automatic result release was specified. Proposed completion check: a representative authorized run arrives in the correct records, and another analyst follows the documented workflow.",
+    "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification.",
+    "nextStep": "Smpltrax: verify collector setup, automatic completed-run collection and recovery. Lab analysts: confirm sample/QC checks and missing-result conditions. Prepare the handoff tutorial after the complete workflow is proven.",
     "stage": 2,
     "historicalSnapshots": [
       {
@@ -2908,14 +3013,35 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Installed collector ownership/source tuple unverified",
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
         }
+      },
+      {
+        "asOf": "2026-10-10",
+        "record": {
+          "id": "empower-native-collection",
+          "area": "Reports & analyses",
+          "status": "built",
+          "title": "Automatic Empower imports and recovery",
+          "description": "Collect completed Empower runs without a manual export and recover interrupted imports.",
+          "detail": "The sample-ID matching fix was installed and verified on 9 October. Automatic collection of all completed Empower runs, interrupted-import recovery and previously held runs still need confirmation. Conflicting sample IDs stay unmatched. Staff must still enter the correct sample ID; the product name is not a second check.",
+          "evidence": "Saved release record: installed 9 October; server and certificate-worker checks passed. Real instrument-result acceptance and held-run recovery were not tested.",
+          "nextStep": "Smpltrax: confirm the installed collection process, import coverage and recovery checks. The matching release did not retry held runs or test a real instrument-result journey.",
+          "stage": 2,
+          "recordedProgressCredit": 92,
+          "recordedProgressLabel": "Feature built",
+          "currentAsOf": "2026-10-10",
+          "currentDisposition": "The sample-ID matching fix was installed and verified on 9 October. Automatic collection of all completed Empower runs, interrupted-import recovery and previously held runs still need confirmation.",
+          "currentOwner": "Installed collector ownership/source tuple unverified",
+          "currentEvidenceBoundary": "Saved 9 October deployment record confirms installation, server health and certificate-worker readiness. No new real instrument or customer-result check; held runs were not retried."
+        }
       }
     ],
     "recordedProgressCredit": 92,
     "recordedProgressLabel": "Feature built",
-    "currentAsOf": "2026-10-10",
-    "currentDisposition": "The sample-ID matching fix was installed and verified on 9 October. Automatic collection of all completed Empower runs, interrupted-import recovery and previously held runs still need confirmation.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "The sample-ID matching fix was installed and verified on 9 October. Automatic collection of all completed Empower runs, interrupted-import recovery and previously held runs still need confirmation. Conflicting sample IDs stay unmatched. Staff must still enter the correct sample ID; the product name is not a second check. The morning meeting requests finishing the collector on the new computer so completed instrument runs arrive automatically and staff can inspect injections and mass-spectral data. Participants described work underway; that does not verify installation or usability. Complete a representative instrument-to-correct-record journey and document the practical workflow for Brian and other analysts once reliable. Define preliminary sample/QC checks and conditions for notifications when a run is expected but no results arrive. “Over an hour” is an example, not an approved alarm setting. No automatic result release was specified. Proposed completion check: a representative authorized run arrives in the correct records, and another analyst follows the documented workflow.",
     "currentOwner": "Installed collector ownership/source tuple unverified",
-    "currentEvidenceBoundary": "Saved 9 October deployment record confirms installation, server health and certificate-worker readiness. No new real instrument or customer-result check; held runs were not retried."
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "meetingPriority": true
   },
   {
     "id": "inventory-follow-ups",
@@ -4323,10 +4449,10 @@ window.OPTIQ_REQUESTS = [
     "area": "Receiving",
     "status": "built",
     "title": "Customer follow-up for intake problems",
-    "description": "Let staff record an attention reason and follow up on the affected sample.",
-    "detail": "The existing Action required tools are the starting point. Saving a problem, contacting the correct customer and handling the reply still need complete checks.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
-    "nextStep": "Smpltrax: finish checks for saved issues, customer messages and replies, including when each message is sent.",
+    "description": "Use an Action Required portal request, preset reasons and photos to resolve problems with the related sample or submission.",
+    "detail": "The existing Action Required tools are a starting point, not proof of complete availability. The concrete new case is three conformity vials received without adequate labels: staff attach photos and ask the client to identify each vial through the portal. Keep the response linked to the relevant submission or sample and retrievable. Custom reasons were mentioned, but administrator-maintained options versus unrestricted one-off text was not settled. Reason permissions and status/resolution behavior beyond the request-and-response flow remain open. Proposed completion check: send photos of unidentified vials in a test portal request, receive the client’s clarification and reopen it from the relevant record.",
+    "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification.",
+    "nextStep": "Smpltrax: verify staff requests, photo attachments, portal responses and record association for missing vial labels. Lab operations: confirm reason maintenance and resolution behavior.",
     "stage": 2,
     "meetingPriority": true,
     "historicalSnapshots": [
@@ -4365,14 +4491,35 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Existing photo/intake follow-up owner",
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
         }
+      },
+      {
+        "asOf": "2026-10-10",
+        "record": {
+          "id": "intake-attention-notices",
+          "area": "Receiving",
+          "status": "built",
+          "title": "Customer follow-up for intake problems",
+          "description": "Let staff record an attention reason and follow up on the affected sample.",
+          "detail": "The existing Action required tools are the starting point. Saving a problem, contacting the correct customer and handling the reply still need complete checks.",
+          "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+          "nextStep": "Smpltrax: finish checks for saved issues, customer messages and replies, including when each message is sent.",
+          "stage": 2,
+          "meetingPriority": true,
+          "recordedProgressCredit": 28,
+          "recordedProgressLabel": "Existing framework — activation off",
+          "currentAsOf": "2026-10-10",
+          "currentDisposition": "The existing Action required tools are the starting point. Saving a problem, contacting the correct customer and handling the reply still need complete checks.",
+          "currentOwner": "Existing photo/intake follow-up owner",
+          "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+        }
       }
     ],
     "recordedProgressCredit": 28,
     "recordedProgressLabel": "Existing framework — activation off",
-    "currentAsOf": "2026-10-10",
-    "currentDisposition": "The existing Action required tools are the starting point. Saving a problem, contacting the correct customer and handling the reply still need complete checks.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "The existing Action Required tools are a starting point, not proof of complete availability. The concrete new case is three conformity vials received without adequate labels: staff attach photos and ask the client to identify each vial through the portal. Keep the response linked to the relevant submission or sample and retrievable. Custom reasons were mentioned, but administrator-maintained options versus unrestricted one-off text was not settled. Reason permissions and status/resolution behavior beyond the request-and-response flow remain open. Proposed completion check: send photos of unidentified vials in a test portal request, receive the client’s clarification and reopen it from the relevant record.",
     "currentOwner": "Existing photo/intake follow-up owner",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed."
   },
   {
     "id": "public-coa-boundaries",
@@ -5472,13 +5619,36 @@ window.OPTIQ_REQUESTS = [
     "nextReview": true,
     "priorityLabel": "Design review · Wednesday 14 October",
     "description": "Prepare the table version and an all-inclusive COA mockup with first-page vial inspection and the fentanyl presentation.",
-    "detail": "The Wednesday, 14 October 2026 target is a mockup and layout review, not a production-release deadline. Show the COA number in the relevant header instead of the test type. Revisit section sizes and page breaks and explore the discussed top-border/header cleanup. Put vial and cap integrity, intact or cracked condition, vial color and cap color on the first page. “Brown vial, red cap; vial and cap intact” is an example, not a fixed approved template. Include fentanyl and both new Reporting Hub columns in the design package. Final header appearance, page breaks and inspection input vocabulary remain open. Agree on appearance before wiring the approved design to stored results, while preserving the existing COA workflow. The earlier completed summary layout remains a separate closed request.",
-    "nextStep": "Smpltrax: prepare the revised table and complete mockups for Wednesday. Optiq reviewers: approve the appearance before application wiring and rollout.",
+    "detail": "The Wednesday, 14 October 2026 target is a mockup and layout review, not a production-release deadline. Show the COA number in the relevant header instead of the test type. Revisit section sizes and page breaks and explore the discussed top-border/header cleanup. Put vial and cap integrity, intact or cracked condition, vial color and cap color on the first page. “Brown vial, red cap; vial and cap intact” is an example, not a fixed approved template. Include fentanyl and both new Reporting Hub columns in the design package. Final header appearance, page breaks and inspection input vocabulary remain open. Agree on appearance before wiring the approved design to stored results, while preserving the existing COA workflow. The earlier completed summary layout remains a separate closed request. Additional morning requirements: retain the preferred side-by-side information layout. Long client and sample names must remain readable without clipping, collision or overlap. Adjust the affected overflowing field rather than shrinking or rearranging the whole page; wrapping versus font reduction is still open. Make fentanyl prominent and accommodate both normal and unusually large test combinations while preserving useful readable elements. A standalone summary page followed by detailed tables was discussed, not adopted. Proposed completion check: review long-name examples, a normal panel and a large test combination with first-page inspection and an easy-to-find fentanyl callout.",
+    "nextStep": "Smpltrax: prepare the Wednesday table and complete mockups, including long names and large panels. Optiq reviewers: choose overflow behavior and fentanyl placement before wiring the approved presentation.",
     "currentOwner": "Smpltrax; Optiq reviewers for appearance",
     "currentAsOf": "2026-10-12",
-    "currentDisposition": "The Wednesday, 14 October 2026 target is a mockup and layout review, not a production-release deadline. Show the COA number in the relevant header instead of the test type. Revisit section sizes and page breaks and explore the discussed top-border/header cleanup. Put vial and cap integrity, intact or cracked condition, vial color and cap color on the first page. “Brown vial, red cap; vial and cap intact” is an example, not a fixed approved template. Include fentanyl and both new Reporting Hub columns in the design package. Final header appearance, page breaks and inspection input vocabulary remain open. Agree on appearance before wiring the approved design to stored results, while preserving the existing COA workflow. The earlier completed summary layout remains a separate closed request.",
-    "evidence": "Recorded from the 12 October meeting summary. This new scope has not been verified as implemented or released.",
-    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
+    "currentDisposition": "The Wednesday, 14 October 2026 target is a mockup and layout review, not a production-release deadline. Show the COA number in the relevant header instead of the test type. Revisit section sizes and page breaks and explore the discussed top-border/header cleanup. Put vial and cap integrity, intact or cracked condition, vial color and cap color on the first page. “Brown vial, red cap; vial and cap intact” is an example, not a fixed approved template. Include fentanyl and both new Reporting Hub columns in the design package. Final header appearance, page breaks and inspection input vocabulary remain open. Agree on appearance before wiring the approved design to stored results, while preserving the existing COA workflow. The earlier completed summary layout remains a separate closed request. Additional morning requirements: retain the preferred side-by-side information layout. Long client and sample names must remain readable without clipping, collision or overlap. Adjust the affected overflowing field rather than shrinking or rearranging the whole page; wrapping versus font reduction is still open. Make fentanyl prominent and accommodate both normal and unusually large test combinations while preserving useful readable elements. A standalone summary page followed by detailed tables was discussed, not adopted. Proposed completion check: review long-name examples, a normal panel and a large test combination with first-page inspection and an easy-to-find fentanyl callout.",
+    "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification.",
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "historicalSnapshots": [
+      {
+        "asOf": "2026-10-12",
+        "record": {
+          "status": "queued",
+          "stage": 0,
+          "meetingPriority": true,
+          "id": "coa-oct14-mockups",
+          "area": "Reports & analyses",
+          "title": "Revised COA and table mockups for 14 October",
+          "nextReview": true,
+          "priorityLabel": "Design review · Wednesday 14 October",
+          "description": "Prepare the table version and an all-inclusive COA mockup with first-page vial inspection and the fentanyl presentation.",
+          "detail": "The Wednesday, 14 October 2026 target is a mockup and layout review, not a production-release deadline. Show the COA number in the relevant header instead of the test type. Revisit section sizes and page breaks and explore the discussed top-border/header cleanup. Put vial and cap integrity, intact or cracked condition, vial color and cap color on the first page. “Brown vial, red cap; vial and cap intact” is an example, not a fixed approved template. Include fentanyl and both new Reporting Hub columns in the design package. Final header appearance, page breaks and inspection input vocabulary remain open. Agree on appearance before wiring the approved design to stored results, while preserving the existing COA workflow. The earlier completed summary layout remains a separate closed request.",
+          "nextStep": "Smpltrax: prepare the revised table and complete mockups for Wednesday. Optiq reviewers: approve the appearance before application wiring and rollout.",
+          "currentOwner": "Smpltrax; Optiq reviewers for appearance",
+          "currentAsOf": "2026-10-12",
+          "currentDisposition": "The Wednesday, 14 October 2026 target is a mockup and layout review, not a production-release deadline. Show the COA number in the relevant header instead of the test type. Revisit section sizes and page breaks and explore the discussed top-border/header cleanup. Put vial and cap integrity, intact or cracked condition, vial color and cap color on the first page. “Brown vial, red cap; vial and cap intact” is an example, not a fixed approved template. Include fentanyl and both new Reporting Hub columns in the design package. Final header appearance, page breaks and inspection input vocabulary remain open. Agree on appearance before wiring the approved design to stored results, while preserving the existing COA workflow. The earlier completed summary layout remains a separate closed request.",
+          "evidence": "Recorded from the 12 October meeting summary. This new scope has not been verified as implemented or released.",
+          "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
+        }
+      }
+    ]
   },
   {
     "status": "queued",
@@ -5496,5 +5666,190 @@ window.OPTIQ_REQUESTS = [
     "currentDisposition": "Refresh Optiq’s older Sample Details page and keep the digital submission slip accessible after submission. Attach and retrieve scans or photos of annotated paperwork, including useful receiving notes such as expected milligrams or identities, and keep signed white-label attestations with the related sample/order documents. An unmodified paper slip can use the existing digital version; photographing every blank slip was not required. Keep vial and sample photos in Sample Photos. Staff should find the relevant sample and paperwork inside the LIMS. Order Details may also provide access, but a second implementation was not required. OCR, handwriting recognition and full-text search inside scans were not specified. The 13–14 October timing was tentative for the initial page refresh, not a promise to complete all documents and conformity work.",
     "evidence": "Recorded from the 12 October meeting summary. This new scope has not been verified as implemented or released.",
     "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
+  },
+  {
+    "status": "queued",
+    "stage": 0,
+    "meetingPriority": true,
+    "id": "inventory-receiving-defaults",
+    "area": "Inventory & operations",
+    "title": "Inventory receiving defaults and full or partial PO receipts",
+    "description": "Receive known catalog products using their purchasing units, usual storage locations and available order quantities, with editable exceptions.",
+    "detail": "Selecting a known item should populate its known purchasing unit and usual storage location; staff can override the actual receipt. Use the known order/purchase-context quantity when available. “Five boxes” is an example, not a fixed default. A receipt date must be available, but its defaulting rule was not agreed. Routine purchasing should use a purchase order with the vendor’s actual products and support full or partial delivery. Participants described the PO workflow as existing; audit and improve it rather than assume a replacement purchasing system is needed. Keep Quick Add Stock as an alternate path, not a requirement for routine PO receiving. Proposed completion check: receive a known item by confirming quantity and exceptions without retyping known attributes; verify both full and partial orders.",
+    "nextStep": "Smpltrax: audit catalog defaults and editable units, locations and quantities, then verify full/partial PO receiving. Lab operations: confirm receipt-date behavior.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Selecting a known item should populate its known purchasing unit and usual storage location; staff can override the actual receipt. Use the known order/purchase-context quantity when available. “Five boxes” is an example, not a fixed default. A receipt date must be available, but its defaulting rule was not agreed. Routine purchasing should use a purchase order with the vendor’s actual products and support full or partial delivery. Participants described the PO workflow as existing; audit and improve it rather than assume a replacement purchasing system is needed. Keep Quick Add Stock as an alternate path, not a requirement for routine PO receiving. Proposed completion check: receive a known item by confirming quantity and exceptions without retyping known attributes; verify both full and partial orders.",
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
+  },
+  {
+    "status": "queued",
+    "stage": 0,
+    "meetingPriority": true,
+    "id": "chemical-components-grid-stability",
+    "area": "Inventory & operations",
+    "title": "Fix the unstable Create Chemical Components grid",
+    "description": "Stop the shaking, seizing or repeated layout movement reported in Create Chemical Components.",
+    "detail": "The morning recording identifies visible instability but does not establish its cause or exact trigger. Reproduce the affected interaction, retain enough evidence to repeat it, then fix the root cause. Proposed completion check: the same interaction remains stable and allows uninterrupted data entry.",
+    "nextStep": "Smpltrax: reproduce the affected action, identify the cause and verify the correction against that reproduction.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "The morning recording identifies visible instability but does not establish its cause or exact trigger. Reproduce the affected interaction, retain enough evidence to repeat it, then fix the root cause. Proposed completion check: the same interaction remains stable and allows uninterrupted data entry.",
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
+  },
+  {
+    "status": "optiq",
+    "stage": 0,
+    "meetingPriority": true,
+    "id": "immunoassay-method-wording",
+    "area": "Reports & analyses",
+    "title": "Immunoassay wording and confirmation of the stated 10 ng/mL",
+    "description": "Use Immunoassay in customer-facing method text and confirm which test the stated 10 ng/mL value belongs to.",
+    "detail": "Use Immunoassay rather than strip. The conversation changed a stated 50 ng/mL value to 10 ng/mL after asking Leslie, but the transcript garbles the test name; nearby discussion mentions fentanyl. Confirm the test association, units and lab-approved description (sensitivity, cutoff or another term) before updating numeric report claims. A stated value is not independent validation of performance. Proposed completion check: method labels and report text match the lab’s confirmed method information.",
+    "question": "Leslie/method owner: which test does the stated 10 ng/mL apply to, are those the correct units, and should reports call it sensitivity, cutoff or another approved term?",
+    "nextStep": "Smpltrax: apply confirmed method terminology consistently after the method owner resolves the numerical claim.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Use Immunoassay rather than strip. The conversation changed a stated 50 ng/mL value to 10 ng/mL after asking Leslie, but the transcript garbles the test name; nearby discussion mentions fentanyl. Confirm the test association, units and lab-approved description (sensitivity, cutoff or another term) before updating numeric report claims. A stated value is not independent validation of performance. Proposed completion check: method labels and report text match the lab’s confirmed method information.",
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
+  },
+  {
+    "status": "queued",
+    "stage": 0,
+    "meetingPriority": true,
+    "id": "sample-order-client-messaging",
+    "area": "Planning & communication",
+    "title": "Client conversations tied to a sample or order",
+    "description": "Provide reliable asynchronous staff/client messages and retrievable history linked to a specific sample or order.",
+    "detail": "Prioritize basic back-and-forth communication over GIFs, reactions and other social features. Participants reported the messenger functional with quirks; production readiness remains unverified. Conversations should persist asynchronously and avoid implying immediate live support. Verify sample/order links, email-notification behavior and complete retrievable history. Open: staff routing and response ownership, notification rules and whether email only notifies or can accept replies into the thread. Proposed completion check: staff and a test client exchange messages about the same sample/order, receive the intended notifications and later retrieve the whole conversation.",
+    "nextStep": "Smpltrax: verify core messaging and record links, then fix important edge cases. Lab operations: define response ownership, notification behavior and any email-reply handling.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Prioritize basic back-and-forth communication over GIFs, reactions and other social features. Participants reported the messenger functional with quirks; production readiness remains unverified. Conversations should persist asynchronously and avoid implying immediate live support. Verify sample/order links, email-notification behavior and complete retrievable history. Open: staff routing and response ownership, notification rules and whether email only notifies or can accept replies into the thread. Proposed completion check: staff and a test client exchange messages about the same sample/order, receive the intended notifications and later retrieve the whole conversation.",
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
+  },
+  {
+    "status": "queued",
+    "stage": 0,
+    "meetingPriority": true,
+    "id": "sample-storage-multi-lab",
+    "area": "Inventory & operations",
+    "title": "Retained sample and vial storage across labs",
+    "description": "Help staff locate the correct retained sample or individual vial for retesting at Optiq and the other locations.",
+    "detail": "Continue storage-room work against the previously supplied spreadsheets. Obtain changes since the version already used, compare current implementation and make the workflow usable at the relevant labs. This is a generic sample-storage need; Metrc-related handling can coexist without limiting the feature to cannabis. The field list, storage hierarchy and integration details require those spreadsheets and were not enumerated in the meeting. Proposed completion check: staff locate the correct retained vial through the LIMS rather than memory or a separate spreadsheet.",
+    "nextStep": "Smpltrax: reconcile the existing workflow with the latest storage spreadsheets. Lab operations: supply changed fields and verify retained-vial lookup.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Continue storage-room work against the previously supplied spreadsheets. Obtain changes since the version already used, compare current implementation and make the workflow usable at the relevant labs. This is a generic sample-storage need; Metrc-related handling can coexist without limiting the feature to cannabis. The field list, storage hierarchy and integration details require those spreadsheets and were not enumerated in the meeting. Proposed completion check: staff locate the correct retained vial through the LIMS rather than memory or a separate spreadsheet.",
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
+  },
+  {
+    "status": "queued",
+    "stage": 0,
+    "meetingPriority": true,
+    "id": "quality-workflows-multi-lab",
+    "area": "Inventory & operations",
+    "title": "Adopt nonconformance, CAPA, SOP and document control across labs",
+    "description": "Use the selected quality-management workflows across all three labs without duplicate manual tracking of the same work.",
+    "detail": "Review existing modules, identify what is actually usable and the remaining workflow gaps, configure the selected functions for each relevant lab and plan transition from current trackers/documents. Reuse the existing document and approval work rather than create a parallel system. Inventory and quality adoption need not wait for the complete analytical migration. Approval roles, permissions, document lifecycle, sign-off and detailed nonconformance/CAPA behavior remain open. The ambiguous “by January 1st, start working on it” comment cannot be assigned to this work or made a blanket deadline. Proposed completion check: staff complete the selected workflows without maintaining equivalent parallel trackers.",
+    "nextStep": "Smpltrax and lab quality owners: audit and select existing workflows, confirm the missing rules and agree tracker/document transition.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Review existing modules, identify what is actually usable and the remaining workflow gaps, configure the selected functions for each relevant lab and plan transition from current trackers/documents. Reuse the existing document and approval work rather than create a parallel system. Inventory and quality adoption need not wait for the complete analytical migration. Approval roles, permissions, document lifecycle, sign-off and detailed nonconformance/CAPA behavior remain open. The ambiguous “by January 1st, start working on it” comment cannot be assigned to this work or made a blanket deadline. Proposed completion check: staff complete the selected workflows without maintaining equivalent parallel trackers.",
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
+  },
+  {
+    "status": "queued",
+    "stage": 0,
+    "meetingPriority": true,
+    "id": "mammoth-portal-coa",
+    "area": "Lab rollout",
+    "title": "Mammoth portal, COA and operational workflow configuration",
+    "description": "Configure Mammoth’s client portal and COA and confirm its submission, sampling, reporting and external-system boundaries.",
+    "detail": "Use shared LIMS functionality to reduce manual CSV handling where the agreed process permits it. The role of Confident Cannabis remains unclear; eliminating it entirely was not approved. Work out instrument/analytical automation at Optiq, refine the cannabis workflow at Mammoth, then bring the proven workflow to the busier existing lab. This analytical rollout direction is separate from the later billing decision to pilot Optiq billing before ExcelBIS. Inventory and quality adoption can proceed separately. Late October 2026 inspection was an operational milestone, not a software-release deadline; first samples by January 2027 was an estimate, not a confirmed launch. Proposed completion check: a representative Mammoth submission reaches the intended report through the agreed workflow and staff understand the remaining external steps.",
+    "nextStep": "Smpltrax and Mammoth operations: confirm submission, sampling and external responsibilities, configure portal/COA and prove a representative agreed submission before any release.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Use shared LIMS functionality to reduce manual CSV handling where the agreed process permits it. The role of Confident Cannabis remains unclear; eliminating it entirely was not approved. Work out instrument/analytical automation at Optiq, refine the cannabis workflow at Mammoth, then bring the proven workflow to the busier existing lab. This analytical rollout direction is separate from the later billing decision to pilot Optiq billing before ExcelBIS. Inventory and quality adoption can proceed separately. Late October 2026 inspection was an operational milestone, not a software-release deadline; first samples by January 2027 was an estimate, not a confirmed launch. Proposed completion check: a representative Mammoth submission reaches the intended report through the agreed workflow and staff understand the remaining external steps.",
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
+  },
+  {
+    "status": "queued",
+    "stage": 0,
+    "meetingPriority": true,
+    "id": "authentic-lab-marketing",
+    "area": "Marketing & communication",
+    "title": "Authentic lab photography and evidence-led content",
+    "description": "Use real lab photography, real information and human-presented explanations for public-facing marketing.",
+    "detail": "Move away from raw generic AI-generated imagery that looks synthetic or interchangeable with other labs. AI can assist production and concepts; rebuild useful concepts into intentionally designed assets instead of publishing raw generated images. Lead with data and evidence. “Results are earned” is an idea to explore, not an approved slogan. Interactive educational tools were mentioned without a selected tool or delivery commitment. Proposed completion check: new content represents the actual lab and communicates real information.",
+    "nextStep": "Suggested handoff to Travis/content team: review current posts, gather actual lab photos and develop human-presented educational content.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Move away from raw generic AI-generated imagery that looks synthetic or interchangeable with other labs. AI can assist production and concepts; rebuild useful concepts into intentionally designed assets instead of publishing raw generated images. Lead with data and evidence. “Results are earned” is an idea to explore, not an approved slogan. Interactive educational tools were mentioned without a selected tool or delivery commitment. Proposed completion check: new content represents the actual lab and communicates real information.",
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
+  },
+  {
+    "status": "optiq",
+    "stage": 0,
+    "meetingPriority": false,
+    "id": "workspace-kevin-assistance",
+    "area": "Administrative follow-ups",
+    "title": "Clarify Kevin Gray’s Google Workspace assistance",
+    "description": "Identify the appropriate Workspace administrator and the assistance Kevin needs.",
+    "detail": "The administrator’s identity and the exact access request are not reliably captured. Put Kevin in contact with the right administrator only once the need is clear. The meeting does not establish a specific permission grant; this is an administrative clarification, not authorization to change access.",
+    "question": "Which Workspace administrator should help Kevin, and what specific assistance does he need?",
+    "nextStep": "Confirm the administrator and need before the requested handoff; do not infer a permission grant.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "The administrator’s identity and the exact access request are not reliably captured. Put Kevin in contact with the right administrator only once the need is clear. The meeting does not establish a specific permission grant; this is an administrative clarification, not authorization to change access.",
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
+  },
+  {
+    "status": "optiq",
+    "stage": 0,
+    "meetingPriority": false,
+    "id": "package-quantity-clarification",
+    "area": "Administrative follow-ups",
+    "title": "Clarify the package quantity adjustment",
+    "description": "Identify the screen, record and expected quantity behavior behind the closing request.",
+    "detail": "The request is too unclear to assign to inventory, submissions, packaging or shipping. Keep the unresolved intent visible without inventing an implementation ticket or default quantity.",
+    "question": "Which screen and record need the package quantity adjustment, and what should the quantity do?",
+    "nextStep": "Capture the affected record and expected behavior before assigning implementation scope.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "The request is too unclear to assign to inventory, submissions, packaging or shipping. Keep the unresolved intent visible without inventing an implementation ticket or default quantity.",
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
+  },
+  {
+    "status": "optiq",
+    "stage": 0,
+    "meetingPriority": false,
+    "id": "manifest-registration-clarification",
+    "area": "Administrative follow-ups",
+    "title": "Clarify the manifest-registration question",
+    "description": "Determine whether the brief question concerned an outstanding task and which manifest it referred to.",
+    "detail": "The meeting provides insufficient context for a software requirement. Record the question for clarification without assuming a manifest type, integration or registration workflow.",
+    "question": "Which manifest was discussed, and is there a specific outstanding registration task?",
+    "nextStep": "Confirm the manifest and outstanding action before creating implementation scope.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "The meeting provides insufficient context for a software requirement. Record the question for clarification without assuming a manifest type, integration or registration workflow.",
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
+  },
+  {
+    "status": "optiq",
+    "stage": 0,
+    "meetingPriority": false,
+    "id": "mammoth-validation-submission",
+    "area": "Lab rollout",
+    "title": "Confirm Mammoth validation submission and operational ownership",
+    "description": "Identify the owner and remaining submission steps for Mammoth validation materials.",
+    "detail": "Participants said validation work had been done but still discussed submitting materials. This is an operational follow-up separate from software delivery; do not mark submission complete from that statement. The late-October inspection milestone does not establish a software release deadline or a new submission authorization.",
+    "question": "Mammoth operations: who owns the validation submission, and which materials or submission steps remain?",
+    "nextStep": "Confirm operational ownership and remaining steps separately from the portal/COA software work.",
+    "currentAsOf": "2026-10-12",
+    "currentDisposition": "Participants said validation work had been done but still discussed submitting materials. This is an operational follow-up separate from software delivery; do not mark submission complete from that statement. The late-October inspection milestone does not establish a software release deadline or a new submission authorization.",
+    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
   }
 ];
