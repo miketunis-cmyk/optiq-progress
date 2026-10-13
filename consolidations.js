@@ -1,6 +1,20 @@
 // Original records and their history remain in data.js. Each source belongs to one work item.
 window.OPTIQ_CONSOLIDATIONS = [
   {
+    "id": "fentanyl-results",
+    "sourceIds": [
+      "fentanyl-results",
+      "immunoassay-method-wording"
+    ],
+    "title": "Fentanyl results, method wording and COA",
+    "status": "working",
+    "stage": 1,
+    "description": "Complete Fentanyl reporting with the confirmed Method: Immunoassay and Specification: <10 ng/mL.",
+    "detail": "Fentanyl result and reporting changes are built; the approved method/specification text still needs application and the complete saved-result-to-certificate flow remains unverified. Mike confirmed Fentanyl, Method: Immunoassay and Specification: <10 ng/mL on 12 October, resolving the prior wording question. Preserve existing result-entry and audited reporting behavior, keep the separate Reporting Hub column, and coordinate the prominent certificate presentation and integration with the existing COA Mockups owner. Fentanyl remains ahead of QR drop-off. No firm release date was agreed; no new implementation or release verification is claimed.",
+    "question": null,
+    "nextStep": "Smpltrax: apply the confirmed Fentanyl wording and finish the saved-result-to-COA proof with the existing Fentanyl and COA owners."
+  },
+  {
     id: 'optiq-billing-rules',
     sourceIds: ['optiq-billing-rules', 'client-specific-pricing', 'rush-surcharge'],
     title: 'Optiq invoicing: customer rates, formats and rush rules',

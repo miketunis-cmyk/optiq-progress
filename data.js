@@ -409,9 +409,9 @@ window.OPTIQ_REQUESTS = [
     "stage": 2,
     "title": "Fentanyl test results",
     "description": "Finish fentanyl result entry, its own Reporting Hub column and the lab-approved COA presentation.",
-    "detail": "The existing result and reporting changes are built, but saving through the final certificate still needs a complete check. Customers are asking for this service and test strips were on the way. Fentanyl is higher priority than QR drop-off. Include its proposed COA appearance in the Wednesday, 14 October mockups and approve the look before finishing the application wiring. The 12 October meeting did not specify result vocabulary, invalid-result handling, detection threshold or exact COA wording; use the lab’s actual method and reporting rules. No firm release date was agreed. The morning discussion calls for the customer-facing term Immunoassay instead of strip and a prominent fentanyl callout. A stated value changed from 50 to 10 ng/mL, but the test name is garbled; Leslie must confirm which test it applies to, the units and whether it describes sensitivity, cutoff or another approved term. This is not validated performance or an approved fentanyl threshold. That confirmation is tracked separately in the method-wording request.",
-    "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification.",
-    "nextStep": "Smpltrax: finish result entry and Reporting Hub/COA proof after layout approval. Confirm method wording and the stated 10 ng/mL claim with Leslie before putting a numerical claim on reports.",
+    "detail": "The existing Fentanyl result and reporting changes are built, but saving through the final certificate still needs a complete check. Fentanyl is higher priority than QR drop-off. Keep the separate Reporting Hub column and a prominent COA callout; the existing COA Mockups chat owns appearance and the coordinated certificate integration. Mike confirmed the lab-approved Fentanyl wording on 12 October: Method: Immunoassay; Specification: <10 ng/mL. Apply these labels consistently while preserving the existing result-entry and audited reporting workflow. The former method-confirmation question is resolved. Final saved-result-to-certificate proof and release remain pending. No firm release date was agreed.",
+    "evidence": "Mike confirmed on 12 October that Leslie had resolved the wording, supplied Method: Immunoassay; Specification: <10 ng/mL, and identified the test as Fentanyl. Earlier requirements and delivery records are retained in history. This records approved wording, not fresh delivery proof.",
+    "nextStep": "Smpltrax: finish Fentanyl result entry and Reporting Hub/COA proof using Method: Immunoassay and Specification: <10 ng/mL, coordinated with the existing COA owner.",
     "area": "Reports & analyses",
     "meetingPriority": true,
     "historicalSnapshots": [
@@ -492,14 +492,35 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Fentanyl and COA layout owners",
           "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
         }
+      },
+      {
+        "asOf": "2026-10-12",
+        "record": {
+          "id": "fentanyl-results",
+          "status": "built",
+          "stage": 2,
+          "title": "Fentanyl test results",
+          "description": "Finish fentanyl result entry, its own Reporting Hub column and the lab-approved COA presentation.",
+          "detail": "The existing result and reporting changes are built, but saving through the final certificate still needs a complete check. Customers are asking for this service and test strips were on the way. Fentanyl is higher priority than QR drop-off. Include its proposed COA appearance in the Wednesday, 14 October mockups and approve the look before finishing the application wiring. The 12 October meeting did not specify result vocabulary, invalid-result handling, detection threshold or exact COA wording; use the lab’s actual method and reporting rules. No firm release date was agreed. The morning discussion calls for the customer-facing term Immunoassay instead of strip and a prominent fentanyl callout. A stated value changed from 50 to 10 ng/mL, but the test name is garbled; Leslie must confirm which test it applies to, the units and whether it describes sensitivity, cutoff or another approved term. This is not validated performance or an approved fentanyl threshold. That confirmation is tracked separately in the method-wording request.",
+          "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification.",
+          "nextStep": "Smpltrax: finish result entry and Reporting Hub/COA proof after layout approval. Confirm method wording and the stated 10 ng/mL claim with Leslie before putting a numerical claim on reports.",
+          "area": "Reports & analyses",
+          "meetingPriority": true,
+          "recordedProgressCredit": 92,
+          "recordedProgressLabel": "Built locally — STOPPED on owned test hold",
+          "currentAsOf": "2026-10-12",
+          "currentDisposition": "The existing result and reporting changes are built, but saving through the final certificate still needs a complete check. Customers are asking for this service and test strips were on the way. Fentanyl is higher priority than QR drop-off. Include its proposed COA appearance in the Wednesday, 14 October mockups and approve the look before finishing the application wiring. The 12 October meeting did not specify result vocabulary, invalid-result handling, detection threshold or exact COA wording; use the lab’s actual method and reporting rules. No firm release date was agreed. The morning discussion calls for the customer-facing term Immunoassay instead of strip and a prominent fentanyl callout. A stated value changed from 50 to 10 ng/mL, but the test name is garbled; Leslie must confirm which test it applies to, the units and whether it describes sensitivity, cutoff or another approved term. This is not validated performance or an approved fentanyl threshold. That confirmation is tracked separately in the method-wording request.",
+          "currentOwner": "Fentanyl and COA layout owners",
+          "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed."
+        }
       }
     ],
     "recordedProgressCredit": 92,
     "recordedProgressLabel": "Built locally — STOPPED on owned test hold",
     "currentAsOf": "2026-10-12",
-    "currentDisposition": "The existing result and reporting changes are built, but saving through the final certificate still needs a complete check. Customers are asking for this service and test strips were on the way. Fentanyl is higher priority than QR drop-off. Include its proposed COA appearance in the Wednesday, 14 October mockups and approve the look before finishing the application wiring. The 12 October meeting did not specify result vocabulary, invalid-result handling, detection threshold or exact COA wording; use the lab’s actual method and reporting rules. No firm release date was agreed. The morning discussion calls for the customer-facing term Immunoassay instead of strip and a prominent fentanyl callout. A stated value changed from 50 to 10 ng/mL, but the test name is garbled; Leslie must confirm which test it applies to, the units and whether it describes sensitivity, cutoff or another approved term. This is not validated performance or an approved fentanyl threshold. That confirmation is tracked separately in the method-wording request.",
+    "currentDisposition": "The existing Fentanyl result and reporting changes are built, but saving through the final certificate still needs a complete check. Fentanyl is higher priority than QR drop-off. Keep the separate Reporting Hub column and a prominent COA callout; the existing COA Mockups chat owns appearance and the coordinated certificate integration. Mike confirmed the lab-approved Fentanyl wording on 12 October: Method: Immunoassay; Specification: <10 ng/mL. Apply these labels consistently while preserving the existing result-entry and audited reporting workflow. The former method-confirmation question is resolved. Final saved-result-to-certificate proof and release remain pending. No firm release date was agreed.",
     "currentOwner": "Fentanyl and COA layout owners",
-    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed."
+    "currentEvidenceBoundary": "Mike confirmed the Fentanyl report wording; no new implementation, deployment or operational check was performed."
   },
   {
     "id": "requested-white-label-photo",
@@ -5701,20 +5722,41 @@ window.OPTIQ_REQUESTS = [
     "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
   },
   {
-    "status": "optiq",
+    "status": "queued",
     "stage": 0,
     "meetingPriority": true,
     "id": "immunoassay-method-wording",
     "area": "Reports & analyses",
-    "title": "Immunoassay wording and confirmation of the stated 10 ng/mL",
-    "description": "Use Immunoassay in customer-facing method text and confirm which test the stated 10 ng/mL value belongs to.",
-    "detail": "Use Immunoassay rather than strip. The conversation changed a stated 50 ng/mL value to 10 ng/mL after asking Leslie, but the transcript garbles the test name; nearby discussion mentions fentanyl. Confirm the test association, units and lab-approved description (sensitivity, cutoff or another term) before updating numeric report claims. A stated value is not independent validation of performance. Proposed completion check: method labels and report text match the lab’s confirmed method information.",
-    "question": "Leslie/method owner: which test does the stated 10 ng/mL apply to, are those the correct units, and should reports call it sensitivity, cutoff or another approved term?",
-    "nextStep": "Smpltrax: apply confirmed method terminology consistently after the method owner resolves the numerical claim.",
+    "title": "Fentanyl method and specification wording",
+    "description": "Use the lab-confirmed Fentanyl report labels: Method: Immunoassay; Specification: <10 ng/mL.",
+    "detail": "Mike confirmed that Leslie has resolved the method wording and identified Fentanyl as the test on 12 October. Use the exact approved report text: Method: Immunoassay; Specification: <10 ng/mL. The test association, units and label are now settled. Apply this wording consistently to the existing Fentanyl reporting work and verify the rendered certificate. Implementation and release remain unverified.",
+    "question": null,
+    "nextStep": "Smpltrax: apply Method: Immunoassay and Specification: <10 ng/mL to Fentanyl reporting, then verify the saved-result-to-COA flow with the existing Fentanyl and COA owners.",
     "currentAsOf": "2026-10-12",
-    "currentDisposition": "Use Immunoassay rather than strip. The conversation changed a stated 50 ng/mL value to 10 ng/mL after asking Leslie, but the transcript garbles the test name; nearby discussion mentions fentanyl. Confirm the test association, units and lab-approved description (sensitivity, cutoff or another term) before updating numeric report claims. A stated value is not independent validation of performance. Proposed completion check: method labels and report text match the lab’s confirmed method information.",
-    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
-    "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
+    "currentDisposition": "Mike confirmed that Leslie has resolved the method wording and identified Fentanyl as the test on 12 October. Use the exact approved report text: Method: Immunoassay; Specification: <10 ng/mL. The test association, units and label are now settled. Apply this wording consistently to the existing Fentanyl reporting work and verify the rendered certificate. Implementation and release remain unverified.",
+    "currentEvidenceBoundary": "Mike confirmed the Fentanyl report wording; no new implementation, deployment or operational check was performed.",
+    "evidence": "Mike confirmed on 12 October that Leslie had resolved the wording, supplied Method: Immunoassay; Specification: <10 ng/mL, and identified the test as Fentanyl. Earlier requirements and delivery records are retained in history. This records approved wording, not fresh delivery proof.",
+    "historicalSnapshots": [
+      {
+        "asOf": "2026-10-12",
+        "record": {
+          "status": "optiq",
+          "stage": 0,
+          "meetingPriority": true,
+          "id": "immunoassay-method-wording",
+          "area": "Reports & analyses",
+          "title": "Immunoassay wording and confirmation of the stated 10 ng/mL",
+          "description": "Use Immunoassay in customer-facing method text and confirm which test the stated 10 ng/mL value belongs to.",
+          "detail": "Use Immunoassay rather than strip. The conversation changed a stated 50 ng/mL value to 10 ng/mL after asking Leslie, but the transcript garbles the test name; nearby discussion mentions fentanyl. Confirm the test association, units and lab-approved description (sensitivity, cutoff or another term) before updating numeric report claims. A stated value is not independent validation of performance. Proposed completion check: method labels and report text match the lab’s confirmed method information.",
+          "question": "Leslie/method owner: which test does the stated 10 ng/mL apply to, are those the correct units, and should reports call it sensitivity, cutoff or another approved term?",
+          "nextStep": "Smpltrax: apply confirmed method terminology consistently after the method owner resolves the numerical claim.",
+          "currentAsOf": "2026-10-12",
+          "currentDisposition": "Use Immunoassay rather than strip. The conversation changed a stated 50 ng/mL value to 10 ng/mL after asking Leslie, but the transcript garbles the test name; nearby discussion mentions fentanyl. Confirm the test association, units and lab-approved description (sensitivity, cutoff or another term) before updating numeric report claims. A stated value is not independent validation of performance. Proposed completion check: method labels and report text match the lab’s confirmed method information.",
+          "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+          "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
+        }
+      }
+    ]
   },
   {
     "status": "queued",
