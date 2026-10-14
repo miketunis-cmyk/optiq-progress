@@ -19,9 +19,9 @@ window.OPTIQ_CATALOG = window.OPTIQ_REQUESTS.flatMap(request => {
     meetingPriority: sources.some(source => source.meetingPriority),
     ...group,
     consolidatedSources: sources,
-    currentAsOf: '2026-10-12',
-    currentDisposition: group.detail,
-    currentEvidenceBoundary: 'Consolidation preserves the original evidence and delivery status; no new implementation or release verification.',
-    evidence: `Consolidated ${sources.length} overlapping records on 12 October. Original requirements, progress and evidence are retained below; this is a planning update.`
+    currentAsOf: group.currentAsOf || '2026-10-12',
+    currentDisposition: group.currentDisposition || group.detail,
+    currentEvidenceBoundary: group.currentEvidenceBoundary || 'Consolidation preserves the original evidence and delivery status; no new implementation or release verification.',
+    evidence: group.evidence || `Consolidated ${sources.length} overlapping records on 12 October. Original requirements, progress and evidence are retained below; this is a planning update.`
   }];
 });

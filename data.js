@@ -5,10 +5,10 @@ window.OPTIQ_REQUESTS = [
     "status": "working",
     "title": "Conformity testing",
     "description": "Keep one client-facing parent sample and track each conformity vial and its Purity, Identity or Net Content results inside the parent’s Sample Details.",
-    "detail": "The final correction is explicit: staff manage Conformity inside Sample Details. Do not build the rejected dedicated expandable Conformity result columns after metals and solvents in Reporting Hub. Keep one organizing parent and client-facing parent ID; automatically create distinct linked internal vial IDs so each physical vial’s results can be traced. Hide conformity inputs until the client selects the service, then reveal the applicable tests and vial-count controls. Support Purity, Identity and Net Content, including combinations. Receiving staff must see the requested tests and count, verify what arrived and match vials to IDs or labels. Enter and review each vial/test result in Sample Details. Parts are built, but the full workflow and availability remain unfinished. Reuse the established Conformity implementation specification and existing work. Accepted minimum result counts, shared-vial allocation, qualifying original-result credit, pricing and configured descriptive statistics are already defined; the meeting does not reopen those decisions. Optiq reports descriptive statistics without a pass/fail conformity verdict. Assess remaining receiving, result lineage, Sample Details and COA implementation/proof gaps against the existing contract. The latest Sample Details placement supersedes older Reporting Hub presentation plans. Three intended tests may produce five instrument records: extra instrument records must not become extra physical vials. The exact Sample Details arrangement remains open. Mike’s subsequent priority review makes Conformity the current top implementation priority. The meeting’s earlier closing billing priority is superseded by this direct instruction. The rejected temporary-grid estimate of two months is not a deadline. Proposed completion check: receive three distinguishable example vials, associate their results with the parent in Sample Details, and retain an extra injection as an instrument record without creating a fourth vial or a Reporting Hub Conformity group.",
-    "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification. Mike’s subsequent direct review puts Conformity first; this changes priority, not implementation or delivery status. Mike confirmed the vial/test logic is already extensively covered; reuse the established specification rather than reopen those decisions.",
+    "detail": "The final correction is explicit: staff manage Conformity inside Sample Details. Do not build the rejected dedicated expandable Conformity result columns after metals and solvents in Reporting Hub. Keep one organizing parent and client-facing parent ID; automatically create distinct linked internal vial IDs so each physical vial’s results can be traced. Hide conformity inputs until the client selects the service, then reveal the applicable tests and vial-count controls. Support Purity, Identity and Net Content, including combinations. Receiving staff must see the requested tests and count, verify what arrived and match vials to IDs or labels. Enter and review each vial/test result in Sample Details. Parts are built, but the full workflow and availability remain unfinished. Reuse the established Conformity implementation specification and existing work. Accepted minimum result counts, shared-vial allocation, qualifying original-result credit, pricing and configured descriptive statistics are already defined; the meeting does not reopen those decisions. Optiq reports descriptive statistics without a pass/fail conformity verdict. Assess remaining receiving, result lineage, Sample Details and COA implementation/proof gaps against the existing contract. The latest Sample Details placement supersedes older Reporting Hub presentation plans. Three intended tests may produce five instrument records: extra instrument records must not become extra physical vials. The exact Sample Details arrangement remains open. Mike’s priority review made Conformity the leading broader Optiq priority; his subsequent instruction makes finishing Fentanyl the immediate focus. The meeting’s earlier closing billing priority is superseded by this direct instruction. The rejected temporary-grid estimate of two months is not a deadline. Proposed completion check: receive three distinguishable example vials, associate their results with the parent in Sample Details, and retain an extra injection as an instrument record without creating a fourth vial or a Reporting Hub Conformity group. Progress reviewed 14 October: 13 October owner evidence: database initialization and migration checks succeeded in bounded attempts; storage, transport and missing-fixture prerequisites were repaired. The latest run is preserved for continuation rather than rebuilding successful setup. Vial naming and inline result-entry changes have focused checks; independent review and the actual three-vial, nine-result journey remain unfinished. The complete submit, receive, enter, save/reopen, independently review and released-COA journey has not passed. MASTER coordinates existing owners; Finalize Optiq Conformity retains the implementation/proof work. No staging or live completion is established. Recorded owner: MASTER — accountable delivery; Finalize Optiq Conformity — existing implementation and proof owner.",
+    "evidence": "13 October: MASTER (01a136ed-039c-78a0-9b4b-f9c18ca03214) and Finalize Optiq Conformity (01a13361-7f7e-77b0-a357-26f3af678c30), retained owner snapshots in the 14 October evidence review. PR #5530 records the development-friction follow-ups, not Conformity delivery.",
     "stage": 1,
-    "nextStep": "Smpltrax: reconcile and reuse the existing Conformity specification, code and acceptance cases; complete and prove receiving through Sample Details results and the COA. Preserve established allocation, original-result credit, pricing, statistics and no-verdict rules.",
+    "nextStep": "MASTER and the existing Conformity implementation owner: continue on the preserved database, finish review and prove vial names, inline results, save/reopen, independent review and the released COA against the accepted rules. Fentanyl is Mike’s immediate focus; Conformity remains the leading broader Optiq priority.",
     "meetingPriority": true,
     "historicalSnapshots": [
       {
@@ -89,17 +89,30 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Conformity owner",
           "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified."
         }
+      },
+      {
+        "currentAsOf": "2026-10-12",
+        "status": "working",
+        "stage": 1,
+        "currentDisposition": "The final correction is explicit: staff manage Conformity inside Sample Details. Do not build the rejected dedicated expandable Conformity result columns after metals and solvents in Reporting Hub. Keep one organizing parent and client-facing parent ID; automatically create distinct linked internal vial IDs so each physical vial’s results can be traced. Hide conformity inputs until the client selects the service, then reveal the applicable tests and vial-count controls. Support Purity, Identity and Net Content, including combinations. Receiving staff must see the requested tests and count, verify what arrived and match vials to IDs or labels. Enter and review each vial/test result in Sample Details. Parts are built, but the full workflow and availability remain unfinished. Reuse the established Conformity implementation specification and existing work. Accepted minimum result counts, shared-vial allocation, qualifying original-result credit, pricing and configured descriptive statistics are already defined; the meeting does not reopen those decisions. Optiq reports descriptive statistics without a pass/fail conformity verdict. Assess remaining receiving, result lineage, Sample Details and COA implementation/proof gaps against the existing contract. The latest Sample Details placement supersedes older Reporting Hub presentation plans. Three intended tests may produce five instrument records: extra instrument records must not become extra physical vials. The exact Sample Details arrangement remains open. Mike’s subsequent priority review makes Conformity the current top implementation priority. The meeting’s earlier closing billing priority is superseded by this direct instruction. The rejected temporary-grid estimate of two months is not a deadline. Proposed completion check: receive three distinguishable example vials, associate their results with the parent in Sample Details, and retain an extra injection as an instrument record without creating a fourth vial or a Reporting Hub Conformity group.",
+        "currentOwner": "Conformity owner",
+        "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+        "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification. Mike’s subsequent direct review puts Conformity first; this changes priority, not implementation or delivery status. Mike confirmed the vial/test logic is already extensively covered; reuse the established specification rather than reopen those decisions.",
+        "nextStep": "Smpltrax: reconcile and reuse the existing Conformity specification, code and acceptance cases; complete and prove receiving through Sample Details results and the COA. Preserve established allocation, original-result credit, pricing, statistics and no-verdict rules.",
+        "recordedProgressCredit": 76,
+        "recordedProgressLabel": "Work in progress",
+        "source": "Published PR #30 baseline, reviewed 14 October 2026"
       }
     ],
     "recordedProgressCredit": 76,
     "recordedProgressLabel": "Work in progress",
-    "currentAsOf": "2026-10-12",
-    "currentDisposition": "The final correction is explicit: staff manage Conformity inside Sample Details. Do not build the rejected dedicated expandable Conformity result columns after metals and solvents in Reporting Hub. Keep one organizing parent and client-facing parent ID; automatically create distinct linked internal vial IDs so each physical vial’s results can be traced. Hide conformity inputs until the client selects the service, then reveal the applicable tests and vial-count controls. Support Purity, Identity and Net Content, including combinations. Receiving staff must see the requested tests and count, verify what arrived and match vials to IDs or labels. Enter and review each vial/test result in Sample Details. Parts are built, but the full workflow and availability remain unfinished. Reuse the established Conformity implementation specification and existing work. Accepted minimum result counts, shared-vial allocation, qualifying original-result credit, pricing and configured descriptive statistics are already defined; the meeting does not reopen those decisions. Optiq reports descriptive statistics without a pass/fail conformity verdict. Assess remaining receiving, result lineage, Sample Details and COA implementation/proof gaps against the existing contract. The latest Sample Details placement supersedes older Reporting Hub presentation plans. Three intended tests may produce five instrument records: extra instrument records must not become extra physical vials. The exact Sample Details arrangement remains open. Mike’s subsequent priority review makes Conformity the current top implementation priority. The meeting’s earlier closing billing priority is superseded by this direct instruction. The rejected temporary-grid estimate of two months is not a deadline. Proposed completion check: receive three distinguishable example vials, associate their results with the parent in Sample Details, and retain an extra injection as an instrument record without creating a fourth vial or a Reporting Hub Conformity group.",
-    "currentOwner": "Conformity owner",
-    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "currentAsOf": "2026-10-14",
+    "currentDisposition": "13 October owner evidence: database initialization and migration checks succeeded in bounded attempts; storage, transport and missing-fixture prerequisites were repaired. The latest run is preserved for continuation rather than rebuilding successful setup. Vial naming and inline result-entry changes have focused checks; independent review and the actual three-vial, nine-result journey remain unfinished. The complete submit, receive, enter, save/reopen, independently review and released-COA journey has not passed. MASTER coordinates existing owners; Finalize Optiq Conformity retains the implementation/proof work. No staging or live completion is established.",
+    "currentOwner": "MASTER — accountable delivery; Finalize Optiq Conformity — existing implementation and proof owner",
+    "currentEvidenceBoundary": "Read-only reconciliation of dated owner/PR evidence; this list refresh performed no lab tests, staging, activation or live deployment.",
     "topPriority": true,
-    "priorityOrder": 1,
-    "priorityLabel": "Top implementation priority · Mike’s current direction"
+    "priorityOrder": 2,
+    "priorityLabel": "Leading broader Optiq priority"
   },
   {
     "id": "inspection-rules",
@@ -107,10 +120,10 @@ window.OPTIQ_REQUESTS = [
     "status": "optiq",
     "title": "Visual inspection and COA rules",
     "description": "Record vial and cap condition and colors, with visual inspection on the COA’s first page and its own Reporting Hub column.",
-    "detail": "Recording vial checks is built; the final COA display remains unfinished. The 12 October direction calls for vial integrity (intact or cracked), cap integrity, vial color and cap color on the first page. Prepare the display in the 14 October mockups, agree on appearance, then connect stored observations. Input controls, controlled vocabulary, final header and page breaks remain open. Earlier questions about powder appearance, visible amount and handling damaged or empty vials remain unresolved; the meeting did not settle those policies.",
-    "evidence": "Requirements updated from the 12 October meeting summary. Earlier delivery status is retained; no new implementation or release check was performed. Mike confirmed that COA mockups are handled in the existing COA Mockups chat; inspection presentation and integration follow that owner. This scope review does not add implementation or release proof.",
+    "detail": "Recording vial checks is built; the final COA display remains unfinished. The 12 October direction calls for vial integrity (intact or cracked), cap integrity, vial color and cap color on the first page. Prepare the display in the 14 October mockups, agree on appearance, then connect stored observations. Input controls, controlled vocabulary, final header and page breaks remain open. Earlier questions about powder appearance, visible amount and handling damaged or empty vials remain unresolved; the meeting did not settle those policies. Progress reviewed 14 October: 13 October COA design work is underway with the existing COA Mockups owner. Design artifacts do not demonstrate saved inspection observations on a released COA. No new complete field-persistence, separate Reporting Hub column or first-page integration proof was found; existing intake proof stays retained and the unresolved lab rules stay open. Recorded owner: Existing inspection implementation custodian; COA Mockups owns design.",
+    "evidence": "13 October: COA Mockups design record; the 9 October Optiq inspection — paused successor handoff retains intake proof and identifies COA binding as unfinished. The 14 October review found no newer complete inspection journey.",
     "stage": 1,
-    "nextStep": "Smpltrax: prepare the first-page inspection mockup and separate Reporting Hub column, then verify saved observations, missing information and page breaks after layout approval.",
+    "nextStep": "Existing inspection and COA owners: finish appearance review, then verify all required stored observations, the separate Reporting Hub column, missing information and first-page/page-break behavior. Lab owners resolve only the remaining vocabulary and damaged/empty-vial rules.",
     "meetingPriority": true,
     "historicalSnapshots": [
       {
@@ -172,14 +185,27 @@ window.OPTIQ_REQUESTS = [
           "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release.",
           "question": "Please confirm which vial observations should appear on the certificate, including powder appearance, visible amount and damaged or empty vials."
         }
+      },
+      {
+        "currentAsOf": "2026-10-12",
+        "status": "optiq",
+        "stage": 1,
+        "currentDisposition": "Recording vial checks is built; the final COA display remains unfinished. The 12 October direction calls for vial integrity (intact or cracked), cap integrity, vial color and cap color on the first page. Prepare the display in the 14 October mockups, agree on appearance, then connect stored observations. Input controls, controlled vocabulary, final header and page breaks remain open. Earlier questions about powder appearance, visible amount and handling damaged or empty vials remain unresolved; the meeting did not settle those policies.",
+        "currentOwner": "Inspection and COA layout owners",
+        "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified.",
+        "evidence": "Requirements updated from the 12 October meeting summary. Earlier delivery status is retained; no new implementation or release check was performed. Mike confirmed that COA mockups are handled in the existing COA Mockups chat; inspection presentation and integration follow that owner. This scope review does not add implementation or release proof.",
+        "nextStep": "Smpltrax: prepare the first-page inspection mockup and separate Reporting Hub column, then verify saved observations, missing information and page breaks after layout approval.",
+        "recordedProgressCredit": 28,
+        "recordedProgressLabel": "Request recorded",
+        "source": "Published PR #30 baseline, reviewed 14 October 2026"
       }
     ],
     "recordedProgressCredit": 28,
     "recordedProgressLabel": "Request recorded",
-    "currentAsOf": "2026-10-12",
-    "currentDisposition": "Recording vial checks is built; the final COA display remains unfinished. The 12 October direction calls for vial integrity (intact or cracked), cap integrity, vial color and cap color on the first page. Prepare the display in the 14 October mockups, agree on appearance, then connect stored observations. Input controls, controlled vocabulary, final header and page breaks remain open. Earlier questions about powder appearance, visible amount and handling damaged or empty vials remain unresolved; the meeting did not settle those policies.",
-    "currentOwner": "Inspection and COA layout owners",
-    "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified.",
+    "currentAsOf": "2026-10-14",
+    "currentDisposition": "13 October COA design work is underway with the existing COA Mockups owner. Design artifacts do not demonstrate saved inspection observations on a released COA. No new complete field-persistence, separate Reporting Hub column or first-page integration proof was found; existing intake proof stays retained and the unresolved lab rules stay open.",
+    "currentOwner": "Existing inspection implementation custodian; COA Mockups owns design",
+    "currentEvidenceBoundary": "Read-only reconciliation of dated owner/PR evidence; this list refresh performed no lab tests, staging, activation or live deployment.",
     "question": "Please review the 14 October inspection mockup and confirm the final input vocabulary and any outstanding rules for damaged or empty vials and powder observations.",
     "scopeReview": {
       "asOf": "2026-10-12",
@@ -358,9 +384,9 @@ window.OPTIQ_REQUESTS = [
     "stage": 2,
     "title": "Reference standards for spectrum comparisons",
     "description": "Save the lab’s reference spectra and compare sample spectra with them.",
-    "detail": "The reference library is built and has had preview checks. Connecting reference spectra to sample results and completing the full review process remain unfinished.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
-    "nextStep": "Smpltrax: check saving, comparing and reviewing reference spectra with sample results. A spectrum match alone does not confirm Identity.",
+    "detail": "The reference library is built and has had preview checks. Connecting reference spectra to sample results and completing the full review process remain unfinished. Progress reviewed 14 October: 13 October: instrument-aware reference browsing and immutable method/metadata compatibility were reviewed and merged on main through PRs #5517 and #5521, then promoted to the Optiq release branch through #5527. The lab peptide registry is connected without adopting chemical analytes by name. Focused suites, synthetic browser interactions and seven disposable MariaDB replay checks passed. Those fixtures are not acquired-standard approval or authentic sample-to-COA acceptance. A licensed production web artifact, curated/approved references, qualified native comparison lineage, full sample-linked workflow and approved deployment remain open; nothing here confirms live Library availability. Recorded owner: October 9 recovery — reconcile and finish…; existing Spectral Library source/release custodian.",
+    "evidence": "13 October: merged PRs #5517, #5521 and #5527; #5527 Tests Run and Known Risks explicitly separate fixture proof from authentic sample-linked acceptance and deployment.",
+    "nextStep": "Existing Library/recovery release owner: finish the licensed artifact and remaining authentic reference/sample lineage and review proof, then prepare the scoped Optiq release. A spectrum match alone does not confirm Identity.",
     "area": "Reports & analyses",
     "meetingPriority": true,
     "historicalSnapshots": [
@@ -399,24 +425,37 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Spectral-library owner",
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
         }
+      },
+      {
+        "currentAsOf": "2026-10-10",
+        "status": "built",
+        "stage": 2,
+        "currentDisposition": "The reference library is built and has had preview checks. Connecting reference spectra to sample results and completing the full review process remain unfinished.",
+        "currentOwner": "Spectral-library owner",
+        "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release.",
+        "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+        "nextStep": "Smpltrax: check saving, comparing and reviewing reference spectra with sample results. A spectrum match alone does not confirm Identity.",
+        "recordedProgressCredit": 92,
+        "recordedProgressLabel": "Feature built",
+        "source": "Published PR #30 baseline, reviewed 14 October 2026"
       }
     ],
     "recordedProgressCredit": 92,
     "recordedProgressLabel": "Feature built",
-    "currentAsOf": "2026-10-10",
-    "currentDisposition": "The reference library is built and has had preview checks. Connecting reference spectra to sample results and completing the full review process remain unfinished.",
-    "currentOwner": "Spectral-library owner",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "currentAsOf": "2026-10-14",
+    "currentDisposition": "13 October: instrument-aware reference browsing and immutable method/metadata compatibility were reviewed and merged on main through PRs #5517 and #5521, then promoted to the Optiq release branch through #5527. The lab peptide registry is connected without adopting chemical analytes by name. Focused suites, synthetic browser interactions and seven disposable MariaDB replay checks passed. Those fixtures are not acquired-standard approval or authentic sample-to-COA acceptance. A licensed production web artifact, curated/approved references, qualified native comparison lineage, full sample-linked workflow and approved deployment remain open; nothing here confirms live Library availability.",
+    "currentOwner": "October 9 recovery — reconcile and finish…; existing Spectral Library source/release custodian",
+    "currentEvidenceBoundary": "Read-only reconciliation of dated owner/PR evidence; this list refresh performed no lab tests, staging, activation or live deployment."
   },
   {
     "id": "fentanyl-results",
-    "status": "built",
-    "stage": 2,
-    "title": "Fentanyl test results",
-    "description": "Finish fentanyl result entry, its own Reporting Hub column and the lab-approved COA presentation.",
-    "detail": "The existing Fentanyl result and reporting changes are built, but saving through the final certificate still needs a complete check. Fentanyl is higher priority than QR drop-off. Keep the separate Reporting Hub column and a prominent COA callout; the existing COA Mockups chat owns appearance and the coordinated certificate integration. Mike confirmed the lab-approved Fentanyl wording on 12 October: Method: Immunoassay; Specification: <10 ng/mL. Apply these labels consistently while preserving the existing result-entry and audited reporting workflow. The former method-confirmation question is resolved. Final saved-result-to-certificate proof and release remain pending. No firm release date was agreed.",
-    "evidence": "Mike confirmed on 12 October that Leslie had resolved the wording, supplied Method: Immunoassay; Specification: <10 ng/mL, and identified the test as Fentanyl. Earlier requirements and delivery records are retained in history. This records approved wording, not fresh delivery proof.",
-    "nextStep": "Smpltrax: finish Fentanyl result entry and Reporting Hub/COA proof using Method: Immunoassay and Specification: <10 ng/mL, coordinated with the existing COA owner.",
+    "status": "working",
+    "stage": 1,
+    "title": "Fentanyl analysis: test selection through COA",
+    "description": "Offer Fentanyl as an ordinary selectable analysis, save the order, enter explicit manual Pass/Fail, independently review it and produce the COA with Method: Immunoassay; Specification: <10 ng/mL.",
+    "detail": "The existing Fentanyl result and reporting changes are built, but saving through the final certificate still needs a complete check. Fentanyl is higher priority than QR drop-off. Keep the separate Reporting Hub column and a prominent COA callout; the existing COA Mockups chat owns appearance and the coordinated certificate integration. Mike confirmed the lab-approved Fentanyl wording on 12 October: Method: Immunoassay; Specification: <10 ng/mL. Apply these labels consistently while preserving the existing result-entry and audited reporting workflow. The former method-confirmation question is resolved. Final saved-result-to-certificate proof and release remain pending. No firm release date was agreed. Progress reviewed 14 October: 13 October: the approved report defaults, canonical icon and explicit manual Pass/Fail behavior are implemented and source-reviewed in draft PR #5516, with focused checks and synthetic renderer/picker proof. The current sole Fentanyl owner is Fentanyl — finish full UI workflow testing; the archived Fentynl chat confirmed transfer. Draft PR #5537 implements the ordinary staff-defined analysis, training, results and COA path on the Optiq release branch. Remote validation found dependency, fixture, identity and training-audit defects; repairs and checks are continuing. Full authenticated Fentanyl and arbitrary-analysis journeys, final-head review/merge, qualified release artifacts and live/customer availability are not established. Source review and draft CI do not complete this requirement. Recorded owner: Fentanyl — finish full UI workflow testing; COA Mockups owns design.",
+    "evidence": "13 October: PR #5516 and draft PR #5537, and the current owner’s recorded validation. Archived Fentynl (01a136b5-84c1-7812-8d00-281184f69640) explicitly transferred to Fentanyl — finish full UI workflow testing (01a13867-415d-70d2-98c9-be0317c9a8de). See the 14 October evidence review for dated links and proof boundaries.",
+    "nextStep": "Fentanyl — finish full UI workflow testing: finish corrected remote checks and both ordinary authenticated UI journeys; prove normal test selection, saved order, explicit manual Pass/Fail result, independent review, Reporting Hub and released COA with Method: Immunoassay; Specification: <10 ng/mL. Preserve permissions, training and existing saved metadata; do not infer a verdict or invent prices.",
     "area": "Reports & analyses",
     "meetingPriority": true,
     "historicalSnapshots": [
@@ -518,14 +557,30 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Fentanyl and COA layout owners",
           "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed."
         }
+      },
+      {
+        "currentAsOf": "2026-10-12",
+        "status": "built",
+        "stage": 2,
+        "currentDisposition": "The existing Fentanyl result and reporting changes are built, but saving through the final certificate still needs a complete check. Fentanyl is higher priority than QR drop-off. Keep the separate Reporting Hub column and a prominent COA callout; the existing COA Mockups chat owns appearance and the coordinated certificate integration. Mike confirmed the lab-approved Fentanyl wording on 12 October: Method: Immunoassay; Specification: <10 ng/mL. Apply these labels consistently while preserving the existing result-entry and audited reporting workflow. The former method-confirmation question is resolved. Final saved-result-to-certificate proof and release remain pending. No firm release date was agreed.",
+        "currentOwner": "Fentanyl and COA layout owners",
+        "currentEvidenceBoundary": "Mike confirmed the Fentanyl report wording; no new implementation, deployment or operational check was performed.",
+        "evidence": "Mike confirmed on 12 October that Leslie had resolved the wording, supplied Method: Immunoassay; Specification: <10 ng/mL, and identified the test as Fentanyl. Earlier requirements and delivery records are retained in history. This records approved wording, not fresh delivery proof.",
+        "nextStep": "Smpltrax: finish Fentanyl result entry and Reporting Hub/COA proof using Method: Immunoassay and Specification: <10 ng/mL, coordinated with the existing COA owner.",
+        "recordedProgressCredit": 92,
+        "recordedProgressLabel": "Built locally — STOPPED on owned test hold",
+        "source": "Published PR #30 baseline, reviewed 14 October 2026"
       }
     ],
-    "recordedProgressCredit": 92,
-    "recordedProgressLabel": "Built locally — STOPPED on owned test hold",
-    "currentAsOf": "2026-10-12",
-    "currentDisposition": "The existing Fentanyl result and reporting changes are built, but saving through the final certificate still needs a complete check. Fentanyl is higher priority than QR drop-off. Keep the separate Reporting Hub column and a prominent COA callout; the existing COA Mockups chat owns appearance and the coordinated certificate integration. Mike confirmed the lab-approved Fentanyl wording on 12 October: Method: Immunoassay; Specification: <10 ng/mL. Apply these labels consistently while preserving the existing result-entry and audited reporting workflow. The former method-confirmation question is resolved. Final saved-result-to-certificate proof and release remain pending. No firm release date was agreed.",
-    "currentOwner": "Fentanyl and COA layout owners",
-    "currentEvidenceBoundary": "Mike confirmed the Fentanyl report wording; no new implementation, deployment or operational check was performed."
+    "recordedProgressCredit": 76,
+    "recordedProgressLabel": "In progress — complete UI proof pending",
+    "currentAsOf": "2026-10-14",
+    "currentDisposition": "13 October: the approved report defaults, canonical icon and explicit manual Pass/Fail behavior are implemented and source-reviewed in draft PR #5516, with focused checks and synthetic renderer/picker proof. The current sole Fentanyl owner is Fentanyl — finish full UI workflow testing; the archived Fentynl chat confirmed transfer. Draft PR #5537 implements the ordinary staff-defined analysis, training, results and COA path on the Optiq release branch. Remote validation found dependency, fixture, identity and training-audit defects; repairs and checks are continuing. Full authenticated Fentanyl and arbitrary-analysis journeys, final-head review/merge, qualified release artifacts and live/customer availability are not established. Source review and draft CI do not complete this requirement.",
+    "currentOwner": "Fentanyl — finish full UI workflow testing; COA Mockups owns design",
+    "currentEvidenceBoundary": "Read-only reconciliation of dated owner/PR evidence; this list refresh performed no lab tests, staging, activation or live deployment.",
+    "topPriority": true,
+    "priorityOrder": 1,
+    "priorityLabel": "Immediate focus"
   },
   {
     "id": "requested-white-label-photo",
@@ -1513,10 +1568,10 @@ window.OPTIQ_REQUESTS = [
     "status": "built",
     "title": "Lab documents, forms, logs and quality-issue reports",
     "description": "Create and edit lab documents, forms and logs, keep earlier versions, and record quality issues such as nonconformance reports.",
-    "detail": "Parts of the lab-document tools are built. Importing, editing, saving, viewing earlier versions and using forms, logs and quality-issue reports still need complete checks. The morning meeting names nonconformance records, CAPAs, SOPs and document control for use across all three labs, reducing parallel manual tracking. Audit the existing modules and reusable documents before introducing duplicate tools. Configuration, migration of current trackers, approval roles, permissions, lifecycle and sign-off still need agreement. Cross-lab adoption can proceed without waiting for the complete analytical migration; no new signature or approval policy was settled.",
-    "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification.",
+    "detail": "Parts of the lab-document tools are built. Importing, editing, saving, viewing earlier versions and using forms, logs and quality-issue reports still need complete checks. The morning meeting names nonconformance records, CAPAs, SOPs and document control for use across all three labs, reducing parallel manual tracking. Audit the existing modules and reusable documents before introducing duplicate tools. Configuration, migration of current trackers, approval roles, permissions, lifecycle and sign-off still need agreement. Cross-lab adoption can proceed without waiting for the complete analytical migration; no new signature or approval policy was settled. Progress reviewed 14 October: 13 October: draft PR #5537 connects native SOP/training evidence to the ordinary configured-analysis path. Remote checks exposed account-transition and audit-metadata defects; repairs remain under validation. This is scoped training integration progress, not complete SOP/document control, nonconformance/CAPA or cross-lab adoption. Existing QMS custody, approval/lifecycle decisions and complete versioned-document checks remain open. Recorded owner: Existing lab-document/QMS custodian; Fentanyl — finish full UI workflow testing for its scoped native training integration.",
+    "evidence": "13 October: draft #5537 native training integration and current Fentanyl owner validation record. The archived Lab documents paused handoff is context only and does not establish a new implementation owner or completed QMS adoption.",
     "stage": 2,
-    "nextStep": "Smpltrax: verify usable document and quality modules and the remaining checks. Lab quality owners: choose adoption and tracker transition details, including approval roles and lifecycle.",
+    "nextStep": "Existing QMS and scoped analysis-training owners: finish training verification without duplicating SOPs, then verify the retained document/quality workflows. Lab quality owners retain adoption, tracker-transition and lifecycle decisions.",
     "meetingPriority": true,
     "historicalSnapshots": [
       {
@@ -1575,14 +1630,27 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Lab-document owner",
           "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
         }
+      },
+      {
+        "currentAsOf": "2026-10-12",
+        "status": "built",
+        "stage": 2,
+        "currentDisposition": "Parts of the lab-document tools are built. Importing, editing, saving, viewing earlier versions and using forms, logs and quality-issue reports still need complete checks. The morning meeting names nonconformance records, CAPAs, SOPs and document control for use across all three labs, reducing parallel manual tracking. Audit the existing modules and reusable documents before introducing duplicate tools. Configuration, migration of current trackers, approval roles, permissions, lifecycle and sign-off still need agreement. Cross-lab adoption can proceed without waiting for the complete analytical migration; no new signature or approval policy was settled.",
+        "currentOwner": "Lab-document owner",
+        "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+        "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification.",
+        "nextStep": "Smpltrax: verify usable document and quality modules and the remaining checks. Lab quality owners: choose adoption and tracker transition details, including approval roles and lifecycle.",
+        "recordedProgressCredit": 92,
+        "recordedProgressLabel": "Feature built",
+        "source": "Published PR #30 baseline, reviewed 14 October 2026"
       }
     ],
     "recordedProgressCredit": 92,
     "recordedProgressLabel": "Feature built",
-    "currentAsOf": "2026-10-12",
-    "currentDisposition": "Parts of the lab-document tools are built. Importing, editing, saving, viewing earlier versions and using forms, logs and quality-issue reports still need complete checks. The morning meeting names nonconformance records, CAPAs, SOPs and document control for use across all three labs, reducing parallel manual tracking. Audit the existing modules and reusable documents before introducing duplicate tools. Configuration, migration of current trackers, approval roles, permissions, lifecycle and sign-off still need agreement. Cross-lab adoption can proceed without waiting for the complete analytical migration; no new signature or approval policy was settled.",
-    "currentOwner": "Lab-document owner",
-    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed."
+    "currentAsOf": "2026-10-14",
+    "currentDisposition": "13 October: draft PR #5537 connects native SOP/training evidence to the ordinary configured-analysis path. Remote checks exposed account-transition and audit-metadata defects; repairs remain under validation. This is scoped training integration progress, not complete SOP/document control, nonconformance/CAPA or cross-lab adoption. Existing QMS custody, approval/lifecycle decisions and complete versioned-document checks remain open.",
+    "currentOwner": "Existing lab-document/QMS custodian; Fentanyl — finish full UI workflow testing for its scoped native training integration",
+    "currentEvidenceBoundary": "Read-only reconciliation of dated owner/PR evidence; this list refresh performed no lab tests, staging, activation or live deployment."
   },
   {
     "id": "partner-inventory",
@@ -2348,10 +2416,10 @@ window.OPTIQ_REQUESTS = [
     "status": "working",
     "title": "Lab-specific testing steps",
     "description": "Set up the lab’s preparation, result entry, and review steps for each test.",
-    "detail": "Connect preparation, native instrument results, result history, staff review and the final certificate using existing lab-specific Sample Details and repeat-work contracts. Native peak integration and calculations currently done manually are useful near-term work for Optiq and potentially Mammoth. Inspect incoming injections and mass spectra and preserve source-to-result lineage. Audit and reuse accepted method, QC, capability and reportable-run rules before identifying genuine remaining gaps; transcript silence does not reopen established decisions. Preserve human review and the existing release authority. Prove a representative authorized run through the intended analysis and COA workflow and document the steps for another analyst.",
-    "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification. Mike kept the existing item or follow-through during the 12 October review. This scope review does not add implementation or release proof.",
+    "detail": "Connect preparation, native instrument results, result history, staff review and the final certificate using existing lab-specific Sample Details and repeat-work contracts. Native peak integration and calculations currently done manually are useful near-term work for Optiq and potentially Mammoth. Inspect incoming injections and mass spectra and preserve source-to-result lineage. Audit and reuse accepted method, QC, capability and reportable-run rules before identifying genuine remaining gaps; transcript silence does not reopen established decisions. Preserve human review and the existing release authority. Prove a representative authorized run through the intended analysis and COA workflow and document the steps for another analyst. Progress reviewed 14 October: 13 October: shared autonomous revision source merged via #5504 and the Optiq disabled-worker integration via #5508. Draft #5537 adds the ordinary configured-analysis/training/result/COA path; schema replay fixtures and native provisioning are still under proof. Neither source merges nor remote checks demonstrate the complete scientific review/COA journey. The existing accepted preparation, repeat-work, reportable-run, QC and human release contracts remain authoritative. Retain separate physical vial, injection, preparation and original-data links. Recorded owner: Existing lab-testing/scientific workflow custodians; Fentanyl — finish full UI workflow testing owns the current analysis-creation proof.",
+    "evidence": "13 October: PRs #5504/#5508 and draft #5537; prior testing-workflow evidence already retained its 416-row workbook match and unrun full runtime/live acceptance. No new complete authenticated analysis or released-COA proof is claimed.",
     "stage": 1,
-    "nextStep": "Existing lab-testing owner: reconcile retained Sample Details/native-analysis work, reuse accepted method, QC and repeat-run rules, and prove the complete result-selection → staff-review → COA workflow. Method owners resolve only genuine remaining gaps.",
+    "nextStep": "Existing workflow owners: finish native schema/fixture and actual authenticated analysis proof, preserve source-to-result lineage and separate review/release authority, then document a representative analyst workflow. Fentanyl owner retains the immediate normal-analysis acceptance work.",
     "meetingPriority": true,
     "historicalSnapshots": [
       {
@@ -2431,14 +2499,27 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Existing lab-testing owner",
           "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed."
         }
+      },
+      {
+        "currentAsOf": "2026-10-12",
+        "status": "working",
+        "stage": 1,
+        "currentDisposition": "Connect preparation, native instrument results, result history, staff review and the final certificate using existing lab-specific Sample Details and repeat-work contracts. Native peak integration and calculations currently done manually are useful near-term work for Optiq and potentially Mammoth. Inspect incoming injections and mass spectra and preserve source-to-result lineage. Audit and reuse accepted method, QC, capability and reportable-run rules before identifying genuine remaining gaps; transcript silence does not reopen established decisions. Preserve human review and the existing release authority. Prove a representative authorized run through the intended analysis and COA workflow and document the steps for another analyst.",
+        "currentOwner": "Existing lab-testing owner",
+        "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+        "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification. Mike kept the existing item or follow-through during the 12 October review. This scope review does not add implementation or release proof.",
+        "nextStep": "Existing lab-testing owner: reconcile retained Sample Details/native-analysis work, reuse accepted method, QC and repeat-run rules, and prove the complete result-selection → staff-review → COA workflow. Method owners resolve only genuine remaining gaps.",
+        "recordedProgressCredit": 76,
+        "recordedProgressLabel": "Work in progress",
+        "source": "Published PR #30 baseline, reviewed 14 October 2026"
       }
     ],
     "recordedProgressCredit": 76,
     "recordedProgressLabel": "Work in progress",
-    "currentAsOf": "2026-10-12",
-    "currentDisposition": "Connect preparation, native instrument results, result history, staff review and the final certificate using existing lab-specific Sample Details and repeat-work contracts. Native peak integration and calculations currently done manually are useful near-term work for Optiq and potentially Mammoth. Inspect incoming injections and mass spectra and preserve source-to-result lineage. Audit and reuse accepted method, QC, capability and reportable-run rules before identifying genuine remaining gaps; transcript silence does not reopen established decisions. Preserve human review and the existing release authority. Prove a representative authorized run through the intended analysis and COA workflow and document the steps for another analyst.",
-    "currentOwner": "Existing lab-testing owner",
-    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "currentAsOf": "2026-10-14",
+    "currentDisposition": "13 October: shared autonomous revision source merged via #5504 and the Optiq disabled-worker integration via #5508. Draft #5537 adds the ordinary configured-analysis/training/result/COA path; schema replay fixtures and native provisioning are still under proof. Neither source merges nor remote checks demonstrate the complete scientific review/COA journey. The existing accepted preparation, repeat-work, reportable-run, QC and human release contracts remain authoritative. Retain separate physical vial, injection, preparation and original-data links.",
+    "currentOwner": "Existing lab-testing/scientific workflow custodians; Fentanyl — finish full UI workflow testing owns the current analysis-creation proof",
+    "currentEvidenceBoundary": "Read-only reconciliation of dated owner/PR evidence; this list refresh performed no lab tests, staging, activation or live deployment.",
     "scopeReview": {
       "asOf": "2026-10-12",
       "decision": "keep",
@@ -3061,9 +3142,9 @@ window.OPTIQ_REQUESTS = [
     "status": "built",
     "title": "Automatic Empower imports and recovery",
     "description": "Collect completed Empower runs without a manual export and recover interrupted imports.",
-    "detail": "The sample-ID matching fix was installed and verified on 9 October. Automatic collection of all completed Empower runs, interrupted-import recovery and previously held runs still need confirmation. Conflicting sample IDs stay unmatched. Staff must still enter the correct sample ID; the product name is not a second check. The morning meeting requests finishing the collector on the new computer so completed instrument runs arrive automatically and staff can inspect injections and mass-spectral data. Participants described work underway; that does not verify installation or usability. Complete a representative instrument-to-correct-record journey and document the practical workflow for Brian and other analysts once reliable. Define preliminary sample/QC checks and conditions for notifications when a run is expected but no results arrive. “Over an hour” is an example, not an approved alarm setting. No automatic result release was specified. Proposed completion check: a representative authorized run arrives in the correct records, and another analyst follows the documented workflow.",
-    "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification. Mike kept the existing item or follow-through during the 12 October review. This scope review does not add implementation or release proof.",
-    "nextStep": "Smpltrax: verify collector setup, automatic completed-run collection and recovery. Lab analysts: confirm sample/QC checks and missing-result conditions. Prepare the handoff tutorial after the complete workflow is proven.",
+    "detail": "The sample-ID matching fix was installed and verified on 9 October. Automatic collection of all completed Empower runs, interrupted-import recovery and previously held runs still need confirmation. Conflicting sample IDs stay unmatched. Staff must still enter the correct sample ID; the product name is not a second check. The morning meeting requests finishing the collector on the new computer so completed instrument runs arrive automatically and staff can inspect injections and mass-spectral data. Participants described work underway; that does not verify installation or usability. Complete a representative instrument-to-correct-record journey and document the practical workflow for Brian and other analysts once reliable. Define preliminary sample/QC checks and conditions for notifications when a run is expected but no results arrive. “Over an hour” is an example, not an approved alarm setting. No automatic result release was specified. Proposed completion check: a representative authorized run arrives in the correct records, and another analyst follows the documented workflow. Progress reviewed 14 October: 13 October: autonomous Empower Purity/Identity revision source merged to main in PR #5504; durable completed-import admission and guarded worker/source integration merged to the Optiq release branch in #5508. The worker remains disabled pending separately qualified activation. These source merges do not verify new-computer collector setup, all completed runs, interrupted recovery, previously held runs, reportable lineage or analyst handoff. The independently checked four-job archives, destinations and sample associations were established on 12 October before this update’s baseline and are retained as prior evidence, not new progress. Recorded owner: October 9 recovery — reconcile and finish… with existing collector/result-lineage custodians.",
+    "evidence": "13 October: merged PRs #5504 and #5508 explicitly exclude deployment, activation and customer/scientific release. Prior 12 October result-import owner evidence confirmed four archives, 672 chunks/20 channels and four associations, with the eight pre-existing lab-result entries’ analysis-run lineage still open.",
+    "nextStep": "Existing recovery, collector and scientific-result owners: qualify the installed source/worker tuple and authorized completed-run, recovery and reportable-lineage journey, then document analyst handoff. Preserve held runs and missing-result/QC decisions; do not activate or retry them as part of this list update.",
     "stage": 2,
     "historicalSnapshots": [
       {
@@ -3119,14 +3200,27 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Installed collector ownership/source tuple unverified",
           "currentEvidenceBoundary": "Saved 9 October deployment record confirms installation, server health and certificate-worker readiness. No new real instrument or customer-result check; held runs were not retried."
         }
+      },
+      {
+        "currentAsOf": "2026-10-12",
+        "status": "built",
+        "stage": 2,
+        "currentDisposition": "The sample-ID matching fix was installed and verified on 9 October. Automatic collection of all completed Empower runs, interrupted-import recovery and previously held runs still need confirmation. Conflicting sample IDs stay unmatched. Staff must still enter the correct sample ID; the product name is not a second check. The morning meeting requests finishing the collector on the new computer so completed instrument runs arrive automatically and staff can inspect injections and mass-spectral data. Participants described work underway; that does not verify installation or usability. Complete a representative instrument-to-correct-record journey and document the practical workflow for Brian and other analysts once reliable. Define preliminary sample/QC checks and conditions for notifications when a run is expected but no results arrive. “Over an hour” is an example, not an approved alarm setting. No automatic result release was specified. Proposed completion check: a representative authorized run arrives in the correct records, and another analyst follows the documented workflow.",
+        "currentOwner": "Installed collector ownership/source tuple unverified",
+        "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+        "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification. Mike kept the existing item or follow-through during the 12 October review. This scope review does not add implementation or release proof.",
+        "nextStep": "Smpltrax: verify collector setup, automatic completed-run collection and recovery. Lab analysts: confirm sample/QC checks and missing-result conditions. Prepare the handoff tutorial after the complete workflow is proven.",
+        "recordedProgressCredit": 92,
+        "recordedProgressLabel": "Feature built",
+        "source": "Published PR #30 baseline, reviewed 14 October 2026"
       }
     ],
     "recordedProgressCredit": 92,
     "recordedProgressLabel": "Feature built",
-    "currentAsOf": "2026-10-12",
-    "currentDisposition": "The sample-ID matching fix was installed and verified on 9 October. Automatic collection of all completed Empower runs, interrupted-import recovery and previously held runs still need confirmation. Conflicting sample IDs stay unmatched. Staff must still enter the correct sample ID; the product name is not a second check. The morning meeting requests finishing the collector on the new computer so completed instrument runs arrive automatically and staff can inspect injections and mass-spectral data. Participants described work underway; that does not verify installation or usability. Complete a representative instrument-to-correct-record journey and document the practical workflow for Brian and other analysts once reliable. Define preliminary sample/QC checks and conditions for notifications when a run is expected but no results arrive. “Over an hour” is an example, not an approved alarm setting. No automatic result release was specified. Proposed completion check: a representative authorized run arrives in the correct records, and another analyst follows the documented workflow.",
-    "currentOwner": "Installed collector ownership/source tuple unverified",
-    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "currentAsOf": "2026-10-14",
+    "currentDisposition": "13 October: autonomous Empower Purity/Identity revision source merged to main in PR #5504; durable completed-import admission and guarded worker/source integration merged to the Optiq release branch in #5508. The worker remains disabled pending separately qualified activation. These source merges do not verify new-computer collector setup, all completed runs, interrupted recovery, previously held runs, reportable lineage or analyst handoff. The independently checked four-job archives, destinations and sample associations were established on 12 October before this update’s baseline and are retained as prior evidence, not new progress.",
+    "currentOwner": "October 9 recovery — reconcile and finish… with existing collector/result-lineage custodians",
+    "currentEvidenceBoundary": "Read-only reconciliation of dated owner/PR evidence; this list refresh performed no lab tests, staging, activation or live deployment.",
     "meetingPriority": true,
     "scopeReview": {
       "asOf": "2026-10-12",
@@ -3140,9 +3234,9 @@ window.OPTIQ_REQUESTS = [
     "status": "partial",
     "title": "Remaining Inventory screens and AI tools",
     "description": "Finish the remaining Inventory redesign and assisted entry tools.",
-    "detail": "Inventory improvements are partly built. Safe supplier editing, saving to the correct item and the complete purchasing process still need checks; document-reading tools remain unfinished.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
-    "nextStep": "Smpltrax: prove that switching items or discarding changes cannot overwrite another item, then finish the remaining Inventory checks.",
+    "detail": "Inventory improvements are partly built. Safe supplier editing, saving to the correct item and the complete purchasing process still need checks; document-reading tools remain unfinished. Progress reviewed 14 October: 13 October: the latest Inventory owner explicitly stopped this chat and paused its scheduled follow-through. Inventory has not been installed; old compiler/artifact recovery is not product delivery. Draft PR #5499 remains a fixture candidate, not a completed upgrade or signed-in Inventory journey. Existing source/evidence is preserved. Current transport qualification, full upgrade proof and installer access remain unresolved. This status does not reopen completed Inventory changes or authorize resuming stopped work. Recorded owner: Optiq2 Inventory — fix build root cause… — stopped, preserved custody.",
+    "evidence": "13 October: Optiq2 Inventory — fix build root cause… (01a12ef1-ff0d-7ec1-80cf-e60ccd677f1b) explicitly confirms stopped work and paused schedule; PR #5499 is still draft. Earlier Inventory successors are historical custody evidence.",
+    "nextStep": "Preserved Inventory owner: retain the stopped work and evidence. Any authorized continuation must establish a qualified test route and prove safe edits, full purchasing/receiving and upgrade checks before installation.",
     "stage": 1,
     "meetingPriority": true,
     "historicalSnapshots": [
@@ -3181,14 +3275,27 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Inventory owner",
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
         }
+      },
+      {
+        "currentAsOf": "2026-10-10",
+        "status": "partial",
+        "stage": 1,
+        "currentDisposition": "Inventory improvements are partly built. Safe supplier editing, saving to the correct item and the complete purchasing process still need checks; document-reading tools remain unfinished.",
+        "currentOwner": "Inventory owner",
+        "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release.",
+        "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+        "nextStep": "Smpltrax: prove that switching items or discarding changes cannot overwrite another item, then finish the remaining Inventory checks.",
+        "recordedProgressCredit": 76,
+        "recordedProgressLabel": "Partly delivered",
+        "source": "Published PR #30 baseline, reviewed 14 October 2026"
       }
     ],
     "recordedProgressCredit": 76,
     "recordedProgressLabel": "Partly delivered",
-    "currentAsOf": "2026-10-10",
-    "currentDisposition": "Inventory improvements are partly built. Safe supplier editing, saving to the correct item and the complete purchasing process still need checks; document-reading tools remain unfinished.",
-    "currentOwner": "Inventory owner",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "currentAsOf": "2026-10-14",
+    "currentDisposition": "13 October: the latest Inventory owner explicitly stopped this chat and paused its scheduled follow-through. Inventory has not been installed; old compiler/artifact recovery is not product delivery. Draft PR #5499 remains a fixture candidate, not a completed upgrade or signed-in Inventory journey. Existing source/evidence is preserved. Current transport qualification, full upgrade proof and installer access remain unresolved. This status does not reopen completed Inventory changes or authorize resuming stopped work.",
+    "currentOwner": "Optiq2 Inventory — fix build root cause… — stopped, preserved custody",
+    "currentEvidenceBoundary": "Read-only reconciliation of dated owner/PR evidence; this list refresh performed no lab tests, staging, activation or live deployment."
   },
   {
     "id": "purchasing-status-words",
@@ -5656,9 +5763,9 @@ window.OPTIQ_REQUESTS = [
     "stage": 2,
     "title": "Automatic ion suggestions on COA cards",
     "description": "Suggest matching ions from the selected spectrum using the entered molecular mass, for staff to review.",
-    "detail": "Automatic ion suggestions from a saved spectrum are built and have earlier checks. Saving them, reopening them and carrying them through to the certificate still need a complete installed check.",
-    "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
-    "nextStep": "Smpltrax: prepare the compatible update and verify the full saved-spectrum-to-certificate process. Suggestions do not confirm Identity or replace scientific review.",
+    "detail": "Automatic ion suggestions from a saved spectrum are built and have earlier checks. Saving them, reopening them and carrying them through to the certificate still need a complete installed check. Progress reviewed 14 October: 13 October: the scoped optional spectrum-summary release preparation merged in PR #5532. Its exact projected API/web proof, disposable MariaDB checks and 312 same/zero-difference COA boundary cases support compatibility, not a new installed feature or automatic scientific verdict. Remote immutable artifacts, final release prerequisites and exact Optiq approval remain required. Automatic ion suggestions still require the full saved-spectrum, staff-review and certificate journey. Recorded owner: October 9 recovery — reconcile and finish…; existing spectrum source/release custodian.",
+    "evidence": "13 October: merged PR #5532, Tests Run and Known Risks. No live deployment, customer-data change or Conformity completion is claimed.",
+    "nextStep": "Existing spectrum/release owner: finish immutable preparation and outstanding release checks, coordinate the exact release with Conformity, and obtain the required Optiq approval. Staff continue to review suggested ions; they do not establish Identity.",
     "historicalSnapshots": [
       {
         "asOf": "2026-10-07",
@@ -5693,14 +5800,27 @@ window.OPTIQ_REQUESTS = [
           "currentOwner": "Original scientific source custodian and separate release planning owner",
           "currentEvidenceBoundary": "Current source/proof and installed release remain separately verified stages."
         }
+      },
+      {
+        "currentAsOf": "2026-10-10",
+        "status": "built",
+        "stage": 2,
+        "currentDisposition": "Automatic ion suggestions from a saved spectrum are built and have earlier checks. Saving them, reopening them and carrying them through to the certificate still need a complete installed check.",
+        "currentOwner": "Original scientific source custodian and separate release planning owner",
+        "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release.",
+        "evidence": "Reviewed from saved work records on 10 October. This page update did not run new lab tests or install this feature.",
+        "nextStep": "Smpltrax: prepare the compatible update and verify the full saved-spectrum-to-certificate process. Suggestions do not confirm Identity or replace scientific review.",
+        "recordedProgressCredit": 92,
+        "recordedProgressLabel": "Feature built",
+        "source": "Published PR #30 baseline, reviewed 14 October 2026"
       }
     ],
     "recordedProgressCredit": 92,
     "recordedProgressLabel": "Feature built",
-    "currentAsOf": "2026-10-10",
-    "currentDisposition": "Automatic ion suggestions from a saved spectrum are built and have earlier checks. Saving them, reopening them and carrying them through to the certificate still need a complete installed check.",
-    "currentOwner": "Original scientific source custodian and separate release planning owner",
-    "currentEvidenceBoundary": "Reviewed from saved records; this page update did not run new lab tests or confirm a new release."
+    "currentAsOf": "2026-10-14",
+    "currentDisposition": "13 October: the scoped optional spectrum-summary release preparation merged in PR #5532. Its exact projected API/web proof, disposable MariaDB checks and 312 same/zero-difference COA boundary cases support compatibility, not a new installed feature or automatic scientific verdict. Remote immutable artifacts, final release prerequisites and exact Optiq approval remain required. Automatic ion suggestions still require the full saved-spectrum, staff-review and certificate journey.",
+    "currentOwner": "October 9 recovery — reconcile and finish…; existing spectrum source/release custodian",
+    "currentEvidenceBoundary": "Read-only reconciliation of dated owner/PR evidence; this list refresh performed no lab tests, staging, activation or live deployment."
   },
   {
     "status": "queued",
@@ -5719,7 +5839,7 @@ window.OPTIQ_REQUESTS = [
     "currentDisposition": "Mike confirmed on 12 October that Optiq uses QuickBooks Online. The meeting ended by elevating billing; Mike’s subsequent direct priority review puts Conformity first. Invoice/payment status sync remains the first billing increment. Start with invoiced and paid status synchronization at Optiq. An order number was proposed for matching; confirm how the actual records identify each order. Investigate the real QuickBooks connection and authorization requirements: the meeting suggestion to get an API key was not a verified access specification. Public pricing, package selection and discount policies do not block this first increment. No completion date was agreed.",
     "evidence": "Recorded from the 12 October meeting summary. This new scope has not been verified as implemented or released. Mike confirmed QuickBooks Online during the item-by-item review on 12 October.",
     "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified.",
-    "priorityOrder": 2
+    "priorityOrder": 3
   },
   {
     "status": "optiq",
@@ -5739,7 +5859,7 @@ window.OPTIQ_REQUESTS = [
     "currentDisposition": "Mike selected QuickBooks customer notes as the starting source for Optiq rates, rush charges and customer exceptions on 12 October. Follow the status-sync increment with explicit billing configuration and human-reviewed dry runs. Retain sample IDs, sample names and quantities; support grouped lines where wanted and different layouts for customers who need them. The current grouped format is a starting point, not a universal preference. Collect rates, QuickBooks notes, exceptions and rush rules from the billing lead. The examples of $50 or $100 rush charges and a 10% discount are not approved policies. Use testable rules rather than AI deciding each invoice at runtime; sending every invoice unattended was not agreed. Prove the Optiq pilot before adapting it to ExcelBIS.",
     "evidence": "Recorded from the 12 October meeting summary. This new scope has not been verified as implemented or released. Mike selected QuickBooks customer notes during the item-by-item review on 12 October.",
     "currentEvidenceBoundary": "Meeting requirements updated; implementation and availability have not been newly verified.",
-    "priorityOrder": 3
+    "priorityOrder": 4
   },
   {
     "status": "deferred",
@@ -5763,8 +5883,8 @@ window.OPTIQ_REQUESTS = [
     }
   },
   {
-    "status": "queued",
-    "stage": 0,
+    "status": "working",
+    "stage": 1,
     "meetingPriority": true,
     "id": "coa-oct14-mockups",
     "area": "Reports & analyses",
@@ -5772,13 +5892,13 @@ window.OPTIQ_REQUESTS = [
     "nextReview": true,
     "priorityLabel": "Design review · Wednesday 14 October",
     "description": "Prepare the table version and an all-inclusive COA mockup with first-page vial inspection and the fentanyl presentation.",
-    "detail": "The Wednesday, 14 October 2026 target is a mockup and layout review, not a production-release deadline. Show the COA number in the relevant header instead of the test type. Revisit section sizes and page breaks and explore the discussed top-border/header cleanup. Put vial and cap integrity, intact or cracked condition, vial color and cap color on the first page. “Brown vial, red cap; vial and cap intact” is an example, not a fixed approved template. Include fentanyl and both new Reporting Hub columns in the design package. Final header appearance, page breaks and inspection input vocabulary remain open. Agree on appearance before wiring the approved design to stored results, while preserving the existing COA workflow. The earlier completed summary layout remains a separate closed request. Additional morning requirements: retain the preferred side-by-side information layout. Long client and sample names must remain readable without clipping, collision or overlap. Adjust the affected overflowing field rather than shrinking or rearranging the whole page; wrapping versus font reduction is still open. Make fentanyl prominent and accommodate both normal and unusually large test combinations while preserving useful readable elements. A standalone summary page followed by detailed tables was discussed, not adopted. Proposed completion check: review long-name examples, a normal panel and a large test combination with first-page inspection and an easy-to-find fentanyl callout.",
-    "nextStep": "Existing COA Mockups owner: continue the current revised certificate/table previews for the 14 October review, then coordinate the approved appearance with inspection and Fentanyl integration.",
-    "currentOwner": "Smpltrax; Optiq reviewers for appearance",
-    "currentAsOf": "2026-10-12",
-    "currentDisposition": "The Wednesday, 14 October 2026 target is a mockup and layout review, not a production-release deadline. Show the COA number in the relevant header instead of the test type. Revisit section sizes and page breaks and explore the discussed top-border/header cleanup. Put vial and cap integrity, intact or cracked condition, vial color and cap color on the first page. “Brown vial, red cap; vial and cap intact” is an example, not a fixed approved template. Include fentanyl and both new Reporting Hub columns in the design package. Final header appearance, page breaks and inspection input vocabulary remain open. Agree on appearance before wiring the approved design to stored results, while preserving the existing COA workflow. The earlier completed summary layout remains a separate closed request. Additional morning requirements: retain the preferred side-by-side information layout. Long client and sample names must remain readable without clipping, collision or overlap. Adjust the affected overflowing field rather than shrinking or rearranging the whole page; wrapping versus font reduction is still open. Make fentanyl prominent and accommodate both normal and unusually large test combinations while preserving useful readable elements. A standalone summary page followed by detailed tables was discussed, not adopted. Proposed completion check: review long-name examples, a normal panel and a large test combination with first-page inspection and an easy-to-find fentanyl callout.",
-    "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification. Mike confirmed that COA mockups are handled in the existing COA Mockups chat; inspection presentation and integration follow that owner. This scope review does not add implementation or release proof.",
-    "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+    "detail": "The Wednesday, 14 October 2026 target is a mockup and layout review, not a production-release deadline. Show the COA number in the relevant header instead of the test type. Revisit section sizes and page breaks and explore the discussed top-border/header cleanup. Put vial and cap integrity, intact or cracked condition, vial color and cap color on the first page. “Brown vial, red cap; vial and cap intact” is an example, not a fixed approved template. Include fentanyl and both new Reporting Hub columns in the design package. Final header appearance, page breaks and inspection input vocabulary remain open. Agree on appearance before wiring the approved design to stored results, while preserving the existing COA workflow. The earlier completed summary layout remains a separate closed request. Additional morning requirements: retain the preferred side-by-side information layout. Long client and sample names must remain readable without clipping, collision or overlap. Adjust the affected overflowing field rather than shrinking or rearranging the whole page; wrapping versus font reduction is still open. Make fentanyl prominent and accommodate both normal and unusually large test combinations while preserving useful readable elements. A standalone summary page followed by detailed tables was discussed, not adopted. Proposed completion check: review long-name examples, a normal panel and a large test combination with first-page inspection and an easy-to-find fentanyl callout. Progress reviewed 14 October: 13 October: the existing COA Mockups owner produced one- and two-analyte Conformity comparisons using five replicates and an original-layout two-analyte example. Mike is comparing layout crowding/readability; the current request compares both layouts using the same three analytes and five replicates. These are PDF/PNG design artifacts, not implemented or deployed certificate behavior. No universal analyte-count breakpoint or final layout approval is inferred. The 14 October target remains a design review, not a live-release deadline. Recorded owner: COA Mockups — sole design owner; existing implementation owners integrate approved layouts.",
+    "nextStep": "COA Mockups: complete the same-values three-analyte comparison and finish the design review, retaining long-name, panel-size, inspection and Fentanyl requirements. Existing implementation owners then integrate the approved appearance and prove stored-data-to-COA behavior.",
+    "currentOwner": "COA Mockups — sole design owner; existing implementation owners integrate approved layouts",
+    "currentAsOf": "2026-10-14",
+    "currentDisposition": "13 October: the existing COA Mockups owner produced one- and two-analyte Conformity comparisons using five replicates and an original-layout two-analyte example. Mike is comparing layout crowding/readability; the current request compares both layouts using the same three analytes and five replicates. These are PDF/PNG design artifacts, not implemented or deployed certificate behavior. No universal analyte-count breakpoint or final layout approval is inferred. The 14 October target remains a design review, not a live-release deadline.",
+    "evidence": "13 October: COA Mockups (01a11a22-c368-7763-9946-73412ccd7368), retained r70 one/two-analyte comparison and r71 original-two-analyte PDF/PNG artifacts; subsequent same-values three-analyte comparison request. Paths and owner evidence are recorded in the 14 October review.",
+    "currentEvidenceBoundary": "Read-only reconciliation of dated owner/PR evidence; this list refresh performed no lab tests, staging, activation or live deployment.",
     "historicalSnapshots": [
       {
         "asOf": "2026-10-12",
@@ -5821,13 +5941,26 @@ window.OPTIQ_REQUESTS = [
           "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification.",
           "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed."
         }
+      },
+      {
+        "currentAsOf": "2026-10-12",
+        "status": "queued",
+        "stage": 0,
+        "currentDisposition": "The Wednesday, 14 October 2026 target is a mockup and layout review, not a production-release deadline. Show the COA number in the relevant header instead of the test type. Revisit section sizes and page breaks and explore the discussed top-border/header cleanup. Put vial and cap integrity, intact or cracked condition, vial color and cap color on the first page. “Brown vial, red cap; vial and cap intact” is an example, not a fixed approved template. Include fentanyl and both new Reporting Hub columns in the design package. Final header appearance, page breaks and inspection input vocabulary remain open. Agree on appearance before wiring the approved design to stored results, while preserving the existing COA workflow. The earlier completed summary layout remains a separate closed request. Additional morning requirements: retain the preferred side-by-side information layout. Long client and sample names must remain readable without clipping, collision or overlap. Adjust the affected overflowing field rather than shrinking or rearranging the whole page; wrapping versus font reduction is still open. Make fentanyl prominent and accommodate both normal and unusually large test combinations while preserving useful readable elements. A standalone summary page followed by detailed tables was discussed, not adopted. Proposed completion check: review long-name examples, a normal panel and a large test combination with first-page inspection and an easy-to-find fentanyl callout.",
+        "currentOwner": "Smpltrax; Optiq reviewers for appearance",
+        "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
+        "evidence": "Additional requirements from the corrected 12 October morning meeting summary. Existing delivery status is retained; completion checks below are proposed tests, not meeting decisions or fresh verification. Mike confirmed that COA mockups are handled in the existing COA Mockups chat; inspection presentation and integration follow that owner. This scope review does not add implementation or release proof.",
+        "nextStep": "Existing COA Mockups owner: continue the current revised certificate/table previews for the 14 October review, then coordinate the approved appearance with inspection and Fentanyl integration.",
+        "source": "Published PR #30 baseline, reviewed 14 October 2026"
       }
     ],
     "scopeReview": {
       "asOf": "2026-10-12",
       "decision": "existing-owner",
       "note": "Mike confirmed that COA mockups are handled in the existing COA Mockups chat; inspection presentation and integration follow that owner."
-    }
+    },
+    "recordedProgressCredit": 76,
+    "recordedProgressLabel": "Design work in progress — application integration pending"
   },
   {
     "status": "queued",
@@ -5908,20 +6041,20 @@ window.OPTIQ_REQUESTS = [
     "currentOwner": "Smpltrax"
   },
   {
-    "status": "queued",
-    "stage": 0,
+    "status": "built",
+    "stage": 2,
     "meetingPriority": true,
     "id": "immunoassay-method-wording",
     "area": "Reports & analyses",
     "title": "Fentanyl method and specification wording",
     "description": "Use the lab-confirmed Fentanyl report labels: Method: Immunoassay; Specification: <10 ng/mL.",
-    "detail": "Mike confirmed that Leslie has resolved the method wording and identified Fentanyl as the test on 12 October. Use the exact approved report text: Method: Immunoassay; Specification: <10 ng/mL. The test association, units and label are now settled. Apply this wording consistently to the existing Fentanyl reporting work and verify the rendered certificate. Implementation and release remain unverified.",
+    "detail": "Mike confirmed that Leslie has resolved the method wording and identified Fentanyl as the test on 12 October. Use the exact approved report text: Method: Immunoassay; Specification: <10 ng/mL. The test association, units and label are now settled. Apply this wording consistently to the existing Fentanyl reporting work and verify the rendered certificate. The earlier wording-only update did not verify implementation or release; current evidence follows. Progress reviewed 14 October: 13 October: draft PR #5516 applies Method: Immunoassay and Specification: <10 ng/mL and passed source review, focused catalog/reporting checks and synthetic COA rendering. Explicit saved metadata keeps precedence and staff still enter Pass/Fail manually. The wording is implemented in a candidate, not merged or confirmed available at Optiq. Recorded owner: Fentanyl — finish full UI workflow testing; COA Mockups for appearance.",
     "question": null,
-    "nextStep": "Smpltrax: apply Method: Immunoassay and Specification: <10 ng/mL to Fentanyl reporting, then verify the saved-result-to-COA flow with the existing Fentanyl and COA owners.",
-    "currentAsOf": "2026-10-12",
-    "currentDisposition": "Mike confirmed that Leslie has resolved the method wording and identified Fentanyl as the test on 12 October. Use the exact approved report text: Method: Immunoassay; Specification: <10 ng/mL. The test association, units and label are now settled. Apply this wording consistently to the existing Fentanyl reporting work and verify the rendered certificate. Implementation and release remain unverified.",
-    "currentEvidenceBoundary": "Mike confirmed the Fentanyl report wording; no new implementation, deployment or operational check was performed.",
-    "evidence": "Mike confirmed on 12 October that Leslie had resolved the wording, supplied Method: Immunoassay; Specification: <10 ng/mL, and identified the test as Fentanyl. Earlier requirements and delivery records are retained in history. This records approved wording, not fresh delivery proof.",
+    "nextStep": "Current Fentanyl owner: carry the approved wording through the actual ordered analysis, saved result, review and COA proof; coordinate the certificate appearance with COA Mockups.",
+    "currentAsOf": "2026-10-14",
+    "currentDisposition": "13 October: draft PR #5516 applies Method: Immunoassay and Specification: <10 ng/mL and passed source review, focused catalog/reporting checks and synthetic COA rendering. Explicit saved metadata keeps precedence and staff still enter Pass/Fail manually. The wording is implemented in a candidate, not merged or confirmed available at Optiq.",
+    "currentEvidenceBoundary": "Read-only reconciliation of dated owner/PR evidence; this list refresh performed no lab tests, staging, activation or live deployment.",
+    "evidence": "13 October: PR #5516, Tests Run and independent-review comment at candidate cfb50df; acceptance and release remain held.",
     "historicalSnapshots": [
       {
         "asOf": "2026-10-12",
@@ -5941,8 +6074,21 @@ window.OPTIQ_REQUESTS = [
           "currentEvidenceBoundary": "Requirements recorded from the corrected 12 October morning meeting summary; no new implementation, deployment or operational check was performed.",
           "evidence": "Recorded from the corrected 12 October morning meeting summary. Delivery has not been independently verified. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments."
         }
+      },
+      {
+        "currentAsOf": "2026-10-12",
+        "status": "queued",
+        "stage": 0,
+        "currentDisposition": "Mike confirmed that Leslie has resolved the method wording and identified Fentanyl as the test on 12 October. Use the exact approved report text: Method: Immunoassay; Specification: <10 ng/mL. The test association, units and label are now settled. Apply this wording consistently to the existing Fentanyl reporting work and verify the rendered certificate. Implementation and release remain unverified.",
+        "currentEvidenceBoundary": "Mike confirmed the Fentanyl report wording; no new implementation, deployment or operational check was performed.",
+        "evidence": "Mike confirmed on 12 October that Leslie had resolved the wording, supplied Method: Immunoassay; Specification: <10 ng/mL, and identified the test as Fentanyl. Earlier requirements and delivery records are retained in history. This records approved wording, not fresh delivery proof.",
+        "nextStep": "Smpltrax: apply Method: Immunoassay and Specification: <10 ng/mL to Fentanyl reporting, then verify the saved-result-to-COA flow with the existing Fentanyl and COA owners.",
+        "source": "Published PR #30 baseline, reviewed 14 October 2026"
       }
-    ]
+    ],
+    "currentOwner": "Fentanyl — finish full UI workflow testing; COA Mockups for appearance",
+    "recordedProgressCredit": 92,
+    "recordedProgressLabel": "Implemented candidate — release pending"
   },
   {
     "status": "queued",
