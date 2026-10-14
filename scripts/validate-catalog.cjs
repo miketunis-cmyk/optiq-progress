@@ -26,14 +26,14 @@ for (const item of items.filter(row => row.consolidatedSources)) {
     assert(item.consolidatedSources.every(row => row.status === 'deferred'), `Active work deferred: ${item.id}`);
   }
 }
-const priorityIds = ['conformity', 'quickbooks-status-sync', 'optiq-billing-rules'];
+const priorityIds = ['fentanyl-results', 'conformity', 'quickbooks-status-sync', 'optiq-billing-rules'];
 for (const [index, id] of priorityIds.entries()) {
   const item = items.find(row => row.id === id);
-  assert(item?.topPriority && item.priorityOrder === index + 1, `Priority order must put Conformity first and preserve the billing sequence: ${id}`);
+  assert(item?.topPriority && item.priorityOrder === index + 1, `Priority order must preserve immediate Fentanyl focus, broader Conformity priority and the billing sequence: ${id}`);
 }
-assert.equal(items.filter(row => row.topPriority).length, priorityIds.length, 'Only Conformity and the two billing increments have explicit priority');
+assert.equal(items.filter(row => row.topPriority).length, priorityIds.length, 'Only Fentanyl, Conformity and the two billing increments have explicit priority');
 const fentanyl = items.find(row => row.id === 'fentanyl-results');
 assert(fentanyl?.consolidatedSources?.some(row => row.id === 'immunoassay-method-wording'), 'Confirmed Fentanyl wording must retain its original record within the Fentanyl item');
 assert(items.some(row => row.id === 'conformity'), 'Conformity keeps its own Sample Details scope');
 assert(items.some(row => row.id === 'white-label-attestation'), 'Consent capture remains distinct from document retrieval');
-console.log(`PASS: ${originals.length} original records preserved exactly once in ${items.length} work items; ${groups.length} overlap groups; Conformity first; billing sequence and completion boundaries retained.`);
+console.log(`PASS: ${originals.length} original records preserved exactly once in ${items.length} work items; ${groups.length} overlap groups; immediate Fentanyl focus, Conformity and billing sequence retained.`);
