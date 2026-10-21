@@ -1,4 +1,3 @@
-// Original records remain in data.js. Each source belongs to one work item.
 window.OPTIQ_CONSOLIDATIONS = [
   {
     "id": "fentanyl-results",
@@ -10,13 +9,13 @@ window.OPTIQ_CONSOLIDATIONS = [
     "status": "complete",
     "stage": 3,
     "description": "Offer Fentanyl as an ordinary selectable analysis, save the order, enter explicit manual Pass/Fail, independently review it and produce the COA with Method: Immunoassay; Specification: <10 ng/mL.",
-    "detail": "Fentanyl result entry and reporting are built, including the lab-approved wording confirmed by Mike on 12 October: Method: Immunoassay; Specification: <10 ng/mL. Preserve existing result-entry and audited reporting behavior and keep the separate Reporting Hub column and prominent certificate presentation. Fentanyl remains ahead of QR drop-off. Progress reviewed 20 October: Fentanyl was installed at Optiq on 20 October 2026. It arrives switched off: the Fentanyl test stays a draft until Optiq staff turn it on, and nobody’s access changed. Once it is on, staff select Fentanyl as an ordinary test, save the order, enter Pass or Fail manually, send it for independent review and produce the COA with Method: Immunoassay; Specification: <10 ng/mL. Publishing a new analysis needs the lab’s Analysis Lifecycle training.",
+    "detail": "Fentanyl result entry and reporting are built, including the lab-approved wording confirmed by Mike on 12 October: Method: Immunoassay; Specification: <10 ng/mL. Preserve existing result-entry and audited reporting behavior and keep the separate Reporting Hub column and prominent certificate presentation. Fentanyl remains ahead of QR drop-off. Progress reviewed 21 October: Fentanyl was installed at Optiq on 20 October 2026. Since 21 October 2026 it is turned on and can be ordered at Optiq, and nobody’s access changed. Staff select Fentanyl as an ordinary test, save the order, enter Pass or Fail manually, send it for independent review and produce the COA with Method: Immunoassay; Specification: <10 ng/mL. Publishing a new analysis needs the lab’s Analysis Lifecycle training.",
     "question": null,
-    "nextStep": "Optiq: turn the Fentanyl test on when the lab is ready. Smpltrax: confirm the first released Fentanyl COA once it is in use.",
-    "currentAsOf": "2026-10-20",
+    "nextStep": "Smpltrax: confirm the first released Fentanyl COA once it is in use.",
+    "currentAsOf": "2026-10-21",
     "currentOwner": "Smpltrax",
-    "currentDisposition": "Fentanyl was installed at Optiq on 20 October 2026. It arrives switched off: the Fentanyl test stays a draft until Optiq staff turn it on, and nobody’s access changed. Once it is on, staff select Fentanyl as an ordinary test, save the order, enter Pass or Fail manually, send it for independent review and produce the COA with Method: Immunoassay; Specification: <10 ng/mL. Publishing a new analysis needs the lab’s Analysis Lifecycle training.",
-    "evidence": "20 October: after an independent review, Fentanyl was installed at Optiq on 20 October 2026 during a short maintenance window, and the site was healthy afterwards. The test is installed switched off, and everyone’s access is the same as before.",
+    "currentDisposition": "Fentanyl was installed at Optiq on 20 October 2026. Since 21 October 2026 it is turned on and can be ordered at Optiq, and nobody’s access changed. Staff select Fentanyl as an ordinary test, save the order, enter Pass or Fail manually, send it for independent review and produce the COA with Method: Immunoassay; Specification: <10 ng/mL. Publishing a new analysis needs the lab’s Analysis Lifecycle training.",
+    "evidence": "20 October: after an independent review, Fentanyl was installed at Optiq on 20 October 2026 during a short maintenance window, and the site was healthy afterwards. On 21 October 2026 it was turned on and can now be ordered at Optiq; everyone’s access is the same as before.",
     "topPriority": true,
     "priorityOrder": 1,
     "priorityLabel": "Immediate focus"
