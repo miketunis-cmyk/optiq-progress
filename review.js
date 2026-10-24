@@ -2,7 +2,7 @@
 // Current decisions overlay earlier evidence; original request records remain unchanged.
 window.OPTIQ_REVIEW = {
   "date": "2026-10-23",
-  "summary": "Confirmed scope and status corrections from the 23 October review. New work is planned; no implementation or deployment is implied.",
+  "summary": "Mike and Smpltrax reviewed Optiq’s feedback on 23 October and agreed a focused delivery plan: build on existing capabilities, validate complete workflows, and prioritize practical improvements for lab staff and clients.",
   "updates": {
     "invoice-status": {
       "title": "Invoice status and the Uninvoiced quick filter",
@@ -71,10 +71,10 @@ window.OPTIQ_REVIEW = {
       "currentEvidenceBoundary": "23 October discussion records scope and next steps; it does not establish new implementation, click-test completion or live deployment."
     },
     "analysis-framework": {
-      "title": "Lab testing workflow and recovery of direct result entry",
-      "detail": "Lab-specific Sample Details and repeat-work actions remain an existing draft; the connected testing process comes next. Build on the existing work and preserve source records, original result files, immutable lab capability/method pins and caller permissions. Reuse accepted method, QC, preparation and repeat-run rules; identify only the work that remains. Verify LIMS-generated batches and explicit repreparation/rerun handling where required. Distinguish physical vials from injections and preparation records and preserve reportable-result selection. Native peak integration and calculations currently done manually remain useful near-term work. Prove the complete correct-record → analysis → human review → COA journey and analyst handoff through the existing release authority. Specific Conformity parent/vial rules remain in the Conformity item; collection/import acceptance is separate. Progress reviewed 20 October: Automatic purity and automatic library identity for peptide samples are built and waiting to be installed after Fentanyl. Results are labelled automatic and unreleased until an analyst reviews them. Purity is the combined area of all peptide peaks, shown live in the peak table with a card for each peptide peak. The release adds a Data Analysis area with a list of runs to analyse and purity review, live purity in the peak table, and a fix for Empower run time units. Staff remain responsible for review and release. A practice installation on a copy of Optiq’s data comes next, before it becomes available at Optiq. Lab-defined analyses through results, training and COA are still in draft. 23 October review: recover the existing prep/direct-result-entry work instead of building a replacement. Mike believes it was nearly finished but its owner and stopping point are not verified. Find the existing work, establish what is complete and finish the missing path so staff can enter results in Smpltrax instead of re-entering them from GLIMS Lite. Sterility and endotoxins were named. Profile-controlled views and editing behavior are tracked separately.",
-      "nextStep": "Smpltrax: locate the original direct-entry work and owner, establish the actual remaining work, then finish and click-test the result-entry-to-reporting path alongside the retained analysis programme.",
-      "currentDisposition": "Existing analysis work is retained. Direct lab entry is a recovery-and-completion item; the believed near-complete state and owner have not been verified.",
+      "title": "Lab testing workflow and direct result entry",
+      "detail": "Lab-specific Sample Details and repeat-work actions remain an existing draft; the connected testing process comes next. Build on the existing work and preserve source records, original result files, immutable lab capability/method pins and caller permissions. Reuse accepted method, QC, preparation and repeat-run rules; identify only the work that remains. Verify LIMS-generated batches and explicit repreparation/rerun handling where required. Distinguish physical vials from injections and preparation records and preserve reportable-result selection. Native peak integration and calculations currently done manually remain useful near-term work. Prove the complete correct-record → analysis → human review → COA journey and analyst handoff through the existing release authority. Specific Conformity parent/vial rules remain in the Conformity item; collection/import acceptance is separate. Progress reviewed 20 October: Automatic purity and automatic library identity for peptide samples are built and waiting to be installed after Fentanyl. Results are labelled automatic and unreleased until an analyst reviews them. Purity is the combined area of all peptide peaks, shown live in the peak table with a card for each peptide peak. The release adds a Data Analysis area with a list of runs to analyse and purity review, live purity in the peak table, and a fix for Empower run time units. Staff remain responsible for review and release. A practice installation on a copy of Optiq’s data comes next, before it becomes available at Optiq. Lab-defined analyses through results, training and COA are still in draft. 23 October review: prioritize completion of the existing direct-entry work for sterility and endotoxin results. Smpltrax will locate the implementation, confirm its owner and remaining work, and validate the staff workflow before release. This builds on prior development and aims to eliminate duplicate entry.",
+      "nextStep": "Smpltrax: confirm the existing direct-entry implementation and remaining delivery steps; validate the complete analyst workflow and coordinate permission controls.",
+      "currentDisposition": "Lab-specific Sample Details and repeat-work actions remain an existing draft; the connected testing process comes next. Build on the existing work and preserve source records, original result files, immutable lab capability/method pins and caller permissions. Reuse accepted method, QC, preparation and repeat-run rules; identify only the work that remains. Verify LIMS-generated batches and explicit repreparation/rerun handling where required. Distinguish physical vials from injections and preparation records and preserve reportable-result selection. Native peak integration and calculations currently done manually remain useful near-term work. Prove the complete correct-record → analysis → human review → COA journey and analyst handoff through the existing release authority. Specific Conformity parent/vial rules remain in the Conformity item; collection/import acceptance is separate. Progress reviewed 20 October: Automatic purity and automatic library identity for peptide samples are built and waiting to be installed after Fentanyl. Results are labelled automatic and unreleased until an analyst reviews them. Purity is the combined area of all peptide peaks, shown live in the peak table with a card for each peptide peak. The release adds a Data Analysis area with a list of runs to analyse and purity review, live purity in the peak table, and a fix for Empower run time units. Staff remain responsible for review and release. A practice installation on a copy of Optiq’s data comes next, before it becomes available at Optiq. Lab-defined analyses through results, training and COA are still in draft. 23 October review: prioritize completion of the existing direct-entry work for sterility and endotoxin results. Smpltrax will locate the implementation, confirm its owner and remaining work, and validate the staff workflow before release. This builds on prior development and aims to eliminate duplicate entry.",
       "evidence": "23 October: Mike reported weeks-old direct-entry work and requested recovery rather than a duplicate build. Earlier analysis evidence is retained.",
       "meetingPriority": true,
       "reviewedOn": "2026-10-23",
@@ -82,13 +82,13 @@ window.OPTIQ_REVIEW = {
       "currentEvidenceBoundary": "23 October discussion records scope and next steps; it does not establish new implementation, click-test completion or live deployment."
     },
     "inventory-follow-ups": {
-      "title": "Purchasing and inventory: end-to-end testing and repair",
+      "title": "Purchasing and inventory: complete workflow validation",
       "status": "check",
       "stage": 0,
       "description": "Red-team the existing purchasing and inventory workflows, not just basic item editing.",
-      "detail": "Mike believes the existing work should be ready, but readiness is not verified. Inspect the full supported workflow from purchasing through receiving, stocking, usage and reordering, including the connections between steps. Expect defects, fix them and retest. Review prior findings so recurring failures receive root-cause fixes. Use test data in a test environment; no inventory deletion or live purchasing is authorized by this review. Retain earlier supplier-editing and document-intake requirements and separate core completion records.",
+      "detail": "Build on the existing purchasing and inventory modules with an end-to-end review: purchasing, receiving, stocking, usage and reordering. Smpltrax will test how the steps connect, resolve defects and recheck earlier findings. Supplier editing and document intake remain included. This review uses test data; operational readiness will be confirmed by workflow testing.",
       "nextStep": "Smpltrax: click-test the complete existing purchasing/inventory journey, repair defects and retest; record usability improvements separately from blockers.",
-      "currentDisposition": "Believed ready by Mike; end-to-end usability and behavior still need verification. Do not start another inventory build.",
+      "currentDisposition": "Build on the existing purchasing and inventory modules with an end-to-end review: purchasing, receiving, stocking, usage and reordering. Smpltrax will test how the steps connect, resolve defects and recheck earlier findings. Supplier editing and document intake remain included. This review uses test data; operational readiness will be confirmed by workflow testing.",
       "evidence": "23 October: Mike requested agent click-testing of purchasing and the full inventory lifecycle, with repair and regression checks.",
       "meetingPriority": true,
       "reviewedOn": "2026-10-23",
@@ -96,13 +96,13 @@ window.OPTIQ_REVIEW = {
       "currentEvidenceBoundary": "23 October discussion records scope and next steps; it does not establish new implementation, click-test completion or live deployment."
     },
     "sop-documents": {
-      "title": "Documents, SOPs, NCR and CAPA: workflow and UX review",
+      "title": "Quality workflows: document control, SOPs, NCR and CAPA",
       "status": "check",
       "stage": 0,
       "description": "Test and improve the existing document-control, SOP, nonconformance and corrective-action workflows.",
-      "detail": "Mike believes these workflows have already been built. This is another round of end-to-end testing, repair and usability review, not a new quality-system build. Inspect existing document workflows and the complete problem-reporting, investigation, corrective-action and resolution journey. Challenge confusing language, unnecessary steps, unclear next actions and error-prone interactions. Recheck earlier findings and retest repaired paths. Retain existing approval and training requirements; lab method validation is lab-owned and is not an engineering task unless a specific software need is identified.",
+      "detail": "Validate and refine the existing quality workflows from document approval and training through issue reporting, investigation, corrective action and resolution. Mike has asked for a usability review as well as functional testing, with attention to clear language, efficient steps and obvious next actions. Smpltrax will address findings and retest the complete journey. Method validation remains with the lab.",
       "nextStep": "Smpltrax: red-team the existing workflows and UI/UX, fix functional and usability defects, and click-test the repaired end-to-end paths.",
-      "currentDisposition": "Existing features expected; operational readiness and usability need verification and repair. No successful click-test is claimed.",
+      "currentDisposition": "Validate and refine the existing quality workflows from document approval and training through issue reporting, investigation, corrective action and resolution. Mike has asked for a usability review as well as functional testing, with attention to clear language, efficient steps and obvious next actions. Smpltrax will address findings and retest the complete journey. Method validation remains with the lab.",
       "evidence": "23 October: Mike confirmed existing implementation is expected and requested testing, repair and UI/UX red-teaming.",
       "meetingPriority": true,
       "reviewedOn": "2026-10-23",
@@ -114,9 +114,9 @@ window.OPTIQ_REVIEW = {
       "stage": 0,
       "title": "Audit collected standard runs and the reference library",
       "description": "Check whether already-collected instrument runs contain the standards needed by the existing analysis library.",
-      "detail": "Mike reports a data collector is collecting the lab instrument runs, so reference-standard runs may already be available. Audit collection coverage, identify runs documented as standards and establish whether the existing library can use them. Do this before requesting repeated uploads or reruns. Preserve earlier reference-library work. Collection alone does not establish approved reference identity or scientific qualification; the lab owns those decisions.",
+      "detail": "Use the existing instrument-data collector to identify reference-standard runs already available to the lab. Smpltrax will check collection coverage, supporting records and compatibility with the reference library before requesting additional uploads or runs. The lab retains responsibility for approving and qualifying scientific references.",
       "nextStep": "Smpltrax: audit collected runs and standard metadata, connect verified references to existing library work and identify genuine missing inputs.",
-      "currentDisposition": "The collector may already hold the standards. Coverage, standard identification and library usability remain unverified.",
+      "currentDisposition": "Use the existing instrument-data collector to identify reference-standard runs already available to the lab. Smpltrax will check collection coverage, supporting records and compatibility with the reference library before requesting additional uploads or runs. The lab retains responsibility for approving and qualifying scientific references.",
       "evidence": "23 October: Mike identified the existing collector as the first source to audit; no new instrument access or data inspection was performed.",
       "meetingPriority": true,
       "reviewedOn": "2026-10-23",
@@ -138,17 +138,17 @@ window.OPTIQ_REVIEW = {
       "currentEvidenceBoundary": "23 October discussion records scope and next steps; it does not establish new implementation, click-test completion or live deployment."
     },
     "receipt-emails": {
-      "title": "Sample-received emails: release the company-name greeting",
+      "title": "Company-name receipt emails: release preparation",
       "status": "built",
       "stage": 2,
-      "description": "Release the existing change that names the client company in the receipt-email subject and greeting.",
-      "detail": "The base receipt emails already work. The company-name change is implemented and merged into the Optiq release branch and included in the deployment package. Mike confirmed it is not live and that the company name, rather than necessarily the individual person name, is correct. Locate the release blocker and take the existing change through the normal approved release path. Do not rebuild it. Verify the generated email and live behavior as part of that release.",
-      "nextStep": "Smpltrax: resolve the release blocker for the existing company-name change, prepare its approved release and verify the receipt email.",
-      "currentDisposition": "Built and merged; company-name wording accepted. Mike confirms this change is not live.",
-      "evidence": "23 October: inspected the merged company-name receipt-email change and its deployment-package commit. Mike confirmed the wording and not-live state. No live send or deployment was performed.",
+      "description": "Personalize the existing sample-received email with the client’s company name in the subject and greeting.",
+      "detail": "The company-name enhancement is built and reviewed. It was included in a broader release that has not reached Optiq. Smpltrax is preparing a focused release against the current installed version, preserving recent reporting improvements and avoiding unrelated receipt changes. Release preparation and verification are underway; the enhancement is not yet live.",
+      "nextStep": "Smpltrax: complete the focused release checks and prepare the exact release for approval, then verify company-name emails after deployment.",
+      "currentDisposition": "The company-name enhancement is built and reviewed. It was included in a broader release that has not reached Optiq. Smpltrax is preparing a focused release against the current installed version, preserving recent reporting improvements and avoiding unrelated receipt changes. Release preparation and verification are underway; the enhancement is not yet live.",
+      "evidence": "Source enhancement reviewed and merged in PR #6152. Release investigation on 24 October confirmed the installed version does not contain it. Focused release preparation is in progress.",
       "meetingPriority": true,
       "reviewedOn": "2026-10-23",
-      "currentAsOf": "2026-10-23",
+      "currentAsOf": "2026-10-24",
       "currentEvidenceBoundary": "23 October discussion records scope and next steps; it does not establish new implementation, click-test completion or live deployment."
     },
     "coa-status-language": {
@@ -156,9 +156,9 @@ window.OPTIQ_REVIEW = {
       "status": "check",
       "stage": 0,
       "description": "Verify that a result differing from the submitted claim does not appear as a successful green identity match.",
-      "detail": "Mike believes the mismatch display has already been fixed. Verify a representative mismatch in the PDF and digital card, then close if the existing behavior is correct; do not rebuild by default. Separately, Mike chose to keep the current compound identity naming unchanged, with no special naming change for the request discussed. This display check does not decide scientific identities or authorize report amendments.",
+      "detail": "The mismatch indicator is reported as addressed; Smpltrax will confirm the behavior in representative PDFs and digital cards before closing the item. Mike confirmed that current compound identity names should remain in place. This verification concerns clear report presentation and does not change scientific findings or report history.",
       "nextStep": "Smpltrax: locate the existing fix and verify a mismatched result in the PDF and digital card; close if it passes.",
-      "currentDisposition": "Believed fixed; current behavior needs verification. Existing compound identity naming remains unchanged.",
+      "currentDisposition": "The mismatch indicator is reported as addressed; Smpltrax will confirm the behavior in representative PDFs and digital cards before closing the item. Mike confirmed that current compound identity names should remain in place. This verification concerns clear report presentation and does not change scientific findings or report history.",
       "evidence": "23 October: Mike said the green-status issue may already be handled and decided to retain current COA identity naming.",
       "meetingPriority": true,
       "reviewedOn": "2026-10-23",
@@ -181,7 +181,7 @@ window.OPTIQ_REVIEW = {
       "currentAsOf": "2026-10-23",
       "currentDisposition": "Lazz cannot move between pages with the page buttons and also reported freezing when changing page size. Mike confirmed one ticket covers both pagination behaviors.",
       "currentOwner": "Smpltrax",
-      "evidence": "Confirmed with Mike during the 23 October transcript review. No implementation or live verification is claimed."
+      "evidence": "Scope confirmed with Mike on 23 October. Delivery stage and verification requirements are shown separately."
     },
     {
       "id": "lab-photo-sort",
@@ -197,7 +197,7 @@ window.OPTIQ_REVIEW = {
       "currentAsOf": "2026-10-23",
       "currentDisposition": "This is the specific image-column sorting request. Client-provided photos do not count. A missing lab photo is not proof that a sample has not arrived; lab-wide sample status tracking is a separate item.",
       "currentOwner": "Smpltrax",
-      "evidence": "Confirmed with Mike during the 23 October transcript review. No implementation or live verification is claimed."
+      "evidence": "Scope confirmed with Mike on 23 October. Delivery stage and verification requirements are shown separately."
     },
     {
       "id": "ordered-test-search",
@@ -213,23 +213,23 @@ window.OPTIQ_REVIEW = {
       "currentAsOf": "2026-10-23",
       "currentDisposition": "Mike confirmed the example of finding samples with fentanyl testing ordered. This concerns ordered tests, not result values. It is separate from the intermittent test-copy issue that worked during the meeting.",
       "currentOwner": "Smpltrax",
-      "evidence": "Confirmed with Mike during the 23 October transcript review. No implementation or live verification is claimed."
+      "evidence": "Scope confirmed with Mike on 23 October. Delivery stage and verification requirements are shown separately."
     },
     {
       "id": "sample-status-audit",
-      "title": "Audit sample status tracking across the lab",
+      "title": "Clear, traceable sample status across the lab",
       "area": "Lab operations",
       "status": "queued",
       "stage": 0,
       "description": "Make sample status meaningful, traceable and visible throughout the lab workflow.",
-      "detail": "Mike expanded this beyond the Reporting Hub. Audit what each status means, which action records it and whether staff can reliably establish where the sample is. Physical receipt is the first known gap to investigate. A lab photo is evidence staff currently use, but photo absence must not automatically mean not received. Do not assume physical receipt and completed intake are identical.",
+      "detail": "Review the existing sample lifecycle so staff can establish where each sample is, what its status means and which action recorded it. Start with physical receipt: lab photos are useful supporting evidence, while a missing photo does not establish non-receipt. Confirm how arrival and completed intake are recorded and make those distinctions clear throughout the lab.",
       "nextStep": "Smpltrax: inspect the existing lifecycle and receipt records, identify gaps, and define and verify reliable status transitions and visibility.",
       "meetingPriority": true,
       "reviewedOn": "2026-10-23",
       "currentAsOf": "2026-10-23",
-      "currentDisposition": "Mike expanded this beyond the Reporting Hub. Audit what each status means, which action records it and whether staff can reliably establish where the sample is. Physical receipt is the first known gap to investigate. A lab photo is evidence staff currently use, but photo absence must not automatically mean not received. Do not assume physical receipt and completed intake are identical.",
+      "currentDisposition": "Review the existing sample lifecycle so staff can establish where each sample is, what its status means and which action recorded it. Start with physical receipt: lab photos are useful supporting evidence, while a missing photo does not establish non-receipt. Confirm how arrival and completed intake are recorded and make those distinctions clear throughout the lab.",
       "currentOwner": "Smpltrax",
-      "evidence": "Confirmed with Mike during the 23 October transcript review. No implementation or live verification is claimed."
+      "evidence": "Scope confirmed with Mike on 23 October. Delivery stage and verification requirements are shown separately."
     },
     {
       "id": "stacked-filter-views",
@@ -245,7 +245,7 @@ window.OPTIQ_REVIEW = {
       "currentAsOf": "2026-10-23",
       "currentDisposition": "Mike confirmed that selected filter views and filter buttons should stack rather than replace one another. Shift-click sorting is a separate existing capability, not the filtering requirement.",
       "currentOwner": "Smpltrax",
-      "evidence": "Confirmed with Mike during the 23 October transcript review. No implementation or live verification is claimed."
+      "evidence": "Scope confirmed with Mike on 23 October. Delivery stage and verification requirements are shown separately."
     },
     {
       "id": "lab-specific-filter-views",
@@ -261,23 +261,23 @@ window.OPTIQ_REVIEW = {
       "currentAsOf": "2026-10-23",
       "currentDisposition": "One ticket covers the configuration fix and removing Compliance, Research and Close from Optiq. Those presets carried over from cannabis workflows. Preserve the underlying capabilities for labs that need them. Stacking filters is a separate behavior.",
       "currentOwner": "Smpltrax",
-      "evidence": "Confirmed with Mike during the 23 October transcript review. No implementation or live verification is claimed."
+      "evidence": "Scope confirmed with Mike on 23 October. Delivery stage and verification requirements are shown separately."
     },
     {
       "id": "custom-filter-view-audit",
-      "title": "Audit existing custom filter views",
+      "title": "Custom filter views: consistency and usability",
       "area": "Reporting Hub",
       "status": "check",
       "stage": 0,
       "description": "Make existing custom filter views match the columns and their supported operations.",
-      "detail": "Custom filter views already exist. Mike recalled mismatches between columns and the filtering or sorting operations offered. Inspect column types, available operations and saved-view behavior; do not build a parallel filtering feature.",
+      "detail": "Refine the existing custom filter views so each column offers suitable filtering and sorting options, and saved views return the expected records and order. The review will check the previously reported mismatches and build on the filtering tools already available.",
       "nextStep": "Smpltrax: test representative columns and saved views, fix mismatches and verify the expected rows and ordering.",
       "meetingPriority": true,
       "reviewedOn": "2026-10-23",
       "currentAsOf": "2026-10-23",
-      "currentDisposition": "Custom filter views already exist. Mike recalled mismatches between columns and the filtering or sorting operations offered. Inspect column types, available operations and saved-view behavior; do not build a parallel filtering feature.",
+      "currentDisposition": "Refine the existing custom filter views so each column offers suitable filtering and sorting options, and saved views return the expected records and order. The review will check the previously reported mismatches and build on the filtering tools already available.",
       "currentOwner": "Smpltrax",
-      "evidence": "Confirmed with Mike during the 23 October transcript review. No implementation or live verification is claimed."
+      "evidence": "Scope confirmed with Mike on 23 October. Delivery stage and verification requirements are shown separately."
     },
     {
       "id": "trusted-white-label-approval",
@@ -293,7 +293,7 @@ window.OPTIQ_REVIEW = {
       "currentAsOf": "2026-10-23",
       "currentDisposition": "Mike confirmed a trusted-client permission within existing white-label editing limits; other clients still require approval. Keep a record of what each client generated for billing. A copy-friendly email summary is an interim option if QuickBooks integration is delayed, not a second accounting system. Existing bulk-request, draft and photo work remains separate.",
       "currentOwner": "Smpltrax",
-      "evidence": "Confirmed with Mike during the 23 October transcript review. No implementation or live verification is claimed."
+      "evidence": "Scope confirmed with Mike on 23 October. Delivery stage and verification requirements are shown separately."
     },
     {
       "id": "internal-document-checks",
@@ -309,7 +309,7 @@ window.OPTIQ_REVIEW = {
       "currentAsOf": "2026-10-23",
       "currentDisposition": "Audit the information already held in the LIMS and its existing checks, then automatically compare the relevant COA, manifest and chain-of-custody data and flag discrepancies for review. Identifiers, licenses and sample types were discussed. The operator current checklist can help assess coverage, but the system should run the checks without Lazz initiating a separate tool.",
       "currentOwner": "Smpltrax",
-      "evidence": "Confirmed with Mike during the 23 October transcript review. No implementation or live verification is claimed."
+      "evidence": "Scope confirmed with Mike on 23 October. Delivery stage and verification requirements are shown separately."
     },
     {
       "id": "result-entry-permission-profiles",
@@ -318,14 +318,14 @@ window.OPTIQ_REVIEW = {
       "status": "queued",
       "stage": 0,
       "description": "Show staff the appropriate result grids and control editing behaviors by permission profile.",
-      "detail": "The discussion moved from accidental dragging to profiles controlling visible and locked areas. Inspect existing permissions and add missing controls for behaviors such as drag-to-fill where needed. Mike does not believe dragging is currently configurable by profile; this has not been verified. Keep this connected to direct result entry without treating grid sensitivity as a separate new project.",
+      "detail": "Align result-entry views and editing controls with each staff member’s permission profile. Smpltrax will verify existing visibility and edit restrictions, assess controls such as drag-to-fill, and address missing safeguards. This supports the direct-result-entry workflow and reduces the chance of unintended edits.",
       "nextStep": "Smpltrax: audit the existing profile controls, fill genuine gaps and click-test permitted and restricted result-entry behavior.",
       "meetingPriority": true,
       "reviewedOn": "2026-10-23",
       "currentAsOf": "2026-10-23",
-      "currentDisposition": "The discussion moved from accidental dragging to profiles controlling visible and locked areas. Inspect existing permissions and add missing controls for behaviors such as drag-to-fill where needed. Mike does not believe dragging is currently configurable by profile; this has not been verified. Keep this connected to direct result entry without treating grid sensitivity as a separate new project.",
+      "currentDisposition": "Align result-entry views and editing controls with each staff member’s permission profile. Smpltrax will verify existing visibility and edit restrictions, assess controls such as drag-to-fill, and address missing safeguards. This supports the direct-result-entry workflow and reduces the chance of unintended edits.",
       "currentOwner": "Smpltrax",
-      "evidence": "Confirmed with Mike during the 23 October transcript review. No implementation or live verification is claimed."
+      "evidence": "Scope confirmed with Mike on 23 October. Delivery stage and verification requirements are shown separately."
     },
     {
       "id": "customer-results-api",
@@ -341,23 +341,23 @@ window.OPTIQ_REVIEW = {
       "currentAsOf": "2026-10-23",
       "currentDisposition": "New reusable integration, with Frontier as the first use case. Provide revocable customer integration credentials restricted to the correct lab account and authorized records; check access on every request. Include the information reported on their COAs, PDF retrieval, structured result data and verification-card access or embed links. Webhooks can notify customers when reports are released or revised. Keep secret credentials on the customer server, not in public browser code. Start read-only and provide a documented integration example.",
       "currentOwner": "Smpltrax",
-      "evidence": "Confirmed with Mike during the 23 October transcript review. No implementation or live verification is claimed."
+      "evidence": "Scope confirmed with Mike on 23 October. Delivery stage and verification requirements are shown separately."
     },
     {
       "id": "boarding-pass-parity",
-      "title": "Recover Apple Wallet / boarding pass parity work",
+      "title": "Wallet-ready COA cards: continue boarding pass parity",
       "area": "Client portal",
       "status": "check",
       "stage": 0,
-      "description": "Recover the previous wallet-card investigation and check existing Apple developer prerequisites.",
-      "detail": "Mike recalled earlier work called boarding pass parity: a COA card with familiar boarding-pass presentation and save-to-wallet behavior. An Apple developer account may already exist. Locate that work and verify the available account/membership and Wallet signing setup before creating a new project or assuming a purchase. The original work and credentials have not yet been located or verified.",
-      "nextStep": "Smpltrax: locate the boarding pass parity work, verify existing Apple prerequisites and identify the actual remaining implementation.",
+      "description": "Build on the earlier wallet-card investigation and confirm the remaining delivery requirements.",
+      "detail": "Continue the earlier “boarding pass parity” concept: a COA card with familiar presentation and save-to-wallet behavior. Smpltrax will locate the prior implementation and research, verify the existing Apple developer and signing setup, and identify what remains. Account availability and implementation status still need confirmation.",
+      "nextStep": "Smpltrax: review the existing wallet-card work and developer setup, then define the remaining implementation.",
       "meetingPriority": true,
       "reviewedOn": "2026-10-23",
       "currentAsOf": "2026-10-23",
-      "currentDisposition": "Mike recalled earlier work called boarding pass parity: a COA card with familiar boarding-pass presentation and save-to-wallet behavior. An Apple developer account may already exist. Locate that work and verify the available account/membership and Wallet signing setup before creating a new project or assuming a purchase. The original work and credentials have not yet been located or verified.",
+      "currentDisposition": "Continue the earlier “boarding pass parity” concept: a COA card with familiar presentation and save-to-wallet behavior. Smpltrax will locate the prior implementation and research, verify the existing Apple developer and signing setup, and identify what remains. Account availability and implementation status still need confirmation.",
       "currentOwner": "Smpltrax",
-      "evidence": "Confirmed with Mike during the 23 October transcript review. No implementation or live verification is claimed."
+      "evidence": "Scope confirmed with Mike on 23 October. Delivery stage and verification requirements are shown separately."
     },
     {
       "id": "abandoned-order-reminders",
@@ -373,7 +373,7 @@ window.OPTIQ_REVIEW = {
       "currentAsOf": "2026-10-23",
       "currentDisposition": "Mike confirmed friendly reminders with a direct link to resume the order. Paid orders awaiting samples need a distinct message with shipping/drop-off instructions. Stop the appropriate reminders when the step is completed or the customer opts out. Timing and final messages remain to be defined; this review does not activate outbound messages.",
       "currentOwner": "Smpltrax",
-      "evidence": "Confirmed with Mike during the 23 October transcript review. No implementation or live verification is claimed."
+      "evidence": "Scope confirmed with Mike on 23 October. Delivery stage and verification requirements are shown separately."
     }
   ]
 };
