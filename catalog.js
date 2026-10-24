@@ -1,4 +1,12 @@
 'use strict';
+// Original records remain intact; confirmed additions and review updates retain provenance.
+const review = window.OPTIQ_REVIEW || {updates:{}, additions:[]};
+const originalSourceIds = new Set(window.OPTIQ_REQUESTS.map(request => request.id));
+for (const request of review.additions) {
+  if (originalSourceIds.has(request.id)) throw new Error(`Duplicate review source: ${request.id}`);
+  originalSourceIds.add(request.id);
+  window.OPTIQ_REQUESTS.push(request);
+}
 // A lossless view over the original requests: original IDs, statuses and history stay intact.
 const sourceById = new Map(window.OPTIQ_REQUESTS.map(request => [request.id, request]));
 const consolidationBySource = new Map();
@@ -24,4 +32,13 @@ window.OPTIQ_CATALOG = window.OPTIQ_REQUESTS.flatMap(request => {
     currentEvidenceBoundary: group.currentEvidenceBoundary || 'Consolidation preserves the original evidence and delivery status; no new implementation or release verification.',
     evidence: group.evidence || `Consolidated ${sources.length} overlapping records on 12 October. Original requirements, progress and evidence are retained below; this is a planning update.`
   }];
+});
+
+const catalogIds = new Set(window.OPTIQ_CATALOG.map(request => request.id));
+for (const id of Object.keys(review.updates)) {
+  if (!catalogIds.has(id)) throw new Error(`Review update has no work item: ${id}`);
+}
+window.OPTIQ_CATALOG = window.OPTIQ_CATALOG.map(request => {
+  const update = review.updates[request.id];
+  return update ? {...request, ...update, previousReview: request} : request;
 });

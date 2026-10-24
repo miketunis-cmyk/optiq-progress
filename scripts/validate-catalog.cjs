@@ -4,13 +4,13 @@ const path = require('node:path');
 const vm = require('node:vm');
 const root = path.resolve(__dirname, '..');
 const context = {window: {}};
-for (const filename of ['data.js', 'consolidations.js', 'catalog.js']) {
+for (const filename of ['data.js', 'consolidations.js', 'review.js', 'catalog.js']) {
   vm.runInNewContext(fs.readFileSync(path.join(root, filename), 'utf8'), context, {filename});
 }
 const {OPTIQ_REQUESTS: originals, OPTIQ_CATALOG: items, OPTIQ_CONSOLIDATIONS: groups} = context.window;
 assert.equal(new Set(originals.map(row => row.id)).size, originals.length, 'Original IDs must be unique');
 assert.equal(new Set(items.map(row => row.id)).size, items.length, 'Work-item IDs must be unique');
-const covered = items.flatMap(row => row.consolidatedSources || [row]);
+const covered = items.flatMap(row => row.consolidatedSources || [row.previousReview || row]);
 assert.equal(covered.length, originals.length, 'No source may be dropped or repeated');
 assert.equal(new Set(covered.map(row => row.id)).size, originals.length, 'Every source belongs to exactly one item');
 for (const source of originals) {
