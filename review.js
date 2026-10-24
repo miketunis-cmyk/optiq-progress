@@ -377,3 +377,57 @@ window.OPTIQ_REVIEW = {
     }
   ]
 };
+
+// 24 October release-evidence reconciliation. Original source records remain in history.
+Object.assign(window.OPTIQ_REVIEW.updates, {
+  "coa-oct14-mockups": {
+    "status": "partial",
+    "stage": 2,
+    "title": "COA 2.0: installed layout and remaining qualification",
+    "nextReview": false,
+    "priorityLabel": "",
+    "currentAsOf": "2026-10-24",
+    "evidenceBasis": "Installed release checked",
+    "description": "COA 2.0 is installed at Optiq; finish qualification of the remaining layout cases against the agreed design.",
+    "detail": "The earlier statement that COA 2.0 was not installed is superseded. The installed release includes the COA 2.0 renderer and receipt-inspection storage. A recorded 24 October production check verified the generated PDF and browser preview for a real amended COA, including the corrected Confirmed identity wording. The new renderer applies to newly generated certificates; existing released artifacts are preserved. This does not establish that every long-name, multi-analyte, Fentanyl and page-break case in the original design request has passed.",
+    "nextStep": "Smpltrax: reconcile the remaining layout cases with existing release proof and verify any uncovered cases; retain the approved layout and existing released certificates.",
+    "currentDisposition": "COA 2.0 is installed. Remaining layout qualification is separate from the completed installation.",
+    "evidence": "24 October: the live version endpoint matches the recorded COA 2.0 plus confirmed-identity release. The release completion record includes a real browser preview and downloaded PDF check. No new report was generated during this list audit.",
+    "currentEvidenceBoundary": "Installed code and the recorded certificate check are confirmed; this is not a claim that every original layout acceptance case has been tested."
+  },
+  "stable-released-coa-links": {
+    "status": "partial",
+    "stage": 2,
+    "currentAsOf": "2026-10-24",
+    "evidenceBasis": "Installed scope checked",
+    "detail": "The installed release includes the ordinary permanent COA-link implementation. The original request also covers customer-branded links and release/recovery behavior. The source contract treats stable white-label publication as a separate scope, so installation of ordinary links does not close the whole request.",
+    "nextStep": "Smpltrax: confirm remaining white-label link and recovery coverage against the installed release before closing the combined request.",
+    "currentDisposition": "Ordinary permanent-link code is installed; the combined white-label and recovery requirements remain to be verified.",
+    "evidence": "24 October: the live release identity and its recorded source contracts confirm the ordinary permanent-link implementation in the installed baseline. This audit did not exercise customer links or publish replacement certificates.",
+    "currentEvidenceBoundary": "Code inclusion is confirmed. End-to-end link behavior and the full white-label scope were not freshly tested."
+  },
+  "client-bulk-white-label": {
+    "status": "partial",
+    "stage": 2,
+    "currentAsOf": "2026-10-24",
+    "evidenceBasis": "Installed scope checked",
+    "detail": "The installed release includes bulk white-label request and review-screen changes. Earlier records also cover private-draft editing and photo-selection fixes. Full coverage of the combined private request → staff edit → save → reopen → correct PDF journey still needs verification, including printed client names and customer-requested photos. Preserve official released certificates. Consent capture, document retrieval and brand profiles remain separate requirements.",
+    "nextStep": "Smpltrax: verify the remaining private-draft, authorized-photo and PDF workflow against the installed release, retaining prior proof where it covers the same behavior.",
+    "currentDisposition": "Bulk request and review changes are included in the installed release; the full combined workflow is not yet verified.",
+    "evidence": "24 October: the live release identity and recorded release source contracts include the bulk white-label pages and review changes. Existing checks are retained; this audit did not submit customer requests or generate white-label reports.",
+    "currentEvidenceBoundary": "Installed scope does not prove every private-draft, photo and PDF interaction. The remaining checks stay open."
+  },
+  "inspection-rules": {
+    "status": "working",
+    "stage": 1,
+    "currentAsOf": "2026-10-24",
+    "evidenceBasis": "Installed scope checked",
+    "detail": "COA 2.0 receipt-inspection storage and certificate presentation are installed. This does not establish delivery of the full receiving and Reporting Hub editing workflow. Verify vial condition, cap and seal integrity, colors and persistence against the existing controls. Confirm the separate Reporting Hub section, correction-with-reason behavior and saved-observation-to-COA journey before marking them delivered. Remaining vocabulary and customer follow-up rules need lab agreement where not already settled.",
+    "nextStep": "Smpltrax: verify which receiving and Reporting Hub controls are installed, finish confirmed gaps, and check saved observations through to the COA; resolve remaining vial-check wording with the lab.",
+    "currentDisposition": "Storage and COA presentation are installed; the broader visual-inspection workflow remains open.",
+    "evidence": "24 October: the installed COA 2.0 source contract includes receipt-inspection storage and presentation. The full intake/Reporting Hub interaction was not tested during this audit; earlier implementation records are retained.",
+    "currentEvidenceBoundary": "Do not infer that all inspection controls or correction actions are live from the COA renderer and storage release."
+  }
+});
+
+Object.assign(window.OPTIQ_REVIEW.updates["receipt-emails"], {nextStep: "Mike: approve the prepared release. Smpltrax: then deploy it and verify the installed company-name receipt email.", currentEvidenceBoundary: "The release package and prerequisite checks are complete. Deployment is awaiting Mike’s approval; the company-name enhancement is not live."});
