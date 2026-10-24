@@ -55,3 +55,6 @@
 @media print{.notes-filter-group{display:none}.stage-context{margin:8px 0 18px}}
 
 .original-notes{margin-top:18px;border-top:1px solid var(--line);padding-top:14px}.original-notes summary{cursor:pointer;font-weight:700}.original-notes article{margin-top:18px;padding-top:12px;border-top:1px solid var(--line)}.original-notes h4{margin:0 0 8px}.original-notes article p{margin:8px 0}
+
+/* Dated evidence replaces illustrative progress bars. */
+.status-record{display:flex;flex-direction:column;gap:4px;margin-top:10px;font-size:12px;line-height:1.4;color:var(--muted)}

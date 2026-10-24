@@ -26,7 +26,7 @@ const icon=status=>status==='complete'?'<svg viewBox="0 0 20 20" aria-hidden="tr
 function renderSummary(){
   document.querySelector('#summary').innerHTML=['queued','working','built','complete'].map(status=>`<button class="summary-button" type="button" data-status="${status}" aria-pressed="${selectedStatus===status}"><span class="summary-number">${requests.filter(r=>progressStage(r)===status).length}</span><span class="summary-label">${statuses[status].label}</span></button>`).join('');
   const context=document.querySelector('#stage-context');
-  if(context)context.textContent=`Progress distinguishes saved delivery evidence from review decisions. Verification is pending for ${(n=>n===1?'1 request':n+' requests')(requests.filter(r=>progressStage(r)==='unverified').length)}; ${requests.filter(r=>r.status==='deferred').length} requests are deferred and ${requests.filter(r=>r.status==='proposed').length} are ideas.`;
+  if(context)context.textContent=`Statuses reflect the dated evidence on each item. This page update is not a fresh live test of every feature. Verification is pending for ${(n=>n===1?'1 request':n+' requests')(requests.filter(r=>progressStage(r)==='unverified').length)}; ${requests.filter(r=>r.status==='deferred').length} requests are deferred and ${requests.filter(r=>r.status==='proposed').length} are ideas.`;
 }
 function renderProgressFilters(){
   const container=document.querySelector('#progress-filters');
@@ -46,35 +46,17 @@ function renderProgressFilters(){
 }
 function labQuestions(){return requests.filter(r=>requestNotes(r).includes('optiq')&&r.question).sort((a,b)=>Number(Boolean(b.topPriority))-Number(Boolean(a.topPriority))||(a.priorityOrder||0)-(b.priorityOrder||0)||Number(Boolean(b.nextReview))-Number(Boolean(a.nextReview)));}
 function renderLabQuestions(){document.querySelector('#lab-questions').innerHTML=labQuestions().map((r,i)=>`<article class="question"><div class="question-label"><span class="question-number">${i+1}</span><h3>${escapeHtml(r.title)}</h3></div><div><p>${escapeHtml(r.question)}</p>${r.reviewPreview?`<a class="review-preview-link" href="${escapeHtml(r.reviewPreview)}">View approval preview</a>`:''}</div></article>`).join('');}
-// Milestone positions are categorical, not estimates of work completed.
-// Foundation credit is tied to an existing capability recorded in the evidence.
-const foundations={
-  "coa-summary-layout": "Multi-page COA tools and the detailed Conformity layout are built; combining and releasing the new tests remains.",
-  "requested-white-label-photo": "Photo selection exists for eligible private drafts; customer requests awaiting approval need a separate fix.",
-  "inspection-checks": "Receiving checks already exist; seal observations still need to save correctly.",
-  "frozen-sort": "Rows can already be sorted; keeping them still while editing is planned.",
-  "printed-labels": "Label printing already exists; separate symbol and test-name choices are planned.",
-  "manufacturer-profiles": "Manufacturer names can be entered by hand; saved choices are planned.",
-  "client-bulk-white-label": "The client bulk white-label request screen is built and tested; current Optiq availability is not confirmed.",
-  "blend-potency": "The COA layout is ready; entering each peptide’s result still needs work.",
-  "certified-imports": "Values can be entered by hand; spreadsheet export and document import are planned."
-};
-function engineeringProgress(r){
-  if(r.id==='verify-results-font'&&r.status!=='complete')return {label:'Design ready',fill:92,basis:r.currentDisposition||r.evidence};
-  if(r.status==='check')return {label:'Verification pending',fill:28,basis:r.currentDisposition||r.evidence};
-  if(r.status==='deferred')return {label:'Deferred request',fill:28,basis:r.currentDisposition||r.evidence};
-  if(r.status==='proposed')return {label:'Idea recorded',fill:28,basis:r.currentDisposition||r.evidence};
-  if(r.id==='multi-lab-login')return {label:'Plan ready',fill:55,basis:r.currentDisposition||r.evidence};
-  if(r.id==='grid-widths')return {label:'Readability released; width choices built',fill:92,basis:r.currentDisposition||r.evidence};
-  if(r.status==='complete')return {label:'Finished',fill:100,basis:r.currentDisposition||r.evidence};
-  if(r.id==='universal-import')return {label:'Some parts built',fill:76,basis:r.currentDisposition||r.evidence};
-  if(r.status==='partial')return {label:'Partly delivered',fill:76,basis:r.currentDisposition||r.evidence};
-  if(r.stage===2)return {label:'Feature built',fill:92,basis:r.currentDisposition||r.evidence};
-  if(foundations[r.id])return {label:'Starting tools ready',fill:55,basis:r.currentDisposition||r.evidence};
-  if(r.stage===1)return {label:'Work in progress',fill:76,basis:r.currentDisposition||r.evidence};
-  return {label:'Request recorded',fill:28,basis:r.currentDisposition||r.evidence};
+// Show dated records instead of unmeasured completion percentages.
+function evidenceBasis(r){
+  if(r.evidenceBasis)return r.evidenceBasis;
+  if(r.id==='receipt-emails')return 'Release prepared · not live';
+  if(r.reviewedOn)return 'Scope confirmed with Mike';
+  return r.status==='complete'?'Earlier completion record':'Earlier status record';
 }
-function progressBar(r){if(['unverified','deferred','proposed'].includes(progressStage(r)))return '';const p=engineeringProgress(r);return `<div class="engineering-progress" title="${escapeHtml(p.basis)}"><div class="milestone-track" role="img" aria-label="Progress: ${escapeHtml(p.label)}. ${escapeHtml(p.basis)}"><span style="width:${p.fill}%"></span><i></i><i></i><i></i></div><span class="milestone-label">${escapeHtml(p.label)}</span></div>`;}
+function statusRecord(r){
+  const date=r.currentAsOf||r.reviewedOn;
+  return '<div class="status-record"><span>'+escapeHtml(evidenceBasis(r))+'</span><span>Status recorded: '+(date?'<time datetime="'+escapeHtml(date)+'">'+escapeHtml(date)+'</time>':'date not recorded')+'</span></div>';
+}
 function requestReference(r){return [r.area,r.priorityLabel||(r.nextReview?'Next review':r.meetingPriority?'Meeting priority':'')].filter(Boolean).join(' · ');}
 function originalNotes(r){
   if(!r.consolidatedSources)return '';
@@ -83,13 +65,13 @@ function originalNotes(r){
 function previousReviewNotes(r){
   if(!r.previousReview)return "";
   const previous=r.previousReview;
-  return `<details class="original-notes"><summary>Earlier work-item record — superseded by the 23 October review</summary><article><h4>${escapeHtml(previous.title)}</h4><p>${escapeHtml(previous.detail)}</p><p>${escapeHtml(previous.evidence||"")}</p></article></details>`;
+  return `<details class="original-notes"><summary>Earlier work-item record — superseded by the dated update above</summary><article><h4>${escapeHtml(previous.title)}</h4><p>${escapeHtml(previous.detail)}</p><p>${escapeHtml(previous.evidence||"")}</p></article></details>`;
 }
 function row(r){
   const expanded=expandedRequests.has(r.id);
   const stage=progressStage(r);
   const notes=requestNotes(r).map(note=>`<span class="request-note ${note}">${escapeHtml(noteLabels[note])}</span>`).join('');
-  return `<tr class="request-row is-${r.status}" data-request="${r.id}"><td class="request-name"><div class="request-title-line"><button class="row-toggle" type="button" aria-label="${expanded?'Hide':'Show'} details for ${escapeHtml(r.title)}" aria-expanded="${expanded}" aria-controls="detail-${r.id}" data-detail="${r.id}"><span class="expand-mark" aria-hidden="true">${expanded?'−':'+'}</span></button><span class="request-title">${escapeHtml(r.title)}</span></div><span class="row-reference">${escapeHtml(requestReference(r))}</span></td><td class="request-status"><span class="badge ${stage}">${icon(stage)}${escapeHtml(statuses[stage].label)}</span>${notes?`<div class="request-notes">${notes}</div>`:''}${progressBar(r)}</td><td class="request-next ${r.question?'lab-next':''}">${escapeHtml(r.question||r.nextStep||r.description)}</td></tr><tr class="detail-row" id="detail-${r.id}" ${expanded?'':'hidden'}><td colspan="3"><div class="row-detail"><p>${escapeHtml(r.description)}</p><p>${escapeHtml(r.detail)}</p><span>${escapeHtml(r.evidence)}</span>${originalNotes(r)}${previousReviewNotes(r)}${r.reviewPreview?(document.querySelector('#approval-preview-template')?.innerHTML||''):''}</div></td></tr>`;
+  return `<tr class="request-row is-${r.status}" data-request="${r.id}"><td class="request-name"><div class="request-title-line"><button class="row-toggle" type="button" aria-label="${expanded?'Hide':'Show'} details for ${escapeHtml(r.title)}" aria-expanded="${expanded}" aria-controls="detail-${r.id}" data-detail="${r.id}"><span class="expand-mark" aria-hidden="true">${expanded?'−':'+'}</span></button><span class="request-title">${escapeHtml(r.title)}</span></div><span class="row-reference">${escapeHtml(requestReference(r))}</span></td><td class="request-status"><span class="badge ${stage}">${icon(stage)}${escapeHtml(statuses[stage].label)}</span>${notes?`<div class="request-notes">${notes}</div>`:''}${statusRecord(r)}</td><td class="request-next ${r.question?'lab-next':''}">${escapeHtml(r.question||r.nextStep||r.description)}</td></tr><tr class="detail-row" id="detail-${r.id}" ${expanded?'':'hidden'}><td colspan="3"><div class="row-detail"><p>${escapeHtml(r.description)}</p><p>${escapeHtml(r.detail)}</p><p><strong>Evidence:</strong> ${escapeHtml(r.evidence)}</p>${r.currentEvidenceBoundary?`<p>${escapeHtml(r.currentEvidenceBoundary)}</p>`:''}${originalNotes(r)}${previousReviewNotes(r)}${r.reviewPreview?(document.querySelector('#approval-preview-template')?.innerHTML||''):''}</div></td></tr>`;
 }
 function visibleRequests(){
   const terms=query.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
