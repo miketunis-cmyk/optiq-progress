@@ -431,3 +431,26 @@ Object.assign(window.OPTIQ_REVIEW.updates, {
 });
 
 Object.assign(window.OPTIQ_REVIEW.updates["receipt-emails"], {nextStep: "Mike: approve the prepared release. Smpltrax: then deploy it and verify the installed company-name receipt email.", currentEvidenceBoundary: "The release package and prerequisite checks are complete. Deployment is awaiting Mike’s approval; the company-name enhancement is not live."});
+
+// 24 October cart decisions: payment before order placement; Optiq owns pricing input.
+for (const [id, update] of Object.entries({
+  "portal-price-visibility": {
+    "detail": "The 23 October decision supersedes the earlier deferred/hidden-public-pricing direction. Build a low-friction, mobile-friendly ordering journey with public prices and clear sample-submission instructions. Returning clients sign in before payment for their agreed pricing and can reuse My Products information with the new lot details. Keep complex promotions and unapproved pricing rules out of the initial scope. Click-test new-customer and returning-customer journeys before accepting the design. Saved results must not become results for a new lot. Coordinate payment work with the existing QuickBooks owner. 24 October clarification: customers enter required sample information and review the total before payment. Payment must succeed before the order is placed; unfinished or unsuccessful checkout remains a draft. Payment is required by default for every client. The lab can turn off upfront payment through a per-client setting for approved clients with agreed billing terms. Portal invitation alone does not waive payment.",
+    "nextStep": "Smpltrax: prepare and click-test prepaid new-customer and returning-customer checkout, plus the approved client-terms exception. Optiq must supply approved pricing before real charges.",
+    "currentDisposition": "Payment-before-order placement is agreed, with a per-client exception for approved billing terms. Checkout implementation and click-testing remain unverified.",
+    "evidence": "23 October: Mike selected familiar low-friction checkout and repeat ordering through My Products. 24 October: Mike clarified that payment precedes order placement, not sample-data entry, and confirmed payment is required by default with a client-specific terms setting.",
+    "currentAsOf": "2026-10-24",
+    "currentEvidenceBoundary": "These are confirmed product requirements, not evidence that checkout or the terms setting is implemented or live."
+  },
+  "optiq-billing-rules": {
+    "status": "optiq",
+    "stage": 0,
+    "currentAsOf": "2026-10-24",
+    "currentDisposition": "Waiting on Optiq for approved test, package and client-specific prices. Checkout design can proceed while those inputs are gathered.",
+    "evidence": "23 October: Mike explicitly classified this as needing lab information and requested red-teaming existing per-client pricing. 24 October: Mike reconfirmed that pricing is an information request for Optiq.",
+    "nextStep": "Optiq: provide approved pricing and applicable rush or exception rules. Smpltrax: continue checkout design and verify the existing pricing framework once those inputs arrive.",
+    "currentEvidenceBoundary": "Pricing remains pending lab input. No illustrative price, discount or rush rule has been adopted through this review."
+  }
+})) {
+  Object.assign(window.OPTIQ_REVIEW.updates[id], update);
+}
