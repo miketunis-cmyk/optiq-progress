@@ -454,3 +454,117 @@ for (const [id, update] of Object.entries({
 })) {
   Object.assign(window.OPTIQ_REVIEW.updates[id], update);
 }
+
+// 27 October: reconcile installed full upgrade and Data Analysis top-up.
+for (const [id, update] of Object.entries({
+  "reporting-hub-pagination": {
+    "status": "complete",
+    "stage": 3,
+    "currentAsOf": "2026-10-27",
+    "evidenceBasis": "Installed repair and retained browser proof",
+    "detail": "Page navigation and page-size changes are installed. The pagination repair preserves the selected page across aggregate rerenders.",
+    "currentDisposition": "Page navigation and page-size changes are installed. The pagination repair preserves the selected page across aggregate rerenders.",
+    "nextStep": "Delivered. Smpltrax retains the existing regression and browser proof; any new defect stays separately owned.",
+    "evidence": "27 October: the public Optiq /health/version endpoint reports API, web and Node runtime at 89167befd679365d5fb3702e3b92ccf38ac9d08a. GitHub ancestry confirms inclusion of the 26 October full-install version 950b90c0 and Reporting Hub repairs #6602/#6604. Existing source review and browser proof are retained; this work-list audit made no customer changes. Repair: https://github.com/himmapan-lab/smpltrax-v2/pull/6602",
+    "currentEvidenceBoundary": "Release inclusion is verified. The repair owner recorded local browser proof before merge; no authenticated production click-test was performed during this list update."
+  },
+  "ordered-test-search": {
+    "status": "complete",
+    "stage": 3,
+    "currentAsOf": "2026-10-27",
+    "evidenceBasis": "Installed repair and retained browser proof",
+    "detail": "Tests Ordered now matches the actual ordered analysis codes, including Fentanyl, rather than result values. The repair is installed.",
+    "currentDisposition": "Tests Ordered now matches the actual ordered analysis codes, including Fentanyl, rather than result values. The repair is installed.",
+    "nextStep": "Delivered. Smpltrax retains the existing regression and browser proof; any new defect stays separately owned.",
+    "evidence": "27 October: the public Optiq /health/version endpoint reports API, web and Node runtime at 89167befd679365d5fb3702e3b92ccf38ac9d08a. GitHub ancestry confirms inclusion of the 26 October full-install version 950b90c0 and Reporting Hub repairs #6602/#6604. Existing source review and browser proof are retained; this work-list audit made no customer changes. Repair: https://github.com/himmapan-lab/smpltrax-v2/pull/6604",
+    "currentEvidenceBoundary": "Release inclusion is verified. The repair owner recorded local browser proof before merge; no authenticated production click-test was performed during this list update."
+  },
+  "stacked-filter-views": {
+    "status": "complete",
+    "stage": 3,
+    "currentAsOf": "2026-10-27",
+    "evidenceBasis": "Installed repair and retained browser proof",
+    "detail": "Saved views keep their own AND/OR expressions and combine with quick-filter buttons. Each condition can be removed independently, and remembered selections survive reload. The repair is installed.",
+    "currentDisposition": "Saved views keep their own AND/OR expressions and combine with quick-filter buttons. Each condition can be removed independently, and remembered selections survive reload. The repair is installed.",
+    "nextStep": "Delivered. Smpltrax retains the existing regression and browser proof; any new defect stays separately owned.",
+    "evidence": "27 October: the public Optiq /health/version endpoint reports API, web and Node runtime at 89167befd679365d5fb3702e3b92ccf38ac9d08a. GitHub ancestry confirms inclusion of the 26 October full-install version 950b90c0 and Reporting Hub repairs #6602/#6604. Existing source review and browser proof are retained; this work-list audit made no customer changes. Repair: https://github.com/himmapan-lab/smpltrax-v2/pull/6604",
+    "currentEvidenceBoundary": "Release inclusion is verified. The repair owner recorded local browser proof before merge; no authenticated production click-test was performed during this list update."
+  },
+  "lab-specific-filter-views": {
+    "status": "complete",
+    "stage": 3,
+    "currentAsOf": "2026-10-27",
+    "evidenceBasis": "Installed repair and retained browser proof",
+    "detail": "Optiq no longer offers Compliance, Research or Close in its preset buttons, dropdown or editor. Other lab profiles retain their own presets. The repair is installed.",
+    "currentDisposition": "Optiq no longer offers Compliance, Research or Close in its preset buttons, dropdown or editor. Other lab profiles retain their own presets. The repair is installed.",
+    "nextStep": "Delivered. Smpltrax retains the existing regression and browser proof; any new defect stays separately owned.",
+    "evidence": "27 October: the public Optiq /health/version endpoint reports API, web and Node runtime at 89167befd679365d5fb3702e3b92ccf38ac9d08a. GitHub ancestry confirms inclusion of the 26 October full-install version 950b90c0 and Reporting Hub repairs #6602/#6604. Existing source review and browser proof are retained; this work-list audit made no customer changes. Repair: https://github.com/himmapan-lab/smpltrax-v2/pull/6604",
+    "currentEvidenceBoundary": "Release inclusion is verified. The repair owner recorded local browser proof before merge; no authenticated production click-test was performed during this list update."
+  },
+  "custom-filter-view-audit": {
+    "status": "complete",
+    "stage": 3,
+    "currentAsOf": "2026-10-27",
+    "evidenceBasis": "Installed repair and retained browser proof",
+    "detail": "The reviewed filter repairs are installed: valid views keep their intended rows and ordering; incompatible or malformed saved filters visibly block results until corrected. Date and client-value normalization fixes are included. Broader future usability improvements remain separate.",
+    "currentDisposition": "The reviewed filter repairs are installed: valid views keep their intended rows and ordering; incompatible or malformed saved filters visibly block results until corrected. Date and client-value normalization fixes are included. Broader future usability improvements remain separate.",
+    "nextStep": "Delivered. Smpltrax retains the existing regression and browser proof; any new defect stays separately owned.",
+    "evidence": "27 October: the public Optiq /health/version endpoint reports API, web and Node runtime at 89167befd679365d5fb3702e3b92ccf38ac9d08a. GitHub ancestry confirms inclusion of the 26 October full-install version 950b90c0 and Reporting Hub repairs #6602/#6604. Existing source review and browser proof are retained; this work-list audit made no customer changes. Repair: https://github.com/himmapan-lab/smpltrax-v2/pull/6604",
+    "currentEvidenceBoundary": "Release inclusion is verified. The repair owner recorded local browser proof before merge; no authenticated production click-test was performed during this list update."
+  },
+  "analysis-framework": {
+    "status": "partial",
+    "stage": 2,
+    "title": "Lab testing workflow: Data Analysis installed, end-to-end work remains",
+    "currentAsOf": "2026-10-27",
+    "evidenceBasis": "Installed Data Analysis release checked",
+    "description": "Data Analysis and its reviewed purity/identity workspace updates are installed. Finish the wider lab-defined result-entry and analyst-to-COA workflow.",
+    "detail": "The earlier statement that Data Analysis is waiting for installation is superseded. The installed 89167bef release includes the Data Analysis integration (#6729): the sample review strip, combined identity table, purity recording permissions, sample header pane, chart drag selection and lab peptide mass fields. Prior workflow requirements remain: correct sample/result matching, original source preservation, immutable method pins, repeat work and reportable-result selection, human review, and the released COA. Sterility/endotoxin direct entry and the full lab-defined workflow retain their existing owners and completion checks. Collector activation and qualified reference-library contents are separate; installing the workspace does not prove either.",
+    "currentDisposition": "Data Analysis is installed. The complete direct-entry, analyst-review and released-COA workflow remains open.",
+    "nextStep": "Smpltrax: verify the remaining direct-result-entry and analyst-to-COA journey; establish collector and reference-library readiness separately before any activation.",
+    "evidence": "27 October: /health/version reports the #6729 merge 89167bef on both API and web. The PR records 572 web and 41 API tests passed and explicitly keeps the collector off pending end-to-end proof and approval. https://github.com/himmapan-lab/smpltrax-v2/pull/6729",
+    "currentEvidenceBoundary": "Installed source is confirmed. This audit did not run an analysis, activate collection, qualify reference standards or release a customer COA."
+  },
+  "conformity": {
+    "status": "partial",
+    "stage": 2,
+    "currentAsOf": "2026-10-27",
+    "evidenceBasis": "Installed code; activation and full workflow unverified",
+    "detail": "The full upgrade is installed, superseding the earlier blanket statement that no new Conformity code is available at Optiq. The installed release carries the lab-defined Conformity implementation, Sample Details integration and activation controls. Installation alone does not establish the current switches, approved lab configuration or completion of the parent/vial → result entry → independent review → COA journey. Preserve the established parent/vial lineage, analysis-specific result types and agreed scope. Existing lab configuration and end-to-end acceptance obligations remain open.",
+    "currentDisposition": "Conformity code is installed. Current activation, lab configuration and the complete vial-to-COA workflow still need verified evidence.",
+    "nextStep": "Smpltrax: reconcile the installation owner’s activation record, verify Optiq’s approved analyses and service catalogue, and finish the full parent/vial-to-COA acceptance check.",
+    "evidence": "27 October: the public Optiq /health/version endpoint reports API, web and Node runtime at 89167befd679365d5fb3702e3b92ccf38ac9d08a. GitHub ancestry confirms inclusion of the 26 October full-install version 950b90c0 and Reporting Hub repairs #6602/#6604. Existing source review and browser proof are retained; this work-list audit made no customer changes. The installed release includes docs/operations/optiq-conformity-activation-release.md; it treats installation and activation as separate controls.",
+    "currentEvidenceBoundary": "No runtime switch or customer workflow was checked in this audit. Do not infer that Conformity is enabled or fully qualified from installed code."
+  },
+  "receipt-emails": {
+    "status": "partial",
+    "stage": 2,
+    "title": "Company-name receipt emails: installed, delivery verification remains",
+    "currentAsOf": "2026-10-27",
+    "evidenceBasis": "Installed receipt-email source checked",
+    "description": "The installed receipt email uses the client company name in its subject and greeting. Verify the delivery behavior through the existing owner.",
+    "detail": "The old standalone release package and request for Mike to approve it are superseded by the full installed application. In installed API source 89167bef, sampleReceiptNotificationService selects the distributor company name with a submitter-name fallback, and sampleReceiptEmail uses that resolved name in the subject and greeting. Whole-order/partial receipt behavior and recipient isolation remain in scope. This proves inclusion of the company-name enhancement, while actual outbound delivery is not newly verified.",
+    "currentDisposition": "Company-name receipt code is installed; the old standalone deployment is no longer the next action. Delivery verification remains with the receipt owner.",
+    "nextStep": "Smpltrax: reconcile existing receipt delivery evidence against the installed version and complete any remaining authorized verification; do not deploy the stale standalone package.",
+    "evidence": "27 October: installed API identity 89167bef confirmed at /health/version. Exact-source inspection verifies the company-name SQL selection and rendered greeting/subject. No email was sent during this audit.",
+    "currentEvidenceBoundary": "Installed behavior is verified from source and release identity; no new customer receipt or email-delivery test was performed."
+  },
+  "invoice-status": {
+    "currentAsOf": "2026-10-27",
+    "currentDisposition": "27 October release reconciliation: this remains open. Installed Reporting Hub filter/pagination repairs do not establish authoritative issued-invoice coverage for sample-level billable work. The Hub owner still records no verified coverage writer; manual Paid/Unpaid labels cannot replace it.",
+    "detail": "Invoice status itself was previously recorded complete. On 23 October Mike confirmed the missing request is specifically an Uninvoiced button above the Reporting Hub TS grid that shows rows not yet invoiced. Do not rebuild invoice status or conflate this with photo sorting. 27 October release reconciliation: this remains open. Installed Reporting Hub filter/pagination repairs do not establish authoritative issued-invoice coverage for sample-level billable work. The Hub owner still records no verified coverage writer; manual Paid/Unpaid labels cannot replace it.",
+    "nextStep": "Existing QuickBooks and Reporting Hub owners: establish authoritative issued-invoice coverage, then implement and prove the Uninvoiced filter.",
+    "evidence": "27 October: the public Optiq /health/version endpoint reports API, web and Node runtime at 89167befd679365d5fb3702e3b92ccf38ac9d08a. GitHub ancestry confirms inclusion of the 26 October full-install version 950b90c0 and Reporting Hub repairs #6602/#6604. Existing source review and browser proof are retained; this work-list audit made no customer changes. Existing Hub owner records retain this unfinished obligation.",
+    "currentEvidenceBoundary": "The deployment does not close this item; no invoice, payment, photo or customer record was changed."
+  },
+  "lab-photo-sort": {
+    "currentAsOf": "2026-10-27",
+    "currentDisposition": "27 October release reconciliation: this remains open. Installed Reporting Hub filter/pagination repairs do not establish authoritative lab-photo provenance. The existing photo origin/lineage work and its database proof remain outstanding.",
+    "detail": "This is the specific image-column sorting request. Client-provided photos do not count. A missing lab photo is not proof that a sample has not arrived; lab-wide sample status tracking is a separate item. 27 October release reconciliation: this remains open. Installed Reporting Hub filter/pagination repairs do not establish authoritative lab-photo provenance. The existing photo origin/lineage work and its database proof remain outstanding.",
+    "nextStep": "Existing Reporting Hub owner: complete photo-origin/lineage proof, then verify lab-photo sorting.",
+    "evidence": "27 October: the public Optiq /health/version endpoint reports API, web and Node runtime at 89167befd679365d5fb3702e3b92ccf38ac9d08a. GitHub ancestry confirms inclusion of the 26 October full-install version 950b90c0 and Reporting Hub repairs #6602/#6604. Existing source review and browser proof are retained; this work-list audit made no customer changes. Existing Hub owner records retain this unfinished obligation.",
+    "currentEvidenceBoundary": "The deployment does not close this item; no invoice, payment, photo or customer record was changed."
+  }
+})) {
+  window.OPTIQ_REVIEW.updates[id] = {...window.OPTIQ_REVIEW.updates[id], ...update};
+}
