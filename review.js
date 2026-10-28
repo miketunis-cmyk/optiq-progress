@@ -568,3 +568,584 @@ for (const [id, update] of Object.entries({
 })) {
   window.OPTIQ_REVIEW.updates[id] = {...window.OPTIQ_REVIEW.updates[id], ...update};
 }
+
+// 28 October gap analysis: current delivery/ownership, with earlier records retained.
+window.OPTIQ_REVIEW.gapAnalysisDate = "2026-10-28";
+for (const [id, update] of Object.entries({
+  "invoice-status": {
+    "currentOwner": "QuickBooks Production Readiness + Reporting Hub owner — invoice coverage dependency",
+    "currentAsOf": "2026-10-28",
+    "status": "queued",
+    "currentDisposition": "Still open: installed Hub filter repairs do not establish issued-invoice coverage of sample-level billable work. Manual Paid/Unpaid labels are insufficient.",
+    "detail": "Keep the existing invoice-status capability and add an Uninvoiced quick-filter button above the TS grid. Still open: installed Hub filter repairs do not establish issued-invoice coverage of sample-level billable work. Manual Paid/Unpaid labels are insufficient.",
+    "nextStep": "Establish authoritative issued-invoice coverage, then implement and prove the Uninvoiced quick filter.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Still open: installed Hub filter repairs do not establish issued-invoice coverage of sample-level billable work. Manual Paid/Unpaid labels are insufficient.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "portal-price-visibility": {
+    "currentOwner": "Shopping Cart — retained design owner; Optiq Manager owns implementation pickup",
+    "currentAsOf": "2026-10-28",
+    "status": "queued",
+    "currentDisposition": "Checkout requirements are agreed; complete implementation and click-testing remain unverified. Stripe handles customer payments; QuickBooks handles accounting. Payment precedes order placement except for approved client billing terms.",
+    "detail": "Let customers choose tests, see the full price, supply required sample information and pay through a familiar checkout. Checkout requirements are agreed; complete implementation and click-testing remain unverified. Stripe handles customer payments; QuickBooks handles accounting. Payment precedes order placement except for approved client billing terms.",
+    "nextStep": "Finish new and returning customer checkout, required sample details and approved terms exceptions; use approved Optiq prices before real charges.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Checkout requirements are agreed; complete implementation and click-testing remain unverified. Stripe handles customer payments; QuickBooks handles accounting. Payment precedes order placement except for approved client billing terms.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "public-signup-approval": {
+    "currentOwner": "Optiq Manager — accountable delivery owner; implementation pickup unconfirmed",
+    "currentAsOf": "2026-10-28",
+    "status": "queued",
+    "currentDisposition": "Paid-purchaser and staff-invitation access direction is agreed; completed implementation and verification are not established.",
+    "detail": "Keep public browsing and checkout available while restricting portal access to verified purchasers and invited clients. Paid-purchaser and staff-invitation access direction is agreed; completed implementation and verification are not established.",
+    "nextStep": "Implement and test access, account recovery and correct company association for both paths.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Paid-purchaser and staff-invitation access direction is agreed; completed implementation and verification are not established.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "optiq-billing-rules": {
+    "currentOwner": "Optiq billing lead — approved rates; QuickBooks/Cart owners — implementation",
+    "currentAsOf": "2026-10-28",
+    "status": "optiq",
+    "currentDisposition": "Approved test, package, customer-specific and rush prices remain outstanding inputs. Pricing framework work exists; design can continue while lab inputs are gathered.",
+    "detail": "Use approved client-specific test and package prices through ordering and invoicing. Approved test, package, customer-specific and rush prices remain outstanding inputs. Pricing framework work exists; design can continue while lab inputs are gathered.",
+    "nextStep": "Optiq supplies approved rates and exceptions; existing owners configure and verify them without treating illustrative prices as policy.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Approved test, package, customer-specific and rush prices remain outstanding inputs. Pricing framework work exists; design can continue while lab inputs are gathered.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "quickbooks-status-sync": {
+    "currentOwner": "QuickBooks Production Readiness — current delivery owner",
+    "currentAsOf": "2026-10-28",
+    "status": "working",
+    "currentDisposition": "Staff invoicing and read-only invoice matching are merged on main (#6805/#6834). The canonical Optiq port #6837 remains draft/held for target browser/database proof and release gates. Docker testing recovery has been authorized; no live activation is established.",
+    "detail": "Bring QuickBooks Online invoice and payment information into the matching Smpltrax order so staff do not update both systems manually. Staff invoicing and read-only invoice matching are merged on main (#6805/#6834). The canonical Optiq port #6837 remains draft/held for target browser/database proof and release gates. Docker testing recovery has been authorized; no live activation is established.",
+    "nextStep": "Finish target runtime proof and exact-source review, then prepare the eligible Optiq release and approval package. Initial delivery reflects existing QuickBooks invoices with financial writes disabled.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Staff invoicing and read-only invoice matching are merged on main (#6805/#6834). The canonical Optiq port #6837 remains draft/held for target browser/database proof and release gates. Docker testing recovery has been authorized; no live activation is established.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "analysis-framework": {
+    "currentOwner": "Optiq Manager + existing Data Analysis owner; direct-entry successor pickup unconfirmed",
+    "currentAsOf": "2026-10-28",
+    "status": "partial",
+    "currentDisposition": "Data Analysis is installed and real Empower runs are importing automatically. Today's existing live-check owner reports about 3½–5½ minutes after acquisition for ten recent successful runs; the list has no timed refresh. Complete direct entry, permissions, review and released-COA acceptance remain open.",
+    "detail": "Data Analysis and its reviewed purity/identity workspace updates are installed. Finish the wider lab-defined result-entry and analyst-to-COA workflow. Data Analysis is installed and real Empower runs are importing automatically. Today's existing live-check owner reports about 3½–5½ minutes after acquisition for ten recent successful runs; the list has no timed refresh. Complete direct entry, permissions, review and released-COA acceptance remain open.",
+    "nextStep": "Close the retained result-entry handoff and prove direct entry → save/reopen → independent review → released COA. Resolve list freshness and import exceptions separately.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Data Analysis is installed and real Empower runs are importing automatically. Today's existing live-check owner reports about 3½–5½ minutes after acquisition for ten recent successful runs; the list has no timed refresh. Complete direct entry, permissions, review and released-COA acceptance remain open.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "inventory-follow-ups": {
+    "currentOwner": "Optiq Purchasing and Inventory Review… — cleared plan; Optiq Manager owns implementation pickup",
+    "currentAsOf": "2026-10-28",
+    "status": "check",
+    "currentDisposition": "Existing modules and an independently cleared repair plan are available. Current records do not establish completed implementation or whole-workflow acceptance.",
+    "detail": "Red-team the existing purchasing and inventory workflows, not just basic item editing. Existing modules and an independently cleared repair plan are available. Current records do not establish completed implementation or whole-workflow acceptance.",
+    "nextStep": "Implement remaining findings and verify purchasing → receiving → stock → usage → reorder, including supplier editing and document intake.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Existing modules and an independently cleared repair plan are available. Current records do not establish completed implementation or whole-workflow acceptance.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "sop-documents": {
+    "currentOwner": "Optiq Quality Workflows Review Plan — cleared plan; Optiq Manager owns implementation pickup",
+    "currentAsOf": "2026-10-28",
+    "status": "check",
+    "currentDisposition": "The revised document/training/NCR/CAPA plan is independently cleared. Staff acknowledgement screens, safe review/closure behavior and complete workflow qualification remain outstanding.",
+    "detail": "Test and improve the existing document-control, SOP, nonconformance and corrective-action workflows. The revised document/training/NCR/CAPA plan is independently cleared. Staff acknowledgement screens, safe review/closure behavior and complete workflow qualification remain outstanding.",
+    "nextStep": "Use the cleared plan to finish repairs and prove approval, training, issue investigation, corrective action and independent closure together.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. The revised document/training/NCR/CAPA plan is independently cleared. Staff acknowledgement screens, safe review/closure behavior and complete workflow qualification remain outstanding.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "spectral-reference-library": {
+    "currentOwner": "Existing spectral-library/Data Analysis owners + AI100 deployment owner; lab qualifies references",
+    "currentAsOf": "2026-10-28",
+    "status": "partial",
+    "currentDisposition": "All 16 draft reference entries were seeded and 33 cached no-library channels refreshed. Historical matching is still recorded as incomplete. Library visibility/retirement and ion-display corrections are in the current release pipeline. Loaded references do not establish lab qualification.",
+    "detail": "Check whether already-collected instrument runs contain the standards needed by the existing analysis library. All 16 draft reference entries were seeded and 33 cached no-library channels refreshed. Historical matching is still recorded as incomplete. Library visibility/retirement and ion-display corrections are in the current release pipeline. Loaded references do not establish lab qualification.",
+    "nextStep": "Finish historical coverage and genuine evidence gaps; integrate and qualify the library lifecycle/display fixes, and retain lab approval of scientific references.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. All 16 draft reference entries were seeded and 33 cached no-library channels refreshed. Historical matching is still recorded as incomplete. Library visibility/retirement and ion-display corrections are in the current release pipeline. Loaded references do not establish lab qualification.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "hubspot-onboarding": {
+    "currentOwner": "Optiq Manager — accountable delivery owner; implementation pickup unconfirmed",
+    "currentAsOf": "2026-10-28",
+    "status": "queued",
+    "currentDisposition": "Synchronization is confirmed scope; a completed current implementation is not established.",
+    "detail": "Avoid maintaining the same client information separately in HubSpot and Smpltrax. Synchronization is confirmed scope; a completed current implementation is not established.",
+    "nextStep": "Inspect reusable HubSpot work, confirm record ownership and conflict handling, and prove client synchronization.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Synchronization is confirmed scope; a completed current implementation is not established.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "receipt-emails": {
+    "currentOwner": "Optiq Company-Name Receipt Release — existing receipt owner",
+    "currentAsOf": "2026-10-28",
+    "status": "partial",
+    "currentDisposition": "Company-name receipt code is installed. Actual delivery evidence still needs reconciliation; the older standalone deployment is obsolete.",
+    "detail": "The installed receipt email uses the client company name in its subject and greeting. Verify the delivery behavior through the existing owner. Company-name receipt code is installed. Actual delivery evidence still needs reconciliation; the older standalone deployment is obsolete.",
+    "nextStep": "Reconcile existing delivery evidence against the installed version and finish remaining authorized verification.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Company-name receipt code is installed. Actual delivery evidence still needs reconciliation; the older standalone deployment is obsolete.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "coa-status-language": {
+    "currentOwner": "Optiq Manager — COA owner verification pickup unconfirmed",
+    "currentAsOf": "2026-10-28",
+    "status": "check",
+    "currentDisposition": "Identity mismatch indicators were previously reported addressed; representative PDF and digital-card proof is still required before closure.",
+    "detail": "Verify that a result differing from the submitted claim does not appear as a successful green identity match. Identity mismatch indicators were previously reported addressed; representative PDF and digital-card proof is still required before closure.",
+    "nextStep": "Locate the installed fix and verify mismatched identity on both report surfaces, preserving scientific findings and issued report history.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Identity mismatch indicators were previously reported addressed; representative PDF and digital-card proof is still required before closure.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "reporting-hub-pagination": {
+    "currentOwner": "Reporting Hub repair owner — delivered; Optiq Manager retains follow-up",
+    "currentAsOf": "2026-10-28",
+    "status": "complete",
+    "currentDisposition": "Page navigation and page-size changes are installed. The pagination repair preserves the selected page across aggregate rerenders.",
+    "detail": "Make the page buttons change pages and page-size changes work reliably. Page navigation and page-size changes are installed. The pagination repair preserves the selected page across aggregate rerenders.",
+    "nextStep": "Delivered. Retain existing browser/regression proof; track any new defect separately.",
+    "evidence": "27 October installed-release reconciliation: #6602/#6604 included; existing source and browser proof retained. 28 October gap analysis confirms the recorded delivered scope without claiming a new live retest.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "ordered-test-search": {
+    "currentOwner": "Reporting Hub repair owner — delivered; Optiq Manager retains follow-up",
+    "currentAsOf": "2026-10-28",
+    "status": "complete",
+    "currentDisposition": "Tests Ordered now matches the actual ordered analysis codes, including Fentanyl, rather than result values. The repair is installed.",
+    "detail": "Find samples with a particular test ordered, independently of their test results. Tests Ordered now matches the actual ordered analysis codes, including Fentanyl, rather than result values. The repair is installed.",
+    "nextStep": "Delivered. Retain existing browser/regression proof; track any new defect separately.",
+    "evidence": "27 October installed-release reconciliation: #6602/#6604 included; existing source and browser proof retained. 28 October gap analysis confirms the recorded delivered scope without claiming a new live retest.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "stacked-filter-views": {
+    "currentOwner": "Reporting Hub repair owner — delivered; Optiq Manager retains follow-up",
+    "currentAsOf": "2026-10-28",
+    "status": "complete",
+    "currentDisposition": "Saved views keep their own AND/OR expressions and combine with quick-filter buttons. Each condition can be removed independently, and remembered selections survive reload. The repair is installed.",
+    "detail": "Let saved filter views and quick-filter buttons combine their conditions. Saved views keep their own AND/OR expressions and combine with quick-filter buttons. Each condition can be removed independently, and remembered selections survive reload. The repair is installed.",
+    "nextStep": "Delivered. Retain existing browser/regression proof; track any new defect separately.",
+    "evidence": "27 October installed-release reconciliation: #6602/#6604 included; existing source and browser proof retained. 28 October gap analysis confirms the recorded delivered scope without claiming a new live retest.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "lab-specific-filter-views": {
+    "currentOwner": "Reporting Hub repair owner — delivered; Optiq Manager retains follow-up",
+    "currentAsOf": "2026-10-28",
+    "status": "complete",
+    "currentDisposition": "Optiq no longer offers Compliance, Research or Close in its preset buttons, dropdown or editor. Other lab profiles retain their own presets. The repair is installed.",
+    "detail": "Use lab-appropriate filter views and quick-filter buttons without affecting other labs. Optiq no longer offers Compliance, Research or Close in its preset buttons, dropdown or editor. Other lab profiles retain their own presets. The repair is installed.",
+    "nextStep": "Delivered. Retain existing browser/regression proof; track any new defect separately.",
+    "evidence": "27 October installed-release reconciliation: #6602/#6604 included; existing source and browser proof retained. 28 October gap analysis confirms the recorded delivered scope without claiming a new live retest.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "custom-filter-view-audit": {
+    "currentOwner": "Reporting Hub repair owner — delivered; Optiq Manager retains follow-up",
+    "currentAsOf": "2026-10-28",
+    "status": "complete",
+    "currentDisposition": "The reviewed filter repairs are installed: valid views keep their intended rows and ordering; incompatible or malformed saved filters visibly block results until corrected. Date and client-value normalization fixes are included. Broader future usability improvements remain separate.",
+    "detail": "Make existing custom filter views match the columns and their supported operations. The reviewed filter repairs are installed: valid views keep their intended rows and ordering; incompatible or malformed saved filters visibly block results until corrected. Date and client-value normalization fixes are included. Broader future usability improvements remain separate.",
+    "nextStep": "Delivered. Retain existing browser/regression proof; track any new defect separately.",
+    "evidence": "27 October installed-release reconciliation: #6602/#6604 included; existing source and browser proof retained. 28 October gap analysis confirms the recorded delivered scope without claiming a new live retest.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "lab-photo-sort": {
+    "currentOwner": "Optiq Reporting Hub Repair Plan — existing Hub owner; Optiq Manager coordinates remaining pickup",
+    "currentAsOf": "2026-10-28",
+    "status": "queued",
+    "currentDisposition": "Still open: installed filtering repairs do not establish authoritative photo provenance. Client photos must not count as lab photos; missing photos do not prove non-receipt.",
+    "detail": "Sort rows by whether a lab-uploaded photo is present or absent. Still open: installed filtering repairs do not establish authoritative photo provenance. Client photos must not count as lab photos; missing photos do not prove non-receipt.",
+    "nextStep": "Complete photo-origin/lineage database proof, then verify lab-photo presence sorting.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Still open: installed filtering repairs do not establish authoritative photo provenance. Client photos must not count as lab photos; missing photos do not prove non-receipt.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "sample-status-audit": {
+    "currentOwner": "Optiq Sample Status Tracking — cleared plan; Optiq Manager owns implementation pickup",
+    "currentAsOf": "2026-10-28",
+    "status": "queued",
+    "currentDisposition": "The revised lifecycle repair plan is independently cleared; implementation/runtime acceptance is not established. Receipt cycles, holds and analytical restoration dependencies remain explicit.",
+    "detail": "Make sample status meaningful, traceable and visible throughout the lab workflow. The revised lifecycle repair plan is independently cleared; implementation/runtime acceptance is not established. Receipt cycles, holds and analytical restoration dependencies remain explicit.",
+    "nextStep": "Implement and prove receipt/intake distinctions, preserved holds, audited transitions and safe restoration; coordinate receipt and analysis owners.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. The revised lifecycle repair plan is independently cleared; implementation/runtime acceptance is not established. Receipt cycles, holds and analytical restoration dependencies remain explicit.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "trusted-white-label-approval": {
+    "currentOwner": "Optiq Trusted-Client White-Label Approval… — cleared plan; Optiq Manager owns implementation pickup",
+    "currentAsOf": "2026-10-28",
+    "status": "queued",
+    "currentDisposition": "The trusted-client plan is independently cleared. Permission/revocation and durable billing activity records remain implementation work; billing-policy-dependent activation requires confirmed lab rules.",
+    "detail": "Allow selected trusted clients to generate permitted white labels without manual approval while retaining billing visibility. The trusted-client plan is independently cleared. Permission/revocation and durable billing activity records remain implementation work; billing-policy-dependent activation requires confirmed lab rules.",
+    "nextStep": "Build and verify trusted approval, revocation and billing activity records; confirm charge triggers, rates, exemptions and replacement rules before charge-dependent activation.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. The trusted-client plan is independently cleared. Permission/revocation and durable billing activity records remain implementation work; billing-policy-dependent activation requires confirmed lab rules.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "internal-document-checks": {
+    "currentOwner": "Optiq Manager — accountable delivery owner; implementation pickup unconfirmed",
+    "currentAsOf": "2026-10-28",
+    "status": "queued",
+    "currentDisposition": "Automatic COA, manifest and chain-of-custody reconciliation is confirmed scope; completed implementation is not established.",
+    "detail": "Run consistency checks inside Smpltrax so staff do not have to download and re-upload documents for manual checking. Automatic COA, manifest and chain-of-custody reconciliation is confirmed scope; completed implementation is not established.",
+    "nextStep": "Inventory existing comparisons, identify missing checks and verify that discrepancies surface automatically for review.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Automatic COA, manifest and chain-of-custody reconciliation is confirmed scope; completed implementation is not established.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "result-entry-permission-profiles": {
+    "currentOwner": "Optiq Manager + existing Data Analysis owner; direct-entry successor pickup unconfirmed",
+    "currentAsOf": "2026-10-28",
+    "status": "queued",
+    "currentDisposition": "Related recovery planning and batch-edit permission work exist. Complete profile-specific visibility, editing and drag-fill proof remains outstanding.",
+    "detail": "Show staff the appropriate result grids and control editing behaviors by permission profile. Related recovery planning and batch-edit permission work exist. Complete profile-specific visibility, editing and drag-fill proof remains outstanding.",
+    "nextStep": "Confirm result-entry successor ownership and prove allowed/denied views, edits, bulk updates and drag-fill behavior.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Related recovery planning and batch-edit permission work exist. Complete profile-specific visibility, editing and drag-fill proof remains outstanding.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "customer-results-api": {
+    "currentOwner": "Optiq Customer Results API and Certificate… — cleared plan; Optiq Manager owns implementation pickup",
+    "currentAsOf": "2026-10-28",
+    "status": "queued",
+    "currentDisposition": "Revision 2 of the integration plan is independently cleared. Implementation and runtime qualification are not established.",
+    "detail": "Provide customer-authorized access to released COA PDFs, structured results and Verify Results cards. Revision 2 of the integration plan is independently cleared. Implementation and runtime qualification are not established.",
+    "nextStep": "Implement and verify scoped credentials, revocation, authorized PDFs/results, embeds and release/revision webhooks, including cross-client isolation.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Revision 2 of the integration plan is independently cleared. Implementation and runtime qualification are not established.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "boarding-pass-parity": {
+    "currentOwner": "Optiq Manager — accountable delivery owner; implementation pickup unconfirmed",
+    "currentAsOf": "2026-10-28",
+    "status": "check",
+    "currentDisposition": "Wallet-card work remains a recovery/research item; current signing readiness and usable delivery are unverified.",
+    "detail": "Build on the earlier wallet-card investigation and confirm the remaining delivery requirements. Wallet-card work remains a recovery/research item; current signing readiness and usable delivery are unverified.",
+    "nextStep": "Locate retained implementation, verify developer/signing setup and establish the remaining build and acceptance checks.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Wallet-card work remains a recovery/research item; current signing readiness and usable delivery are unverified.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "abandoned-order-reminders": {
+    "currentOwner": "Optiq Manager — accountable delivery owner; implementation pickup unconfirmed",
+    "currentAsOf": "2026-10-28",
+    "status": "queued",
+    "currentDisposition": "Separate unfinished-checkout and paid-awaiting-samples reminders are confirmed scope. Trigger timing, final messages and suppression proof remain outstanding.",
+    "detail": "Help customers resume unfinished orders and send samples for paid orders that are still waiting for them. Separate unfinished-checkout and paid-awaiting-samples reminders are confirmed scope. Trigger timing, final messages and suppression proof remain outstanding.",
+    "nextStep": "Define cadence, resume/instruction links and completion/opt-out suppression; test before outbound activation.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Separate unfinished-checkout and paid-awaiting-samples reminders are confirmed scope. Trigger timing, final messages and suppression proof remain outstanding.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "conformity": {
+    "currentOwner": "Optiq Manager + deployment owner + Optiq lab admin",
+    "currentAsOf": "2026-10-28",
+    "status": "partial",
+    "currentDisposition": "Conformity code is installed. The 27 October live record has draft service configuration and no active catalogue rows. Approved configuration, client availability and the full parent/vial-to-COA journey remain outstanding. Existing-sample follow-up is held for its required click-test.",
+    "detail": "Keep one client-facing parent sample and track each conformity vial and its Purity, Identity or Net Content results inside the parent’s Sample Details. Conformity code is installed. The 27 October live record has draft service configuration and no active catalogue rows. Approved configuration, client availability and the full parent/vial-to-COA journey remain outstanding. Existing-sample follow-up is held for its required click-test.",
+    "nextStep": "Complete approved analysis/service setup and activation evidence, then prove ordered vials → receiving → results → review → released COA.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Conformity code is installed. The 27 October live record has draft service configuration and no active catalogue rows. Approved configuration, client availability and the full parent/vial-to-COA journey remain outstanding. Existing-sample follow-up is held for its required click-test.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "inspection-rules": {
+    "currentOwner": "Optiq Manager — receiving/COA owner pickup unconfirmed",
+    "currentAsOf": "2026-10-28",
+    "status": "partial",
+    "currentDisposition": "Inspection storage and COA presentation are installed. Complete receiving/Hub controls, remaining vial-check wording and saved-observation-to-COA proof remain open.",
+    "detail": "Save vial and cap integrity and colors, give inspection its own Reporting Hub column, and show it on the COA’s first page. Inspection storage and COA presentation are installed. Complete receiving/Hub controls, remaining vial-check wording and saved-observation-to-COA proof remain open.",
+    "nextStep": "Confirm installed controls, agree remaining wording with the lab and verify the complete receiving-to-report workflow.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Inspection storage and COA presentation are installed. Complete receiving/Hub controls, remaining vial-check wording and saved-observation-to-COA proof remain open.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "coa-oct14-mockups": {
+    "currentOwner": "Optiq Manager + existing COA owner",
+    "currentAsOf": "2026-10-28",
+    "status": "partial",
+    "currentDisposition": "COA 2.0 is installed; remaining layout qualification and uncovered cases remain open. Current wavelength/chart fixes require their own evidence and release handling.",
+    "detail": "COA 2.0 is installed at Optiq; finish qualification of the remaining layout cases against the agreed design. COA 2.0 is installed; remaining layout qualification and uncovered cases remain open. Current wavelength/chart fixes require their own evidence and release handling.",
+    "nextStep": "Reconcile retained layout proof, finish uncovered cases and qualify the selected chart fixes without regenerating existing issued certificates.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. COA 2.0 is installed; remaining layout qualification and uncovered cases remain open. Current wavelength/chart fixes require their own evidence and release handling.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "stable-released-coa-links": {
+    "currentOwner": "Existing white-label/COA owner + AI100 deployment owner",
+    "currentAsOf": "2026-10-28",
+    "status": "partial",
+    "currentDisposition": "Ordinary permanent-link code is installed. White-label and recovery acceptance remains incomplete; printed-number lookup activation is tracked separately.",
+    "detail": "Keep normal and customer-branded certificate links pointing to the sample’s latest released version. Ordinary permanent-link code is installed. White-label and recovery acceptance remains incomplete; printed-number lookup activation is tracked separately.",
+    "nextStep": "Verify the combined white-label/permanent-link/recovery cases against the installed version.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Ordinary permanent-link code is installed. White-label and recovery acceptance remains incomplete; printed-number lookup activation is tracked separately.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "client-bulk-white-label": {
+    "currentOwner": "Existing white-label owner + AI100 deployment owner",
+    "currentAsOf": "2026-10-28",
+    "status": "partial",
+    "currentDisposition": "Bulk request/review work and portal white-label ZIP support are installed. ZIP fallback disclosure was installed on 28 October. The full private-draft, authorized-photo and correct-PDF journey remains unverified.",
+    "detail": "Let clients request several branded COAs and let approved staff edit the private draft, printed client details and selected photo. Bulk request/review work and portal white-label ZIP support are installed. ZIP fallback disclosure was installed on 28 October. The full private-draft, authorized-photo and correct-PDF journey remains unverified.",
+    "nextStep": "Finish the retained draft → edit → save/reopen → authorized photo → correct PDF acceptance cases.",
+    "evidence": "28 October gap analysis: reconciled the confirmed 23 October review, the 27 October work-list release audit, current PRs and existing owner-chat records. Bulk request/review work and portal white-label ZIP support are installed. ZIP fallback disclosure was installed on 28 October. The full private-draft, authorized-photo and correct-PDF journey remains unverified.",
+    "currentEvidenceBoundary": "Dated delivery and owner records; this tracker update is not a fresh end-to-end live test or a new implementation assignment."
+  },
+  "verify-results-font": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "fentanyl-results": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "coa-summary-layout": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "frozen-sort": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "receiving-tables": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "lot-number": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "printed-labels": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "client-scrolling": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "grid-widths": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "inventory-release": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "iu-units": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "preview-performance": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "partner-inventory": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "manufacturer-profiles": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "blend-potency": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "photo-reliability": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "scan-intake": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "certified-imports": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "retained-intent": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "intake-identity": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "purchasing-core": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "reporting-method-drafts": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "staff-scan-access": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "multi-lab-login": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "shared-feature-tracker": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "missing-order-recovery": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "net-content-undo": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "bulk-coa-amendments": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "pda-peak-default": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "native-empower-charts": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "empower-native-collection": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "purchasing-status-words": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "purchase-history-forecast": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "water-sample-type": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "order-submit-retry": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "white-label-attestation": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "white-label-photo-vials": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "white-label-missing-vials": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "white-label-required-lot": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "client-create-invite": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "panel-presets": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "live-vial-count": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "unresolved-client-orders": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "net-content-per-vial": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "partner-sample-routing": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "intake-attention-notices": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "shared-lims-priorities": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "customer-qr-labels": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "coa-tamper-evidence": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "tablet-sample-type": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "coa-spectrum-interpretation": {
+    "currentOwner": "Optiq Manager — retained delivery record and follow-up",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "submission-matrix-save-parity": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "stale-tab-refresh": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "coa-automatic-ion-interpretation": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "sample-details-documents": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "inventory-receiving-defaults": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "chemical-components-grid-stability": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "sample-order-client-messaging": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "sample-storage-multi-lab": {
+    "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  },
+  "mammoth-portal-coa": {
+    "currentOwner": "Mammoth operations + Smpltrax onboarding; named pickup not recorded",
+    "currentOwnerAsOf": "2026-10-28"
+  }
+})) {
+ window.OPTIQ_REVIEW.updates[id] = {...window.OPTIQ_REVIEW.updates[id], ...update};
+}
+window.OPTIQ_REVIEW.additions.push(...[
+  {
+    "id": "public-coa-access-hardening",
+    "area": "Reports & analyses",
+    "title": "Harden public certificate access while keeping printed QR links",
+    "status": "working",
+    "stage": 1,
+    "description": "Keep authorized public certificate verification usable while preventing unintended report discovery.",
+    "detail": "The 28 October release checklist records an urgent access-hardening repair. Existing printed QR links must keep working. Implementation/review and the exact release are still pending.",
+    "currentDisposition": "Urgent repair in the current release pipeline; not recorded as deployed.",
+    "nextStep": "Existing COA access owner finishes the repair and its positive/negative proof; deployment owner includes the eligible reviewed result in the exact approved release.",
+    "currentOwner": "Existing Claude Optiq COA access owner + AI100 deployment owner",
+    "currentAsOf": "2026-10-28",
+    "evidence": "28 October shared deployment checklist: public-COA access hardening is current work; preserve existing printed links.",
+    "currentEvidenceBoundary": "Public-facing scope summary only; no new live security test or deployment claim."
+  },
+  {
+    "id": "white-label-printed-lookup",
+    "area": "Reports & analyses",
+    "title": "Verify white-label certificates by their printed number",
+    "status": "partial",
+    "stage": 1,
+    "description": "Return the correct issued white-label certificate from its printed identifier.",
+    "detail": "Code #6779 and the registry migration are installed. Registration reconciliation and ordered lookup activation remain unfinished; installation alone does not make the feature available.",
+    "currentDisposition": "Installed code; activation and full acceptance remain open.",
+    "nextStep": "Reconcile issued-certificate registration, handle evidence conflicts, activate in order and verify correct white-label lookup plus unknown-number rejection.",
+    "currentOwner": "Existing white-label owner + AI100 deployment owner",
+    "currentAsOf": "2026-10-28",
+    "evidence": "28 October shared deployment checklist and issue #6777 retain activation work after #6779 installation.",
+    "currentEvidenceBoundary": "No activation or live customer action is authorized by this tracker update."
+  }
+]);
+
+for (const id of ["invoice-status","portal-price-visibility","public-signup-approval","optiq-billing-rules","quickbooks-status-sync","analysis-framework","inventory-follow-ups","sop-documents","spectral-reference-library","hubspot-onboarding","receipt-emails","coa-status-language","reporting-hub-pagination","ordered-test-search","stacked-filter-views","lab-specific-filter-views","custom-filter-view-audit","lab-photo-sort","sample-status-audit","trusted-white-label-approval","internal-document-checks","result-entry-permission-profiles","customer-results-api","boarding-pass-parity","abandoned-order-reminders","conformity","inspection-rules","coa-oct14-mockups","stable-released-coa-links","client-bulk-white-label"]) { window.OPTIQ_REVIEW.updates[id].evidenceBasis = "28 October delivery/owner reconciliation"; }
