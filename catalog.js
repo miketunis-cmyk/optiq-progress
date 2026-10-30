@@ -42,3 +42,14 @@ window.OPTIQ_CATALOG = window.OPTIQ_CATALOG.map(request => {
   const update = review.updates[request.id];
   return update ? {...request, ...update, previousReview: request} : request;
 });
+
+const reconciliation = window.OPTIQ_RECONCILIATION;
+if (reconciliation) {
+  for (const id of Object.keys(reconciliation.updates)) {
+    if (!catalogIds.has(id)) throw new Error(`Reconciliation update has no work item: ${id}`);
+  }
+  window.OPTIQ_CATALOG = window.OPTIQ_CATALOG.map(request => {
+    const update = reconciliation.updates[request.id];
+    return update ? {...request, ...update, previousReview: request} : request;
+  });
+}
