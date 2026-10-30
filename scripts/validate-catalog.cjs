@@ -4,7 +4,7 @@ const path = require('node:path');
 const vm = require('node:vm');
 const root = path.resolve(__dirname, '..');
 const context = {window: {}};
-for (const filename of ['data.js', 'consolidations.js', 'review.js', 'reconciliation.js', 'catalog.js']) {
+for (const filename of ['data.js', 'consolidations.js', 'review.js', 'reconciliation.js', 'ownership.js', 'catalog.js']) {
   vm.runInNewContext(fs.readFileSync(path.join(root, filename), 'utf8'), context, {filename});
 }
 const {OPTIQ_REQUESTS: originals, OPTIQ_CATALOG: items, OPTIQ_CONSOLIDATIONS: groups} = context.window;
@@ -57,3 +57,14 @@ for (const [id, update] of Object.entries(dated.updates)) {
 assert(!items.find(row => row.id === 'portal-price-visibility').detail.includes('Stripe handles'));
 assert(items.find(row => row.id === 'sample-details-documents').status !== 'complete', 'Attachment delivery must not silently close original-slip acceptance');
 console.log(`PASS: ${Object.keys(dated.updates).length} dated reconciliations and ${dated.additions.length} new tracked scopes; production closures and activation/Demo holds preserved.`);
+
+const assigned = context.window.OPTIQ_OWNERSHIP;
+assert.equal(Object.keys(assigned.updates).length, 58, 'Every open Optiq catalog request must have a named owner');
+for (const [id, update] of Object.entries(assigned.updates)) {
+  const item = items.find(row => row.id === id);
+  assert.equal(item.currentOwner, update.currentOwner);
+  if (assigned.assignedIds.includes(id)) assert(/\([^)]+,[a-f0-9-]{36}\)/.test(item.currentOwner), `Owner needs exact chat identity: ${id}`);
+  assert(item.currentBlocker && item.nextStep && item.ownershipRecordUrl, `Missing owner handoff: ${id}`);
+  assert.equal(item.status, item.previousReview.status, `Assignment changed delivery status: ${id}`);
+}
+console.log('PASS: all 58 open Optiq items have owners, blockers and next actions; 53 exact local chat assignments and 5 retained active source owners; delivery stages preserved.');

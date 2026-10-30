@@ -53,3 +53,14 @@ if (reconciliation) {
     return update ? {...request, ...update, previousReview: request} : request;
   });
 }
+
+const ownership = window.OPTIQ_OWNERSHIP;
+if (ownership) {
+  for (const id of Object.keys(ownership.updates)) {
+    if (!catalogIds.has(id)) throw new Error(`Owner assignment has no work item: ${id}`);
+  }
+  window.OPTIQ_CATALOG = window.OPTIQ_CATALOG.map(request => {
+    const update = ownership.updates[request.id];
+    return update ? {...request, ...update, previousReview: request} : request;
+  });
+}
