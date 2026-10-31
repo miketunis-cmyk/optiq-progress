@@ -47,7 +47,7 @@ for (const id of ['frozen-sort','printed-labels','net-content-undo','retained-in
   assert.equal(item.deliveryEvidence?.kind, 'production', `Production evidence missing: ${id}`);
   assert(item.previousReview && item.evidenceUrl.includes(dated.checklistCommit), `History/snapshot missing: ${id}`);
 }
-for (const id of ['conformity','white-label-printed-lookup','quickbooks-status-sync','data-analysis-demo-review','standard-based-net-content','automatic-analysis-evidence','white-label-release-emails']) {
+for (const id of ['conformity','white-label-printed-lookup','quickbooks-status-sync','standard-based-net-content','automatic-analysis-evidence','white-label-release-emails']) {
   assert.notEqual(items.find(row => row.id === id)?.status, 'complete', `Open dependency incorrectly completed: ${id}`);
 }
 for (const [id, update] of Object.entries(dated.updates)) {
@@ -59,12 +59,36 @@ assert(items.find(row => row.id === 'sample-details-documents').status !== 'comp
 console.log(`PASS: ${Object.keys(dated.updates).length} dated reconciliations and ${dated.additions.length} new tracked scopes; production closures and activation/Demo holds preserved.`);
 
 const assigned = context.window.OPTIQ_OWNERSHIP;
-assert.equal(Object.keys(assigned.updates).length, 58, 'Every open Optiq catalog request must have a named owner');
+assert.equal(Object.keys(assigned.updates).length, 62, 'Retain the58 owner records and four separate new Demo scopes');
 for (const [id, update] of Object.entries(assigned.updates)) {
   const item = items.find(row => row.id === id);
   assert.equal(item.currentOwner, update.currentOwner);
   if (assigned.assignedIds.includes(id)) assert(/\([^)]+,[a-f0-9-]{36}\)/.test(item.currentOwner), `Owner needs exact chat identity: ${id}`);
-  assert(item.currentBlocker && item.nextStep && item.ownershipRecordUrl, `Missing owner handoff: ${id}`);
+  assert(item.nextStep && item.ownershipRecordUrl && (item.status === 'complete' || item.currentBlocker), `Missing owner handoff: ${id}`);
   assert.equal(item.status, item.previousReview.status, `Assignment changed delivery status: ${id}`);
 }
-console.log('PASS: all 58 open Optiq items have owners, blockers and next actions; 53 exact local chat assignments and 5 retained active source owners; delivery stages preserved.');
+console.log('PASS:62 retained owner records;53 original exact chat assignments and9 retained source scopes; completed delivery and remaining blockers stay distinct.');
+
+// The installed release must not close newer Demo-only scope or lose prior evidence.
+assert.equal(originals.length,131);
+assert.equal(items.length,104);
+const installed=items.find(row=>row.id==='data-analysis-demo-review');
+assert.equal(installed.status,'complete');
+assert.equal(installed.deliveryEvidence.release,'5046f44ebc8a48bde8d03a8ad602c2448467547b');
+assert.deepEqual(Array.from(installed.deliveryEvidence.prs),[6876,6991,7011]);
+for(const id of ['data-analysis-ion-signal-match','data-analysis-spectrum-smoothing','data-analysis-ion-composite','data-analysis-stable-ion-table']) {
+  const item=items.find(row=>row.id===id);
+  assert(item && item.status!=='complete' && item.currentBlocker, 'New Demo scope cannot inherit production completion: '+id);
+}
+for(const [id,update] of Object.entries(dated.followUpUpdates)) {
+  const item=items.find(row=>row.id===id);
+  assert.equal(item.status,update.status || item.previousReview.status);
+  assert.equal(update.currentAsOf,dated.followUpDate);
+  assert(update.evidenceUrl.includes(dated.followUpChecklistCommit));
+}
+for(const id of ['bulk-coa-amendments','submission-matrix-save-parity','grid-widths','shared-lims-priorities']) {
+  const item=items.find(row=>row.id===id);
+  assert.equal(item.status,'check');
+  assert(item.lastSubstantiveEvidenceAt && item.evidence.includes('not new implementation'));
+}
+console.log('PASS: installed scope closes independently; four newer scopes remain open; older recovery evidence dates and original history retained.');

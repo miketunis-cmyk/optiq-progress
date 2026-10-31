@@ -2,14 +2,14 @@
 // Explicit owner assignment is separate from recorded product delivery.
 window.OPTIQ_OWNERSHIP = {
   "date": "2026-10-30",
-  "sourceCommit": "a961a07c046bd7ed012206fec3e48f6b6b6dba9e",
+  "sourceCommit": "8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541",
   "updates": {
     "conformity": {
       "currentOwner": "Codex — Make Conformity orderable on Optiq (Mini,01a17cec-f70b-7d10-ab3b-2124de17aa12)",
       "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Continue the existing chat's non-live preparation: refresh the manual-test go-live card and close any source/proof gap within current scope; preserve the explicit merge hold until Mike lifts it.",
-      "currentBlocker": "Exact44501 CI/review pass, but Mike's manual click-test/merge hold and final clean-line worker/access/activation gates remain.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/main/shared/deploy-checklist.md#optiq--named-backlog-owners-and-next-actions"
+      "nextStep": "Mike click-tests the current card and lifts the explicit merge hold; then final clean-line worker/access proof, approved catalogue/configuration and exact release/activation decision.",
+      "currentBlocker": "Current9b378b8 required CI41147000075 attempt2 is green; explicit Mike manual merge hold, final worker/access proof and approved catalogue/configuration/activation remain.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
     },
     "inspection-rules": {
       "currentOwner": "Codex — Optiq UI manager (Mini,01a175b6-a08a-7b82-9ddf-30a5533219ca)",
@@ -42,9 +42,9 @@ window.OPTIQ_OWNERSHIP = {
     "grid-widths": {
       "currentOwner": "Codex — Optiq UI manager (Mini,01a175b6-a08a-7b82-9ddf-30a5533219ca)",
       "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Locate installed width controls; prove auto/fixed choices and persistence on an existing copy, then close the item or fix the actual uncovered control.",
-      "currentBlocker": "Automatic/fixed width availability lacks current installed-source and browser proof.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/main/shared/deploy-checklist.md#optiq--named-backlog-owners-and-next-actions"
+      "nextStep": "Check whether Auto/Fixed widths and persistence are already installed; close from current evidence or port only a missing control. Do not rebuild the grid.",
+      "currentBlocker": "Automatic/fixed width availability lacks current installed-source and browser proof. No newer delivery proof found.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
     },
     "sop-documents": {
       "currentOwner": "Codex — Manager (Mini,01a17598-1981-72f1-b470-98d5690896da)",
@@ -105,9 +105,9 @@ window.OPTIQ_OWNERSHIP = {
     "bulk-coa-amendments": {
       "currentOwner": "Codex — Investigate WL COA generation (Mini,01a180cb-c573-7d91-a210-3393c760047f)",
       "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Recover bulk amendment implementation/proof and exercise synthetic selected corrections through replacement history; identify any real defect before replacing code.",
-      "currentBlocker": "Selection through replacement release and retained earlier versions remains unqualified.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/main/shared/deploy-checklist.md#optiq--named-backlog-owners-and-next-actions"
+      "nextStep": "Recover the existing bulk correction source; use a synthetic selection through replacement release and retained earlier certificates. Do not publish the obsolete4920 bundle or use customer releases for proof.",
+      "currentBlocker": "Selection through replacement release and retained earlier versions remains unqualified. No newer delivery proof found.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
     },
     "empower-native-collection": {
       "currentOwner": "Codex — Manager (Mini,01a17598-1981-72f1-b470-98d5690896da)",
@@ -126,9 +126,9 @@ window.OPTIQ_OWNERSHIP = {
     "order-submit-retry": {
       "currentOwner": "Codex — Optiq UI manager (Mini,01a175b6-a08a-7b82-9ddf-30a5533219ca)",
       "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Compare main #5947 with current clean-line and the active deployment owner's port scope; carry valid source/proof and prepare the minimal Optiq retry/reload repair without a rival branch.",
-      "currentBlocker": "Existing main order-reload/receipt source needs a current Optiq port and retry/no-duplicate proof.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/main/shared/deploy-checklist.md#optiq--named-backlog-owners-and-next-actions"
+      "nextStep": "Port only submitted-order reload to current Optiq draft/receipt contracts; prove already-placed/not-placed/unreachable and no duplicate submission.",
+      "currentBlocker": "Main5947 exists but its submitted-order reload outcome is not ported/proved against current Optiq draft/receipt contracts.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
     },
     "white-label-attestation": {
       "currentOwner": "Codex — Investigate WL COA generation (Mini,01a180cb-c573-7d91-a210-3393c760047f)",
@@ -217,9 +217,9 @@ window.OPTIQ_OWNERSHIP = {
     "shared-lims-priorities": {
       "currentOwner": "Codex — Manager (Mini,01a17598-1981-72f1-b470-98d5690896da)",
       "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Locate the existing priorities implementation; match delivered source and prove retained owners/dependencies through save/reopen before writing replacement code.",
-      "currentBlocker": "Reviewed priorities catalog and save/reopen availability have not been reconciled to installed code.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/main/shared/deploy-checklist.md#optiq--named-backlog-owners-and-next-actions"
+      "nextStep": "Recover the existing LIMS priority implementation, bind the current retained task catalogue, and prove authorized save/reopen with owners/history preserved before replacing code.",
+      "currentBlocker": "Reviewed priorities catalog and save/reopen availability have not been reconciled to installed code. No newer delivery proof found.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
     },
     "hubspot-onboarding": {
       "currentOwner": "Codex — API (Mini,01a18532-865e-7fc0-b514-4cf016fe0337)",
@@ -245,9 +245,9 @@ window.OPTIQ_OWNERSHIP = {
     "submission-matrix-save-parity": {
       "currentOwner": "Codex — Optiq UI manager (Mini,01a175b6-a08a-7b82-9ddf-30a5533219ca)",
       "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Recover the five cases and existing implementation; run only invalidated save/reopen proof on an available copy and repair uncovered parity defects.",
-      "currentBlocker": "Five saved-draft/material/symbol consistency cases lack current-environment proof.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/main/shared/deploy-checklist.md#optiq--named-backlog-owners-and-next-actions"
+      "nextStep": "Recover the five existing saved-draft/material/symbol cases and source; prove save/reopen on the current copy, preserve Tablet behavior, then close installed work or repair only the gap.",
+      "currentBlocker": "Five saved-draft/material/symbol consistency cases lack current-environment proof. No newer delivery proof found.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
     },
     "stable-released-coa-links": {
       "currentOwner": "Codex — Investigate WL COA generation (Mini,01a180cb-c573-7d91-a210-3393c760047f)",
@@ -392,9 +392,9 @@ window.OPTIQ_OWNERSHIP = {
     "data-analysis-demo-review": {
       "currentOwner": "AI100 Codex — Codex d / 10/30 Deployment (01a18e67-ea30-7d43-9e11-f92d1c07c108; existing owners retained)",
       "currentOwnerAsOf": "2026-10-30",
-      "currentBlocker": "Final selected additions still need their current required CI/protected integration and compatible sealed packages, target admission and exact production approval.",
-      "nextStep": "Existing Codex d and 10/30 Deployment owners finish the selected #6991/#6982 source/release scope, reuse valid 31-outcome proof, build once after final integration and present the exact release.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/main/shared/deploy-checklist.md#optiq--current-deployment-and-deferred-changes"
+      "currentBlocker": null,
+      "nextStep": "Delivered scope is installed. Complete the final live click-through; keep later spectral UI requests in their separate open items.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
     },
     "standard-based-net-content": {
       "currentOwner": "MacBook Claude — suspicious-grothendieck / collecting manager (#6889/#6946/#6931; existing source owners retained)",
@@ -406,9 +406,37 @@ window.OPTIQ_OWNERSHIP = {
     "data-analysis-batches": {
       "currentOwner": "MacBook Claude — DA batches manager (local_320490ad; existing source owner retained)",
       "currentOwnerAsOf": "2026-10-30",
-      "currentBlocker": "Named batches/late auto-join remain unfinished; restored purity AddSample/Undo needs current behavior/source gates despite retained fixture repair.",
-      "nextStep": "Existing batch manager finishes named/auto-join behavior and coordinates restored #6938/#6940 AddSample/Undo proof with the active deployment owner; preserve already-live batch navigation.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/main/shared/deploy-checklist.md#optiq--current-deployment-and-deferred-changes"
+      "currentBlocker": "Merged6940 repaired the old fixture mismatch. Purity6938 product/test are still absent from installed5046; current restoration/proof is missing. Named batches/late auto-join remain separate unfinished work.",
+      "nextStep": "Restore the smallest current-compatible6938 feature/test on5046; prove add/refusal/unsaved edits/Undo and run affected source gates. The old fixture mismatch is repaired and is no longer the blocker. Named batches/late auto-join remain separate unfinished work.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
+    },
+    "data-analysis-ion-signal-match": {
+      "currentOwner": "Codex — Optiq Demo Manager (AI100,01a186de-c01b-7b03-96d9-072d77791e54)",
+      "currentOwnerAsOf": "2026-10-30",
+      "nextStep": "Diagnose missing grid / nodeApi-mock failure without weakening coverage; repair the actual defect or stale fixture, pass current required CI, complete Mike click-test and protected clean-line integration.",
+      "currentBlocker": "Current exactc7 CI41158611877 FAILED; manual acceptance and protected source integration remain.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
+    },
+    "data-analysis-spectrum-smoothing": {
+      "currentOwner": "Codex — Keep grid stable while deleting (AI100,01a186db-9faf-7091-aa87-cfcc4a7500a6)",
+      "currentOwnerAsOf": "2026-10-30",
+      "nextStep": "Accept the current delivered Demo scope, land6982 first, then qualify7013 on clean-line with current required CI. Keep unfinished automatic composite assembly separately conditional.",
+      "currentBlocker": "Stacked7013 depends on6982 acceptance/green CI/integration; production packaging and approval have not happened.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
+    },
+    "data-analysis-ion-composite": {
+      "currentOwner": "Codex — Keep grid stable while deleting (AI100,01a186db-9faf-7091-aa87-cfcc4a7500a6)",
+      "currentOwnerAsOf": "2026-10-30",
+      "nextStep": "Existing owner completes automatic assembly with focused acquired-ion/skip/edit/Undo proof and actual Demo acceptance. Independently assess the already-qualified manual component for release after6982/7013 source gates.",
+      "currentBlocker": "Automatic assembly is still being implemented; manual component is stacked in7013 on6982 and not production-installed.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
+    },
+    "data-analysis-stable-ion-table": {
+      "currentOwner": "Codex — Optiq Demo Manager (AI100,01a186de-c01b-7b03-96d9-072d77791e54)",
+      "currentOwnerAsOf": "2026-10-30",
+      "nextStep": "Existing Demo Manager confirms the implementation pickup and proves stable rows through select/assign/save/clear without changing peak context or losing editing/reporting controls.",
+      "currentBlocker": "New feedback is recorded; no implementation or acceptance proof yet.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
     }
   },
   "assignedIds": [
@@ -471,6 +499,10 @@ window.OPTIQ_OWNERSHIP = {
     "quickbooks-status-sync",
     "data-analysis-demo-review",
     "standard-based-net-content",
-    "data-analysis-batches"
+    "data-analysis-batches",
+    "data-analysis-ion-signal-match",
+    "data-analysis-spectrum-smoothing",
+    "data-analysis-ion-composite",
+    "data-analysis-stable-ion-table"
   ]
 };
