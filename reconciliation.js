@@ -1,5 +1,5 @@
 'use strict';
-// Dated delivery and recovery updates retain the previous review and source records.
+// Dated intake updates retain previous reviews and source records.
 window.OPTIQ_RECONCILIATION = {
   "date": "2026-10-30",
   "checklistCommit": "29d0692ef5ea62200049888f52f7bc61b8170aa4",
@@ -682,124 +682,304 @@ window.OPTIQ_RECONCILIATION = {
       "currentAsOf": "2026-10-30",
       "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
       "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
+    },
+    {
+      "id": "my-products-disabled",
+      "title": "My Products: install with availability off",
+      "status": "partial",
+      "stage": 1,
+      "description": "Port the customer product catalogue and ordering capabilities while keeping availability off for every Optiq company.",
+      "detail": "7016 portal groundwork and stacked7023 catalogue are current source work; remaining ordering scope needs an explicit handoff. The port has a fail-closed lab default and per-company overrides. Any installation must verify effective off state for every company, hidden catalogue UI and blocked direct catalogue APIs, while ordinary authorized portal/staff/widget ordering remains compatible. Groundwork affects ordinary ordering even when the feature is off. No customer activation is selected.",
+      "currentOwner": "Existing My Products Optiq port owner (PR7016/7023); 10/30 Deployment qualifies installed-off scope",
+      "currentBlocker": "Current source CI/review/browser gates and complete selected port/migration qualification remain; company override states must be bound to off.",
+      "nextStep": "Complete the selected Optiq port and its current required checks/review, rehearse only selected absent migrations, and qualify off-state/direct-access plus ordinary ordering and company-grant isolation. Activation stays a separate scope.",
+      "evidence": "Current PR7016/7023 source and isMyProductsEnabledForCompany inspected; source snapshots retained in deployment work. Production5046 has no My Products feature source.",
+      "plannedAvailability": "off",
+      "sourcePrs": [
+        7016,
+        7023,
+        7019
+      ],
+      "area": "Client Portal",
+      "currentDisposition": "7016 portal groundwork and stacked7023 catalogue are current source work; remaining ordering scope needs an explicit handoff. The port has a fail-closed lab default and per-company overrides. Any installation must verify effective off state for every company, hidden catalogue UI and blocked direct catalogue APIs, while ordinary authorized portal/staff/widget ordering remains compatible. Groundwork affects ordinary ordering even when the feature is off. No customer activation is selected.",
+      "currentNotes": [
+        "partial"
+      ],
+      "currentAsOf": "2026-10-30",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+    },
+    {
+      "id": "compact-sample-photo-clarity",
+      "title": "Clearer compact sample photos and counts",
+      "status": "partial",
+      "stage": 1,
+      "description": "Show compact sample photos clearly and move the photo count off the image.",
+      "detail": "Current7020 changes compact-header thumbnail/cover presentation and count placement. Existing gallery, chosen photo, count, actions, fallback and source image bytes stay intact. It is newer source work outside the installed5046 release; it does not establish lab-photo provenance or implement the separate lab-photo sorting request.",
+      "currentOwner": "Existing PR7020 photo refinement source owner; Optiq Demo Manager coordinates the cumulative preview",
+      "currentBlocker": "Stacked source needs current review/gates, cumulative Demo binding and explicit production artifact inclusion.",
+      "nextStep": "Preserve the latest combined UI, reuse existing six photo tests and exact visual/build proof, finish current source/served qualification and include the complete eligible presentation change.",
+      "evidence": "PR7020 source/body read: two presentation files, retained focused tests and native build/visual proof. No production install claimed.",
+      "sourcePrs": [
+        7020
+      ],
+      "area": "User Interface",
+      "currentDisposition": "Current7020 changes compact-header thumbnail/cover presentation and count placement. Existing gallery, chosen photo, count, actions, fallback and source image bytes stay intact. It is newer source work outside the installed5046 release; it does not establish lab-photo provenance or implement the separate lab-photo sorting request.",
+      "currentNotes": [
+        "partial"
+      ],
+      "currentAsOf": "2026-10-30",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+    },
+    {
+      "id": "optiq-dark-branding",
+      "title": "Canonical dark-mode Optiq logo and emblem",
+      "status": "partial",
+      "stage": 1,
+      "description": "Use the approved dark Optiq wordmark, coloured standalone emblem and matching dark email logo.",
+      "detail": "Current7021 carries the Optiq-line assets and branding cache version; main twin7022 carries its shared portion. Light-mode branding stays intact. Current draft/source gates and exact final review remain; source existence does not establish production delivery.",
+      "currentOwner": "Existing Optiq branding source owner (PR7021/7022); 10/30 Deployment qualifies the paired release surfaces",
+      "currentBlocker": "Current required CI/review and exact web/API/shared branding artifact inclusion are not qualified.",
+      "nextStep": "Finish the existing source gates and asset/render proof for dark full/collapsed/sidebar/email contexts, preserve light branding, and include the exact qualified web/shared/API surfaces without generating customer email.",
+      "evidence": "Current7021 source/files inspected, including branding.ts, Optiq2 branding and dark SVG/PNG assets; main twin retained.",
+      "sourcePrs": [
+        7021,
+        7022
+      ],
+      "area": "User Interface",
+      "currentDisposition": "Current7021 carries the Optiq-line assets and branding cache version; main twin7022 carries its shared portion. Light-mode branding stays intact. Current draft/source gates and exact final review remain; source existence does not establish production delivery.",
+      "currentNotes": [
+        "partial"
+      ],
+      "currentAsOf": "2026-10-30",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
     }
   ],
   "followUpDate": "2026-10-30",
-  "followUpChecklistCommit": "8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541",
-  "followUpChecklistUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
+  "followUpChecklistCommit": "65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a",
+  "followUpChecklistUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
   "followUpUpdates": {
-    "data-analysis-demo-review": {
-      "title": "Data Analysis review UI: installed",
-      "status": "complete",
-      "stage": 3,
-      "description": "Compact Purity, unified analyte/ion controls, stable peak navigation, baseline endpoint repair, exact spectrum hover and quiet overlay clearing are installed.",
-      "detail": "The original31 UI source outcomes plus exact acquired-spectrum hover6991 and quiet overlay clearing7011 are installed in approved5046. The shared ion-matching repair applies across supported analytes; SS-31 was the verification example. Affected public UI and installed matching modules match the sealed artifacts; actual rendition PID/version/readiness and queue resume passed. Later6982 match-evidence and7013 smoothing/composite work are tracked separately. No migrations or feature activations were performed.",
-      "currentDisposition": "Installed and health/artifact verified. Existing exact-source Demo/browser functional proof reused; Mike final live click-test remains.",
-      "nextStep": "Delivered scope is installed. Complete the final live click-through; keep later spectral UI requests in their separate open items.",
-      "currentBlocker": null,
-      "currentNotes": [],
-      "evidence": "Approved5046 web/API/pairedNode/rendition publication completed; native exits0, genuine readiness/owned queue resume, exact affected asset/module hashes and released locks verified. Production proof retained in 10/30 Deployment outputs/published-release-verification.json.",
-      "deliveryEvidence": {
-        "kind": "production",
-        "release": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
-        "prs": [
-          6876,
-          6991,
-          7011
-        ],
-        "record": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
-      },
+    "invoice-status": {
+      "nextStep": "Finish the Uninvoiced quick filter with finance: establish authoritative sample-level issued-invoice coverage, then prove invoiced/uninvoiced/part-covered cases. Paid/Unpaid alone is insufficient.",
+      "currentBlocker": "Authoritative issued-invoice coverage is a dependency; Uninvoiced filter still lacks implementation/proof.",
+      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
       "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
     },
-    "conformity": {
-      "currentBlocker": "Current9b378b8 required CI41147000075 attempt2 is green; explicit Mike manual merge hold, final worker/access proof and approved catalogue/configuration/activation remain.",
-      "nextStep": "Mike click-tests the current card and lifts the explicit merge hold; then final clean-line worker/access proof, approved catalogue/configuration and exact release/activation decision.",
-      "evidence": "Current PR6735 source/body and required CI refreshed. Source/practice qualification is retained; live client availability is not established by green source checks.",
+    "public-signup-approval": {
+      "nextStep": "Include the new-customer and returning-client journeys in finance acceptance: sample entry, price/terms, payment/server confirmation, authorized portal access after payment or invitation, and preserved drafts on refusal/failure. Ordinary ordering must work while My Products stays off.",
+      "currentBlocker": "Sandbox payment code does not prove complete signup/invitation/approved-terms account access.",
+      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
       "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+    },
+    "receipt-emails": {
+      "nextStep": "Close installed company-name receipt delivery from retained outbox/inbox evidence and the qualified finance sandbox/capture case. Check recipient and company scoping; do not rebuild the old receipt bundle or send a customer smoke email.",
+      "currentBlocker": "Company-name code is installed; existing delivery/inbox and recipient evidence is incomplete.",
+      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+      "currentAsOf": "2026-10-30",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+    },
+    "client-bulk-white-label": {
+      "nextStep": "Finish the existing authorized private draft → edit → save/reopen → photo → correct-PDF/ZIP journey as a COA acceptance cohort; isolate any demonstrated repair instead of reopening delivered bulk code.",
+      "currentBlocker": "Private draft/edit/reopen/photo/correct-PDF acceptance remains open despite delivered bulk/ZIP code.",
+      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+      "currentAsOf": "2026-10-30",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+    },
+    "stable-released-coa-links": {
+      "nextStep": "Use the synthetic COA replacement/recovery case to prove original and white-label durable links, correct retained versions and tenant boundaries. Keep printed-number activation as its distinct unresolved identity/data decision.",
+      "currentBlocker": "Combined white-label/permanent-link/recovery acceptance remains incomplete.",
+      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+      "currentAsOf": "2026-10-30",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+    },
+    "sample-details-documents": {
+      "nextStep": "Recover the installed document/slip paths and prove the correct sample/order original digital slip, annotated paperwork and signed-attestation links plus authenticated reopen; repair only a missing association or access gap.",
+      "currentBlocker": "Attachments are delivered; original digital-slip access and correct paperwork/attestation association still need acceptance.",
+      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+      "currentAsOf": "2026-10-30",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+    },
+    "inspection-rules": {
+      "nextStep": "Take the completed source/proof slice into a supported admitted acceptance copy, finish any missing receiving/Hub control or vial wording, then prove saved observations through reopen and the first-page COA. A stale copy/admission label needs a current check.",
+      "currentBlocker": "Receiving/Hub controls, final vial wording and saved-observation-to-COA proof remain incomplete.",
+      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+      "currentAsOf": "2026-10-30",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+    },
+    "coa-status-language": {
+      "nextStep": "Include the retained identity-mismatch versus submitted-claim case in current synthetic PDF and digital-card acceptance; close only after the wrong identity cannot appear as successful green matching.",
+      "currentBlocker": "Installed identity-mismatch behavior must be located and verified on both report surfaces.",
+      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+      "currentAsOf": "2026-10-30",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+    },
+    "analysis-framework": {
+      "nextStep": "Bind selected direct-entry/save/reopen/independent-review/COA cases to the Conformity/standards acceptance work. Record any uncovered method-specific gap rather than inferring full framework completion from one Purity fixture.",
+      "currentBlocker": "Direct entry/save/reopen/independent review/released-COA acceptance remains incomplete beyond installed Data Analysis.",
+      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+      "currentAsOf": "2026-10-30",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
     },
     "data-analysis-batches": {
+      "nextStep": "Restore current-compatible Purity AddSample/Undo and finish named batches/late-sample auto-join as explicit batch deliverables. Supply the actual named-batch source or identify its implementation gap; preserve delivered run controls and avoid inventing sign-off.",
       "currentBlocker": "Merged6940 repaired the old fixture mismatch. Purity6938 product/test are still absent from installed5046; current restoration/proof is missing. Named batches/late auto-join remain separate unfinished work.",
-      "nextStep": "Restore the smallest current-compatible6938 feature/test on5046; prove add/refusal/unsaved edits/Undo and run affected source gates. The old fixture mismatch is repaired and is no longer the blocker. Named batches/late auto-join remain separate unfinished work.",
-      "evidence": "Current6938/6940 PR records confirm both merged historically. Installed5046 preserves the reduced-release exclusion; source merge alone did not deliver AddSample.",
+      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
       "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
     },
-    "order-submit-retry": {
-      "status": "check",
-      "stage": 2,
-      "currentBlocker": "Main5947 exists but its submitted-order reload outcome is not ported/proved against current Optiq draft/receipt contracts.",
-      "nextStep": "Port only submitted-order reload to current Optiq draft/receipt contracts; prove already-placed/not-placed/unreachable and no duplicate submission.",
-      "evidence": "PR5947 is merged to main; last product record20 October. Retry dedup is already installed; only the missing reload outcome needs recovery.",
-      "lastSubstantiveEvidenceAt": "2026-10-20",
+    "data-analysis-ion-composite": {
+      "nextStep": "Automatic assembly now has code-ready source and retained focused proof; finish exact review/artifact/actual served qualification, including acquired-ion selection, explicit partial failures and Undo. Integrate the manual/automatic scope through the stacked spectral UI source.",
+      "currentBlocker": "Automatic assembly now has code-ready source; exact review/artifact/served qualification and stacked integration remain.",
+      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
       "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
     },
-    "submission-matrix-save-parity": {
-      "status": "check",
-      "stage": 2,
-      "lastSubstantiveEvidenceAt": "2026-10-12",
-      "evidenceBasis": "Recovery review; earlier delivery evidence remains unproved",
-      "evidence": "Last substantive retained record: 2026-10-12 (18 days before this review). New owner assignment is not new implementation or delivery proof.",
-      "currentBlocker": "Five saved-draft/material/symbol consistency cases lack current-environment proof. No newer delivery proof found.",
-      "nextStep": "Recover the five existing saved-draft/material/symbol cases and source; prove save/reopen on the current copy, preserve Tablet behavior, then close installed work or repair only the gap.",
-      "currentNotes": [
-        "verification"
-      ],
+    "data-analysis-stable-ion-table": {
+      "nextStep": "PR7017 now implements stable inline suggested/working/saved states. Finish exact source review, current gates and served select/save/reopen/discard proof while preserving reporting/observation distinctions and BIGINT identity.",
+      "currentBlocker": "Implemented source7017 is stacked; exact source/review/current gates and served acceptance remain.",
+      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+      "status": "partial",
+      "stage": 1,
       "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
-    },
-    "bulk-coa-amendments": {
-      "status": "check",
-      "stage": 2,
-      "lastSubstantiveEvidenceAt": "2026-10-10",
-      "evidenceBasis": "Recovery review; earlier delivery evidence remains unproved",
-      "evidence": "Last substantive retained record: 2026-10-10 (20 days before this review). New owner assignment is not new implementation or delivery proof.",
-      "currentBlocker": "Selection through replacement release and retained earlier versions remains unqualified. No newer delivery proof found.",
-      "nextStep": "Recover the existing bulk correction source; use a synthetic selection through replacement release and retained earlier certificates. Do not publish the obsolete4920 bundle or use customer releases for proof.",
-      "currentNotes": [
-        "verification"
-      ],
-      "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
-    },
-    "grid-widths": {
-      "status": "check",
-      "stage": 2,
-      "lastSubstantiveEvidenceAt": "2026-10-10",
-      "evidenceBasis": "Recovery review; earlier delivery evidence remains unproved",
-      "evidence": "Last substantive retained record: 2026-10-10 (20 days before this review). New owner assignment is not new implementation or delivery proof.",
-      "currentBlocker": "Automatic/fixed width availability lacks current installed-source and browser proof. No newer delivery proof found.",
-      "nextStep": "Check whether Auto/Fixed widths and persistence are already installed; close from current evidence or port only a missing control. Do not rebuild the grid.",
-      "currentNotes": [
-        "verification"
-      ],
-      "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
-    },
-    "shared-lims-priorities": {
-      "status": "check",
-      "stage": 2,
-      "lastSubstantiveEvidenceAt": "2026-10-20",
-      "evidenceBasis": "Recovery review; earlier delivery evidence remains unproved",
-      "evidence": "Last substantive retained record: 2026-10-20 (10 days before this review). New owner assignment is not new implementation or delivery proof.",
-      "currentBlocker": "Reviewed priorities catalog and save/reopen availability have not been reconciled to installed code. No newer delivery proof found.",
-      "nextStep": "Recover the existing LIMS priority implementation, bind the current retained task catalogue, and prove authorized save/reopen with owners/history preserved before replacing code.",
-      "currentNotes": [
-        "verification"
-      ],
-      "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
     }
-  }
+  },
+  "followUpHistory": [
+    {
+      "date": "2026-10-30",
+      "checklistCommit": "8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541",
+      "checklistUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
+      "updates": {
+        "data-analysis-demo-review": {
+          "title": "Data Analysis review UI: installed",
+          "status": "complete",
+          "stage": 3,
+          "description": "Compact Purity, unified analyte/ion controls, stable peak navigation, baseline endpoint repair, exact spectrum hover and quiet overlay clearing are installed.",
+          "detail": "The original31 UI source outcomes plus exact acquired-spectrum hover6991 and quiet overlay clearing7011 are installed in approved5046. The shared ion-matching repair applies across supported analytes; SS-31 was the verification example. Affected public UI and installed matching modules match the sealed artifacts; actual rendition PID/version/readiness and queue resume passed. Later6982 match-evidence and7013 smoothing/composite work are tracked separately. No migrations or feature activations were performed.",
+          "currentDisposition": "Installed and health/artifact verified. Existing exact-source Demo/browser functional proof reused; Mike final live click-test remains.",
+          "nextStep": "Delivered scope is installed. Complete the final live click-through; keep later spectral UI requests in their separate open items.",
+          "currentBlocker": null,
+          "currentNotes": [],
+          "evidence": "Approved5046 web/API/pairedNode/rendition publication completed; native exits0, genuine readiness/owned queue resume, exact affected asset/module hashes and released locks verified. Production proof retained in 10/30 Deployment outputs/published-release-verification.json.",
+          "deliveryEvidence": {
+            "kind": "production",
+            "release": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
+            "prs": [
+              6876,
+              6991,
+              7011
+            ],
+            "record": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
+          },
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
+        },
+        "conformity": {
+          "currentBlocker": "Current9b378b8 required CI41147000075 attempt2 is green; explicit Mike manual merge hold, final worker/access proof and approved catalogue/configuration/activation remain.",
+          "nextStep": "Mike click-tests the current card and lifts the explicit merge hold; then final clean-line worker/access proof, approved catalogue/configuration and exact release/activation decision.",
+          "evidence": "Current PR6735 source/body and required CI refreshed. Source/practice qualification is retained; live client availability is not established by green source checks.",
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
+        },
+        "data-analysis-batches": {
+          "currentBlocker": "Merged6940 repaired the old fixture mismatch. Purity6938 product/test are still absent from installed5046; current restoration/proof is missing. Named batches/late auto-join remain separate unfinished work.",
+          "nextStep": "Restore the smallest current-compatible6938 feature/test on5046; prove add/refusal/unsaved edits/Undo and run affected source gates. The old fixture mismatch is repaired and is no longer the blocker. Named batches/late auto-join remain separate unfinished work.",
+          "evidence": "Current6938/6940 PR records confirm both merged historically. Installed5046 preserves the reduced-release exclusion; source merge alone did not deliver AddSample.",
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
+        },
+        "order-submit-retry": {
+          "status": "check",
+          "stage": 2,
+          "currentBlocker": "Main5947 exists but its submitted-order reload outcome is not ported/proved against current Optiq draft/receipt contracts.",
+          "nextStep": "Port only submitted-order reload to current Optiq draft/receipt contracts; prove already-placed/not-placed/unreachable and no duplicate submission.",
+          "evidence": "PR5947 is merged to main; last product record20 October. Retry dedup is already installed; only the missing reload outcome needs recovery.",
+          "lastSubstantiveEvidenceAt": "2026-10-20",
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
+        },
+        "submission-matrix-save-parity": {
+          "status": "check",
+          "stage": 2,
+          "lastSubstantiveEvidenceAt": "2026-10-12",
+          "evidenceBasis": "Recovery review; earlier delivery evidence remains unproved",
+          "evidence": "Last substantive retained record: 2026-10-12 (18 days before this review). New owner assignment is not new implementation or delivery proof.",
+          "currentBlocker": "Five saved-draft/material/symbol consistency cases lack current-environment proof. No newer delivery proof found.",
+          "nextStep": "Recover the five existing saved-draft/material/symbol cases and source; prove save/reopen on the current copy, preserve Tablet behavior, then close installed work or repair only the gap.",
+          "currentNotes": [
+            "verification"
+          ],
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
+        },
+        "bulk-coa-amendments": {
+          "status": "check",
+          "stage": 2,
+          "lastSubstantiveEvidenceAt": "2026-10-10",
+          "evidenceBasis": "Recovery review; earlier delivery evidence remains unproved",
+          "evidence": "Last substantive retained record: 2026-10-10 (20 days before this review). New owner assignment is not new implementation or delivery proof.",
+          "currentBlocker": "Selection through replacement release and retained earlier versions remains unqualified. No newer delivery proof found.",
+          "nextStep": "Recover the existing bulk correction source; use a synthetic selection through replacement release and retained earlier certificates. Do not publish the obsolete4920 bundle or use customer releases for proof.",
+          "currentNotes": [
+            "verification"
+          ],
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
+        },
+        "grid-widths": {
+          "status": "check",
+          "stage": 2,
+          "lastSubstantiveEvidenceAt": "2026-10-10",
+          "evidenceBasis": "Recovery review; earlier delivery evidence remains unproved",
+          "evidence": "Last substantive retained record: 2026-10-10 (20 days before this review). New owner assignment is not new implementation or delivery proof.",
+          "currentBlocker": "Automatic/fixed width availability lacks current installed-source and browser proof. No newer delivery proof found.",
+          "nextStep": "Check whether Auto/Fixed widths and persistence are already installed; close from current evidence or port only a missing control. Do not rebuild the grid.",
+          "currentNotes": [
+            "verification"
+          ],
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
+        },
+        "shared-lims-priorities": {
+          "status": "check",
+          "stage": 2,
+          "lastSubstantiveEvidenceAt": "2026-10-20",
+          "evidenceBasis": "Recovery review; earlier delivery evidence remains unproved",
+          "evidence": "Last substantive retained record: 2026-10-20 (10 days before this review). New owner assignment is not new implementation or delivery proof.",
+          "currentBlocker": "Reviewed priorities catalog and save/reopen availability have not been reconciled to installed code. No newer delivery proof found.",
+          "nextStep": "Recover the existing LIMS priority implementation, bind the current retained task catalogue, and prove authorized save/reopen with owners/history preserved before replacing code.",
+          "currentNotes": [
+            "verification"
+          ],
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
+        }
+      }
+    }
+  ]
 };
 window.OPTIQ_REVIEW.additions.push(...window.OPTIQ_RECONCILIATION.additions);

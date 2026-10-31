@@ -59,7 +59,7 @@ assert(items.find(row => row.id === 'sample-details-documents').status !== 'comp
 console.log(`PASS: ${Object.keys(dated.updates).length} dated reconciliations and ${dated.additions.length} new tracked scopes; production closures and activation/Demo holds preserved.`);
 
 const assigned = context.window.OPTIQ_OWNERSHIP;
-assert.equal(Object.keys(assigned.updates).length, 62, 'Retain the58 owner records and four separate new Demo scopes');
+assert.equal(Object.keys(assigned.updates).length, 65, 'Retain existing owner records plus three newly tracked source scopes');
 for (const [id, update] of Object.entries(assigned.updates)) {
   const item = items.find(row => row.id === id);
   assert.equal(item.currentOwner, update.currentOwner);
@@ -67,11 +67,11 @@ for (const [id, update] of Object.entries(assigned.updates)) {
   assert(item.nextStep && item.ownershipRecordUrl && (item.status === 'complete' || item.currentBlocker), `Missing owner handoff: ${id}`);
   assert.equal(item.status, item.previousReview.status, `Assignment changed delivery status: ${id}`);
 }
-console.log('PASS:62 retained owner records;53 original exact chat assignments and9 retained source scopes; completed delivery and remaining blockers stay distinct.');
+console.log('PASS:65 retained owner records;53 original exact chat assignments and12 retained source scopes; completed delivery and remaining blockers stay distinct.');
 
 // The installed release must not close newer Demo-only scope or lose prior evidence.
-assert.equal(originals.length,131);
-assert.equal(items.length,104);
+assert.equal(originals.length,134);
+assert.equal(items.length,107);
 const installed=items.find(row=>row.id==='data-analysis-demo-review');
 assert.equal(installed.status,'complete');
 assert.equal(installed.deliveryEvidence.release,'5046f44ebc8a48bde8d03a8ad602c2448467547b');
@@ -92,3 +92,11 @@ for(const id of ['bulk-coa-amendments','submission-matrix-save-parity','grid-wid
   assert(item.lastSubstantiveEvidenceAt && item.evidence.includes('not new implementation'));
 }
 console.log('PASS: installed scope closes independently; four newer scopes remain open; older recovery evidence dates and original history retained.');
+
+for(const id of ['my-products-disabled','compact-sample-photo-clarity','optiq-dark-branding']) {
+ const item=items.find(row=>row.id===id);
+ assert(item && item.status!=='complete' && item.currentBlocker && item.nextStep);
+}
+assert.equal(items.find(row=>row.id==='my-products-disabled').plannedAvailability,'off');
+assert.equal(items.filter(row=>row.status==='complete').length,41);
+console.log('PASS: full intake preserves delivery history and keeps My Products planned off.');

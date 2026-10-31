@@ -46,7 +46,7 @@ window.OPTIQ_CATALOG = window.OPTIQ_CATALOG.map(request => {
 const reconciliation = window.OPTIQ_RECONCILIATION;
 if (reconciliation) {
   // Apply later delivery evidence after the earlier snapshot; keep both records in history.
-  for (const updates of [reconciliation.updates, reconciliation.followUpUpdates || {}]) {
+  for (const updates of [reconciliation.updates, ...(reconciliation.followUpHistory || []).map(record => record.updates), reconciliation.followUpUpdates || {}]) {
     for (const id of Object.keys(updates)) {
       if (!catalogIds.has(id)) throw new Error(`Reconciliation update has no work item: ${id}`);
     }

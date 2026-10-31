@@ -1,8 +1,8 @@
 'use strict';
-// Explicit owner assignment is separate from recorded product delivery.
+// Owner assignment remains separate from delivery.
 window.OPTIQ_OWNERSHIP = {
   "date": "2026-10-30",
-  "sourceCommit": "8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541",
+  "sourceCommit": "65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a",
   "updates": {
     "conformity": {
       "currentOwner": "Codex — Make Conformity orderable on Optiq (Mini,01a17cec-f70b-7d10-ab3b-2124de17aa12)",
@@ -14,9 +14,9 @@ window.OPTIQ_OWNERSHIP = {
     "inspection-rules": {
       "currentOwner": "Codex — Optiq UI manager (Mini,01a175b6-a08a-7b82-9ddf-30a5533219ca)",
       "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Recover the existing inspection plan and installed controls; prove a synthetic receive/save/reopen/COA case and finish only the uncovered UI or handoff.",
+      "nextStep": "Take the completed source/proof slice into a supported admitted acceptance copy, finish any missing receiving/Hub control or vial wording, then prove saved observations through reopen and the first-page COA. A stale copy/admission label needs a current check.",
       "currentBlocker": "Receiving/Hub controls, final vial wording and saved-observation-to-COA proof remain incomplete.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/main/shared/deploy-checklist.md#optiq--named-backlog-owners-and-next-actions"
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
     },
     "spectral-reference-library": {
       "currentOwner": "Codex — Manager (Mini,01a17598-1981-72f1-b470-98d5690896da)",
@@ -28,16 +28,16 @@ window.OPTIQ_OWNERSHIP = {
     "receipt-emails": {
       "currentOwner": "Codex — Investigate WL COA generation (Mini,01a180cb-c573-7d91-a210-3393c760047f)",
       "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Recover original receipt owner/outbox/inbox proof and bind it to installed code; close the evidence gap or identify exact missing receipt evidence without sending smoke email.",
+      "nextStep": "Close installed company-name receipt delivery from retained outbox/inbox evidence and the qualified finance sandbox/capture case. Check recipient and company scoping; do not rebuild the old receipt bundle or send a customer smoke email.",
       "currentBlocker": "Company-name code is installed; existing delivery/inbox and recipient evidence is incomplete.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/main/shared/deploy-checklist.md#optiq--named-backlog-owners-and-next-actions"
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
     },
     "invoice-status": {
       "currentOwner": "Codex — Optiq UI manager (Mini,01a175b6-a08a-7b82-9ddf-30a5533219ca)",
       "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Trace the current invoice-status source and coverage contract with the QuickBooks owner; implement the filter only against an authoritative status, otherwise record the exact missing contract.",
+      "nextStep": "Finish the Uninvoiced quick filter with finance: establish authoritative sample-level issued-invoice coverage, then prove invoiced/uninvoiced/part-covered cases. Paid/Unpaid alone is insufficient.",
       "currentBlocker": "Authoritative issued-invoice coverage is a dependency; Uninvoiced filter still lacks implementation/proof.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/main/shared/deploy-checklist.md#optiq--named-backlog-owners-and-next-actions"
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
     },
     "grid-widths": {
       "currentOwner": "Codex — Optiq UI manager (Mini,01a175b6-a08a-7b82-9ddf-30a5533219ca)",
@@ -70,9 +70,9 @@ window.OPTIQ_OWNERSHIP = {
     "client-bulk-white-label": {
       "currentOwner": "Codex — Investigate WL COA generation (Mini,01a180cb-c573-7d91-a210-3393c760047f)",
       "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Recover current private-draft/photo proof and finish one synthetic authorized/denied draft-to-PDF case; preserve issued certificate history.",
+      "nextStep": "Finish the existing authorized private draft → edit → save/reopen → photo → correct-PDF/ZIP journey as a COA acceptance cohort; isolate any demonstrated repair instead of reopening delivered bulk code.",
       "currentBlocker": "Private draft/edit/reopen/photo/correct-PDF acceptance remains open despite delivered bulk/ZIP code.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/main/shared/deploy-checklist.md#optiq--named-backlog-owners-and-next-actions"
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
     },
     "scan-intake": {
       "currentOwner": "Codex — Manager (Mini,01a17598-1981-72f1-b470-98d5690896da)",
@@ -91,9 +91,9 @@ window.OPTIQ_OWNERSHIP = {
     "analysis-framework": {
       "currentOwner": "Codex — Optiq UI manager (Mini,01a175b6-a08a-7b82-9ddf-30a5533219ca)",
       "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Recover existing result-entry source and proof; close the first missing synthetic direct-entry-to-review handoff without altering current Demo/scientific source ownership.",
+      "nextStep": "Bind selected direct-entry/save/reopen/independent-review/COA cases to the Conformity/standards acceptance work. Record any uncovered method-specific gap rather than inferring full framework completion from one Purity fixture.",
       "currentBlocker": "Direct entry/save/reopen/independent review/released-COA acceptance remains incomplete beyond installed Data Analysis.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/main/shared/deploy-checklist.md#optiq--named-backlog-owners-and-next-actions"
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
     },
     "multi-lab-login": {
       "currentOwner": "Codex — Fix failing login checks (Mini,01a17ca1-687e-7e13-b2ee-f7cb40eab86c)",
@@ -161,9 +161,9 @@ window.OPTIQ_OWNERSHIP = {
     "public-signup-approval": {
       "currentOwner": "Codex — Connect Square to Optiq (Mini,01a1848c-cac4-7783-8698-6e9a4aed3669)",
       "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Recover current checkout/auth contracts; prove synthetic signup/payment-or-approved-terms/invitation/account transitions, keeping real payments off.",
+      "nextStep": "Include the new-customer and returning-client journeys in finance acceptance: sample entry, price/terms, payment/server confirmation, authorized portal access after payment or invitation, and preserved drafts on refusal/failure. Ordinary ordering must work while My Products stays off.",
       "currentBlocker": "Sandbox payment code does not prove complete signup/invitation/approved-terms account access.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/main/shared/deploy-checklist.md#optiq--named-backlog-owners-and-next-actions"
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
     },
     "portal-price-visibility": {
       "currentOwner": "Codex — Connect Square to Optiq (Mini,01a1848c-cac4-7783-8698-6e9a4aed3669)",
@@ -196,9 +196,9 @@ window.OPTIQ_OWNERSHIP = {
     "coa-status-language": {
       "currentOwner": "Codex — Investigate WL COA generation (Mini,01a180cb-c573-7d91-a210-3393c760047f)",
       "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Locate the mismatch fix and prove synthetic matching/mismatching cases on report and certificate views without changing scientific findings.",
+      "nextStep": "Include the retained identity-mismatch versus submitted-claim case in current synthetic PDF and digital-card acceptance; close only after the wrong identity cannot appear as successful green matching.",
       "currentBlocker": "Installed identity-mismatch behavior must be located and verified on both report surfaces.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/main/shared/deploy-checklist.md#optiq--named-backlog-owners-and-next-actions"
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
     },
     "partner-sample-routing": {
       "currentOwner": "Codex — Manager (Mini,01a17598-1981-72f1-b470-98d5690896da)",
@@ -252,9 +252,9 @@ window.OPTIQ_OWNERSHIP = {
     "stable-released-coa-links": {
       "currentOwner": "Codex — Investigate WL COA generation (Mini,01a180cb-c573-7d91-a210-3393c760047f)",
       "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Recover installed link and enumeration protections; prove synthetic latest-release, branded and recovery links while preserving older issued artifacts.",
+      "nextStep": "Use the synthetic COA replacement/recovery case to prove original and white-label durable links, correct retained versions and tenant boundaries. Keep printed-number activation as its distinct unresolved identity/data decision.",
       "currentBlocker": "Combined white-label/permanent-link/recovery acceptance remains incomplete.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/main/shared/deploy-checklist.md#optiq--named-backlog-owners-and-next-actions"
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
     },
     "coa-automatic-ion-interpretation": {
       "currentOwner": "Codex — Investigate WL COA generation (Mini,01a180cb-c573-7d91-a210-3393c760047f)",
@@ -280,9 +280,9 @@ window.OPTIQ_OWNERSHIP = {
     "sample-details-documents": {
       "currentOwner": "Codex — Optiq UI manager (Mini,01a175b6-a08a-7b82-9ddf-30a5533219ca)",
       "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Recover the installed Documents and slip paths; prove the correct synthetic sample/order slip and attachment links, then repair only a remaining association/access gap.",
+      "nextStep": "Recover the installed document/slip paths and prove the correct sample/order original digital slip, annotated paperwork and signed-attestation links plus authenticated reopen; repair only a missing association or access gap.",
       "currentBlocker": "Attachments are delivered; original digital-slip access and correct paperwork/attestation association still need acceptance.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/main/shared/deploy-checklist.md#optiq--named-backlog-owners-and-next-actions"
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
     },
     "sample-order-client-messaging": {
       "currentOwner": "Codex — Optiq UI manager (Mini,01a175b6-a08a-7b82-9ddf-30a5533219ca)",
@@ -407,8 +407,8 @@ window.OPTIQ_OWNERSHIP = {
       "currentOwner": "MacBook Claude — DA batches manager (local_320490ad; existing source owner retained)",
       "currentOwnerAsOf": "2026-10-30",
       "currentBlocker": "Merged6940 repaired the old fixture mismatch. Purity6938 product/test are still absent from installed5046; current restoration/proof is missing. Named batches/late auto-join remain separate unfinished work.",
-      "nextStep": "Restore the smallest current-compatible6938 feature/test on5046; prove add/refusal/unsaved edits/Undo and run affected source gates. The old fixture mismatch is repaired and is no longer the blocker. Named batches/late auto-join remain separate unfinished work.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
+      "nextStep": "Restore current-compatible Purity AddSample/Undo and finish named batches/late-sample auto-join as explicit batch deliverables. Supply the actual named-batch source or identify its implementation gap; preserve delivered run controls and avoid inventing sign-off.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
     },
     "data-analysis-ion-signal-match": {
       "currentOwner": "Codex — Optiq Demo Manager (AI100,01a186de-c01b-7b03-96d9-072d77791e54)",
@@ -427,16 +427,37 @@ window.OPTIQ_OWNERSHIP = {
     "data-analysis-ion-composite": {
       "currentOwner": "Codex — Keep grid stable while deleting (AI100,01a186db-9faf-7091-aa87-cfcc4a7500a6)",
       "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Existing owner completes automatic assembly with focused acquired-ion/skip/edit/Undo proof and actual Demo acceptance. Independently assess the already-qualified manual component for release after6982/7013 source gates.",
-      "currentBlocker": "Automatic assembly is still being implemented; manual component is stacked in7013 on6982 and not production-installed.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
+      "nextStep": "Automatic assembly now has code-ready source and retained focused proof; finish exact review/artifact/actual served qualification, including acquired-ion selection, explicit partial failures and Undo. Integrate the manual/automatic scope through the stacked spectral UI source.",
+      "currentBlocker": "Automatic assembly now has code-ready source; exact review/artifact/served qualification and stacked integration remain.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
     },
     "data-analysis-stable-ion-table": {
       "currentOwner": "Codex — Optiq Demo Manager (AI100,01a186de-c01b-7b03-96d9-072d77791e54)",
       "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Existing Demo Manager confirms the implementation pickup and proves stable rows through select/assign/save/clear without changing peak context or losing editing/reporting controls.",
-      "currentBlocker": "New feedback is recorded; no implementation or acceptance proof yet.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
+      "nextStep": "PR7017 now implements stable inline suggested/working/saved states. Finish exact source review, current gates and served select/save/reopen/discard proof while preserving reporting/observation distinctions and BIGINT identity.",
+      "currentBlocker": "Implemented source7017 is stacked; exact source/review/current gates and served acceptance remain.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
+    },
+    "my-products-disabled": {
+      "currentOwner": "Existing My Products Optiq port owner (PR7016/7023); 10/30 Deployment qualifies installed-off scope",
+      "currentOwnerAsOf": "2026-10-30",
+      "nextStep": "Complete the selected Optiq port and its current required checks/review, rehearse only selected absent migrations, and qualify off-state/direct-access plus ordinary ordering and company-grant isolation. Activation stays a separate scope.",
+      "currentBlocker": "Current source CI/review/browser gates and complete selected port/migration qualification remain; company override states must be bound to off.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
+    },
+    "compact-sample-photo-clarity": {
+      "currentOwner": "Existing PR7020 photo refinement source owner; Optiq Demo Manager coordinates the cumulative preview",
+      "currentOwnerAsOf": "2026-10-30",
+      "nextStep": "Preserve the latest combined UI, reuse existing six photo tests and exact visual/build proof, finish current source/served qualification and include the complete eligible presentation change.",
+      "currentBlocker": "Stacked source needs current review/gates, cumulative Demo binding and explicit production artifact inclusion.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
+    },
+    "optiq-dark-branding": {
+      "currentOwner": "Existing Optiq branding source owner (PR7021/7022); 10/30 Deployment qualifies the paired release surfaces",
+      "currentOwnerAsOf": "2026-10-30",
+      "nextStep": "Finish the existing source gates and asset/render proof for dark full/collapsed/sidebar/email contexts, preserve light branding, and include the exact qualified web/shared/API surfaces without generating customer email.",
+      "currentBlocker": "Current required CI/review and exact web/API/shared branding artifact inclusion are not qualified.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
     }
   },
   "assignedIds": [
@@ -503,6 +524,9 @@ window.OPTIQ_OWNERSHIP = {
     "data-analysis-ion-signal-match",
     "data-analysis-spectrum-smoothing",
     "data-analysis-ion-composite",
-    "data-analysis-stable-ion-table"
+    "data-analysis-stable-ion-table",
+    "my-products-disabled",
+    "compact-sample-photo-clarity",
+    "optiq-dark-branding"
   ]
 };
