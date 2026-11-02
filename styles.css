@@ -60,3 +60,7 @@
 .status-record{display:flex;flex-direction:column;gap:4px;margin-top:10px;font-size:12px;line-height:1.4;color:var(--muted)}
 
 .request-owner{margin:12px 0 0;font-size:.8125rem;line-height:1.5;color:var(--muted)}
+
+/* Short reader summaries keep the technical record available on request. */
+.request-summary{font-size:.875rem;font-weight:400;line-height:1.55;color:var(--muted);margin:9px 0 8px 22px}.terms-note{margin-bottom:24px}.row-detail>p{max-width:85ch}.request-next{line-height:1.65}.status-record{line-height:1.5}
+@media(max-width:660px){.request-summary{font-size:.8125rem;margin-left:20px}.request-next{padding-top:7px!important}.request-status .badge{overflow-wrap:anywhere}.status-record{font-size:.6875rem}}
