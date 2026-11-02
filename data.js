@@ -1241,7 +1241,7 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Send samples to a partner lab and receive the results",
     "description": "Track samples sent to a partner lab, returned results and the related charges.",
-    "detail": "Sharing ExcelBIS heavy-metals and solvent results is included in the partner-lab work. Sending samples, receiving reviewed results and settling charges come next.",
+    "detail": "Sharing partner-lab results is included in this work. Sending samples, receiving reviewed results and settling charges come next.",
     "evidence": "Reviewed from saved work records on 10 October.",
     "nextStep": "Smpltrax: finish and verify the complete exchange. The labs must confirm consent, permissions, methods, limits and charging rules.",
     "stage": 0,
@@ -1249,7 +1249,7 @@ window.OPTIQ_REQUESTS = [
     "recordedProgressCredit": 28,
     "recordedProgressLabel": "Execution with item 06 — research support",
     "currentAsOf": "2026-10-10",
-    "currentDisposition": "Sharing ExcelBIS heavy-metals and solvent results is included in the partner-lab work. Sending samples, receiving reviewed results and settling charges come next.",
+    "currentDisposition": "Sharing partner-lab results is included in this work. Sending samples, receiving reviewed results and settling charges come next.",
     "currentOwner": "Smpltrax"
   },
   {
@@ -1593,29 +1593,14 @@ window.OPTIQ_REQUESTS = [
     "topPriority": true,
     "priorityLabel": "After status sync",
     "description": "Let staff choose “invoice this” with the customer’s agreed rates, sample references and invoice format applied.",
-    "detail": "Mike selected QuickBooks customer notes as the starting source for Optiq rates, rush charges and customer exceptions on 12 October. Follow the status-sync step with explicit billing configuration and human-reviewed dry runs. Retain sample IDs, sample names and quantities; support grouped lines where wanted and different layouts for customers who need them. The current grouped format is a starting point, not a universal preference. Collect rates, QuickBooks notes, exceptions and rush rules from the billing lead. The examples of $50 or $100 rush charges and a 10% discount are not approved policies. Use testable rules rather than AI deciding each invoice; sending every invoice unattended was not agreed. Prove the Optiq pilot before adapting it to ExcelBIS.",
+    "detail": "Mike selected QuickBooks customer notes as the starting source for Optiq rates, rush charges and customer exceptions on 12 October. Follow the status-sync step with explicit billing configuration and human-reviewed dry runs. Retain sample IDs, sample names and quantities; support grouped lines where wanted and different layouts for customers who need them. The current grouped format is a starting point, not a universal preference. Collect rates, QuickBooks notes, exceptions and rush rules from the billing lead. The examples of $50 or $100 rush charges and a 10% discount are not approved policies. Use testable rules rather than AI deciding each invoice; sending every invoice unattended was not agreed.",
     "question": "Billing lead: provide access to the QuickBooks customer notes and confirm missing or conflicting rates, invoice-format preferences, exceptions and rush rules.",
     "nextStep": "Smpltrax: load the QuickBooks customer notes into the billing rules and review dry runs once the QuickBooks connection is set up. Billing lead: confirm missing or conflicting rates, formats and rush exceptions.",
     "currentOwner": "Smpltrax, with Optiq’s billing lead",
     "currentAsOf": "2026-10-20",
-    "currentDisposition": "Mike selected QuickBooks customer notes as the starting source for Optiq rates, rush charges and customer exceptions on 12 October. Follow the status-sync step with explicit billing configuration and human-reviewed dry runs. Retain sample IDs, sample names and quantities; support grouped lines where wanted and different layouts for customers who need them. The current grouped format is a starting point, not a universal preference. Collect rates, QuickBooks notes, exceptions and rush rules from the billing lead. The examples of $50 or $100 rush charges and a 10% discount are not approved policies. Use testable rules rather than AI deciding each invoice; sending every invoice unattended was not agreed. Prove the Optiq pilot before adapting it to ExcelBIS. Progress reviewed 20 October: the billing-rules format and an invoice dry run are built for all labs. Optiq’s rates are placeholders until the billing lead confirms them, so every dry run is flagged for review.",
+    "currentDisposition": "Mike selected QuickBooks customer notes as the starting source for Optiq rates, rush charges and customer exceptions on 12 October. Follow the status-sync step with explicit billing configuration and human-reviewed dry runs. Retain sample IDs, sample names and quantities; support grouped lines where wanted and different layouts for customers who need them. The current grouped format is a starting point, not a universal preference. Collect rates, QuickBooks notes, exceptions and rush rules from the billing lead. The examples of $50 or $100 rush charges and a 10% discount are not approved policies. Use testable rules rather than AI deciding each invoice; sending every invoice unattended was not agreed. Progress reviewed 20 October: the billing-rules format and an invoice dry run are built for all labs. Optiq’s rates are placeholders until the billing lead confirms them, so every dry run is flagged for review.",
     "evidence": "20 October: the billing-rules format and an invoice dry run are built for all labs; Optiq’s rates are placeholders until the billing lead confirms them.",
     "priorityOrder": 4
-  },
-  {
-    "status": "deferred",
-    "stage": 0,
-    "meetingPriority": false,
-    "id": "excelbis-billing-follow-on",
-    "area": "Billing",
-    "title": "ExcelBIS billing after the Optiq pilot",
-    "description": "Adapt the proven Optiq billing workflow to ExcelBIS and its existing Confident Cannabis order intake.",
-    "detail": "Sequence ExcelBIS after Optiq. Map incoming tests and packages into DCC flower, concentrate, pre-roll or formulated billing categories; both infused and non-infused pre-rolls use pre-roll billing. Support mixed R&D test combinations and the customer’s full-panel price when it is cheaper, once eligibility rules are captured. Glasshouse requires one line per sample and the PO reference from the notes. Preserve other customer-specific rates and formats. Keep billing and revenue in Smpltrax and QuickBooks; Confident order data is input, and the lab does not want revenue exposed to Confident Cannabis.",
-    "nextStep": "Smpltrax and the billing lead: validate Optiq first, then capture and test ExcelBIS mapping, full-panel eligibility, PO references and customer exceptions.",
-    "currentOwner": "Smpltrax, with Optiq’s billing lead",
-    "currentAsOf": "2026-10-12",
-    "currentDisposition": "Sequence ExcelBIS after Optiq. Map incoming tests and packages into DCC flower, concentrate, pre-roll or formulated billing categories; both infused and non-infused pre-rolls use pre-roll billing. Support mixed R&D test combinations and the customer’s full-panel price when it is cheaper, once eligibility rules are captured. Glasshouse requires one line per sample and the PO reference from the notes. Preserve other customer-specific rates and formats. Keep billing and revenue in Smpltrax and QuickBooks; Confident order data is input, and the lab does not want revenue exposed to Confident Cannabis.",
-    "evidence": "Recorded from the 12 October meeting summary. Mike kept ExcelBIS billing deferred until the Optiq pilot is proven."
   },
   {
     "status": "working",
@@ -1753,10 +1738,10 @@ window.OPTIQ_REQUESTS = [
     "area": "Lab rollout",
     "title": "Mammoth portal, COA and operational workflow configuration",
     "description": "Configure Mammoth’s client portal and COA and confirm its submission, sampling, reporting and external-system boundaries.",
-    "detail": "Use shared LIMS functionality to reduce manual CSV handling where the agreed process permits it. Work out instrument/analytical automation at Optiq, refine the cannabis workflow at Mammoth, then bring the proven workflow to the busier existing lab. This analytical rollout direction is separate from the later billing decision to pilot Optiq billing before ExcelBIS. Inventory and quality adoption can proceed separately. Late October 2026 inspection was an operational milestone, not a software-release deadline; first samples by January 2027 was an estimate, not a confirmed launch. Proposed completion check: a representative Mammoth submission reaches the intended report through the agreed workflow and staff understand the remaining external steps.",
+    "detail": "Use shared LIMS functionality to reduce manual CSV handling where the agreed process permits it. Work out instrument/analytical automation at Optiq, refine the cannabis workflow at Mammoth, then bring the proven workflow to the busier existing lab. Inventory and quality adoption can proceed separately. Late October 2026 inspection was an operational milestone, not a software-release deadline; first samples by January 2027 was an estimate, not a confirmed launch. Proposed completion check: a representative Mammoth submission reaches the intended report through the agreed workflow and staff understand the remaining external steps.",
     "nextStep": "Smpltrax and Mammoth operations: confirm submission, sampling and external responsibilities, configure portal/COA and confirm a representative agreed submission before any release.",
     "currentAsOf": "2026-10-12",
-    "currentDisposition": "Use shared LIMS functionality to reduce manual CSV handling where the agreed process permits it. Work out instrument/analytical automation at Optiq, refine the cannabis workflow at Mammoth, then bring the proven workflow to the busier existing lab. This analytical rollout direction is separate from the later billing decision to pilot Optiq billing before ExcelBIS. Inventory and quality adoption can proceed separately. Late October 2026 inspection was an operational milestone, not a software-release deadline; first samples by January 2027 was an estimate, not a confirmed launch. Proposed completion check: a representative Mammoth submission reaches the intended report through the agreed workflow and staff understand the remaining external steps.",
+    "currentDisposition": "Use shared LIMS functionality to reduce manual CSV handling where the agreed process permits it. Work out instrument/analytical automation at Optiq, refine the cannabis workflow at Mammoth, then bring the proven workflow to the busier existing lab. Inventory and quality adoption can proceed separately. Late October 2026 inspection was an operational milestone, not a software-release deadline; first samples by January 2027 was an estimate, not a confirmed launch. Proposed completion check: a representative Mammoth submission reaches the intended report through the agreed workflow and staff understand the remaining external steps.",
     "evidence": "Recorded from the corrected 12 October morning meeting summary. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments. Mike kept the existing item or follow-through during the 12 October review."
   }
 ];
