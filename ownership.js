@@ -13,10 +13,10 @@ window.OPTIQ_OWNERSHIP = {
     },
     "inspection-rules": {
       "currentOwner": "Codex — Optiq UI manager (Mini,01a175b6-a08a-7b82-9ddf-30a5533219ca)",
-      "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Take the completed source/proof slice into a supported admitted acceptance copy, finish any missing receiving/Hub control or vial wording, then prove saved observations through reopen and the first-page COA. A stale copy/admission label needs a current check.",
-      "currentBlocker": "Receiving/Hub controls, final vial wording and saved-observation-to-COA proof remain incomplete.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
+      "currentOwnerAsOf": "2026-11-02",
+      "nextStep": "Recover the current receiving-to-COA case and any actual remaining gap. Reuse the installed implementation and proof, and update the obsolete acceptance entry point.",
+      "currentBlocker": "Specific receiving/wording acceptance remains unqualified; core inspection installation is complete.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/smpltrax-v2/blob/5046f44ebc8a48bde8d03a8ad602c2448467547b/api/src/services/sampleProcessing/receiptInspectionService.ts"
     },
     "spectral-reference-library": {
       "currentOwner": "Codex — Manager (Mini,01a17598-1981-72f1-b470-98d5690896da)",
@@ -27,17 +27,17 @@ window.OPTIQ_OWNERSHIP = {
     },
     "receipt-emails": {
       "currentOwner": "Codex — Investigate WL COA generation (Mini,01a180cb-c573-7d91-a210-3393c760047f)",
-      "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Close installed company-name receipt delivery from retained outbox/inbox evidence and the qualified finance sandbox/capture case. Check recipient and company scoping; do not rebuild the old receipt bundle or send a customer smoke email.",
-      "currentBlocker": "Company-name code is installed; existing delivery/inbox and recipient evidence is incomplete.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
+      "currentOwnerAsOf": "2026-11-02",
+      "nextStep": "Delivered. Preserve this behavior in later releases; investigate only a specific reported delivery or recipient defect.",
+      "currentBlocker": "",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/smpltrax-v2/blob/5046f44ebc8a48bde8d03a8ad602c2448467547b/api/src/services/email/sampleReceiptEmail.ts"
     },
     "invoice-status": {
       "currentOwner": "Codex — Optiq UI manager (Mini,01a175b6-a08a-7b82-9ddf-30a5533219ca)",
-      "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Finish the Uninvoiced quick filter with finance: establish authoritative sample-level issued-invoice coverage, then prove invoiced/uninvoiced/part-covered cases. Paid/Unpaid alone is insufficient.",
-      "currentBlocker": "Authoritative issued-invoice coverage is a dependency; Uninvoiced filter still lacks implementation/proof.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
+      "currentOwnerAsOf": "2026-11-02",
+      "nextStep": "Check current authorized filter configuration first, then prove issued-invoice coverage and invoiced/uninvoiced/part-covered cases. Reuse the existing invoice-status support.",
+      "currentBlocker": "The specific Uninvoiced filter and authoritative coverage remain unconfirmed; existing invoice statuses are delivered.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/smpltrax-v2/blob/5046f44ebc8a48bde8d03a8ad602c2448467547b/web/src/pages/OptiqPeptideQcReviewPage.tsx"
     },
     "grid-widths": {
       "currentOwner": "Codex — Optiq UI manager (Mini,01a175b6-a08a-7b82-9ddf-30a5533219ca)",
@@ -104,10 +104,10 @@ window.OPTIQ_OWNERSHIP = {
     },
     "bulk-coa-amendments": {
       "currentOwner": "Codex — Investigate WL COA generation (Mini,01a180cb-c573-7d91-a210-3393c760047f)",
-      "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Recover the existing bulk correction source; use a synthetic selection through replacement release and retained earlier certificates. Do not publish the obsolete4920 bundle or use customer releases for proof.",
-      "currentBlocker": "Selection through replacement release and retained earlier versions remains unqualified. No newer delivery proof found.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md"
+      "currentOwnerAsOf": "2026-11-02",
+      "nextStep": "Preserve the installed feature. Run only the remaining mixed/lifecycle/recovery cases affected by the next combined candidate; do not restore an obsolete bulk bundle.",
+      "currentBlocker": "Next-candidate regression qualification remains; there is no demonstrated missing deployment of the existing bulk implementation.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/smpltrax-v2/blob/5046f44ebc8a48bde8d03a8ad602c2448467547b/api/src/services/optiqBulkCoaGeneration.ts"
     },
     "empower-native-collection": {
       "currentOwner": "Codex — Manager (Mini,01a17598-1981-72f1-b470-98d5690896da)",
@@ -279,10 +279,10 @@ window.OPTIQ_OWNERSHIP = {
     },
     "sample-details-documents": {
       "currentOwner": "Codex — Optiq UI manager (Mini,01a175b6-a08a-7b82-9ddf-30a5533219ca)",
-      "currentOwnerAsOf": "2026-10-30",
-      "nextStep": "Recover the installed document/slip paths and prove the correct sample/order original digital slip, annotated paperwork and signed-attestation links plus authenticated reopen; repair only a missing association or access gap.",
-      "currentBlocker": "Attachments are delivered; original digital-slip access and correct paperwork/attestation association still need acceptance.",
-      "ownershipRecordUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md"
+      "currentOwnerAsOf": "2026-11-02",
+      "nextStep": "Recover the exact original-slip, paperwork and attestation association/access cases and repair only a demonstrated gap. Keep delivered attachments closed.",
+      "currentBlocker": "Specific document association/access acceptance remains; attachment support is installed.",
+      "ownershipRecordUrl": "https://github.com/himmapan-lab/smpltrax-v2/blob/5046f44ebc8a48bde8d03a8ad602c2448467547b/web/src/modules/samples/components/tabs/DocumentsTab.tsx"
     },
     "sample-order-client-messaging": {
       "currentOwner": "Codex — Optiq UI manager (Mini,01a175b6-a08a-7b82-9ddf-30a5533219ca)",

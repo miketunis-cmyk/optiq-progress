@@ -86,7 +86,10 @@ for(const [id,update] of Object.entries(dated.followUpUpdates)) {
   assert.equal(update.currentAsOf,dated.followUpDate);
   assert(update.evidenceUrl.includes(dated.followUpChecklistCommit) ||
     (/^[a-f0-9]{40}$/.test(update.sourceHead || '') &&
-      update.evidenceUrl === `https://github.com/himmapan-lab/smpltrax-v2/pull/${update.sourcePullRequest}`),
+      (update.evidenceUrl === `https://github.com/himmapan-lab/smpltrax-v2/pull/${update.sourcePullRequest}` ||
+        (update.liveSourceEvidence?.release === update.sourceHead &&
+          update.liveSourceEvidence.versionUrl === 'https://optiq.smpltrax.com/health/version' &&
+          update.evidenceUrl === `https://github.com/himmapan-lab/smpltrax-v2/blob/${update.sourceHead}/${update.sourcePath}`))),
     `Current evidence needs a pinned checklist or recorded PR head: ${id}`);
 }
 for(const id of ['bulk-coa-amendments','submission-matrix-save-parity','shared-lims-priorities']) {
@@ -104,11 +107,12 @@ for(const id of ['my-products-disabled','compact-sample-photo-clarity','optiq-da
  assert(item && item.status!=='complete' && item.currentBlocker && item.nextStep);
 }
 assert.equal(items.find(row=>row.id==='my-products-disabled').plannedAvailability,'off');
-assert.equal(items.filter(row=>row.status==='complete').length,41);
+assert.equal(items.filter(row=>row.status==='complete').length,42);
 console.log('PASS: full intake preserves delivery history and keeps My Products planned off.');
 
 assert.equal(dated.followUpDate, '2026-11-02');
-assert.equal(dated.followUpHistory.at(-1).date, '2026-10-30', 'Retain the preceding published snapshot');
+assert.equal(dated.followUpHistory.at(-1).date, '2026-11-02', 'Retain the preceding source-review snapshot');
+assert(dated.followUpHistory.some(record=>record.date==='2026-10-30'), 'Retain earlier published evidence');
 const newIds = ['reporting-hub-edit-safety', 'client-portal-coa-shortcuts', 'client-facing-clarity', 'order-validation-clarity', 'optiq-blue-accent'];
 for (const id of newIds) {
   const item=items.find(row=>row.id===id);
@@ -125,7 +129,14 @@ for(const id of ['data-analysis-ion-signal-match','data-analysis-spectrum-smooth
   assert.equal(item.sourcePullRequest,7263,`Current combined integration path missing: ${id}`);
   assert.notEqual(item.status,'complete');
 }
-console.log('PASS: 2 November source progress keeps 41 completed scopes, activation holds and prior evidence intact.');
+const receipt=items.find(row=>row.id==='receipt-emails');
+assert.equal(receipt.status,'complete');
+assert.equal(receipt.deliveryEvidence.release,'5046f44ebc8a48bde8d03a8ad602c2448467547b');
+assert.equal(receipt.liveSourceEvidence.release,receipt.deliveryEvidence.release);
+assert.equal(receipt.currentBlocker,'');
+assert.equal(items.find(row=>row.id==='invoice-status').status,'partial');
+assert.notEqual(items.find(row=>row.id==='bulk-coa-amendments').status,'complete');
+console.log('PASS: fresh live-source reconciliation closes receipt delivery and keeps narrower follow-ups and activation holds separate.');
 
 // Reader wording must cover every item without changing the evidence underneath.
 const catalogBeforeWording = JSON.stringify(items);
