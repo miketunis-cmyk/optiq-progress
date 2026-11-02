@@ -70,8 +70,8 @@ for (const [id, update] of Object.entries(assigned.updates)) {
 console.log('PASS:65 retained owner records;53 original exact chat assignments and12 retained source scopes; completed delivery and remaining blockers stay distinct.');
 
 // The installed release must not close newer Demo-only scope or lose prior evidence.
-assert.equal(originals.length,139);
-assert.equal(items.length,112);
+assert.equal(originals.length,138);
+assert.equal(items.length,111);
 const installed=items.find(row=>row.id==='data-analysis-demo-review');
 assert.equal(installed.status,'complete');
 assert.equal(installed.deliveryEvidence.release,'5046f44ebc8a48bde8d03a8ad602c2448467547b');
@@ -139,3 +139,5 @@ for (const item of items) {
 }
 assert.equal(JSON.stringify(items), catalogBeforeWording, 'Reader wording must not change source records');
 console.log(`PASS: plain-language titles and summaries cover all ${items.length} items; statuses and source records unchanged.`);
+
+assert(!/excelbis/i.test(JSON.stringify(items)), "Optiq must not contain ExcelBIS work or references");
