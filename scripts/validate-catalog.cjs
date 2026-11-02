@@ -126,3 +126,16 @@ for(const id of ['data-analysis-ion-signal-match','data-analysis-spectrum-smooth
   assert.notEqual(item.status,'complete');
 }
 console.log('PASS: 2 November source progress keeps 41 completed scopes, activation holds and prior evidence intact.');
+
+// Reader wording must cover every item without changing the evidence underneath.
+const catalogBeforeWording = JSON.stringify(items);
+vm.runInNewContext(fs.readFileSync(path.join(root, 'plain-language.js'), 'utf8'), context);
+const wording = context.window.OPTIQ_PLAIN_LANGUAGE;
+assert.deepEqual(Object.keys(wording).sort(), Array.from(items, row => row.id).sort());
+for (const item of items) {
+  const view = wording[item.id];
+  assert(view.title && view.summary, `Missing reader summary: ${item.id}`);
+  assert(item.status === 'complete' || view.nextStep, `Missing plain next step: ${item.id}`);
+}
+assert.equal(JSON.stringify(items), catalogBeforeWording, 'Reader wording must not change source records');
+console.log(`PASS: plain-language titles and summaries cover all ${items.length} items; statuses and source records unchanged.`);
