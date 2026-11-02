@@ -70,8 +70,8 @@ for (const [id, update] of Object.entries(assigned.updates)) {
 console.log('PASS:65 retained owner records;53 original exact chat assignments and12 retained source scopes; completed delivery and remaining blockers stay distinct.');
 
 // The installed release must not close newer Demo-only scope or lose prior evidence.
-assert.equal(originals.length,134);
-assert.equal(items.length,107);
+assert.equal(originals.length,139);
+assert.equal(items.length,112);
 const installed=items.find(row=>row.id==='data-analysis-demo-review');
 assert.equal(installed.status,'complete');
 assert.equal(installed.deliveryEvidence.release,'5046f44ebc8a48bde8d03a8ad602c2448467547b');
@@ -84,12 +84,18 @@ for(const [id,update] of Object.entries(dated.followUpUpdates)) {
   const item=items.find(row=>row.id===id);
   assert.equal(item.status,update.status || item.previousReview.status);
   assert.equal(update.currentAsOf,dated.followUpDate);
-  assert(update.evidenceUrl.includes(dated.followUpChecklistCommit));
+  assert(update.evidenceUrl.includes(dated.followUpChecklistCommit) ||
+    (/^[a-f0-9]{40}$/.test(update.sourceHead || '') &&
+      update.evidenceUrl === `https://github.com/himmapan-lab/smpltrax-v2/pull/${update.sourcePullRequest}`),
+    `Current evidence needs a pinned checklist or recorded PR head: ${id}`);
 }
-for(const id of ['bulk-coa-amendments','submission-matrix-save-parity','grid-widths','shared-lims-priorities']) {
+for(const id of ['bulk-coa-amendments','submission-matrix-save-parity','shared-lims-priorities']) {
   const item=items.find(row=>row.id===id);
   assert.equal(item.status,'check');
-  assert(item.lastSubstantiveEvidenceAt && item.evidence.includes('not new implementation'));
+  assert(item.lastSubstantiveEvidenceAt);
+  let history=item;
+  while(history && !history.evidence?.includes('not new implementation')) history=history.previousReview;
+  assert(history, `Original recovery boundary must survive later evidence: ${id}`);
 }
 console.log('PASS: installed scope closes independently; four newer scopes remain open; older recovery evidence dates and original history retained.');
 
@@ -100,3 +106,23 @@ for(const id of ['my-products-disabled','compact-sample-photo-clarity','optiq-da
 assert.equal(items.find(row=>row.id==='my-products-disabled').plannedAvailability,'off');
 assert.equal(items.filter(row=>row.status==='complete').length,41);
 console.log('PASS: full intake preserves delivery history and keeps My Products planned off.');
+
+assert.equal(dated.followUpDate, '2026-11-02');
+assert.equal(dated.followUpHistory.at(-1).date, '2026-10-30', 'Retain the preceding published snapshot');
+const newIds = ['reporting-hub-edit-safety', 'client-portal-coa-shortcuts', 'client-facing-clarity', 'order-validation-clarity', 'optiq-blue-accent'];
+for (const id of newIds) {
+  const item=items.find(row=>row.id===id);
+  assert(item && item.status!=='complete' && item.currentBlocker && item.nextStep && item.currentOwner, `New source work is not installed delivery: ${id}`);
+  assert.equal(item.currentAsOf, dated.followUpDate);
+}
+assert.equal(items.find(row=>row.id==='optiq-dark-branding').status,'built');
+assert.equal(items.find(row=>row.id==='grid-widths').status,'partial');
+assert.equal(items.find(row=>row.id==='conformity').sourcePullRequest,6735);
+assert(items.find(row=>row.id==='my-products-disabled').detail.includes('backed out'));
+assert.equal(items.find(row=>row.id==='stable-released-coa-links').sourcePullRequest,7221);
+for(const id of ['data-analysis-ion-signal-match','data-analysis-spectrum-smoothing','data-analysis-ion-composite','data-analysis-stable-ion-table','data-analysis-batches']) {
+  const item=items.find(row=>row.id===id);
+  assert.equal(item.sourcePullRequest,7263,`Current combined integration path missing: ${id}`);
+  assert.notEqual(item.status,'complete');
+}
+console.log('PASS: 2 November source progress keeps 41 completed scopes, activation holds and prior evidence intact.');

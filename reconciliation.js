@@ -755,109 +755,366 @@ window.OPTIQ_RECONCILIATION = {
       "currentAsOf": "2026-10-30",
       "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
       "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
-    }
-  ],
-  "followUpDate": "2026-10-30",
-  "followUpChecklistCommit": "65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a",
-  "followUpChecklistUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
-  "followUpUpdates": {
-    "invoice-status": {
-      "nextStep": "Finish the Uninvoiced quick filter with finance: establish authoritative sample-level issued-invoice coverage, then prove invoiced/uninvoiced/part-covered cases. Paid/Unpaid alone is insufficient.",
-      "currentBlocker": "Authoritative issued-invoice coverage is a dependency; Uninvoiced filter still lacks implementation/proof.",
-      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
-      "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
     },
-    "public-signup-approval": {
-      "nextStep": "Include the new-customer and returning-client journeys in finance acceptance: sample entry, price/terms, payment/server confirmation, authorized portal access after payment or invitation, and preserved drafts on refusal/failure. Ordinary ordering must work while My Products stays off.",
-      "currentBlocker": "Sandbox payment code does not prove complete signup/invitation/approved-terms account access.",
-      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
-      "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+    {
+      "id": "reporting-hub-edit-safety",
+      "title": "Safer Reporting Hub editing, paste and keyboard controls",
+      "area": "Reporting Hub",
+      "description": "Keep result edits on the intended samples when paging, sorting, pasting or using the keyboard.",
+      "status": "built",
+      "stage": 2,
+      "currentOwner": "Smpltrax — Reporting Hub grid owner and Optiq release owner",
+      "currentOwnerAsOf": "2026-11-02",
+      "currentNotes": [],
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Source progress only. No Optiq production installation or customer activation is claimed.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/pull/7244",
+      "detail": "Merged fixes keep selection tied to samples, make header selection page-only, preserve spreadsheet rows with multiline cells, prevent header keys from clearing values, retain the first typed Net Content digit and improve keyboard movement. A separate merged save guard refuses overwriting another person’s newer panel result while preserving the attempted entry. These are newer repairs, not newly claimed production behavior.",
+      "evidence": "PRs #7198/#7205/#7244/#7243 are merged onto the Optiq release line. The existing install hold asks for Mike’s grid click-test; no later installation is recorded.",
+      "nextStep": "Carry the retained browser proof into the final candidate; complete Mike’s requested page/sort/Delete, page-only selection, multiline paste and Net Content typing checks before install.",
+      "currentBlocker": "Merged source awaits final release qualification, the requested grid click-test and production approval.",
+      "sourceHead": "779822f1e6431f8d9dcee2673e70b5f775b43e70",
+      "sourcePullRequest": 7244
     },
-    "receipt-emails": {
-      "nextStep": "Close installed company-name receipt delivery from retained outbox/inbox evidence and the qualified finance sandbox/capture case. Check recipient and company scoping; do not rebuild the old receipt bundle or send a customer smoke email.",
-      "currentBlocker": "Company-name code is installed; existing delivery/inbox and recipient evidence is incomplete.",
-      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
-      "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+    {
+      "id": "client-portal-coa-shortcuts",
+      "title": "Open COAs directly from portal orders",
+      "area": "Client portal",
+      "description": "Give clients a direct Results column, smaller pages and clearer order loading on phones and desktops.",
+      "status": "built",
+      "stage": 2,
+      "currentOwner": "Smpltrax — Client portal owner and Optiq release owner",
+      "currentOwnerAsOf": "2026-11-02",
+      "currentNotes": [],
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Source progress only. No Optiq production installation or customer activation is claimed.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/pull/7245",
+      "detail": "Each order gets a Results column with access to its released COAs; users without COA permission see a count only. Pages default to 25 rows, loading does not flash an empty-order message, and phones have one New Order button. Saved client column choices remain.",
+      "evidence": "PR #7245 is merged onto the Optiq release line with retained browser proof and independent review. The installed release record has not advanced.",
+      "nextStep": "Include the merged portal change in the next qualified release and verify allowed/denied COA access, saved layouts, loading and narrow-screen ordering.",
+      "currentBlocker": "Merged portal source awaits a qualified production release.",
+      "sourceHead": "32e0fcd82173335c72fc718190a4433e3dfac6b8",
+      "sourcePullRequest": 7245
     },
-    "client-bulk-white-label": {
-      "nextStep": "Finish the existing authorized private draft → edit → save/reopen → photo → correct-PDF/ZIP journey as a COA acceptance cohort; isolate any demonstrated repair instead of reopening delivered bulk code.",
-      "currentBlocker": "Private draft/edit/reopen/photo/correct-PDF acceptance remains open despite delivered bulk/ZIP code.",
-      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
-      "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
-    },
-    "stable-released-coa-links": {
-      "nextStep": "Use the synthetic COA replacement/recovery case to prove original and white-label durable links, correct retained versions and tenant boundaries. Keep printed-number activation as its distinct unresolved identity/data decision.",
-      "currentBlocker": "Combined white-label/permanent-link/recovery acceptance remains incomplete.",
-      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
-      "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
-    },
-    "sample-details-documents": {
-      "nextStep": "Recover the installed document/slip paths and prove the correct sample/order original digital slip, annotated paperwork and signed-attestation links plus authenticated reopen; repair only a missing association or access gap.",
-      "currentBlocker": "Attachments are delivered; original digital-slip access and correct paperwork/attestation association still need acceptance.",
-      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
-      "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
-    },
-    "inspection-rules": {
-      "nextStep": "Take the completed source/proof slice into a supported admitted acceptance copy, finish any missing receiving/Hub control or vial wording, then prove saved observations through reopen and the first-page COA. A stale copy/admission label needs a current check.",
-      "currentBlocker": "Receiving/Hub controls, final vial wording and saved-observation-to-COA proof remain incomplete.",
-      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
-      "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
-    },
-    "coa-status-language": {
-      "nextStep": "Include the retained identity-mismatch versus submitted-claim case in current synthetic PDF and digital-card acceptance; close only after the wrong identity cannot appear as successful green matching.",
-      "currentBlocker": "Installed identity-mismatch behavior must be located and verified on both report surfaces.",
-      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
-      "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
-    },
-    "analysis-framework": {
-      "nextStep": "Bind selected direct-entry/save/reopen/independent-review/COA cases to the Conformity/standards acceptance work. Record any uncovered method-specific gap rather than inferring full framework completion from one Purity fixture.",
-      "currentBlocker": "Direct entry/save/reopen/independent review/released-COA acceptance remains incomplete beyond installed Data Analysis.",
-      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
-      "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
-    },
-    "data-analysis-batches": {
-      "nextStep": "Restore current-compatible Purity AddSample/Undo and finish named batches/late-sample auto-join as explicit batch deliverables. Supply the actual named-batch source or identify its implementation gap; preserve delivered run controls and avoid inventing sign-off.",
-      "currentBlocker": "Merged6940 repaired the old fixture mismatch. Purity6938 product/test are still absent from installed5046; current restoration/proof is missing. Named batches/late auto-join remain separate unfinished work.",
-      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
-      "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
-    },
-    "data-analysis-ion-composite": {
-      "nextStep": "Automatic assembly now has code-ready source and retained focused proof; finish exact review/artifact/actual served qualification, including acquired-ion selection, explicit partial failures and Undo. Integrate the manual/automatic scope through the stacked spectral UI source.",
-      "currentBlocker": "Automatic assembly now has code-ready source; exact review/artifact/served qualification and stacked integration remain.",
-      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
-      "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
-    },
-    "data-analysis-stable-ion-table": {
-      "nextStep": "PR7017 now implements stable inline suggested/working/saved states. Finish exact source review, current gates and served select/save/reopen/discard proof while preserving reporting/observation distinctions and BIGINT identity.",
-      "currentBlocker": "Implemented source7017 is stacked; exact source/review/current gates and served acceptance remain.",
-      "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+    {
+      "id": "client-facing-clarity",
+      "title": "Clearer client messages, email branding and certificate states",
+      "area": "Client portal",
+      "description": "Show clients useful messages and accurate states while keeping internal diagnostics with staff.",
       "status": "partial",
       "stage": 1,
-      "currentAsOf": "2026-10-30",
-      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
-      "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+      "currentOwner": "Smpltrax — Client experience and Optiq release owners",
+      "currentOwnerAsOf": "2026-11-02",
+      "currentNotes": [
+        "verification"
+      ],
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Source progress only. No Optiq production installation or customer activation is claimed.",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/c2679af3ed861c7c48b876c7850c434d4f91c8ad/shared/deploy-checklist.md",
+      "detail": "A set of fixes is merged for public health/error messages, quiet portal failures and holds, lab-branded email links, sign-in preservation during an outage, appropriate COA states and client-specific saved views. The dashboard’s unavailable-count display and optional Revised COA notice remain open changes. The notice switch defaults off; no customer notification activation is claimed.",
+      "evidence": "2 November GitHub intake confirms merged fixes #7255/#7256/#7257/#7261/#7262/#7264/#7265/#7267/#7268/#7270/#7276/#7277/#7278/#7279/#7283. PRs #7291 and #7292 remain open. Source progress is not installation.",
+      "nextStep": "Finish the remaining count/COA-notice slices, qualify client permissions/messages and production email configuration in the approved release, and keep optional notices off until separately enabled.",
+      "currentBlocker": "Some fixes are merged; remaining slices, combined proof, safe production email configuration and installation remain."
+    },
+    {
+      "id": "order-validation-clarity",
+      "title": "Clear order errors and prevent duplicate name-and-lot samples",
+      "area": "Orders & pricing",
+      "description": "Show all missing sample fields at once and reject duplicate sample name/lot combinations consistently.",
+      "status": "partial",
+      "stage": 1,
+      "currentOwner": "Smpltrax — Order workflow owner and Optiq release owner",
+      "currentOwnerAsOf": "2026-11-02",
+      "currentNotes": [
+        "verification"
+      ],
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Source progress only. No Optiq production installation or customer activation is claimed.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/pull/7281",
+      "detail": "Merged order-form changes show every missing field together, with explanations beside fields. The server now rejects two samples in one order with the same name and lot, ignoring case and surrounding spaces; sharing a name alone is allowed. Extending the same rule to staff edits, package changes and later imports is still open. Conformity child vials retain their intentional relationship.",
+      "evidence": "PRs #7250 and #7274 are merged onto the Optiq release line. PR #7281 remains open for saved-order edits and re-imports. None is recorded installed.",
+      "nextStep": "Complete the saved-order extension and its concurrent-edit checks, then qualify ordinary ordering and Conformity exceptions in the combined release.",
+      "currentBlocker": "Saved-order extension and final release qualification/installation remain.",
+      "sourceHead": "d5ba6d3b7acaf241f5bfee55c760a04cf86ddca8",
+      "sourcePullRequest": 7281
+    },
+    {
+      "id": "optiq-blue-accent",
+      "title": "Use Optiq blue throughout buttons and controls",
+      "area": "User Interface",
+      "description": "Apply Optiq’s blue to buttons, tabs, navigation, date pickers and shared-grid accents.",
+      "status": "working",
+      "stage": 1,
+      "currentOwner": "Smpltrax — Optiq branding owner",
+      "currentOwnerAsOf": "2026-11-02",
+      "currentNotes": [
+        "verification"
+      ],
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Source progress only. No Optiq production installation or customer activation is claimed.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/pull/7027",
+      "detail": "Source replaces hard-coded purple/indigo controls with Optiq’s lab accent while retaining categorical result colours and other labs’ branding. It is a separate change from the merged dark logo.",
+      "evidence": "2 November: PR #7027 is still open. Its source and earlier design work are retained; no Optiq installation is recorded.",
+      "nextStep": "Finish the existing branding change’s source gates and current light/dark browser checks, then include it explicitly in a qualified Optiq release.",
+      "currentBlocker": "Source gates, final browser acceptance and installation remain.",
+      "sourceHead": "f15db686403e7c36ccbe50c4c2882f9610092af6",
+      "sourcePullRequest": 7027
+    }
+  ],
+  "followUpDate": "2026-11-02",
+  "followUpChecklistCommit": "c2679af3ed861c7c48b876c7850c434d4f91c8ad",
+  "followUpChecklistUrl": "https://github.com/himmapan-lab/fleet-memory/blob/c2679af3ed861c7c48b876c7850c434d4f91c8ad/shared/deploy-checklist.md",
+  "followUpUpdates": {
+    "conformity": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Checked against dated deployment records and GitHub source status on 2 November. Earlier Demo proof is retained; this tracker update did not retest or change the production application.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/pull/6735",
+      "detail": "Conformity remains unavailable for customers. Results by vial is being rebuilt on the same spreadsheet-style grid as Reporting Hub, with keyboard editing, paste, fill and Undo. The current practice work still needs final review and Mike’s approval before merge. Recording a peptide as Not detected is a separate draft change; the vial-grid connection and complete receiving-to-COA journey remain unfinished.",
+      "evidence": "2 November: PR #6735 is still a draft with Mike’s merge hold. Its new shared-grid implementation is under review. PR #7316 separately implements saved Not-detected records and certificate wording; it is also draft. Earlier practice checks do not establish acceptance of the rebuilt grid.",
+      "nextStep": "Finish the rebuilt vial-grid review and practice browser/PDF checks; complete Not-detected integration and current methods/settings. Obtain Mike’s release of the merge hold, then qualify the complete release and separate activation.",
+      "currentBlocker": "Rebuilt-grid acceptance, Not-detected integration, approved methods/catalogue and the explicit merge/activation holds remain.",
+      "currentNotes": [
+        "partial",
+        "verification"
+      ],
+      "sourceHead": "d1a7bd21a0199b656092a87bbb6c191efba51e8f",
+      "sourcePullRequest": 6735
+    },
+    "analysis-framework": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Checked against dated deployment records and GitHub source status on 2 November. Earlier Demo proof is retained; this tracker update did not retest or change the production application.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/pull/7229",
+      "detail": "The lab-defined analysis database, API and screens are now merged onto the Optiq release line. The lab can choose a per-test entry workflow; the default remains Reporting Hub. These newer changes are not installed, and the connection with Conformity still needs completion and proof before enabling any switch.",
+      "evidence": "2 November: PRs #7214, #7226 and #7229 are merged. PR #7288, which connects the analysis flow with Conformity and prevents conflicting entry settings, remains open. This does not close the full save/reopen/review/COA acceptance scope.",
+      "nextStep": "Finish the Conformity/analysis-flow connection and qualify methods, permissions, save/reopen, independent review and released COAs before a separately approved install or switch-on.",
+      "currentBlocker": "Source is merged, but integration, release qualification and per-test activation remain.",
+      "currentNotes": [
+        "partial",
+        "verification"
+      ],
+      "sourceHead": "fdd1a6192c493c01540bdcefd322e85912d65993",
+      "sourcePullRequest": 7229
+    },
+    "optiq-dark-branding": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Checked against dated deployment records and GitHub source status on 2 November. Earlier Demo proof is retained; this tracker update did not retest or change the production application.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/pull/7021",
+      "detail": "Mike’s canonical dark wordmark, matching sidebar O and dark email logo are merged onto the Optiq release line. The main companion is also merged. This closes the source implementation; the paired application/email assets still await a qualified Optiq install.",
+      "evidence": "PR #7021 merged 31 October after Mike accepted the visuals; companion #7022 is also merged. Existing browser/asset proof is retained. No later production installation is recorded.",
+      "nextStep": "Include the merged branding assets and their cache version in the next qualified Optiq release; verify the installed dark sidebar and email branding without sending customer smoke emails.",
+      "currentBlocker": "The branding change is merged but not recorded installed.",
+      "status": "built",
+      "currentNotes": [],
+      "sourceHead": "b575f3243e9f560b68c227cc7e2808861374bf64",
+      "sourcePullRequest": 7021
+    },
+    "grid-widths": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Checked against dated deployment records and GitHub source status on 2 November. Earlier Demo proof is retained; this tracker update did not retest or change the production application.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/pull/7285",
+      "detail": "The recovered native-grid source and width choices are now merged onto the release line. Fixed widths persist; Auto-mode dragging remains temporary and resettable. This is source progress, not confirmed availability. A separate current fix addresses grids disappearing after a manual column resize in fit mode.",
+      "evidence": "2 November: PR #7285 is merged with the recovered grid/width source. PR #7310 remains open for the fit-mode resize visibility defect. A compatible recovery artifact and final integrated browser qualification remain release work.",
+      "nextStep": "Finish the resize repair and qualify the merged width/persistence behavior on the final candidate, including compatible recovery, before recording it as delivered.",
+      "currentBlocker": "Current resize repair, combined browser proof and production installation remain.",
+      "status": "partial",
+      "currentNotes": [
+        "partial",
+        "verification"
+      ],
+      "sourceHead": "383a9810e547ae19132093d524f4b1ab10c78d66",
+      "sourcePullRequest": 7285
+    },
+    "stable-released-coa-links": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Checked against dated deployment records and GitHub source status on 2 November. Earlier Demo proof is retained; this tracker update did not retest or change the production application.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/pull/7221",
+      "detail": "A new repair keeps older emailed COA links usable after an amendment by opening the latest released certificate, while retaining the current-version integrity check and refusing withdrawn or unavailable reports. Optiq release emails also use the unguessable token link. The repair is merged and awaits installation; existing links are not newly claimed fixed in production.",
+      "evidence": "PR #7221 merged 2 November. Its source addresses the older-version email-link failure on the recorded installed build. Printed-number lookup activation is a separate held scope.",
+      "nextStep": "Include the merged link repair in the next qualified release and verify old-email/current-version/withdrawn cases on a copy before recording production delivery.",
+      "currentBlocker": "The new link repair is merged but not recorded installed.",
+      "currentNotes": [
+        "partial",
+        "verification"
+      ],
+      "sourceHead": "e8cd50d23dbd3e11d3f38925484ab2fd3e881d9f",
+      "sourcePullRequest": 7221
+    },
+    "my-products-disabled": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Checked against dated deployment records and GitHub source status on 2 November. Earlier Demo proof is retained; this tracker update did not retest or change the production application.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/pull/7133",
+      "detail": "The complete Optiq My Products port is still unfinished. Earlier partial ports were backed out; a browser-draft preservation slice is not a complete replacement. The reorder redesign is now merged on main, with latest-lot status, COA access and a lot-number tray, but still needs the complete Optiq port. Availability must remain off for every Optiq company, and ordinary ordering must keep working.",
+      "evidence": "Current deployment record: #7016 groundwork backed out by #7074, and #7023 was reverted by #7097. PR #7133 is now merged on main. The dedicated recovery owner retains the incomplete Optiq port; no customer activation is recorded.",
+      "nextStep": "Recover and complete the full Optiq port, include the merged reorder design, and prove availability-off/direct-access controls, ordinary orders and saved drafts before release.",
+      "currentBlocker": "Complete Optiq source recovery/integration, release qualification and off-state proof remain; customer availability stays off.",
+      "plannedAvailability": "off",
+      "currentNotes": [
+        "partial",
+        "verification"
+      ],
+      "sourceHead": "a5af5445508a3d3114159b5e8c54a79a35736143",
+      "sourcePullRequest": 7133,
+      "currentOwner": "Smpltrax — Finish Optiq My Products port (AI100,01a1955b-3540-78b2-91e8-c0336b48d9e4)"
+    },
+    "submission-matrix-save-parity": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Checked against dated deployment records and GitHub source status on 2 November. Earlier Demo proof is retained; this tracker update did not retest or change the production application.",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/c2679af3ed861c7c48b876c7850c434d4f91c8ad/shared/deploy-checklist.md",
+      "detail": "Existing saved/reopened draft consistency still needs full acceptance. New recovery work preserves prior browser work when a server draft fails to open or another draft is submitted/discarded; it does not import unverified browser data into an authenticated draft. Complete material, symbol and draft-reload checks remain open.",
+      "evidence": "The current deployment record retains focused draft-preservation proof for #7054 and the older five-case acceptance gap. The partial recovery change is not evidence that all saved-draft journeys are complete.",
+      "nextStep": "Integrate the qualified draft-preservation slice and run the retained material/symbol/save/reopen cases with the complete ordinary-order and My Products-off journeys.",
+      "currentBlocker": "Partial browser-draft preservation does not close the full saved/reopened order acceptance scope.",
+      "currentNotes": [
+        "verification"
+      ]
+    },
+    "portal-price-visibility": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Checked against dated deployment records and GitHub source status on 2 November. Earlier Demo proof is retained; this tracker update did not retest or change the production application.",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/c2679af3ed861c7c48b876c7850c434d4f91c8ad/shared/deploy-checklist.md",
+      "detail": "Pay-at-order sandbox source has moved onto the Optiq release line, and a separate draft frames the order form within the new website design. Payment availability remains off. Supported Demo database delivery, sandbox end-to-end checkout, legal/consent requirements and explicit activation are still separate work; there is no real-payment readiness claim.",
+      "evidence": "2 November source intake: #7155 is merged onto the Optiq line with its feature flag off; #7190 remains open for the website-framed order form. The deployment checklist retains copied-Demo prerequisite and checkout qualification holds.",
+      "nextStep": "Qualify the current sandbox source and copied database, then prove quote, payment refusal/retry, confirmed order and portal access without real charges. Prepare a separate customer-activation decision.",
+      "currentBlocker": "Sandbox prerequisite/checkout proof, approved payment terms and separate activation remain.",
+      "currentNotes": [
+        "partial",
+        "verification"
+      ]
+    },
+    "empower-native-collection": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Checked against dated deployment records and GitHub source status on 2 November. Earlier Demo proof is retained; this tracker update did not retest or change the production application.",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/c2679af3ed861c7c48b876c7850c434d4f91c8ad/shared/deploy-checklist.md",
+      "detail": "Instrument monitoring now runs offsite and reports collector/source outages, new completed batches, reported failures and stalled eligible imports. A repair prevents an old abort alert replaying when an already-seen item disappears and returns. This improves monitoring only; correct sample matching, interrupted import recovery and held-run acceptance remain open.",
+      "evidence": "31 October deployment records confirm the LC1/LC2 monitoring move and historical-abort replay repair, with scheduled-service and synthetic fault/recovery checks. No new instrument connection or collector change was made for this tracker update.",
+      "nextStep": "Retain the installed monitoring and recover the remaining copied-run association, interrupted-import and held-run proof without contacting or controlling instruments.",
+      "currentBlocker": "Monitoring delivery does not complete sample association and import-recovery qualification.",
+      "currentNotes": [
+        "partial",
+        "verification"
+      ]
+    },
+    "data-analysis-ion-signal-match": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Checked against dated deployment records and GitHub source status on 2 November. Earlier Demo proof is retained; this tracker update did not retest or change the production application.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/pull/7263",
+      "detail": "The match-ring and acquired-ion evidence changes have retained Demo proof and are now collected in one Optiq integration PR. Suggestions and displayed compatibility scores still require final combined acceptance; an ion-signal match percentage is not a probability of chemical identity. Later recognition-quality concerns remain open.",
+      "evidence": "2 November: PR #7263 is open and collects the Data Analysis chain, including smoothing, suggestions, assigned-ion traces, compact controls, pre-accept ion display, named batches and purity Add Sample. Retained Demo proof is distinct from final integration and production approval.",
+      "nextStep": "Finish the single Data Analysis integration PR and current combined browser/scientific checks; bind the exact candidate and release proof before recording any new production delivery.",
+      "currentBlocker": "Combined source qualification, current preview acceptance and a separately approved production release remain.",
+      "currentNotes": [
+        "partial",
+        "verification"
+      ],
+      "sourceHead": "1a1a408f7ddc2e394d253c65c0e5de1059faf1a4",
+      "sourcePullRequest": 7263
+    },
+    "data-analysis-spectrum-smoothing": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Checked against dated deployment records and GitHub source status on 2 November. Earlier Demo proof is retained; this tracker update did not retest or change the production application.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/pull/7263",
+      "detail": "Raw, moving-average and optional Savitzky–Golay smoothing have retained actual Demo checks, including full acquired times and comparison against original data. The complete smoothing change is now collected in the single Optiq integration PR. It is not recorded installed in production.",
+      "evidence": "2 November: PR #7263 is open and collects the Data Analysis chain, including smoothing, suggestions, assigned-ion traces, compact controls, pre-accept ion display, named batches and purity Add Sample. Retained Demo proof is distinct from final integration and production approval.",
+      "nextStep": "Finish the single Data Analysis integration PR and current combined browser/scientific checks; bind the exact candidate and release proof before recording any new production delivery.",
+      "currentBlocker": "Combined source qualification, current preview acceptance and a separately approved production release remain.",
+      "currentNotes": [
+        "verification"
+      ],
+      "sourceHead": "1a1a408f7ddc2e394d253c65c0e5de1059faf1a4",
+      "sourcePullRequest": 7263
+    },
+    "data-analysis-ion-composite": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Checked against dated deployment records and GitHub source status on 2 November. Earlier Demo proof is retained; this tracker update did not retest or change the production application.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/pull/7263",
+      "detail": "Complete selected-ion shapes, full-run display, baseline guidance and automatic composite behavior have retained Demo proof. Later source is now collected with the rest of Data Analysis in one integration PR. Combined acceptance and production delivery remain open; earlier proof does not establish that the current combined preview is accepted.",
+      "evidence": "2 November: PR #7263 is open and collects the Data Analysis chain, including smoothing, suggestions, assigned-ion traces, compact controls, pre-accept ion display, named batches and purity Add Sample. Retained Demo proof is distinct from final integration and production approval.",
+      "nextStep": "Finish the single Data Analysis integration PR and current combined browser/scientific checks; bind the exact candidate and release proof before recording any new production delivery.",
+      "currentBlocker": "Combined source qualification, current preview acceptance and a separately approved production release remain.",
+      "currentNotes": [
+        "partial",
+        "verification"
+      ],
+      "sourceHead": "1a1a408f7ddc2e394d253c65c0e5de1059faf1a4",
+      "sourcePullRequest": 7263
+    },
+    "data-analysis-stable-ion-table": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Checked against dated deployment records and GitHub source status on 2 November. Earlier Demo proof is retained; this tracker update did not retest or change the production application.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/pull/7263",
+      "detail": "Inline suggested/selected/saved ion states and pre-accept suggested-ion display are included in the current combined Data Analysis source. Earlier standalone instructions are superseded by that integration path. Selection, save/reopen, discard and the pre-accept display still need final combined acceptance.",
+      "evidence": "2 November: PR #7263 is open and collects the Data Analysis chain, including smoothing, suggestions, assigned-ion traces, compact controls, pre-accept ion display, named batches and purity Add Sample. Retained Demo proof is distinct from final integration and production approval.",
+      "nextStep": "Finish the single Data Analysis integration PR and current combined browser/scientific checks; bind the exact candidate and release proof before recording any new production delivery.",
+      "currentBlocker": "Combined source qualification, current preview acceptance and a separately approved production release remain.",
+      "currentNotes": [
+        "partial",
+        "verification"
+      ],
+      "sourceHead": "1a1a408f7ddc2e394d253c65c0e5de1059faf1a4",
+      "sourcePullRequest": 7263
+    },
+    "data-analysis-batches": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Checked against dated deployment records and GitHub source status on 2 November. Earlier Demo proof is retained; this tracker update did not retest or change the production application.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/pull/7263",
+      "detail": "Installed run-list grouping, run switching and SCIEX Add Sample/Undo stay delivered. The restored purity Add Sample and named-batch/menu source are now included in the combined Data Analysis PR. Current combined acceptance, late-arrival behavior and production delivery of the newer scope remain open.",
+      "evidence": "2 November: PR #7263 is open and collects the Data Analysis chain, including smoothing, suggestions, assigned-ion traces, compact controls, pre-accept ion display, named batches and purity Add Sample. Retained Demo proof is distinct from final integration and production approval.",
+      "nextStep": "Finish the single Data Analysis integration PR and current combined browser/scientific checks; bind the exact candidate and release proof before recording any new production delivery.",
+      "currentBlocker": "Combined source qualification, current preview acceptance and a separately approved production release remain.",
+      "currentNotes": [
+        "partial",
+        "verification"
+      ],
+      "sourceHead": "1a1a408f7ddc2e394d253c65c0e5de1059faf1a4",
+      "sourcePullRequest": 7263
+    },
+    "compact-sample-photo-clarity": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Checked against dated deployment records and GitHub source status on 2 November. Earlier Demo proof is retained; this tracker update did not retest or change the production application.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/pull/7020",
+      "detail": "The clearer compact photo and count placed outside the image remain a draft source refinement with earlier component proof. It still needs current-source and combined-screen acceptance plus explicit inclusion in the installed release.",
+      "evidence": "2 November: PR #7020 remains draft; earlier photo tests and visual/build evidence are retained. No production install is recorded.",
+      "nextStep": "Finish the existing photo refinement review and qualify it in the complete current Sample Details view before production inclusion.",
+      "currentBlocker": "Draft photo source, combined-screen proof and installation remain.",
+      "currentNotes": [
+        "partial",
+        "verification"
+      ],
+      "sourceHead": "5f77b84ebb37cfd528dd8c6d2a73294695b50cb9",
+      "sourcePullRequest": 7020
+    },
+    "standard-based-net-content": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "2 November source and delivery review",
+      "currentEvidenceBoundary": "Checked against dated deployment records and GitHub source status on 2 November. Earlier Demo proof is retained; this tracker update did not retest or change the production application.",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/c2679af3ed861c7c48b876c7850c434d4f91c8ad/shared/deploy-checklist.md",
+      "detail": "The single-point calculator, two-run certificates, standard-preparation screen and per-peptide blend results were excluded from the reduced release and remain held together. Existing manual Net Content editing and Undo stay delivered. Real, qualified standard injections must reach the app; sample runs must not be treated as standards.",
+      "evidence": "The current deployment record retains the deferral of #6889/#6931, the held standard-preparation repair #6946 and blend results #6939. Retained copied-Demo proof does not establish a live standard intake or an installed calculator.",
+      "nextStep": "Restore the complete standard/preparation/calculation foundations through the existing owners, qualify genuine standard intake and current-source proof, then prepare a separate reviewed release and method activation.",
+      "currentBlocker": "The calculator foundations remain deferred; genuine standard intake, integration and lab qualification are unfinished.",
+      "currentNotes": [
+        "verification"
+      ]
     }
   },
   "followUpHistory": [
@@ -977,6 +1234,111 @@ window.OPTIQ_RECONCILIATION = {
           "currentAsOf": "2026-10-30",
           "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/8a6f06171a030fa4e5ad90ec52ff3c8fc3c11541/shared/deploy-checklist.md",
           "currentEvidenceBoundary": "Post-publication reconciliation and read-only source/CI/owner review. No new application build/deploy, feature activation, customer write or owner dispatch. Prior source records and delivery history remain intact."
+        }
+      }
+    },
+    {
+      "date": "2026-10-30",
+      "checklistCommit": "65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a",
+      "checklistUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+      "updates": {
+        "invoice-status": {
+          "nextStep": "Finish the Uninvoiced quick filter with finance: establish authoritative sample-level issued-invoice coverage, then prove invoiced/uninvoiced/part-covered cases. Paid/Unpaid alone is insufficient.",
+          "currentBlocker": "Authoritative issued-invoice coverage is a dependency; Uninvoiced filter still lacks implementation/proof.",
+          "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+        },
+        "public-signup-approval": {
+          "nextStep": "Include the new-customer and returning-client journeys in finance acceptance: sample entry, price/terms, payment/server confirmation, authorized portal access after payment or invitation, and preserved drafts on refusal/failure. Ordinary ordering must work while My Products stays off.",
+          "currentBlocker": "Sandbox payment code does not prove complete signup/invitation/approved-terms account access.",
+          "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+        },
+        "receipt-emails": {
+          "nextStep": "Close installed company-name receipt delivery from retained outbox/inbox evidence and the qualified finance sandbox/capture case. Check recipient and company scoping; do not rebuild the old receipt bundle or send a customer smoke email.",
+          "currentBlocker": "Company-name code is installed; existing delivery/inbox and recipient evidence is incomplete.",
+          "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+        },
+        "client-bulk-white-label": {
+          "nextStep": "Finish the existing authorized private draft → edit → save/reopen → photo → correct-PDF/ZIP journey as a COA acceptance cohort; isolate any demonstrated repair instead of reopening delivered bulk code.",
+          "currentBlocker": "Private draft/edit/reopen/photo/correct-PDF acceptance remains open despite delivered bulk/ZIP code.",
+          "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+        },
+        "stable-released-coa-links": {
+          "nextStep": "Use the synthetic COA replacement/recovery case to prove original and white-label durable links, correct retained versions and tenant boundaries. Keep printed-number activation as its distinct unresolved identity/data decision.",
+          "currentBlocker": "Combined white-label/permanent-link/recovery acceptance remains incomplete.",
+          "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+        },
+        "sample-details-documents": {
+          "nextStep": "Recover the installed document/slip paths and prove the correct sample/order original digital slip, annotated paperwork and signed-attestation links plus authenticated reopen; repair only a missing association or access gap.",
+          "currentBlocker": "Attachments are delivered; original digital-slip access and correct paperwork/attestation association still need acceptance.",
+          "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+        },
+        "inspection-rules": {
+          "nextStep": "Take the completed source/proof slice into a supported admitted acceptance copy, finish any missing receiving/Hub control or vial wording, then prove saved observations through reopen and the first-page COA. A stale copy/admission label needs a current check.",
+          "currentBlocker": "Receiving/Hub controls, final vial wording and saved-observation-to-COA proof remain incomplete.",
+          "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+        },
+        "coa-status-language": {
+          "nextStep": "Include the retained identity-mismatch versus submitted-claim case in current synthetic PDF and digital-card acceptance; close only after the wrong identity cannot appear as successful green matching.",
+          "currentBlocker": "Installed identity-mismatch behavior must be located and verified on both report surfaces.",
+          "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+        },
+        "analysis-framework": {
+          "nextStep": "Bind selected direct-entry/save/reopen/independent-review/COA cases to the Conformity/standards acceptance work. Record any uncovered method-specific gap rather than inferring full framework completion from one Purity fixture.",
+          "currentBlocker": "Direct entry/save/reopen/independent review/released-COA acceptance remains incomplete beyond installed Data Analysis.",
+          "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+        },
+        "data-analysis-batches": {
+          "nextStep": "Restore current-compatible Purity AddSample/Undo and finish named batches/late-sample auto-join as explicit batch deliverables. Supply the actual named-batch source or identify its implementation gap; preserve delivered run controls and avoid inventing sign-off.",
+          "currentBlocker": "Merged6940 repaired the old fixture mismatch. Purity6938 product/test are still absent from installed5046; current restoration/proof is missing. Named batches/late auto-join remain separate unfinished work.",
+          "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+        },
+        "data-analysis-ion-composite": {
+          "nextStep": "Automatic assembly now has code-ready source and retained focused proof; finish exact review/artifact/actual served qualification, including acquired-ion selection, explicit partial failures and Undo. Integrate the manual/automatic scope through the stacked spectral UI source.",
+          "currentBlocker": "Automatic assembly now has code-ready source; exact review/artifact/served qualification and stacked integration remain.",
+          "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
+        },
+        "data-analysis-stable-ion-table": {
+          "nextStep": "PR7017 now implements stable inline suggested/working/saved states. Finish exact source review, current gates and served select/save/reopen/discard proof while preserving reporting/observation distinctions and BIGINT identity.",
+          "currentBlocker": "Implemented source7017 is stacked; exact source/review/current gates and served acceptance remain.",
+          "evidence": "Full deployment intake reconciles existing catalogue scope, current checklist owner pickup and current source. Delivery status is unchanged; source/functional/production qualification remains explicit.",
+          "status": "partial",
+          "stage": 1,
+          "currentAsOf": "2026-10-30",
+          "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/65b2c08b889c7f234c72d7ca9ddc0a36ed346a8a/shared/deploy-checklist.md",
+          "currentEvidenceBoundary": "Full catalogue/current-source intake only. No new production qualification, activation or owner dispatch; prior source records and historical reviews retained."
         }
       }
     }
