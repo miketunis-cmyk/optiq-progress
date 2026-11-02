@@ -70,8 +70,8 @@ for (const [id, update] of Object.entries(assigned.updates)) {
 console.log('PASS:65 retained owner records;53 original exact chat assignments and12 retained source scopes; completed delivery and remaining blockers stay distinct.');
 
 // The installed release must not close newer Demo-only scope or lose prior evidence.
-assert.equal(originals.length,138);
-assert.equal(items.length,111);
+assert.equal(originals.length,137);
+assert.equal(items.length,110);
 const installed=items.find(row=>row.id==='data-analysis-demo-review');
 assert.equal(installed.status,'complete');
 assert.equal(installed.deliveryEvidence.release,'5046f44ebc8a48bde8d03a8ad602c2448467547b');
@@ -140,4 +140,15 @@ for (const item of items) {
 assert.equal(JSON.stringify(items), catalogBeforeWording, 'Reader wording must not change source records');
 console.log(`PASS: plain-language titles and summaries cover all ${items.length} items; statuses and source records unchanged.`);
 
-assert(!/excelbis/i.test(JSON.stringify(items)), "Optiq must not contain ExcelBIS work or references");
+// Other labs belong here only when the request concerns Optiq's partner-lab work.
+const partnerWorkIds = new Set(['partner-inventory', 'partner-sample-routing']);
+for (const item of items) {
+  if (/mammoth|excelbis/i.test(JSON.stringify([item, wording[item.id]]))) {
+    assert(partnerWorkIds.has(item.id), `Other-lab reference outside Optiq partner work: ${item.id}`);
+  }
+}
+for (const id of ['mammoth-portal-coa', 'excelbis-billing-follow-on']) {
+  assert(!items.some(item => item.id === id), `Separate lab rollout must stay outside Optiq: ${id}`);
+}
+assert(wording['partner-sample-routing'].summary.includes('ExcelBIS'), 'Retain the documented Optiq partner-lab relationship');
+console.log('PASS: other-lab references are limited to Optiq partner work; separate rollouts are excluded.');

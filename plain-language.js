@@ -58,7 +58,7 @@ live-vial-count|Show how many vials are needed|Update vial counts as customers c
 unresolved-client-orders|Find orders needing a client match|Show orders that still need to be linked to the correct client.|
 net-content-per-vial|Clarify the amount reported per vial|Confirm the agreed meaning and wording of Net Content per vial.|On hold for later. No change to reporting is currently approved.
 coa-status-language|Show identity mismatches clearly|Make sure a result that differs from the customer’s claim does not look like a successful match.|Check the existing indicators with matching and mismatching results.
-partner-sample-routing|Track samples sent to another lab|Follow samples, returned results and related charges when a partner lab does the testing.|Check the complete handover, return of results and charging process.
+partner-sample-routing|Track samples sent to another lab|Track Optiq’s work with partner labs, including ExcelBIS, from sample handover to returned results and charges.|Check the complete handover, return of results and charging process.
 intake-attention-notices|Ask clients about unclear or unlabelled samples|Send a saved request with photos and keep the client’s reply with the sample.|Check the staff request, client reply and final resolution together.
 shared-lims-priorities|Save shared priorities in the lab system|Let authorised lab staff view the work list and save priority changes.|Confirm that staff can save and reopen changes and that access is correctly limited.
 hubspot-onboarding|Keep client details in step with HubSpot|Avoid entering the same client information twice.|Check the existing connection and decide which record takes priority when the two systems disagree.
@@ -78,7 +78,6 @@ inventory-receiving-defaults|Easier receiving of purchased supplies|Start with t
 chemical-components-grid-stability|Keep the chemical-components table steady|Make the table smoother while staff add or edit components.|
 sample-order-client-messaging|Keep client conversations with the sample or order|Save messages and replies where staff can find them later.|Check the record links and agree who receives and responds to notifications before sending is enabled.
 sample-storage-multi-lab|Find stored samples and individual vials|Help staff locate retained material for retesting across labs.|Compare the current storage records and agree the details needed to find a vial reliably.
-mammoth-portal-coa|Set up Mammoth’s portal and certificates|Agree how Mammoth submits samples, receives reports and works with other systems.|Mammoth and Smpltrax: confirm responsibilities, then check a representative submission before release.
 reporting-hub-pagination|Move reliably between results-table pages|Make page buttons and page-size changes work consistently.|
 lab-photo-sort|Find samples with or without a lab photo|Sort the photo column by whether the lab has uploaded a photo.|Confirm how lab photos are distinguished from customer photos, then build and check the sort option.
 ordered-test-search|Find samples by the tests ordered|Search for a selected test even before a result has been entered.|

@@ -633,7 +633,7 @@ window.OPTIQ_REQUESTS = [
     "status": "working",
     "title": "Lab-specific testing steps",
     "description": "Set up the lab’s preparation, result entry, and review steps for each test.",
-    "detail": "Connect preparation, native instrument results, result history, staff review and the final certificate using existing lab-specific Sample Details and repeat-work rules. Native peak integration and calculations currently done manually are useful near-term work for Optiq and potentially Mammoth. Inspect incoming injections and mass spectra and preserve source-to-result lineage. Audit and reuse accepted method, QC, capability and reportable-run rules before identifying the work that remains. Preserve human review and the existing release authority. Prove a representative authorized run through the intended analysis and COA workflow and document the steps for another analyst. Progress reviewed 20 October: Automatic purity and automatic library identity for peptide samples are built and waiting to be installed after Fentanyl. Results are labelled automatic and unreleased until an analyst reviews them. Purity is the combined area of all peptide peaks, shown live in the peak table with a card for each peptide peak. The release adds a Data Analysis area with a list of runs to analyse and purity review, live purity in the peak table, and a fix for Empower run time units. Staff remain responsible for review and release. A practice installation on a copy of Optiq’s data comes next, before it becomes available at Optiq. Turning the lab’s analysis setup into ordinary LIMS analyses, with results, training and COAs, is still in draft.",
+    "detail": "Connect preparation, native instrument results, result history, staff review and the final certificate using existing lab-specific Sample Details and repeat-work rules. Native peak integration and calculations currently done manually are useful near-term work for Optiq. Inspect incoming injections and mass spectra and preserve source-to-result lineage. Audit and reuse accepted method, QC, capability and reportable-run rules before identifying the work that remains. Preserve human review and the existing release authority. Prove a representative authorized run through the intended analysis and COA workflow and document the steps for another analyst. Progress reviewed 20 October: Automatic purity and automatic library identity for peptide samples are built and waiting to be installed after Fentanyl. Results are labelled automatic and unreleased until an analyst reviews them. Purity is the combined area of all peptide peaks, shown live in the peak table with a card for each peptide peak. The release adds a Data Analysis area with a list of runs to analyse and purity review, live purity in the peak table, and a fix for Empower run time units. Staff remain responsible for review and release. A practice installation on a copy of Optiq’s data comes next, before it becomes available at Optiq. Turning the lab’s analysis setup into ordinary LIMS analyses, with results, training and COAs, is still in draft.",
     "evidence": "20 October: automatic purity, automatic identity, the Data Analysis area and the Empower time-unit fix are merged and prepared for the release after Fentanyl. Lab-defined analyses through results, training and COA remain in draft.",
     "stage": 1,
     "nextStep": "Smpltrax: rehearse the purity and identity release on a copy of Optiq’s data, then install it after Fentanyl with approval. Finish lab-defined analyses through to the COA and document a representative analyst workflow.",
@@ -1241,7 +1241,7 @@ window.OPTIQ_REQUESTS = [
     "status": "check",
     "title": "Send samples to a partner lab and receive the results",
     "description": "Track samples sent to a partner lab, returned results and the related charges.",
-    "detail": "Sharing partner-lab results is included in this work. Sending samples, receiving reviewed results and settling charges come next.",
+    "detail": "Sharing ExcelBIS heavy-metals and solvent results is included in Optiq’s partner-lab work. Sending samples, receiving reviewed results and settling charges come next.",
     "evidence": "Reviewed from saved work records on 10 October.",
     "nextStep": "Smpltrax: finish and verify the complete exchange. The labs must confirm consent, permissions, methods, limits and charging rules.",
     "stage": 0,
@@ -1249,7 +1249,7 @@ window.OPTIQ_REQUESTS = [
     "recordedProgressCredit": 28,
     "recordedProgressLabel": "Execution with item 06 — research support",
     "currentAsOf": "2026-10-10",
-    "currentDisposition": "Sharing partner-lab results is included in this work. Sending samples, receiving reviewed results and settling charges come next.",
+    "currentDisposition": "Sharing ExcelBIS heavy-metals and solvent results is included in Optiq’s partner-lab work. Sending samples, receiving reviewed results and settling charges come next.",
     "currentOwner": "Smpltrax"
   },
   {
@@ -1728,20 +1728,6 @@ window.OPTIQ_REQUESTS = [
     "nextStep": "Smpltrax and lab quality owners: audit and select existing workflows, confirm the missing rules and agree tracker/document transition.",
     "currentAsOf": "2026-10-12",
     "currentDisposition": "Review existing modules, identify what is actually usable and the remaining workflow needs, configure the selected functions for each relevant lab and plan transition from current trackers/documents. Reuse the existing document and approval work rather than create a parallel system. Inventory and quality adoption need not wait for the complete analytical migration. Approval roles, permissions, document lifecycle, sign-off and detailed nonconformance/CAPA behavior come next. The ambiguous “by January 1st, start working on it” comment cannot be assigned to this work or made a blanket deadline. Proposed completion check: staff complete the selected workflows without maintaining equivalent parallel trackers.",
-    "evidence": "Recorded from the corrected 12 October morning meeting summary. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments. Mike kept the existing item or follow-through during the 12 October review."
-  },
-  {
-    "status": "queued",
-    "stage": 0,
-    "meetingPriority": true,
-    "id": "mammoth-portal-coa",
-    "area": "Lab rollout",
-    "title": "Mammoth portal, COA and operational workflow configuration",
-    "description": "Configure Mammoth’s client portal and COA and confirm its submission, sampling, reporting and external-system boundaries.",
-    "detail": "Use shared LIMS functionality to reduce manual CSV handling where the agreed process permits it. Work out instrument/analytical automation at Optiq, refine the cannabis workflow at Mammoth, then bring the proven workflow to the busier existing lab. Inventory and quality adoption can proceed separately. Late October 2026 inspection was an operational milestone, not a software-release deadline; first samples by January 2027 was an estimate, not a confirmed launch. Proposed completion check: a representative Mammoth submission reaches the intended report through the agreed workflow and staff understand the remaining external steps.",
-    "nextStep": "Smpltrax and Mammoth operations: confirm submission, sampling and external responsibilities, configure portal/COA and confirm a representative agreed submission before any release.",
-    "currentAsOf": "2026-10-12",
-    "currentDisposition": "Use shared LIMS functionality to reduce manual CSV handling where the agreed process permits it. Work out instrument/analytical automation at Optiq, refine the cannabis workflow at Mammoth, then bring the proven workflow to the busier existing lab. Inventory and quality adoption can proceed separately. Late October 2026 inspection was an operational milestone, not a software-release deadline; first samples by January 2027 was an estimate, not a confirmed launch. Proposed completion check: a representative Mammoth submission reaches the intended report through the agreed workflow and staff understand the remaining external steps.",
     "evidence": "Recorded from the corrected 12 October morning meeting summary. Completion checks are proposed tests; handoff roles are suggestions, not confirmed assignments. Mike kept the existing item or follow-through during the 12 October review."
   }
 ];

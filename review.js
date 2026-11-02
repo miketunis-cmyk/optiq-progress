@@ -1107,10 +1107,6 @@ for (const [id, update] of Object.entries({
   "sample-storage-multi-lab": {
     "currentOwner": "Optiq Manager — delivery routing; named implementation pickup not recorded",
     "currentOwnerAsOf": "2026-10-28"
-  },
-  "mammoth-portal-coa": {
-    "currentOwner": "Mammoth operations + Smpltrax onboarding; named pickup not recorded",
-    "currentOwnerAsOf": "2026-10-28"
   }
 })) {
  window.OPTIQ_REVIEW.updates[id] = {...window.OPTIQ_REVIEW.updates[id], ...update};
