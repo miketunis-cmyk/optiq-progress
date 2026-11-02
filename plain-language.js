@@ -3,13 +3,13 @@
 // Columns: record ID | short title | what it means | what happens next (optional for closed work).
 window.OPTIQ_PLAIN_LANGUAGE = Object.fromEntries(`
 conformity|Track every vial in a Conformity test|Keep each vial’s purity, identity and amount results together under one sample.|Finish the vial screens and missing-result handling, check the test methods, and obtain approval before turning this on.
-inspection-rules|Record how each vial looks|Save checks of the vial, cap and colours, then show them in the results table and test certificate.|Finish the inspection controls and wording, then check that saved observations appear correctly on the certificate.
+inspection-rules|Saved vial checks and certificate observations|The existing inspection and observation tools are installed. Specific receiving and certificate checks remain.|Check receiving through saved observations to the certificate; fix only a demonstrated gap.
 verify-results-font|Check a certificate online|Look up an issued test certificate and compare it with the lab’s saved record.|
 spectral-reference-library|Check the library of reference test results|Make sure the lab has suitable results from known reference materials to compare with customer samples.|Confirm which reference materials are covered and finish checking how new reference results enter the library.
 fentanyl-results|Order and report a Fentanyl test|Choose the test, record a Pass or Fail, have it independently reviewed, and include it on the test certificate.|
 coa-summary-layout|Clearer test certificates and charts|Show a summary first, followed by supporting test results and charts in the agreed order.|
-receipt-emails|Use the company name in receipt emails|The company-name change is installed; correct delivery still needs to be confirmed.|Check the saved email records to confirm the right company name, recipient and delivery.
-invoice-status|Find samples that have not been invoiced|Add an Uninvoiced button above the results table.|Confirm which samples each invoice covers, then check the button with fully and partly invoiced orders.
+receipt-emails|Receipt emails name the client or company|The name is already included in both the subject and greeting at Optiq.|Delivered. Keep this in later updates; investigate a specific email problem if reported.
+invoice-status|Invoice statuses and the Uninvoiced filter|Manual Paid, Invoiced and Unpaid statuses are available. The separate Uninvoiced button is the part left to check.|Check current filters and which work each invoice covers before adding a missing button.
 frozen-sort|Keep rows still while editing|Rows stay in place while staff edit and save. Staff can sort again when ready.|
 receiving-tables|Updated tables for receiving samples|Use clearer order and sample tables when recording what arrived at the lab.|
 lot-number|Show the lot or batch number|Display the number automatically in the sample receiving table.|
@@ -37,7 +37,7 @@ multi-lab-login|Use one login across permitted labs|Let staff switch between the
 shared-feature-tracker|One shared progress list|Keep requests, progress and questions in one place for the lab.|
 missing-order-recovery|Find orders with many photos|Make sure an order remains easy to find even when it has many photos.|
 net-content-undo|Edit sample amounts and undo mistakes|Copy amounts and units between rows, with Undo restoring both correctly after saving.|
-bulk-coa-amendments|Correct several certificates together|Replace selected certificates while keeping their earlier issued versions.|Check selection, correction and replacement together, including access to the earlier certificates.
+bulk-coa-amendments|Correct several certificates together|Existing bulk certificate generation is installed. Remaining checks concern the next combined software update.|Reuse the existing feature and check only the cases affected by the next update.
 pda-peak-default|Start chart peak selection in the right place|Start from the light-detector chart while keeping the related mass-spectrum data available.|
 native-empower-charts|Show charts from original Empower files|Display charts when the original instrument files have been retained.|
 empower-native-collection|Match instrument results to the right samples|Collect completed test results and recover interrupted imports without losing the original files.|Finish checking sample matching, interrupted imports and results that need to be held for review.
@@ -73,7 +73,7 @@ coa-automatic-ion-interpretation|Suggest spectrum matches for staff to review|Us
 quickbooks-status-sync|Bring invoice and payment status in from QuickBooks|Show the matching QuickBooks information on a Smpltrax order so staff do not update both systems.|The connection is off. Finish reliability, privacy and consent checks, then obtain approval before turning it on.
 optiq-billing-rules|Confirm client prices and billing rules|Use the approved test prices, packages, client rates and rush-charge rules.|Optiq: provide the approved price list, special client rates, package prices and any rush charges or exceptions.
 coa-oct14-mockups|Finish checking the new certificate layout|The new layout is installed; some test and chart combinations still need checking.|Check the remaining examples against the agreed design.
-sample-details-documents|Open the right paperwork from Sample Details|Find the original submission slip, marked-up scans and signed customer agreement with the sample.|Confirm that each document is linked to the correct sample and reopens for authorised staff.
+sample-details-documents|Open the right paperwork from Sample Details|Attachment tools are installed. The original slip, marked-up paperwork and signed agreement still need their links checked.|Confirm the right documents are linked to the right sample and reopen for authorised staff.
 inventory-receiving-defaults|Easier receiving of purchased supplies|Start with the usual units, storage locations and quantities, with changes allowed for partial deliveries.|
 chemical-components-grid-stability|Keep the chemical-components table steady|Make the table smoother while staff add or edit components.|
 sample-order-client-messaging|Keep client conversations with the sample or order|Save messages and replies where staff can find them later.|Check the record links and agree who receives and responds to notifications before sending is enabled.
