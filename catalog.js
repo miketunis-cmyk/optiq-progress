@@ -81,6 +81,17 @@ if (decisions) {
   });
 }
 
+const scopeAudit = window.OPTIQ_SCOPE_AUDIT;
+if (scopeAudit) {
+  for (const id of Object.keys(scopeAudit.updates)) {
+    if (!catalogIds.has(id)) throw new Error(`Scope audit has no work item: ${id}`);
+  }
+  window.OPTIQ_CATALOG = window.OPTIQ_CATALOG.map(request => {
+    const update = scopeAudit.updates[request.id];
+    return update ? {...request, ...update, previousReview: request} : request;
+  });
+}
+
 const execution = window.OPTIQ_EXECUTION_PLAN;
 if (execution) {
   for (const id of Object.keys(execution.items)) {

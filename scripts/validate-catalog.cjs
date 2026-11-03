@@ -4,7 +4,7 @@ const path = require('node:path');
 const vm = require('node:vm');
 const root = path.resolve(__dirname, '..');
 const context = {window: {}};
-for (const filename of ['data.js', 'consolidations.js', 'review.js', 'reconciliation.js', 'ownership.js', 'catalog.js']) {
+for (const filename of ['data.js', 'consolidations.js', 'review.js', 'reconciliation.js', 'ownership.js', 'scope-audit.js', 'catalog.js']) {
   vm.runInNewContext(fs.readFileSync(path.join(root, filename), 'utf8'), context, {filename});
 }
 const {OPTIQ_REQUESTS: originals, OPTIQ_CATALOG: items, OPTIQ_CONSOLIDATIONS: groups} = context.window;
@@ -71,8 +71,8 @@ for (const [id, update] of Object.entries(assigned.updates)) {
 console.log('PASS:65 retained owner records;53 original exact chat assignments and12 retained source scopes; completed delivery and remaining blockers stay distinct.');
 
 // The installed release must not close newer Demo-only scope or lose prior evidence.
-assert.equal(originals.length,140);
-assert.equal(items.length,113);
+assert.equal(originals.length,140 + context.window.OPTIQ_SCOPE_AUDIT.additions.length);
+assert.equal(items.length,113 + context.window.OPTIQ_SCOPE_AUDIT.additions.length);
 const installed=items.find(row=>row.id==='data-analysis-demo-review');
 assert.equal(installed.status,'complete');
 assert.equal(installed.deliveryEvidence.release,'5046f44ebc8a48bde8d03a8ad602c2448467547b');
@@ -177,3 +177,20 @@ for (const [id, plan] of Object.entries(execution.items)) {
   assert.equal(item.status, item.previousReview.status, `Planning must not change delivery status: ${id}`);
 }
 console.log(`PASS: ${Object.keys(execution.items).length} execution classifications have plans and completion criteria; delivery status is unchanged.`);
+
+// Every pre-audit work item retains an outcome; split requirements cannot inherit parent progress.
+const scopeAudit = context.window.OPTIQ_SCOPE_AUDIT;
+assert.equal(new Set(scopeAudit.reviewedItemIds).size, 113);
+assert.deepEqual(Object.keys(scopeAudit.outcomes).sort(), Array.from(scopeAudit.reviewedItemIds).sort());
+for (const id of scopeAudit.reviewedItemIds) {
+  const item = items.find(row => row.id === id);
+  assert(item, `Audited work item lost: ${id}`);
+  assert.equal(item.status, scopeAudit.outcomes[id].retainedDeliveryStatus, `Audit changed delivery history: ${id}`);
+}
+for (const source of scopeAudit.additions) {
+  const item = items.find(row => row.id === source.id);
+  assert(item.scopeParentIds.length > 0 && item.scopeParentIds.every(id => items.some(row => row.id === id)), `Missing requirement parent: ${item.id}`);
+  assert(item.executionPlan && item.executionPlan.state !== 'in-progress' && item.executionPlan.state !== 'almost-complete', `Unverified split inherited progress: ${item.id}`);
+  assert.equal(item.status, 'queued', `Unverified split inherited delivery: ${item.id}`);
+}
+console.log(`PASS: ${scopeAudit.reviewedItemIds.length} pre-audit items retain their history and audit outcome; ${scopeAudit.additions.length} separate requirements/inputs inherit no progress.`);
