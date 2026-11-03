@@ -119,3 +119,5 @@ iso-mode-controls|One ISO mode with configurable controls|Provide one lab-level 
   const [id, title, summary, nextStep] = line.split('|');
   return [id, {title, summary, nextStep}];
 }));
+
+Object.assign(window.OPTIQ_PLAIN_LANGUAGE, window.OPTIQ_SCOPE_AUDIT?.readerUpdates || {});

@@ -16,8 +16,9 @@
   <script defer src="review.js?v=20261102-selection-scope"></script>
   <script defer src="reconciliation.js?v=20261102-signed-in-audit"></script>
   <script defer src="ownership.js?v=20261102-signed-in-audit"></script>
-  <script defer src="catalog.js?v=20261102-execution-plan"></script>
-  <script defer src="plain-language.js?v=20261102-selection-scope"></script>
+  <script defer src="scope-audit.js?v=20261102-scope-audit"></script>
+  <script defer src="catalog.js?v=20261102-scope-audit"></script>
+  <script defer src="plain-language.js?v=20261102-scope-audit"></script>
   <script defer src="app.js?v=20261102-execution-plan"></script>
 </head>
 <body>
@@ -25,7 +26,7 @@
   <main class="shell">
     <div class="intro"><div><p class="eyebrow">OPTIQ PROGRESS</p><h1>What’s done. What’s next.</h1><p class="intro-copy">Chromatogram automation is the first priority and ships as soon as ready. The website, ordering, saved products and payment connections form the next coordinated package. Existing teams can continue independent work in parallel. The list below records the 2 November discussion, later owner decisions and investigation findings, with unfinished work and lab inputs kept explicit.</p></div><button class="print-button" id="print-button" type="button">Print / save PDF</button></div>
     <p class="progress-note">Live software checked <strong>2 November 2026.</strong> The lab is using the <strong>30 October update.</strong> Some newer changes are built but still need checks and approval before the lab can use them. Updating this page does not change the lab’s software.</p>
-    <p class="progress-note"><strong>Work state:</strong> discussed items are marked Needs to be started, Needs a plan, Already in progress, Almost completed, or Requires more information. This describes the remaining delivery work; installed and recorded-complete history stays separate. Open an item for its plan, owner/pickup and completion criteria.</p>
+    <p class="progress-note"><strong>Work state:</strong> discussed items are marked Needs to be started, Needs a plan, Already in progress, Almost completed, or Requires more information. This describes the remaining delivery work; installed and recorded-complete history stays separate. An active project does not make added requirements active: new scope gets its own work state. Open an item for its plan, owner/pickup and completion criteria.</p>
     <p class="progress-note terms-note"><strong>Useful terms:</strong> A <strong>COA</strong> is a Certificate of Analysis — the lab’s test certificate. A <strong>white label</strong> is a certificate with the customer’s branding. <strong>Net Content</strong> is the amount of material in a sample. <strong>Reporting Hub</strong> is the lab’s results table.</p>
     <section class="summary" aria-label="Filter by progress stage" id="summary"></section><p id="stage-context" class="progress-note stage-context"></p>
     <section class="lab-panel" aria-labelledby="lab-heading"><div class="lab-panel-top"><div><span class="mini-label">NEXT STEPS FOR THE LAB</span><h2 id="lab-heading">What we need from Optiq</h2></div><button id="copy-questions" class="copy-button" type="button">Copy questions</button></div><div id="lab-questions" class="lab-questions"></div><p class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></p></section>
