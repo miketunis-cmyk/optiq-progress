@@ -103,3 +103,10 @@ if (execution) {
       previousReview: request} : request;
   });
 }
+
+// Fresh observations supersede earlier planning while retaining the full record.
+for (const [id, update] of Object.entries(reconciliation?.latestUpdates || {})) {
+  if (!catalogIds.has(id)) throw new Error(`Live observation has no work item: ${id}`);
+  window.OPTIQ_CATALOG = window.OPTIQ_CATALOG.map(request => request.id === id
+    ? {...request, ...update, previousReview: request} : request);
+}
