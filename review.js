@@ -1358,13 +1358,40 @@ window.OPTIQ_CALL_DECISIONS = {
 };
 
 // Work planning is independent of installed/delivered status.
+// Owner clarification: additional scope is planned separately from active parent work.
+window.OPTIQ_REVIEW.additions.push({
+  "id": "chromatogram-source-selection",
+  "title": "Choose chromatograms independently for the report and purity calculation",
+  "area": "Data Analysis",
+  "status": "queued",
+  "stage": 0,
+  "description": "Choose the report chromatogram independently from the chromatogram used for purity integration and calculation.",
+  "detail": "Owner clarification: an additional requirement is not already in progress merely because its parent workstream is active. Keep independent chromatogram selection separately planned until coverage in the current implementation is verified. Preserve existing automated trace selection and current scientific calculation behavior while defining missing controls. PDA purity and MS identity/report traces are the intended usual choices; the analyst needs independent selection.",
+  "nextStep": "Audit the current chromatogram workers and controls, record what already exists, then define the missing selectors, defaults, saved provenance and affected calculation/report checks with confirmed pickup.",
+  "meetingPriority": true,
+  "currentAsOf": "2026-11-02",
+  "currentOwner": "Existing Data Analysis owners; selection scope and pickup not confirmed",
+  "evidence": "Mike clarified on 2 November that requirements outside verified active scope need their own plan. No implementation or deployment verification for independent selectors is claimed."
+});
+
 window.OPTIQ_EXECUTION_PLAN = {
   "date": "2026-11-02",
   "basis": "Call, owner clarifications, current investigation reports and existing source work; no new production test.",
   "items": {
+    "chromatogram-source-selection": {
+      "state": "needs-plan",
+      "why": "The broader chromatogram work is active, but implementation coverage and confirmed pickup for these independent selectors have not been verified.",
+      "owner": "Existing Data Analysis owners; confirm selection-scope pickup after the coverage audit",
+      "steps": [
+          "Inspect current work to distinguish implemented source selection from automated defaults and identify only missing controls.",
+          "Define independent report and purity-source selectors, configurable defaults, inline analyst changes, and the permissions and scope of saved changes.",
+          "Agree implementation pickup and prove independent choices, save/reopen, retained source provenance, purity recalculation and the correct PDF/digital report trace."
+      ],
+      "done": "The analyst can independently select and retain the report trace and purity-calculation source; calculations use the selected purity source and COAs show the selected report trace, with end-to-end proof."
+  },
     "data-analysis-ion-composite": {
       "state": "in-progress",
-      "why": "Current Data Analysis implementation and integration work exists; complete report-path proof and release are still outstanding.",
+      "why": "Current Data Analysis implementation and integration work exists; complete report-path proof and release are still outstanding. Independent report-versus-purity source selectors are separately marked Needs a plan until their coverage is verified.",
       "owner": "Existing MacBook Claude Data Analysis workers; confirm one owner through release",
       "steps": [
         "Reconcile the active combined candidate and the remaining chromatogram/report connections.",

@@ -2,6 +2,7 @@
 // Reader-facing wording only. Status, ownership, dates and source history stay in the catalog.
 // Columns: record ID | short title | what it means | what happens next (optional for closed work).
 window.OPTIQ_PLAIN_LANGUAGE = Object.fromEntries(`
+chromatogram-source-selection|Choose report and purity chromatograms independently|Select the report trace separately from the trace used for purity integration and calculation. This additional selection scope needs a plan; active chromatogram work does not establish that these controls exist.|Audit existing coverage, define missing selectors and saved behavior, confirm pickup, and prove both choices independently.
 conformity|Finish the existing Conformity workflow|Claude is integrating the vial screens and results. Preserve client-entered vial names and the existing approved reporting design.|Finish naming, settings, integration and order-to-report checks; confirm release ownership and resolve existing holds before activation.
 inspection-rules|Preview custom vial colors on the certificate|Choose cap, vial and contents colors using standard swatches or a custom color wheel, with a preview of the actual certificate illustration.|Keep the existing inspection controls and receiving repair; assign the color-picker work and prove saved colors on PDF and online certificates.
 verify-results-font|Check a certificate online|Look up an issued test certificate and compare it with the lab’s saved record.|
