@@ -2,14 +2,14 @@
 // Reader-facing wording only. Status, ownership, dates and source history stay in the catalog.
 // Columns: record ID | short title | what it means | what happens next (optional for closed work).
 window.OPTIQ_PLAIN_LANGUAGE = Object.fromEntries(`
-conformity|Track every vial in a Conformity test|Keep each vial’s purity, identity and amount results together under one sample.|Finish the vial screens and missing-result handling, check the test methods, and obtain approval before turning this on.
-inspection-rules|Saved vial checks and certificate observations|The existing inspection and observation tools are installed. Specific receiving and certificate checks remain.|Check receiving through saved observations to the certificate; fix only a demonstrated gap.
+conformity|Track every vial in a Conformity test|Draft Conformity settings are installed. The newer vial screens, result handling and three rounding settings still need work.|Finish the current screens, methods and rounding settings, then obtain approval before turning this on.
+inspection-rules|Saved vial checks and certificate observations|Inspection tools are installed, and existing receiving and certificate checks have passed. A newer repair is merged.|Include the receiving repair and check affected cases in the next complete update and recovery plan.
 verify-results-font|Check a certificate online|Look up an issued test certificate and compare it with the lab’s saved record.|
 spectral-reference-library|Check the library of reference test results|Make sure the lab has suitable results from known reference materials to compare with customer samples.|Confirm which reference materials are covered and finish checking how new reference results enter the library.
 fentanyl-results|Order and report a Fentanyl test|Choose the test, record a Pass or Fail, have it independently reviewed, and include it on the test certificate.|
 coa-summary-layout|Clearer test certificates and charts|Show a summary first, followed by supporting test results and charts in the agreed order.|
 receipt-emails|Receipt emails name the client or company|The name is already included in both the subject and greeting at Optiq.|Delivered. Keep this in later updates; investigate a specific email problem if reported.
-invoice-status|Invoice statuses and the Uninvoiced filter|Manual Paid, Invoiced and Unpaid statuses are available. The separate Uninvoiced button is the part left to check.|Check current filters and which work each invoice covers before adding a missing button.
+invoice-status|Invoice statuses and the Uninvoiced filter|Invoice statuses are visible in live Orders. The separate Uninvoiced button was not visible in the views checked.|Confirm the intended shortcut and which work each invoice covers; keep existing status support.
 frozen-sort|Keep rows still while editing|Rows stay in place while staff edit and save. Staff can sort again when ready.|
 receiving-tables|Updated tables for receiving samples|Use clearer order and sample tables when recording what arrived at the lab.|
 lot-number|Show the lot or batch number|Display the number automatically in the sample receiving table.|
@@ -73,7 +73,7 @@ coa-automatic-ion-interpretation|Suggest spectrum matches for staff to review|Us
 quickbooks-status-sync|Bring invoice and payment status in from QuickBooks|Show the matching QuickBooks information on a Smpltrax order so staff do not update both systems.|The connection is off. Finish reliability, privacy and consent checks, then obtain approval before turning it on.
 optiq-billing-rules|Confirm client prices and billing rules|Use the approved test prices, packages, client rates and rush-charge rules.|Optiq: provide the approved price list, special client rates, package prices and any rush charges or exceptions.
 coa-oct14-mockups|Finish checking the new certificate layout|The new layout is installed; some test and chart combinations still need checking.|Check the remaining examples against the agreed design.
-sample-details-documents|Open the right paperwork from Sample Details|Attachment tools are installed. The original slip, marked-up paperwork and signed agreement still need their links checked.|Confirm the right documents are linked to the right sample and reopen for authorised staff.
+sample-details-documents|Open the right paperwork from Sample Details|Attachments are installed. Existing checks cover original slips, marked-up paperwork, signed agreements and access.|Reuse passed checks and verify affected document paths in the next complete update and recovery plan.
 inventory-receiving-defaults|Easier receiving of purchased supplies|Start with the usual units, storage locations and quantities, with changes allowed for partial deliveries.|
 chemical-components-grid-stability|Keep the chemical-components table steady|Make the table smoother while staff add or edit components.|
 sample-order-client-messaging|Keep client conversations with the sample or order|Save messages and replies where staff can find them later.|Check the record links and agree who receives and responds to notifications before sending is enabled.
@@ -96,7 +96,7 @@ white-label-printed-lookup|Find a branded certificate by its printed number|Retu
 data-analysis-demo-review|Updated Data Analysis screens are installed|Use the updated purity and identity controls, chart navigation and spectrum display.|Complete the final check on the installed screens. Newer improvements are listed separately.
 standard-based-net-content|Calculate sample amounts from reference materials|Calculate Net Content using a known reference material and support certificates based on two test runs.|Finish the calculation foundations, reference-material intake and lab checks. Separate release and activation approvals are still needed.
 data-analysis-batches|Group Data Analysis work into named batches|Some run controls are delivered; named batches still need work.|Finish named-batch handling and check it with the combined Data Analysis update before release.
-automatic-analysis-evidence|Check automatic analysis and its supporting records|Confirm that automatic results can be traced to usable original test records.|Find the missing records and result links, and prepare the repairs. Automatic jobs remain subject to separate approval before restarting.
+automatic-analysis-evidence|Check automatic analysis and its supporting records|Analysis screens are installed. Current automated work includes stalled items that need diagnosis.|Inspect current jobs, worker state and original records, then prepare the specific recovery; keep restart approval separate.
 white-label-release-emails|Email customers when branded certificates are ready|The email feature is installed but switched off.|Mike or the lab lead: confirm the required lab notice and readiness before these emails are switched on.
 measured-microbiology-results|Record measured microbiology results|Optionally include measured endotoxin, yeast and mould results.|
 lc-method-deletion|Remove unused instrument test methods safely|Allow permitted staff to delete unused methods while retaining a record of the deletion.|

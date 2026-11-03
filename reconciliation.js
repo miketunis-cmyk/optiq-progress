@@ -867,122 +867,60 @@ window.OPTIQ_RECONCILIATION = {
     }
   ],
   "followUpDate": "2026-11-02",
-  "followUpChecklistCommit": "c2679af3ed861c7c48b876c7850c434d4f91c8ad",
-  "followUpChecklistUrl": "https://github.com/himmapan-lab/fleet-memory/blob/c2679af3ed861c7c48b876c7850c434d4f91c8ad/shared/deploy-checklist.md",
+  "followUpChecklistCommit": "bccd7a0b51e4f5e86f1fae7fd3304f44d2271b32",
+  "followUpChecklistUrl": "https://github.com/himmapan-lab/fleet-memory/blob/bccd7a0b51e4f5e86f1fae7fd3304f44d2271b32/shared/handoffs/2026-11-02-optiq-checklist-audit/README.md",
   "followUpUpdates": {
-    "receipt-emails": {
-      "currentAsOf": "2026-11-02",
-      "evidenceBasis": "Live release confirmed 2 November",
-      "currentEvidenceBoundary": "Read-only comparison with Optiq’s actual version endpoint and the exact installed source. This did not send a new email, generate or release a COA, or change customer records.",
-      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/blob/5046f44ebc8a48bde8d03a8ad602c2448467547b/api/src/services/email/sampleReceiptEmail.ts",
-      "sourceHead": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
-      "sourcePath": "api/src/services/email/sampleReceiptEmail.ts",
-      "liveSourceEvidence": {
-        "release": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
-        "versionUrl": "https://optiq.smpltrax.com/health/version",
-        "observedAt": "2026-11-02T23:11:42.020244+00:00"
-      },
-      "title": "Client/company-name receipt emails: delivered",
-      "status": "complete",
-      "stage": 3,
-      "currentNotes": [],
-      "description": "Name the client or company in receipt email subjects and greetings.",
-      "detail": "This change is installed on live Optiq. The receiving notification resolves the client/company name and passes it to the email builder; both the subject and greeting use it. The earlier missing-inbox-evidence note was a verification follow-up, not an undeployed feature. This closes the original delivery request.",
-      "evidence": "2 November live check: Optiq reports API/web/Node release5046. Its receiving notification and receipt builder include the client-name lookup, subject and greeting. Retained receipt tests cover full/partial receipt and missing-name fallback. No new customer email was sent.",
-      "nextStep": "Delivered. Preserve this behavior in later releases; investigate only a specific reported delivery or recipient defect.",
-      "currentBlocker": "",
-      "deliveryEvidence": {
-        "kind": "production",
-        "release": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
-        "record": "https://optiq.smpltrax.com/health/version"
-      }
-    },
-    "bulk-coa-amendments": {
-      "currentAsOf": "2026-11-02",
-      "evidenceBasis": "Live release confirmed 2 November",
-      "currentEvidenceBoundary": "Read-only comparison with Optiq’s actual version endpoint and the exact installed source. This did not send a new email, generate or release a COA, or change customer records.",
-      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/blob/5046f44ebc8a48bde8d03a8ad602c2448467547b/api/src/services/optiqBulkCoaGeneration.ts",
-      "sourceHead": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
-      "sourcePath": "api/src/services/optiqBulkCoaGeneration.ts",
-      "liveSourceEvidence": {
-        "release": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
-        "versionUrl": "https://optiq.smpltrax.com/health/version",
-        "observedAt": "2026-11-02T23:11:42.020244+00:00"
-      },
-      "title": "Bulk COA generation: installed; next-release checks separate",
-      "currentNotes": [
-        "verification"
-      ],
-      "detail": "The existing bulk initial/amendment COA draft-generation implementation is already in the installed Optiq release. Current source matching confirms the retained bulk runtime, UI, queue and migration paths. No missing product implementation or required rewrite was demonstrated. The prepared mixed-selection, certificate-history and recovery checks concern the next changed combined release; they do not mean the existing feature is undeployed.",
-      "evidence": "2 November: the canonical live version is5046. Fifteen runtime/test/migration blob bindings freshly match the retained bulk source record; prior focused and native lifecycle proof remains available. The next combined-candidate campaign is separate and has not been called complete.",
-      "nextStep": "Preserve the installed feature. Run only the remaining mixed/lifecycle/recovery cases affected by the next combined candidate; do not restore an obsolete bulk bundle.",
-      "currentBlocker": "Next-candidate regression qualification remains; there is no demonstrated missing deployment of the existing bulk implementation."
-    },
     "inspection-rules": {
       "currentAsOf": "2026-11-02",
-      "evidenceBasis": "Live release confirmed 2 November",
-      "currentEvidenceBoundary": "Read-only comparison with Optiq’s actual version endpoint and the exact installed source. This did not send a new email, generate or release a COA, or change customer records.",
-      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/blob/5046f44ebc8a48bde8d03a8ad602c2448467547b/api/src/services/sampleProcessing/receiptInspectionService.ts",
-      "sourceHead": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
-      "sourcePath": "api/src/services/sampleProcessing/receiptInspectionService.ts",
-      "liveSourceEvidence": {
-        "release": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
-        "versionUrl": "https://optiq.smpltrax.com/health/version",
-        "observedAt": "2026-11-02T23:11:42.020244+00:00"
-      },
-      "currentNotes": [
-        "partial",
-        "verification"
-      ],
-      "detail": "The existing inspection services, observation card and grid write path are installed. Eleven selected core/test files exactly match the retained inspection source. Remaining work is the precise receiving/save/reopen/COA acceptance and any demonstrated wording or control gap; the obsolete script opening a deleted modal is not evidence that the installed inspection feature is missing.",
-      "evidence": "2 November: live release5046 includes the matched inspection services, receipt observation card, grid configuration and write path. Surrounding files also contain unrelated later changes; the full receiving workflow was not newly exercised.",
-      "nextStep": "Recover the current receiving-to-COA case and any actual remaining gap. Reuse the installed implementation and proof, and update the obsolete acceptance entry point.",
-      "currentBlocker": "Specific receiving/wording acceptance remains unqualified; core inspection installation is complete."
-    },
-    "invoice-status": {
-      "currentAsOf": "2026-11-02",
-      "evidenceBasis": "Live release confirmed 2 November",
-      "currentEvidenceBoundary": "Read-only comparison with Optiq’s actual version endpoint and the exact installed source. This did not send a new email, generate or release a COA, or change customer records.",
-      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/blob/5046f44ebc8a48bde8d03a8ad602c2448467547b/web/src/pages/OptiqPeptideQcReviewPage.tsx",
-      "sourceHead": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
-      "sourcePath": "web/src/pages/OptiqPeptideQcReviewPage.tsx",
-      "liveSourceEvidence": {
-        "release": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
-        "versionUrl": "https://optiq.smpltrax.com/health/version",
-        "observedAt": "2026-11-02T23:11:42.020244+00:00"
-      },
-      "status": "partial",
-      "stage": 1,
-      "currentNotes": [
-        "partial",
-        "verification"
-      ],
-      "title": "Invoice statuses: live; Uninvoiced filter remains",
-      "detail": "Existing manual invoice-status support is enabled on live Optiq. Its installed Reporting Hub source includes status editing and Paid/Invoiced/Unpaid rollup. The separate request for an Uninvoiced quick filter and authoritative issued-invoice coverage still needs confirmation. This audit did not read private staff filter configuration, so it does not claim the filter is absent merely because the older task was queued.",
-      "evidence": "2 November live branding reports reportingInvoiceStatusV1=true; installed Hub and order-grid source include invoice status editing/rollup. The requested Uninvoiced definition/filter is a distinct remaining scope.",
-      "nextStep": "Check current authorized filter configuration first, then prove issued-invoice coverage and invoiced/uninvoiced/part-covered cases. Reuse the existing invoice-status support.",
-      "currentBlocker": "The specific Uninvoiced filter and authoritative coverage remain unconfirmed; existing invoice statuses are delivered."
+      "evidenceBasis": "Read-only signed-in live site and retained source/native proof",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/bccd7a0b51e4f5e86f1fae7fd3304f44d2271b32/shared/handoffs/2026-11-02-optiq-checklist-audit/README.md",
+      "detail": "The installed inspection/observation baseline and retained receiving/correction/reopen/PDF checks are preserved. The pool-handoff repair7026 is merged; older deleted-modal and unproved-case wording is historical.",
+      "evidence": "Every-item audit covers current source/successors, installed5046 and signed-in live observations. Earlier valid native acceptance is retained; no customer write or new mail/payment/activation performed.",
+      "nextStep": "Include the receiving repair and check affected cases in the next complete update and recovery plan.",
+      "currentBlocker": "Merged receiving repair inclusion and affected final release/recovery qualification remain.",
+      "currentEvidenceBoundary": "Live UI inspection establishes presence/current symptom; it is not a new save/reopen/scientific/production workflow test. Retained proof and next-release qualification are separate."
     },
     "sample-details-documents": {
       "currentAsOf": "2026-11-02",
-      "evidenceBasis": "Live release confirmed 2 November",
-      "currentEvidenceBoundary": "Read-only comparison with Optiq’s actual version endpoint and the exact installed source. This did not send a new email, generate or release a COA, or change customer records.",
-      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/blob/5046f44ebc8a48bde8d03a8ad602c2448467547b/web/src/modules/samples/components/tabs/DocumentsTab.tsx",
-      "sourceHead": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
-      "sourcePath": "web/src/modules/samples/components/tabs/DocumentsTab.tsx",
-      "liveSourceEvidence": {
-        "release": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
-        "versionUrl": "https://optiq.smpltrax.com/health/version",
-        "observedAt": "2026-11-02T23:11:42.020244+00:00"
-      },
-      "currentNotes": [
-        "partial",
-        "verification"
-      ],
-      "detail": "Sample Details attachments are installed: the attachment API/service/types, Documents tab and page consumer match the installed release. Remaining scope is correct original digital slip, annotated paperwork and signed-attestation association/access through authenticated reopen. These narrower cases do not require rebuilding or redeploying attachment support.",
-      "evidence": "2 November: twelve inspected attachment/document source paths match installed5046. Four broad imports/index files contain other changes. Correct original-slip/paperwork/attestation acceptance remains separate.",
-      "nextStep": "Recover the exact original-slip, paperwork and attestation association/access cases and repair only a demonstrated gap. Keep delivered attachments closed.",
-      "currentBlocker": "Specific document association/access acceptance remains; attachment support is installed."
+      "evidenceBasis": "Read-only signed-in live site and retained source/native proof",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/bccd7a0b51e4f5e86f1fae7fd3304f44d2271b32/shared/handoffs/2026-11-02-optiq-checklist-audit/README.md",
+      "detail": "Live Sample Details shows Documents & Datapacks and attachment controls. Retained native proof already covers original-slip association, paperwork/attestation byte identity, upload/Open/refresh and denied unauthorized access. Only affected final mean-aware candidate/recovery qualification remains.",
+      "evidence": "Every-item audit covers current source/successors, installed5046 and signed-in live observations. Earlier valid native acceptance is retained; no customer write or new mail/payment/activation performed.",
+      "nextStep": "Reuse passed checks and verify affected document paths in the next complete update and recovery plan.",
+      "currentBlocker": "Final changed-release/recovery qualification remains; existing document-association proof is not missing implementation.",
+      "currentEvidenceBoundary": "Live UI inspection establishes presence/current symptom; it is not a new save/reopen/scientific/production workflow test. Retained proof and next-release qualification are separate."
+    },
+    "invoice-status": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "Read-only signed-in live site and retained source/native proof",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/bccd7a0b51e4f5e86f1fae7fd3304f44d2271b32/shared/handoffs/2026-11-02-optiq-checklist-audit/README.md",
+      "detail": "Live Orders visibly displays Invoice Status values. No Uninvoiced shortcut was visible in the inspected Samples/Orders views and signed-in profile; this does not establish absence in every possible configuration.",
+      "evidence": "Every-item audit covers current source/successors, installed5046 and signed-in live observations. Earlier valid native acceptance is retained; no customer write or new mail/payment/activation performed.",
+      "nextStep": "Confirm the intended shortcut and which work each invoice covers; keep existing status support.",
+      "currentBlocker": "The narrower intended Uninvoiced shortcut and authoritative invoice coverage remain to be resolved.",
+      "currentEvidenceBoundary": "Live UI inspection establishes presence/current symptom; it is not a new save/reopen/scientific/production workflow test. Retained proof and next-release qualification are separate."
+    },
+    "automatic-analysis-evidence": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "Read-only signed-in live site and retained source/native proof",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/bccd7a0b51e4f5e86f1fae7fd3304f44d2271b32/shared/handoffs/2026-11-02-optiq-checklist-audit/README.md",
+      "detail": "Existing Data Analysis screens and earlier processing are installed. Fresh signed-in inspection shows stalled automated work with blank AI result fields. Earlier original26-job no-result evidence is a different cohort and is not a current process diagnosis.",
+      "evidence": "Every-item audit covers current source/successors, installed5046 and signed-in live observations. Earlier valid native acceptance is retained; no customer write or new mail/payment/activation performed.",
+      "nextStep": "Inspect current jobs, worker state and original records, then prepare the specific recovery; keep restart approval separate.",
+      "currentBlocker": "Current stalled work needs specific runtime/scientific diagnosis; earlier processing does not establish current job/worker health.",
+      "currentEvidenceBoundary": "Live UI inspection establishes presence/current symptom; it is not a new save/reopen/scientific/production workflow test. Retained proof and next-release qualification are separate."
+    },
+    "conformity": {
+      "currentAsOf": "2026-11-02",
+      "evidenceBasis": "Read-only signed-in live site and retained source/native proof",
+      "evidenceUrl": "https://github.com/himmapan-lab/fleet-memory/blob/bccd7a0b51e4f5e86f1fae7fd3304f44d2271b32/shared/handoffs/2026-11-02-optiq-checklist-audit/README.md",
+      "detail": "Live service/policy configuration and staff Conformity management are already installed. The service remains Draft—not live, with three blocking rounding/precision settings for mean, sample standard deviation and relative standard deviation. Newer shared-vial-grid/Not-detected work and explicit holds remain separate.",
+      "evidence": "Every-item audit covers current source/successors, installed5046 and signed-in live observations. Earlier valid native acceptance is retained; no customer write or new mail/payment/activation performed.",
+      "nextStep": "Finish the current screens, methods and rounding settings, then obtain approval before turning this on.",
+      "currentBlocker": "Newer source acceptance, actual methods/settings and explicit merge/activation/release holds remain; preserve installed draft foundations.",
+      "currentEvidenceBoundary": "Live UI inspection establishes presence/current symptom; it is not a new save/reopen/scientific/production workflow test. Retained proof and next-release qualification are separate.",
+      "sourceHead": "bacdb64f54744d5732011f361933515816344260",
+      "sourcePullRequest": 6735
     }
   },
   "followUpHistory": [
@@ -1462,8 +1400,128 @@ window.OPTIQ_RECONCILIATION = {
           ]
         }
       }
+    },
+    {
+      "date": "2026-11-02",
+      "evidenceBasis": "Earlier2November installed-source comparison",
+      "updates": {
+        "receipt-emails": {
+          "currentAsOf": "2026-11-02",
+          "evidenceBasis": "Live release confirmed 2 November",
+          "currentEvidenceBoundary": "Read-only comparison with Optiq’s actual version endpoint and the exact installed source. This did not send a new email, generate or release a COA, or change customer records.",
+          "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/blob/5046f44ebc8a48bde8d03a8ad602c2448467547b/api/src/services/email/sampleReceiptEmail.ts",
+          "sourceHead": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
+          "sourcePath": "api/src/services/email/sampleReceiptEmail.ts",
+          "liveSourceEvidence": {
+            "release": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
+            "versionUrl": "https://optiq.smpltrax.com/health/version",
+            "observedAt": "2026-11-02T23:11:42.020244+00:00"
+          },
+          "title": "Client/company-name receipt emails: delivered",
+          "status": "complete",
+          "stage": 3,
+          "currentNotes": [],
+          "description": "Name the client or company in receipt email subjects and greetings.",
+          "detail": "This change is installed on live Optiq. The receiving notification resolves the client/company name and passes it to the email builder; both the subject and greeting use it. The earlier missing-inbox-evidence note was a verification follow-up, not an undeployed feature. This closes the original delivery request.",
+          "evidence": "2 November live check: Optiq reports API/web/Node release5046. Its receiving notification and receipt builder include the client-name lookup, subject and greeting. Retained receipt tests cover full/partial receipt and missing-name fallback. No new customer email was sent.",
+          "nextStep": "Delivered. Preserve this behavior in later releases; investigate only a specific reported delivery or recipient defect.",
+          "currentBlocker": "",
+          "deliveryEvidence": {
+            "kind": "production",
+            "release": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
+            "record": "https://optiq.smpltrax.com/health/version"
+          }
+        },
+        "bulk-coa-amendments": {
+          "currentAsOf": "2026-11-02",
+          "evidenceBasis": "Live release confirmed 2 November",
+          "currentEvidenceBoundary": "Read-only comparison with Optiq’s actual version endpoint and the exact installed source. This did not send a new email, generate or release a COA, or change customer records.",
+          "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/blob/5046f44ebc8a48bde8d03a8ad602c2448467547b/api/src/services/optiqBulkCoaGeneration.ts",
+          "sourceHead": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
+          "sourcePath": "api/src/services/optiqBulkCoaGeneration.ts",
+          "liveSourceEvidence": {
+            "release": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
+            "versionUrl": "https://optiq.smpltrax.com/health/version",
+            "observedAt": "2026-11-02T23:11:42.020244+00:00"
+          },
+          "title": "Bulk COA generation: installed; next-release checks separate",
+          "currentNotes": [
+            "verification"
+          ],
+          "detail": "The existing bulk initial/amendment COA draft-generation implementation is already in the installed Optiq release. Current source matching confirms the retained bulk runtime, UI, queue and migration paths. No missing product implementation or required rewrite was demonstrated. The prepared mixed-selection, certificate-history and recovery checks concern the next changed combined release; they do not mean the existing feature is undeployed.",
+          "evidence": "2 November: the canonical live version is5046. Fifteen runtime/test/migration blob bindings freshly match the retained bulk source record; prior focused and native lifecycle proof remains available. The next combined-candidate campaign is separate and has not been called complete.",
+          "nextStep": "Preserve the installed feature. Run only the remaining mixed/lifecycle/recovery cases affected by the next combined candidate; do not restore an obsolete bulk bundle.",
+          "currentBlocker": "Next-candidate regression qualification remains; there is no demonstrated missing deployment of the existing bulk implementation."
+        },
+        "inspection-rules": {
+          "currentAsOf": "2026-11-02",
+          "evidenceBasis": "Live release confirmed 2 November",
+          "currentEvidenceBoundary": "Read-only comparison with Optiq’s actual version endpoint and the exact installed source. This did not send a new email, generate or release a COA, or change customer records.",
+          "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/blob/5046f44ebc8a48bde8d03a8ad602c2448467547b/api/src/services/sampleProcessing/receiptInspectionService.ts",
+          "sourceHead": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
+          "sourcePath": "api/src/services/sampleProcessing/receiptInspectionService.ts",
+          "liveSourceEvidence": {
+            "release": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
+            "versionUrl": "https://optiq.smpltrax.com/health/version",
+            "observedAt": "2026-11-02T23:11:42.020244+00:00"
+          },
+          "currentNotes": [
+            "partial",
+            "verification"
+          ],
+          "detail": "The existing inspection services, observation card and grid write path are installed. Eleven selected core/test files exactly match the retained inspection source. Remaining work is the precise receiving/save/reopen/COA acceptance and any demonstrated wording or control gap; the obsolete script opening a deleted modal is not evidence that the installed inspection feature is missing.",
+          "evidence": "2 November: live release5046 includes the matched inspection services, receipt observation card, grid configuration and write path. Surrounding files also contain unrelated later changes; the full receiving workflow was not newly exercised.",
+          "nextStep": "Recover the current receiving-to-COA case and any actual remaining gap. Reuse the installed implementation and proof, and update the obsolete acceptance entry point.",
+          "currentBlocker": "Specific receiving/wording acceptance remains unqualified; core inspection installation is complete."
+        },
+        "invoice-status": {
+          "currentAsOf": "2026-11-02",
+          "evidenceBasis": "Live release confirmed 2 November",
+          "currentEvidenceBoundary": "Read-only comparison with Optiq’s actual version endpoint and the exact installed source. This did not send a new email, generate or release a COA, or change customer records.",
+          "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/blob/5046f44ebc8a48bde8d03a8ad602c2448467547b/web/src/pages/OptiqPeptideQcReviewPage.tsx",
+          "sourceHead": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
+          "sourcePath": "web/src/pages/OptiqPeptideQcReviewPage.tsx",
+          "liveSourceEvidence": {
+            "release": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
+            "versionUrl": "https://optiq.smpltrax.com/health/version",
+            "observedAt": "2026-11-02T23:11:42.020244+00:00"
+          },
+          "status": "partial",
+          "stage": 1,
+          "currentNotes": [
+            "partial",
+            "verification"
+          ],
+          "title": "Invoice statuses: live; Uninvoiced filter remains",
+          "detail": "Existing manual invoice-status support is enabled on live Optiq. Its installed Reporting Hub source includes status editing and Paid/Invoiced/Unpaid rollup. The separate request for an Uninvoiced quick filter and authoritative issued-invoice coverage still needs confirmation. This audit did not read private staff filter configuration, so it does not claim the filter is absent merely because the older task was queued.",
+          "evidence": "2 November live branding reports reportingInvoiceStatusV1=true; installed Hub and order-grid source include invoice status editing/rollup. The requested Uninvoiced definition/filter is a distinct remaining scope.",
+          "nextStep": "Check current authorized filter configuration first, then prove issued-invoice coverage and invoiced/uninvoiced/part-covered cases. Reuse the existing invoice-status support.",
+          "currentBlocker": "The specific Uninvoiced filter and authoritative coverage remain unconfirmed; existing invoice statuses are delivered."
+        },
+        "sample-details-documents": {
+          "currentAsOf": "2026-11-02",
+          "evidenceBasis": "Live release confirmed 2 November",
+          "currentEvidenceBoundary": "Read-only comparison with Optiq’s actual version endpoint and the exact installed source. This did not send a new email, generate or release a COA, or change customer records.",
+          "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/blob/5046f44ebc8a48bde8d03a8ad602c2448467547b/web/src/modules/samples/components/tabs/DocumentsTab.tsx",
+          "sourceHead": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
+          "sourcePath": "web/src/modules/samples/components/tabs/DocumentsTab.tsx",
+          "liveSourceEvidence": {
+            "release": "5046f44ebc8a48bde8d03a8ad602c2448467547b",
+            "versionUrl": "https://optiq.smpltrax.com/health/version",
+            "observedAt": "2026-11-02T23:11:42.020244+00:00"
+          },
+          "currentNotes": [
+            "partial",
+            "verification"
+          ],
+          "detail": "Sample Details attachments are installed: the attachment API/service/types, Documents tab and page consumer match the installed release. Remaining scope is correct original digital slip, annotated paperwork and signed-attestation association/access through authenticated reopen. These narrower cases do not require rebuilding or redeploying attachment support.",
+          "evidence": "2 November: twelve inspected attachment/document source paths match installed5046. Four broad imports/index files contain other changes. Correct original-slip/paperwork/attestation acceptance remains separate.",
+          "nextStep": "Recover the exact original-slip, paperwork and attestation association/access cases and repair only a demonstrated gap. Keep delivered attachments closed.",
+          "currentBlocker": "Specific document association/access acceptance remains; attachment support is installed."
+        }
+      }
     }
   ],
-  "followUpRevision": "live-installed-source-comparison"
+  "followUpRevision": "signed-in-live-and-every-checklist-item-audit"
 };
 window.OPTIQ_REVIEW.additions.push(...window.OPTIQ_RECONCILIATION.additions);
