@@ -64,3 +64,6 @@
 /* Short reader summaries keep the technical record available on request. */
 .request-summary{font-size:.875rem;font-weight:400;line-height:1.55;color:var(--muted);margin:9px 0 8px 22px}.terms-note{margin-bottom:24px}.row-detail>p{max-width:85ch}.request-next{line-height:1.65}.status-record{line-height:1.5}
 @media(max-width:660px){.request-summary{font-size:.8125rem;margin-left:20px}.request-next{padding-top:7px!important}.request-status .badge{overflow-wrap:anywhere}.status-record{font-size:.6875rem}}
+
+/* Delivery work is separate from historical implementation/installation status. */
+.execution-state{font-size:.75rem;line-height:1.45;color:var(--detail-ink);margin:8px 0}.execution-plan{border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:14px 0;background:var(--surface)}.execution-plan ol{padding-left:22px}.execution-plan li{margin:6px 0;line-height:1.5}

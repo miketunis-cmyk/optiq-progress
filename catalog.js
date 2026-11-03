@@ -80,3 +80,15 @@ if (decisions) {
       ...update, previousReview: request} : request;
   });
 }
+
+const execution = window.OPTIQ_EXECUTION_PLAN;
+if (execution) {
+  for (const id of Object.keys(execution.items)) {
+    if (!catalogIds.has(id)) throw new Error(`Execution plan has no work item: ${id}`);
+  }
+  window.OPTIQ_CATALOG = window.OPTIQ_CATALOG.map(request => {
+    const plan = execution.items[request.id];
+    return plan ? {...request, executionPlan: plan, executionAsOf: execution.date,
+      previousReview: request} : request;
+  });
+}
