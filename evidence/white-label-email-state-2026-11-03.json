@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-11-03T09:57:29Z",
+  "lab": "Optiq",
+  "method": "Read-only production settings query; no settings changed and no email triggered.",
+  "settings": {
+    "enabled": true,
+    "white_label_requests_enabled": true,
+    "white_label_release_emails_enabled": true
+  },
+  "notificationLedger": "No successful send is recorded in the current per-client notification rows. Older skipped-disabled rows do not establish a failure after activation.",
+  "conclusion": "Installed and switched on. This check confirms activation, not successful email delivery."
+}

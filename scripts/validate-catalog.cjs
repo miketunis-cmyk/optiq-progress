@@ -62,6 +62,7 @@ const assigned = context.window.OPTIQ_OWNERSHIP;
 assert.equal(Object.keys(assigned.updates).length, 65, 'Retain existing owner records plus three newly tracked source scopes');
 for (const [id, update] of Object.entries(assigned.updates)) {
   let item = items.find(row => row.id === id);
+  if (dated.latestUpdates?.[id]) item = item.previousReview;
   while (item && item.currentOwner !== update.currentOwner) item = item.previousReview;
   assert(item, `Earlier owner assignment must remain in history: ${id}`);
   if (assigned.assignedIds.includes(id)) assert(/\([^)]+,[a-f0-9-]{36}\)/.test(item.currentOwner), `Owner needs exact chat identity: ${id}`);
@@ -185,7 +186,9 @@ assert.deepEqual(Object.keys(scopeAudit.outcomes).sort(), Array.from(scopeAudit.
 for (const id of scopeAudit.reviewedItemIds) {
   const item = items.find(row => row.id === id);
   assert(item, `Audited work item lost: ${id}`);
-  assert.equal(item.status, scopeAudit.outcomes[id].retainedDeliveryStatus, `Audit changed delivery history: ${id}`);
+  let audited = item;
+  if (dated.latestUpdates?.[id]) audited = item.previousReview;
+  assert.equal(audited.status, scopeAudit.outcomes[id].retainedDeliveryStatus, `Audit changed delivery history: ${id}`);
 }
 for (const source of scopeAudit.additions) {
   const item = items.find(row => row.id === source.id);
@@ -211,3 +214,12 @@ for (const id of new Set(questions.flatMap(question => question.sourceIds))) {
 }
 assert.equal(JSON.stringify(items), catalogBeforeWording, 'Question routing must not change delivery records');
 console.log('PASS: customer questions link to evidence; internal follow-ups stay out of the customer filter; delivery history unchanged.');
+
+const emailState = items.find(item => item.id === 'white-label-release-emails');
+const readback = JSON.parse(fs.readFileSync(path.join(root, emailState.evidenceUrl), 'utf8'));
+assert(Object.values(readback.settings).every(value => value === true));
+assert.equal(emailState.status, 'unverified', 'Activation readback alone must not claim verified delivery');
+assert.equal(emailState.question, null);
+assert.equal(emailState.previousReview.status, 'built', 'Keep the superseded activation hold in history');
+assert(wording[emailState.id].summary.includes('installed and enabled'));
+console.log('PASS: current enabled state supersedes the old hold without claiming verified email delivery.');

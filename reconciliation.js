@@ -1525,3 +1525,23 @@ window.OPTIQ_RECONCILIATION = {
   "followUpRevision": "signed-in-live-and-every-checklist-item-audit"
 };
 window.OPTIQ_REVIEW.additions.push(...window.OPTIQ_RECONCILIATION.additions);
+
+// Applied after older ownership and planning snapshots.
+window.OPTIQ_RECONCILIATION.latestUpdates = {
+  "white-label-release-emails": {
+    "currentAsOf": "2026-11-03",
+    "status": "unverified",
+    "stage": 3,
+    "currentNotes": [
+      "verification"
+    ],
+    "question": null,
+    "currentBlocker": "Activation is complete; successful automatic sending was not established by this read-only check.",
+    "detail": "A direct read of Optiq production settings at 09:57 UTC on 3 November found all three required switches enabled. This supersedes the earlier activation hold. The current per-client notification ledger contains no successful-send timestamp; this does not establish a failure after activation. No settings were changed and no emails were sent by this check.",
+    "nextStep": "Keep the existing activation. Confirm automatic sending from subsequent normal activity; no test email or repeat activation is needed for this check.",
+    "evidence": "3 November 2026 direct read-only production settings readback: program enabled, branded-certificate requests enabled and release emails enabled.",
+    "evidenceBasis": "Live settings checked 3 November 2026",
+    "evidenceUrl": "evidence/white-label-email-state-2026-11-03.json",
+    "currentEvidenceBoundary": "Activation verified, not email receipt. Historical task notes are superseded by this live settings readback."
+  }
+};
