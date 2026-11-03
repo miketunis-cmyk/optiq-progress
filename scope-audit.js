@@ -678,134 +678,134 @@ window.OPTIQ_SCOPE_AUDIT = {
   },
   "readerUpdates": {
     "net-content-method-controls": {
-      "title": "Configure Net Content defaults and change them inside Data Analysis",
-      "summary": "For Net Content, configure lab defaults and let analysts make one-off changes or update the method when permitted, directly in Data Analysis.",
-      "nextStep": "Audit the current settings and one-off controls; define only missing lab defaults, per-sample/per-peptide changes and permission-controlled method updates."
+      "title": "Change quantity-test settings while reviewing results",
+      "summary": "Let staff use the lab’s usual settings or make an allowed change for one sample.",
+      "nextStep": "Our team will check the existing controls and finish any missing settings."
     },
     "authenticated-order-handoff": {
-      "title": "Connect website ordering to the signed-in customer journey",
-      "summary": "Connect the existing public website and signed-in portal/saved-product ordering without losing drafts, selections or customer identity.",
-      "nextStep": "Map the existing public and signed-in paths; define the missing handoff and verified-customer/invoice eligibility behavior."
+      "title": "Keep an order when a customer signs in",
+      "summary": "Keep the customer’s selected tests and saved order as they move from the website to their account.",
+      "nextStep": "Our team will check the full sign-in and ordering journey and finish any missing steps."
     },
     "account-price-resolution": {
-      "title": "Apply account prices consistently throughout ordering and billing",
-      "summary": "Implement the settled guest-versus-account pricing policy across all customer journeys; final price amounts remain a separate Optiq input.",
-      "nextStep": "Audit current account-price support and plan the missing authenticated price resolution across website, cart, saved products, checkout and billing."
+      "title": "Use the right customer price throughout an order",
+      "summary": "Show each customer their agreed prices in the cart, checkout and invoice.",
+      "nextStep": "Our team will check that the same prices and discounts apply at every step."
     },
     "operational-checkout-accounting": {
-      "title": "Connect checkout payments to operational accounting records",
-      "summary": "Finish the operational accounting connection required by checkout; optional invoice-status enhancements remain lower priority.",
-      "nextStep": "Recover the existing finance handoff and define the minimum order/payment/LIMS/QuickBooks linkage and recording responsibilities."
+      "title": "Record checkout payments in QuickBooks",
+      "summary": "Connect the customer’s order, payment and accounting records.",
+      "nextStep": "Our team will finish the connection and check that orders and payments are recorded correctly."
     },
     "unattended-payment-recovery": {
-      "title": "Recover payments when the customer closes the browser",
-      "summary": "Recover incomplete payment/accounting work even after the customer leaves; reuse the existing duplicate protection.",
-      "nextStep": "Locate any existing recovery implementation and define only the missing closed-browser, pending-capture and accounting-failure transitions."
+      "title": "Finish recording a payment after the customer leaves",
+      "summary": "Keep track of payments even if the customer closes the browser, without charging twice.",
+      "nextStep": "Our team will check interrupted payments and finish any missing recovery steps."
     },
     "conformity-child-labels": {
-      "title": "Finish child names, labels and QR identity",
-      "summary": "Start the already-planned child naming and label follow-ons separately from the active Conformity grid/report integration.",
-      "nextStep": "Recover steps 2\u20134 of the existing agreed child-sample plan and confirm pickup; do not replace step 1."
+      "title": "Keep each vial’s name and label together",
+      "summary": "Preserve the customer’s vial names and link each vial to the right label and scannable code.",
+      "nextStep": "Our team will finish the planned naming and label work alongside the vial-testing screens."
     },
     "chromatogram-report-inclusion": {
-      "title": "Choose whether a report includes chromatograms",
-      "summary": "Offer the requested simple report on/off choice. This is separate from selecting the report trace and purity-calculation trace.",
-      "nextStep": "Audit existing report/chart inclusion controls and determine whether they already satisfy the requested simple on/off choice."
+      "title": "Choose whether test charts appear on a certificate",
+      "summary": "Let staff include or leave out the instrument charts on a report.",
+      "nextStep": "Our team will check the existing report options and add this choice if it is missing."
     },
     "certified-certificate-extraction": {
-      "title": "Read proposed reference values from a certificate",
-      "summary": "Plan certificate reading separately from the existing CSV export, keeping staff confirmation before values are saved.",
-      "nextStep": "Audit existing certificate-reading work and define the missing supported input and proposed-value review flow."
+      "title": "Read reference values from a supplier’s certificate",
+      "summary": "Suggest values from a reference-material certificate for staff to check before saving.",
+      "nextStep": "Our team will check existing document-reading tools and plan the remaining work."
     },
     "partner-supply-settlement": {
-      "title": "Confirm partner supply charging and settlement rules",
-      "summary": "Resolve partner-specific supply charges and settlement inputs separately from existing stock-sharing progress.",
-      "nextStep": "Obtain the actual partner sharing permissions, supply charging and month-end settlement agreements."
+      "title": "Work out charges for supplies shared with partner labs",
+      "summary": "The charging and payment arrangements need to match the partner agreements.",
+      "nextStep": "Our team will review the existing agreements and list any specific missing business decision before asking Optiq."
     },
     "frontier-connection-inputs": {
-      "title": "Confirm Frontier test endpoints and released-data mapping",
-      "summary": "Supply the endpoint and authorized data inputs the active API work needs; its local demonstration does not establish the real connection.",
-      "nextStep": "Resolve the existing requests for approved test endpoints and an authorized small released-data mapping; do not restart the API implementation or duplicate the questions."
+      "title": "Arrange a test connection with Frontier",
+      "summary": "Our team needs to agree where Frontier will receive test results and how the information should be sent.",
+      "nextStep": "Our integration team will follow up on the existing requests with Frontier and the person authorised to approve data sharing."
     },
     "analyst-access-walkthrough": {
       "title": "Help Scott and Laz enter results now",
-      "summary": "Start immediate access and current-workflow assistance; do not wait for the new training feature or change current identity behavior.",
-      "nextStep": "Check Scott's and Laz's existing account access and intended permissions, without assuming they have signed in."
+      "summary": "Help them use their existing accounts and the current results screens.",
+      "nextStep": "Our team will check their access and walk them through entering results."
     },
     "library-standard-entry-policy": {
-      "title": "Configure explicit standard creation and immediate use",
-      "summary": "Plan the settled one-run/explicit-create/immediate-use policy separately from obtaining Scott's actual run and preparation records.",
-      "nextStep": "Audit existing library entry and standard-qualification controls against the settled policy; reuse the all-runs intake plan."
+      "title": "Save and reuse a reference test",
+      "summary": "Allow staff to save a successful reference test and use it in later calculations, as already agreed.",
+      "nextStep": "Our team will check the existing controls and finish any missing steps."
     },
     "net-content-method-inputs": {
-      "title": "Confirm Net Content methods and run-selection inputs",
-      "summary": "Obtain the scientific method and run-selection inputs separately from the existing calculator and new inline controls.",
-      "nextStep": "Obtain approved method/preparation details, Empower-to-LIMS method mappings, response units/ranges and confirmation of the proposed in-range rule."
+      "title": "Use the lab’s approved quantity-testing procedure",
+      "summary": "Calculations need the correct preparation details and rules for choosing suitable measurements.",
+      "nextStep": "Our team will collect the existing procedures and ask Scott only for missing records or unresolved scientific choices."
     },
     "portal-price-visibility": {
-      "title": "Website, ordering and payment in one journey",
-      "summary": "Existing website and sandbox checkout work is underway. Handoff, account pricing, operational accounting and unattended recovery have separate plans.",
-      "nextStep": "Keep the current contributors; complete the separately tracked increments and confirmed commercial inputs before the coordinated release."
+      "title": "Order and pay through the website",
+      "summary": "The website and trial checkout are being built. Customers should be able to sign in, keep their order and pay the right price.",
+      "nextStep": "Our team will finish and test the complete ordering journey using the lab’s confirmed prices."
     },
     "standard-based-net-content": {
-      "title": "Calculate Net Content from sample and standard",
-      "summary": "Existing single-point and blend calculation source is progressing. Inline method controls and approved scientific inputs are separately tracked.",
-      "nextStep": "Qualify the existing calculator; coordinate the separate controls plan and method/preparation/run-selection inputs."
+      "title": "Calculate how much material is in a sample",
+      "summary": "Compare the sample with a known reference and account for how both were prepared.",
+      "nextStep": "Our team will check the calculations through to the final certificate using approved lab procedures."
     },
     "my-products-disabled": {
       "title": "Finish ordering from saved products",
-      "summary": "Continue the existing saved-product redesign and ports. Authenticated handoff and account-price resolution are separate planned increments.",
-      "nextStep": "Finish the retained port and own-company/new-lot checks; coordinate the separate handoff and pricing plans."
+      "summary": "Let customers order again from saved product details using their account prices.",
+      "nextStep": "Our team will finish the connection to the cart and check saved products, new batches and prices."
     },
     "conformity": {
-      "title": "Finish the existing Conformity workflow",
-      "summary": "Existing grid/report integration is active. Agreed child naming and label/QR follow-ons separately need pickup; keep client vial names.",
-      "nextStep": "Finish the current candidate and companions, get pickup for the separately listed child identity work, and qualify the full workflow under existing holds."
+      "title": "Finish testing and reporting each vial",
+      "summary": "Work is underway to keep each vial’s name, results and certificate together.",
+      "nextStep": "Our team will finish the screens and labels, then check an order all the way through to its report."
     },
     "data-analysis-ion-composite": {
-      "title": "Automatic chromatograms for purity and identity",
-      "summary": "Existing assigned-ion/report source is progressing. Independent source selectors and report on/off controls separately need plans. Chromatograms remain first priority.",
-      "nextStep": "Qualify existing saved trace/report work; coordinate the separately tracked selector and inclusion controls before their respective completion claims."
+      "title": "Automatically prepare purity and identity charts",
+      "summary": "Prepare the instrument charts used to assess purity and identify a substance. This is the first priority.",
+      "nextStep": "Our team will check that the correct charts are saved, reopened and shown on certificates."
     },
     "customer-results-api": {
-      "title": "Finish the existing Frontier results API work",
-      "summary": "The existing synthetic API package and remote preparation are progressing. Approved endpoints and real-data mapping remain separate inputs.",
-      "nextStep": "Reuse the package and existing owner; qualify the connection using the separately requested endpoint and data inputs before activation."
+      "title": "Send approved results to Frontier",
+      "summary": "The connection has been demonstrated with made-up data. It still needs checking with Frontier before use.",
+      "nextStep": "Our integration team will arrange the test connection and check that the right results reach Frontier."
     },
     "certified-imports": {
-      "title": "Finish exporting stored reference-material values",
-      "summary": "CSV export has existing source progress; finishing pickup/proof needs a plan. Reading values from a certificate is a separate planned increment.",
-      "nextStep": "Recover and qualify the stored-value export, and plan the separately tracked certificate-reading workflow."
+      "title": "Export saved reference-material values",
+      "summary": "Let staff download values already stored for reference materials.",
+      "nextStep": "Our team will finish checking the download. Reading values from a supplier’s certificate is separate work."
     },
     "invoice-status": {
-      "title": "Invoice statuses and the Uninvoiced filter",
-      "summary": "Existing invoice statuses are visible. The missing Uninvoiced shortcut needs a specific source/coverage plan.",
-      "nextStep": "Recover current filter coverage, define the missing shortcut and confirm implementation pickup."
+      "title": "See which orders still need an invoice",
+      "summary": "Invoice statuses are already visible. A shortcut for orders without invoices is still missing.",
+      "nextStep": "Our team will check the existing filters and finish the missing shortcut."
     },
     "live-vial-count": {
       "title": "Show how many vials are needed",
-      "summary": "The optional live Amount required display needs a plan; website progress does not establish that it exists.",
-      "nextStep": "Audit current rules and the missing display using confirmed package quantities; retain its optional priority."
+      "summary": "An optional order display would tell customers how many vials to send.",
+      "nextStep": "Our team will check the package quantities and plan the display."
     },
     "scan-intake": {
       "title": "Scan and check arriving samples",
-      "summary": "Recover and plan the remaining scan, staff review and explicit receipt workflow; current finishing pickup is unverified.",
-      "nextStep": "Trace the existing path and proof, define only missing steps, and confirm pickup without automatic sample receiving."
+      "summary": "Help staff scan arriving samples, check the details and confirm receipt.",
+      "nextStep": "Our team will check the existing steps and finish what is missing."
     },
     "intake-attention-notices": {
       "title": "Ask clients about unclear or unlabelled samples",
-      "summary": "The existing sample-specific request/reply work needs a current finishing plan and pickup; generic notices remain suppressed.",
-      "nextStep": "Recover the existing request/reply/resolution source and prove the smallest missing links."
+      "summary": "Let staff ask about a specific sample and keep the customer’s reply with it.",
+      "nextStep": "Our team will finish checking the question, reply and resolution steps."
     },
     "partner-inventory": {
       "title": "Share stock information with partner labs",
-      "summary": "Existing stock-sharing and supply-balance source is partly built. Partner charging and settlement agreements are separate pending inputs.",
-      "nextStep": "Qualify permitted sharing and balances; obtain partner-specific charging/settlement inputs through their separate item."
+      "summary": "Some stock-sharing and supply-balance features are built. Charges must follow the partner agreements.",
+      "nextStep": "Our team will check access and balances, and review the agreements before requesting any missing decisions."
     },
     "spectral-reference-library": {
-      "title": "Obtain actual standard runs and preparation records",
-      "summary": "Scott/Laz supply the real reference names, run dates and preparation facts. The settled creation/immediate-use policy has a separate plan.",
-      "nextStep": "Locate the genuine runs and records; coordinate the separate explicit-create and lab-configured use-policy plan."
+      "title": "Save reference tests for later comparisons",
+      "summary": "Use known reference materials to help interpret later sample results.",
+      "nextStep": "Our team will locate Scott’s tests and preparation records, then finish saving and selecting them."
     }
   },
   "outcomes": {

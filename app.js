@@ -11,13 +11,18 @@ function progressStage(r){
   if(r.status==='optiq')return r.stage===0?'queued':r.stage===1?'working':r.stage===2?'built':'unverified';
   return Object.hasOwn(statuses,r.status)?r.status:'unverified';
 }
-function requestNotes(r){
+function recordedNotes(r){
   if(Array.isArray(r.currentNotes))return [...new Set(r.currentNotes)];
   const notes=[];
   if(r.status==='optiq')notes.push('optiq');
   if(r.status==='partial')notes.push('partial');
   if(progressStage(r)==='unverified')notes.push('verification');
-  if(r.consolidatedSources)notes.push(...r.consolidatedSources.flatMap(requestNotes));
+  if(r.consolidatedSources)notes.push(...r.consolidatedSources.flatMap(recordedNotes));
+  return [...new Set(notes)];
+}
+function requestNotes(r){
+  const notes=recordedNotes(r).filter(note=>note!=='optiq');
+  if(window.OPTIQ_LAB_QUESTIONS.some(question=>question.sourceIds.includes(r.id)))notes.push('optiq');
   return [...new Set(notes)];
 }
 function matchesStatus(r,status){return status==='all'||(status==='reviewed'?r.reviewedOn===window.OPTIQ_REVIEW?.date:status==='meeting'?r.meetingPriority:progressStage(r)===status);}
@@ -47,8 +52,8 @@ function renderProgressFilters(){
   if(!notes.childElementCount)notes.innerHTML=Object.keys(noteLabels).map(note=>`<button class="progress-filter" type="button" data-note="${note}" aria-pressed="false"><span>${escapeHtml(noteLabels[note])}</span><span class="filter-count">${requests.filter(r=>requestNotes(r).includes(note)).length}</span></button>`).join('');
   notes.querySelectorAll('[data-note]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.note===selectedNote)));
 }
-function labQuestions(){return requests.filter(r=>requestNotes(r).includes('optiq')&&r.question).sort((a,b)=>Number(Boolean(b.topPriority))-Number(Boolean(a.topPriority))||(a.priorityOrder||0)-(b.priorityOrder||0)||Number(Boolean(b.nextReview))-Number(Boolean(a.nextReview)));}
-function renderLabQuestions(){document.querySelector('#lab-questions').innerHTML=labQuestions().map((r,i)=>`<article class="question"><div class="question-label"><span class="question-number">${i+1}</span><h3>${escapeHtml(plain(r).title)}</h3></div><div><p>${escapeHtml(r.question)}</p>${r.reviewPreview?`<a class="review-preview-link" href="${escapeHtml(r.reviewPreview)}">View approval preview</a>`:''}</div></article>`).join('');}
+function labQuestions(){return window.OPTIQ_LAB_QUESTIONS;}
+function renderLabQuestions(){document.querySelector('#lab-questions').innerHTML=labQuestions().map((q,i)=>`<article class="question"><div class="question-label"><span class="question-number">${i+1}</span><h3>${escapeHtml(q.title)}</h3></div><div><p>${escapeHtml(q.question)}</p></div></article>`).join('');}
 // Show dated records instead of unmeasured completion percentages.
 function evidenceBasis(r){
   if(r.evidenceBasis)return r.evidenceBasis;
@@ -91,7 +96,7 @@ function row(r){
   const stage=progressStage(r);
   const view=plain(r);
   const notes=requestNotes(r).map(note=>`<span class="request-note ${note}">${escapeHtml(noteLabels[note])}</span>`).join('');
-  return `<tr class="request-row is-${r.status}" data-request="${r.id}"><td class="request-name"><div class="request-title-line"><button class="row-toggle" type="button" aria-label="${expanded?'Hide':'Show'} details for ${escapeHtml(view.title)}" aria-expanded="${expanded}" aria-controls="detail-${r.id}" data-detail="${r.id}"><span class="expand-mark" aria-hidden="true">${expanded?'−':'+'}</span></button><span class="request-title">${escapeHtml(view.title)}</span></div><p class="request-summary">${escapeHtml(view.summary)}</p><span class="row-reference">${escapeHtml(requestReference(r))}</span></td><td class="request-status"><span class="badge ${stage}">${icon(stage)}${escapeHtml(statuses[stage].label)}</span>${notes?`<div class="request-notes">${notes}</div>`:''}${executionBadge(r)}${statusRecord(r)}</td><td class="request-next ${r.question?'lab-next':''}">${escapeHtml(nextStep(r))}</td></tr><tr class="detail-row" id="detail-${r.id}" ${expanded?'':'hidden'}><td colspan="3"><div class="row-detail"><p>${escapeHtml(view.summary)}</p><p><strong>What happens next:</strong> ${escapeHtml(nextStep(r))}</p>${executionDetails(r)}${r.evidenceUrl?`<p><a href="${escapeHtml(r.evidenceUrl)}" target="_blank" rel="noopener">Supporting record for this update</a></p>`:''}<details class="original-notes"><summary>Technical details and earlier updates</summary><p><strong>Original title:</strong> ${escapeHtml(r.title)}</p><p>${escapeHtml(r.description)}</p><p>${escapeHtml(r.detail)}</p>${r.currentBlocker?`<p><strong>What is still outstanding:</strong> ${escapeHtml(r.currentBlocker)}</p>`:''}<p><strong>Recorded next step:</strong> ${escapeHtml(r.question||r.nextStep||r.description)}</p><p><strong>Assigned contact:</strong> ${escapeHtml(r.currentOwner||'Named owner not recorded')}${r.ownershipRecordUrl?` · <a href="${escapeHtml(r.ownershipRecordUrl)}" target="_blank" rel="noopener">Assignment record</a>`:''}</p><p><strong>Status based on:</strong> ${escapeHtml(evidenceBasis(r))}</p><p><strong>Supporting information:</strong> ${escapeHtml(r.evidence)}</p>${r.currentEvidenceBoundary?`<p>${escapeHtml(r.currentEvidenceBoundary)}</p>`:''}${originalNotes(r)}${previousReviewNotes(r)}</details>${r.reviewPreview?(document.querySelector('#approval-preview-template')?.innerHTML||''):''}</div></td></tr>`;
+  return `<tr class="request-row is-${r.status}" data-request="${r.id}"><td class="request-name"><div class="request-title-line"><button class="row-toggle" type="button" aria-label="${expanded?'Hide':'Show'} details for ${escapeHtml(view.title)}" aria-expanded="${expanded}" aria-controls="detail-${r.id}" data-detail="${r.id}"><span class="expand-mark" aria-hidden="true">${expanded?'−':'+'}</span></button><span class="request-title">${escapeHtml(view.title)}</span></div><p class="request-summary">${escapeHtml(view.summary)}</p><span class="row-reference">${escapeHtml(requestReference(r))}</span></td><td class="request-status"><span class="badge ${stage}">${icon(stage)}${escapeHtml(statuses[stage].label)}</span>${notes?`<div class="request-notes">${notes}</div>`:''}${executionBadge(r)}${statusRecord(r)}</td><td class="request-next ${requestNotes(r).includes('optiq')?'lab-next':''}">${escapeHtml(nextStep(r))}</td></tr><tr class="detail-row" id="detail-${r.id}" ${expanded?'':'hidden'}><td colspan="3"><div class="row-detail"><p>${escapeHtml(view.summary)}</p><p><strong>What happens next:</strong> ${escapeHtml(nextStep(r))}</p>${r.evidenceUrl?`<p><a href="${escapeHtml(r.evidenceUrl)}" target="_blank" rel="noopener">Supporting record for this update</a></p>`:''}<details class="original-notes"><summary>Technical details and earlier updates</summary>${executionDetails(r)}<p><strong>Original title:</strong> ${escapeHtml(r.title)}</p><p>${escapeHtml(r.description)}</p><p>${escapeHtml(r.detail)}</p>${r.currentBlocker?`<p><strong>What is still outstanding:</strong> ${escapeHtml(r.currentBlocker)}</p>`:''}<p><strong>Recorded next step:</strong> ${escapeHtml(r.question||r.nextStep||r.description)}</p><p><strong>Assigned contact:</strong> ${escapeHtml(r.currentOwner||'Named owner not recorded')}${r.ownershipRecordUrl?` · <a href="${escapeHtml(r.ownershipRecordUrl)}" target="_blank" rel="noopener">Assignment record</a>`:''}</p><p><strong>Status based on:</strong> ${escapeHtml(evidenceBasis(r))}</p><p><strong>Supporting information:</strong> ${escapeHtml(r.evidence)}</p>${r.currentEvidenceBoundary?`<p>${escapeHtml(r.currentEvidenceBoundary)}</p>`:''}${originalNotes(r)}${previousReviewNotes(r)}</details>${r.reviewPreview?(document.querySelector('#approval-preview-template')?.innerHTML||''):''}</div></td></tr>`;
 }
 
 function visibleRequests(){
@@ -109,5 +114,5 @@ document.querySelector('#request-grid').addEventListener('click',event=>{const b
 window.addEventListener('hashchange',showApprovalPreview);
 document.querySelector('#lab-questions').addEventListener('click',event=>{if(event.target.closest('.review-preview-link')){event.preventDefault();if(location.hash==='#verification-design-preview')showApprovalPreview();else location.hash='verification-design-preview';}});
 document.querySelector('#reset-filters').addEventListener('click',reset);document.querySelector('#empty-reset').addEventListener('click',reset);document.querySelector('#print-button').addEventListener('click',()=>window.print());
-document.querySelector('#copy-questions').addEventListener('click',async()=>{const text='Optiq — details to confirm\n\n'+labQuestions().map((r,i)=>`${i+1}. ${plain(r).title}\n${r.question}`).join('\n\n');const feedback=document.querySelector('#copy-feedback');try{await navigator.clipboard.writeText(text);feedback.textContent='Questions copied. Ready to paste into your shared discussion.';}catch{feedback.textContent='Select and copy the questions above; clipboard access is unavailable in this browser.';}});
+document.querySelector('#copy-questions').addEventListener('click',async()=>{const text='Optiq — details to confirm\n\n'+labQuestions().map((r,i)=>`${i+1}. ${r.title}\n${r.question}`).join('\n\n');const feedback=document.querySelector('#copy-feedback');try{await navigator.clipboard.writeText(text);feedback.textContent='Questions copied. Ready to paste into your shared discussion.';}catch{feedback.textContent='Select and copy the questions above; clipboard access is unavailable in this browser.';}});
 renderLabQuestions();render();showApprovalPreview();
