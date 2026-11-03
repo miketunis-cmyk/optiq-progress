@@ -27,17 +27,17 @@ for (const item of items.filter(row => row.consolidatedSources)) {
     assert(item.consolidatedSources.every(row => row.status === 'deferred'), `Active work deferred: ${item.id}`);
   }
 }
-const priorityIds = ['fentanyl-results', 'conformity', 'quickbooks-status-sync', 'optiq-billing-rules'];
+const priorityIds = ['data-analysis-ion-composite', 'portal-price-visibility'];
 for (const [index, id] of priorityIds.entries()) {
   const item = items.find(row => row.id === id);
-  assert(item?.topPriority && item.priorityOrder === index + 1, `Priority order must preserve immediate Fentanyl focus, broader Conformity priority and the billing sequence: ${id}`);
+  assert(item?.topPriority && item.priorityOrder === index + 1, `Priority order must preserve the latest chromatogram and website release decisions: ${id}`);
 }
-assert.equal(items.filter(row => row.topPriority).length, priorityIds.length, 'Only Fentanyl, Conformity and the two billing increments have explicit priority');
+assert.equal(items.filter(row => row.topPriority).length, priorityIds.length, 'Only chromatograms and the coordinated website package have numbered priority in the latest decision');
 const fentanyl = items.find(row => row.id === 'fentanyl-results');
 assert(fentanyl?.consolidatedSources?.some(row => row.id === 'immunoassay-method-wording'), 'Confirmed Fentanyl wording must retain its original record within the Fentanyl item');
 assert(items.some(row => row.id === 'conformity'), 'Conformity keeps its own Sample Details scope');
 assert(items.some(row => row.id === 'white-label-attestation'), 'Consent capture remains distinct from document retrieval');
-console.log(`PASS: ${originals.length} original records preserved exactly once in ${items.length} work items; ${groups.length} overlap groups; immediate Fentanyl focus, Conformity and billing sequence retained.`);
+console.log(`PASS: ${originals.length} original records preserved exactly once in ${items.length} work items; ${groups.length} overlap groups; latest owner priorities applied.`);
 
 const dated = context.window.OPTIQ_RECONCILIATION;
 assert.equal(dated.date, '2026-10-30');
@@ -61,8 +61,9 @@ console.log(`PASS: ${Object.keys(dated.updates).length} dated reconciliations an
 const assigned = context.window.OPTIQ_OWNERSHIP;
 assert.equal(Object.keys(assigned.updates).length, 65, 'Retain existing owner records plus three newly tracked source scopes');
 for (const [id, update] of Object.entries(assigned.updates)) {
-  const item = items.find(row => row.id === id);
-  assert.equal(item.currentOwner, update.currentOwner);
+  let item = items.find(row => row.id === id);
+  while (item && item.currentOwner !== update.currentOwner) item = item.previousReview;
+  assert(item, `Earlier owner assignment must remain in history: ${id}`);
   if (assigned.assignedIds.includes(id)) assert(/\([^)]+,[a-f0-9-]{36}\)/.test(item.currentOwner), `Owner needs exact chat identity: ${id}`);
   assert(item.nextStep && item.ownershipRecordUrl && (item.status === 'complete' || item.currentBlocker), `Missing owner handoff: ${id}`);
   assert.equal(item.status, item.previousReview.status, `Assignment changed delivery status: ${id}`);
@@ -70,8 +71,8 @@ for (const [id, update] of Object.entries(assigned.updates)) {
 console.log('PASS:65 retained owner records;53 original exact chat assignments and12 retained source scopes; completed delivery and remaining blockers stay distinct.');
 
 // The installed release must not close newer Demo-only scope or lose prior evidence.
-assert.equal(originals.length,137);
-assert.equal(items.length,110);
+assert.equal(originals.length,139);
+assert.equal(items.length,112);
 const installed=items.find(row=>row.id==='data-analysis-demo-review');
 assert.equal(installed.status,'complete');
 assert.equal(installed.deliveryEvidence.release,'5046f44ebc8a48bde8d03a8ad602c2448467547b');
@@ -107,7 +108,7 @@ for(const id of ['my-products-disabled','compact-sample-photo-clarity','optiq-da
  assert(item && item.status!=='complete' && item.currentBlocker && item.nextStep);
 }
 assert.equal(items.find(row=>row.id==='my-products-disabled').plannedAvailability,'off');
-assert.equal(items.filter(row=>row.status==='complete').length,42);
+assert.equal(items.filter(row=>row.status==='complete').length,41);
 console.log('PASS: full intake preserves delivery history and keeps My Products planned off.');
 
 assert.equal(dated.followUpDate, '2026-11-02');
@@ -122,7 +123,9 @@ for (const id of newIds) {
 assert.equal(items.find(row=>row.id==='optiq-dark-branding').status,'built');
 assert.equal(items.find(row=>row.id==='grid-widths').status,'partial');
 assert.equal(items.find(row=>row.id==='conformity').sourcePullRequest,6735);
-assert(items.find(row=>row.id==='my-products-disabled').detail.includes('backed out'));
+let productHistory = items.find(row=>row.id==='my-products-disabled');
+while (productHistory && !productHistory.detail?.includes('backed out')) productHistory = productHistory.previousReview;
+assert(productHistory, 'Retain the earlier backed-out My Products record when newer work supersedes it');
 assert.equal(items.find(row=>row.id==='stable-released-coa-links').sourcePullRequest,7221);
 for(const id of ['data-analysis-ion-signal-match','data-analysis-spectrum-smoothing','data-analysis-ion-composite','data-analysis-stable-ion-table','data-analysis-batches']) {
   const item=items.find(row=>row.id===id);

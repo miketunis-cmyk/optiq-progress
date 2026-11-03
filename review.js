@@ -1145,3 +1145,207 @@ window.OPTIQ_REVIEW.additions.push(...[
 ]);
 
 for (const id of ["invoice-status","portal-price-visibility","public-signup-approval","optiq-billing-rules","quickbooks-status-sync","analysis-framework","inventory-follow-ups","sop-documents","spectral-reference-library","hubspot-onboarding","receipt-emails","coa-status-language","reporting-hub-pagination","ordered-test-search","stacked-filter-views","lab-specific-filter-views","custom-filter-view-audit","lab-photo-sort","sample-status-audit","trusted-white-label-approval","internal-document-checks","result-entry-permission-profiles","customer-results-api","boarding-pass-parity","abandoned-order-reminders","conformity","inspection-rules","coa-oct14-mockups","stable-released-coa-links","client-bulk-white-label"]) { window.OPTIQ_REVIEW.updates[id].evidenceBasis = "28 October delivery/owner reconciliation"; }
+
+// Mike's later training decision is a separate scope, not completion of SOP tooling.
+window.OPTIQ_REVIEW.additions.push({
+  id: 'guided-analysis-training',
+  area: 'Lab operations',
+  title: 'In-LIMS practice walkthroughs and training competence',
+  status: 'queued',
+  stage: 0,
+  description: 'Train new hires in the LIMS with guided walkthroughs, dummy data and practical tasks, and retain their progress and task outcomes.',
+  detail: 'Laz intends Scott to enter results directly in Smpltrax; verify account access and provide a focused walkthrough as needed. For the reusable training feature, use the client-portal style of live walkthrough as the primary mode. New hires practise real workflows with dummy data and assigned tasks to develop and demonstrate competence. Data Analysis is not stable enough for this work yet: retain the task until its UI and workflow settle, then complete and prove the exercises before the ISO audit. Allow people to repeat exercises as their skills grow. Keep training data and task actions separate from customer work.',
+  nextStep: 'Once the Data Analysis workflow is stable enough, define the practice scenarios and expected task outcomes with the lab, build the walkthroughs and verify that each learner can complete them with their progress and outcomes recorded before the ISO audit.',
+  currentDisposition: 'Confirmed requirement; planned, with no implementation or competency completion claimed.',
+  currentOwner: 'Smpltrax training implementation; named worker not yet assigned. Optiq owns the training scenarios and audit date.',
+  currentBlocker: 'Data Analysis UI/workflow stability and defined practice tasks and expected outcomes. Finish before the audit; no calendar date is specified.',
+  currentNotes: ['optiq'],
+  question: 'Confirm the practice tasks and expected outcomes needed for new-hire competence.',
+  currentAsOf: '2026-11-02',
+  reviewedOn: '2026-11-02',
+  evidenceBasis: 'Mike’s training decision on 2 November',
+  evidence: 'Mike confirmed that live in-LIMS walkthroughs with dummy data and tasks are the intended training-competence approach. Work waits for a sufficiently stable Data Analysis interface and is needed before ISO.',
+  currentEvidenceBoundary: 'Owner-confirmed scope and dependency only. No training feature, learner assessment or audit readiness has been verified.'
+});
+
+window.OPTIQ_REVIEW.additions.push({
+  "id": "iso-mode-controls",
+  "area": "Lab operations",
+  "title": "ISO mode with configurable controls",
+  "status": "queued",
+  "stage": 0,
+  "description": "Provide one lab-level ISO mode with individual workflow controls configurable underneath it.",
+  "detail": "One overall ISO mode enables the ISO workflow, with underlying controls available for lab-specific configuration. Second approval is a lab setting granular by action/workflow; for the current Optiq scope it is off. Finish ISO readiness before the audit, without inventing a calendar date. Training walkthroughs are a separately tracked prerequisite. This records desired controls, not completed compliance or changes to current production settings.",
+  "nextStep": "Reconcile existing quality/method/approval controls, assign the missing integration, and prove the master mode and per-workflow settings before the audit.",
+  "currentOwner": "Existing quality/workflow owners; combined implementation pickup not yet confirmed",
+  "currentBlocker": "Current control inventory, missing integration and proof of lab-scoped mode/settings remain.",
+  "currentAsOf": "2026-11-02",
+  "reviewedOn": "2026-11-02",
+  "evidenceBasis": "Mike’s 2 November clarification",
+  "evidence": "Mike confirmed one ISO mode with configurable underlying toggles, granular second approval off for current Optiq scope, and readiness before the audit without a fixed date.",
+  "currentEvidenceBoundary": "Confirmed product scope only; no ISO-readiness completion, production setting change or regulatory claim."
+});
+
+// Later owner decisions and investigations supersede, but do not erase, earlier records.
+window.OPTIQ_CALL_DECISIONS = {
+  "date": "2026-11-02",
+  "evidenceBasis": "2 November call, later owner clarifications and read-only investigations",
+  "updates": {
+    "data-analysis-ion-composite": {
+      "title": "Automatic chromatograms for purity and identity",
+      "topPriority": true,
+      "priorityOrder": 1,
+      "priorityLabel": "First priority — ship as soon as ready",
+      "description": "Prepare separate chromatograms for purity calculation and identity/reporting, with analyst review and simple COA inclusion.",
+      "detail": "Use PDA/wavelength data for purity calculation, retaining relevant impurity peaks. Use the analyte-specific MS trace for identity and the report graphic. Handle multiple identified analytes together and preserve actual instrument timing. Build on the active Data Analysis work; finish and release eligible chromatogram work as soon as ready, independently of the website/order/payment package. Do not redesign the existing approved COA pane rules.",
+      "nextStep": "Existing Data Analysis workers: reconcile the current candidate, prove the separate purity and identity paths through save/reopen and PDF/digital reporting, then prepare the independently approved release.",
+      "currentOwner": "MacBook Claude — existing Data Analysis workers; combined release responsibility still needs confirmation",
+      "currentBlocker": "Combined workflow proof, accountable release pickup and the separately approved deployment remain.",
+      "question": "",
+      "currentNotes": [
+        "partial",
+        "verification"
+      ]
+    },
+    "portal-price-visibility": {
+      "topPriority": true,
+      "priorityOrder": 2,
+      "priorityLabel": "Second priority — coordinated website/order/payment release",
+      "description": "Provide one cohesive website, test cart, saved-product ordering and payment experience, showing the appropriate customer prices.",
+      "detail": "Public list prices are visible without signing in. Signed-in customers see their configured account prices, consistently through cart, checkout and billing. Combine the website, order cart, My Products, Square and QuickBooks work in a coordinated package. Current MacBook Claude work includes service pages, embedded ordering and sandbox checkout; those do not establish production activation. Confirm final commercial amounts and rules with Optiq. Shipping labels and cart upsells remain optional ideas.",
+      "nextStep": "Existing website, checkout and My Products owners: finish the combined sandbox journey, resolve remaining pricing/accounting inputs, provide Laz a preview and walkthrough, and prepare the coordinated release.",
+      "currentOwner": "MacBook Claude — active website and sandbox checkout workers; shared package owner not yet confirmed",
+      "currentBlocker": "Saved-product integration, account pricing, operational accounting, combined acceptance and final commercial inputs remain.",
+      "question": "Confirm final public/account prices, package composition, discounts and invoice/payment terms.",
+      "currentNotes": [
+        "partial",
+        "optiq",
+        "verification"
+      ]
+    },
+    "fentanyl-results": {
+      "status": "partial",
+      "stage": 1,
+      "topPriority": false,
+      "priorityOrder": null,
+      "title": "Fentanyl results delivered; restore the missing summary pane",
+      "description": "Fentanyl findings are recorded and reported, but the existing approved summary pane is missing from some multi-test certificates.",
+      "detail": "Read-only investigation found that the six-pane selection priorities exclude fentanyl when other completed tests fill the available places. The approved pane, green passing-result styling and result-table findings remain intact. Repair the selection priorities, preserving the approved layout and all reportable findings. A software repair will not alter frozen released certificates; any correction of issued documents needs its own authorized amendment/reissue.",
+      "nextStep": "COA owner: take pickup of the priority repair, prove the real multi-test selection and PDF/digital output, then prepare the release. Separately decide whether affected issued certificates need amendment.",
+      "currentOwner": "Existing COA and deployment owners; repair pickup not yet confirmed",
+      "currentBlocker": "Pane-selection repair, complete composition/rendering proof and release remain.",
+      "question": "",
+      "currentNotes": [
+        "partial",
+        "verification"
+      ],
+      "evidence": "2 November read-only investigation of installed source and stored report artifacts found a six-pane selection defect. No production repair or reissue was performed.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/blob/5046f44ebc8a48bde8d03a8ad602c2448467547b/packages/types/src/optiq-reporting-catalog.ts"
+    },
+    "conformity": {
+      "topPriority": false,
+      "priorityOrder": null,
+      "detail": "Continue the existing Sample Details conformity workflow and approved parent/vial report model. Preserve the client's distinct vial names alongside internal traceability identifiers. MacBook Claude is actively integrating the result grid, result handling and existing-order work; this is not a fresh implementation. Label/QR identity, rounding settings, required method configuration and the final review-to-report proof remain in the existing work. Keep current explicit merge/activation holds until resolved. Lab-configurable second approval is off for the current Optiq scope.",
+      "nextStep": "Existing Claude workers: finish integration and outstanding naming/label/settings work, prove a multi-vial order through correction, review and report, and establish the final release owner. Laz checks whether a waiting customer changes urgency.",
+      "currentOwner": "MacBook Claude — active conformity worker and existing session coordinator; end-to-end release pickup not yet confirmed",
+      "currentBlocker": "Combined qualification, remaining vial identity/settings work, explicit holds and release responsibility remain.",
+      "question": "Is a current customer waiting for Conformity?",
+      "currentNotes": [
+        "partial",
+        "verification",
+        "optiq"
+      ]
+    },
+    "blend-potency": {
+      "description": "Enter and report separate measured quantities for each peptide while retaining the current identity workflow.",
+      "detail": "Keep Laz's current scalar Confirmed identity selection. Opening Net Content should offer a table seeded with declared peptide names, with quantities left for measured entry. Analysts can add, remove or change analytes when the sample differs from the label claims; never rewrite the original claims or copy claimed quantities into measured results. Existing component storage and COA rendering are installed, but the cell still opens a scalar editor and the required Net Content method is not configured. Multiple named identity entry is a separate available source capability, not an instruction to switch the current workflow.",
+      "nextStep": "Use the existing component editor for seeded, editable entry; configure the approved Net Content method; send Laz the requested layout mockup and prove save/reopen plus vertical PDF/digital entries with Confirmed identity.",
+      "currentOwner": "Existing Optiq result-entry and Data Analysis workers; named repair pickup needs confirmation",
+      "currentBlocker": "Seeded cell entry, approved method setup and end-to-end visual proof remain.",
+      "question": "",
+      "currentNotes": [
+        "partial",
+        "verification"
+      ]
+    },
+    "standard-based-net-content": {
+      "description": "Calculate each peptide's Net Content from its sample and standard integrations, preserve the evidence, and record reviewed results on the COA.",
+      "detail": "Continue the existing single-point implementation described in Scott's 28 October discussion. Account for actual preparation, dilution and reconstitution, including exceptions. Retain the exact sample/standard revisions and calculation inputs. Blend components can use their own suitable sample runs. Configure standard selection in lab Analysis Settings and expose it directly in Data Analysis. Offer both a one-off sample/peptide override and a permission-controlled method update without navigating away. Later method edits must not change previous calculations.",
+      "nextStep": "Existing Net Content owners: reconcile the implemented calculation and blend paths with current deployment, resolve genuine reference/preparation/method inputs, and prove integration → calculation → analyst review/save → PDF/digital COA on representative cases.",
+      "currentBlocker": "Approved preparation/reference/method records, direct workflow controls, integration and complete runtime proof remain.",
+      "question": "Provide the actual reference/preparation records and approved method details needed for calculations.",
+      "currentNotes": [
+        "optiq",
+        "verification"
+      ]
+    },
+    "empower-native-collection": {
+      "description": "Evolve the existing run queue so all discovered runs can be reviewed, organized and resolved even without a recognized sample ID.",
+      "detail": "The native collector already observes unassigned and non-sample runs, but collector eligibility and ordinary API intake block them before LIMS acquisition storage. Reuse the existing queue and run-management work. Filter matched, unmatched and needs-review records; retain incomplete/blocked/source-changed states. Analysts can resolve associations and classify runs; AI can recommend resolutions using run metadata, known sample details and existing analyte recommendations, with reasons visible for confirmation. Create a new sample, standard, control or other supported record only when an analyst or authorized agent explicitly invokes Create from this run. Prefill instrument facts, retain missing information for completion, prevent duplicates and preserve source history.",
+      "nextStep": "Adapt the existing queue and run-management path to the native collector, decouple collection/classification/sample association, prove all relevant run states remain visible, then plan bounded historical recovery.",
+      "currentOwner": "Existing native collection and run-management owners; implementation pickup for the new queue scope not yet confirmed",
+      "currentBlocker": "Native observation intake, unassigned acquisition support, queue resolution/creation controls and historical reconciliation remain.",
+      "question": "",
+      "currentNotes": [
+        "partial",
+        "verification"
+      ]
+    },
+    "spectral-reference-library": {
+      "description": "Create reusable library standards from successful collected runs and make them easy to use on demand.",
+      "detail": "One successful instrument run is sufficient for an initial standard-library entry. Creation is an explicit analyst or authorized-agent action from the run. Whether a new standard needs further approval is a lab setting; Optiq's current setting is usable for calculations immediately after creation. Keep the entry linked to its source run and make existing entries easy to select and reuse on demand. Visibility of all runs does not itself finish the reference library. Laz still checks Scott's reference material names and run dates so existing standards can be located and linked. Method/reference suitability and the actual preparation facts remain explicit inputs, not invented observations.",
+      "nextStep": "Existing library owners: locate the completed standard runs, finish the explicit create-and-use path with the agreed lab setting, and verify selection of the retained standard evidence in Data Analysis.",
+      "currentBlocker": "Reference/run/preparation records, explicit library creation/use and end-to-end qualification remain; prior coverage reports do not prove every historical numerical import.",
+      "question": "Confirm the reference materials/analytes and run dates with Scott.",
+      "currentNotes": [
+        "partial",
+        "optiq",
+        "verification"
+      ]
+    },
+    "inspection-rules": {
+      "description": "Choose cap, vial and contents colors with a live preview of the same illustration used on the COA.",
+      "detail": "Retain existing saved inspection and integrity controls and the existing rendering behavior. Offer standard swatches and a custom color wheel for cap, vial and contents. Preview the actual report illustration as the analyst changes the selection, and preserve the selected color consistently in the PDF and digital COA. Existing named-color rendering is not proof that a custom color picker is implemented. Retain the separately recorded receiving repair and release qualification.",
+      "nextStep": "Preserve the eligible receiving repair. Assign the custom-color controls, reuse the report illustration for the preview, and prove saved selections through reopen and PDF/digital output.",
+      "currentOwner": "Existing inspection/COA owners; custom-color implementation pickup not yet assigned",
+      "currentBlocker": "Custom-color entry, common preview/report rendering and saved-output proof remain.",
+      "question": "",
+      "currentNotes": [
+        "partial",
+        "verification"
+      ]
+    },
+    "customer-results-api": {
+      "status": "working",
+      "stage": 1,
+      "description": "Continue the existing customer results API and developer payload work, with clear remote and production activation steps.",
+      "detail": "Mac mini Codex already has a synthetic developer payload package and locally integrated REST/PDF retrieval and signed delivery work. Original owner records report local demonstrations including updates, withdrawal and recovery; the investigation did not independently rerun them. Reuse that package rather than prepare a first payload from scratch. Remote partner connectivity, real-source admission and production activation remain unproven/unapproved.",
+      "nextStep": "Existing API owner: reconcile the exact contract and current review state, finish remote synthetic connectivity and qualification, then prepare the separately approved partner activation.",
+      "currentOwner": "Mac mini Codex — Continue Frontier results API; API + BYOA Delivery Manager coordinates",
+      "currentBlocker": "Exact-current review, remote connectivity, real-source qualification and production activation remain.",
+      "question": "",
+      "currentNotes": [
+        "verification"
+      ],
+      "evidence": "2 November investigation reconciled the original Mac mini owner records and repository work; it did not rerun the local demonstration or activate the integration.",
+      "evidenceUrl": "https://github.com/himmapan-lab/smpltrax-v2/pull/7289"
+    },
+    "quickbooks-status-sync": {
+      "topPriority": false,
+      "priorityOrder": null,
+      "nextStep": "Keep the status-sync follow-up with the accounting owner; finish the agreed lower-urgency scope without making every enhancement a prerequisite for the website package.",
+      "detail": "Keep the existing invoice/payment status synchronization scope and its retained source work. Laz explicitly said it was not urgently needed in the 2 November call. This lower urgency supersedes the older priority ranking; final billing/accounting agreement still matters for the coordinated checkout release."
+    },
+    "optiq-billing-rules": {
+      "topPriority": false,
+      "priorityOrder": null,
+      "detail": "Public list prices are shown on the website without sign-in. Signed-in customers automatically see their configured account prices, consistently through cart, checkout and billing. The menu and spoken price corrections remain provisional; final prices, package rules, discounts and payment/invoice terms need Optiq confirmation. Reuse current pricing work rather than treating confirmed display behavior as an unanswered question.",
+      "question": "Confirm final prices, package composition, account/volume discounts and payment or invoice terms.",
+      "nextStep": "Optiq confirms commercial rules; existing pricing/checkout workers configure them and prove matching totals throughout the order and billing journey."
+    },
+    "my-products-disabled": {
+      "nextStep": "Existing My Products and checkout owners: reconcile the current redesign/ports, prove new orders from saved products with correct account pricing and retained drafts, and include the eligible result in the coordinated website/order/payment release.",
+      "detail": "Continue the existing redesigned saved-product ordering work and retained off-state controls. The coordinated package must connect the actual authenticated reorder journey to the cart and checkout. Source merges and a demo do not establish production availability; keep customer activation separately approved."
+    }
+  }
+};

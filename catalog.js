@@ -67,3 +67,16 @@ if (ownership) {
     return update ? {...request, ...update, previousReview: request} : request;
   });
 }
+
+const decisions = window.OPTIQ_CALL_DECISIONS;
+if (decisions) {
+  for (const id of Object.keys(decisions.updates)) {
+    if (!catalogIds.has(id)) throw new Error(`Decision update has no work item: ${id}`);
+  }
+  window.OPTIQ_CATALOG = window.OPTIQ_CATALOG.map(request => {
+    const update = decisions.updates[request.id];
+    return update ? {...request, currentAsOf: decisions.date, evidenceBasis: decisions.evidenceBasis,
+      currentEvidenceBoundary: 'Owner scope and investigation findings are distinct from implementation, review and production delivery; earlier evidence is retained below.',
+      ...update, previousReview: request} : request;
+  });
+}
