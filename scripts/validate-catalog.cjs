@@ -166,3 +166,14 @@ for (const id of ['mammoth-portal-coa', 'excelbis-billing-follow-on']) {
 }
 assert(wording['partner-sample-routing'].summary.includes('ExcelBIS'), 'Retain the documented Optiq partner-lab relationship');
 console.log('PASS: other-lab references are limited to Optiq partner work; separate rollouts are excluded.');
+
+const execution = context.window.OPTIQ_EXECUTION_PLAN;
+const executionStates = new Set(['needs-start', 'needs-plan', 'in-progress', 'almost-complete', 'needs-information']);
+for (const [id, plan] of Object.entries(execution.items)) {
+  assert(executionStates.has(plan.state), `Unknown work state: ${id}`);
+  assert([plan.why, plan.owner, plan.done].every(value => typeof value === 'string' && value.trim()), `Missing planning context: ${id}`);
+  assert(Array.isArray(plan.steps) && plan.steps.length > 0 && plan.steps.every(step => typeof step === 'string' && step.trim()), `Missing attack plan: ${id}`);
+  const item = items.find(row => row.id === id);
+  assert.equal(item.status, item.previousReview.status, `Planning must not change delivery status: ${id}`);
+}
+console.log(`PASS: ${Object.keys(execution.items).length} execution classifications have plans and completion criteria; delivery status is unchanged.`);

@@ -1356,3 +1356,253 @@ window.OPTIQ_CALL_DECISIONS = {
     }
   }
 };
+
+// Work planning is independent of installed/delivered status.
+window.OPTIQ_EXECUTION_PLAN = {
+  "date": "2026-11-02",
+  "basis": "Call, owner clarifications, current investigation reports and existing source work; no new production test.",
+  "items": {
+    "data-analysis-ion-composite": {
+      "state": "in-progress",
+      "why": "Current Data Analysis implementation and integration work exists; complete report-path proof and release are still outstanding.",
+      "owner": "Existing MacBook Claude Data Analysis workers; confirm one owner through release",
+      "steps": [
+        "Reconcile the active combined candidate and the remaining chromatogram/report connections.",
+        "Prove separate PDA purity and MS identity/report traces through save, reopen and PDF/digital output.",
+        "Prepare the eligible chromatogram release independently of the website package."
+      ],
+      "done": "An analyst can review and report the correct separate traces without routine manual cleanup, with retained source evidence and an approved release."
+    },
+    "fentanyl-results": {
+      "state": "needs-start",
+      "why": "The cause and repair are established, but no current implementation pickup of this specific pane-priority repair was verified.",
+      "owner": "Existing COA owner; explicit repair pickup still needed",
+      "steps": [
+        "Take ownership of the existing pane-selection defect and preserve the approved six-pane design.",
+        "Correct priority selection and test full and partial multi-test compositions, passing/failing fentanyl, and absent/unordered tests.",
+        "Inspect generated PDF and digital output, then prepare the reviewed release; keep issued-document correction separate."
+      ],
+      "done": "The approved panes are selected in representative real compositions, all result rows remain, and PDF/digital output passes the affected checks."
+    },
+    "blend-potency": {
+      "state": "needs-start",
+      "why": "The existing component editor and renderer can be reused; the seeded cell-entry behavior is missing and its implementation pickup is unconfirmed.",
+      "owner": "Existing result-entry/Net Content owner; seeded-editor pickup still needed",
+      "steps": [
+        "Connect the Net Content cell to the existing component editor and seed names from claims on first entry, retaining saved measurements thereafter.",
+        "Allow analyte changes while preserving original claims and the current Confirmed identity selection.",
+        "Use approved method configuration and prove save/reopen, correction and named vertical values on PDF/digital COAs; provide Laz the mockup."
+      ],
+      "done": "An analyst can edit separate measured values for the actual analytes and produce the intended COA without changing current identity behavior."
+    },
+    "standard-based-net-content": {
+      "state": "in-progress",
+      "why": "Single-point calculation, retained evidence and blend recording source already exist; operational integration, lab inputs and complete proof remain.",
+      "owner": "Existing MacBook Claude Net Content workers; retain the current implementation",
+      "steps": [
+        "Reconcile the calculation, standard/run selection, preparation factors and per-peptide run choices with the installed workflow.",
+        "Audit existing Analysis Settings and define the missing inline controls for one-off changes and permission-controlled method updates.",
+        "Complete approved reference/preparation/method inputs and prove sample/standard integration through reviewed results and the COA."
+      ],
+      "done": "Representative single-peptide, blend and exceptional-preparation cases calculate and report correctly, with the exact method, standard and overrides retained."
+    },
+    "spectral-reference-library": {
+      "state": "needs-information",
+      "why": "Laz/Scott's actual reference names, run dates and preparation facts remain missing; policy decisions about initial entries are already settled.",
+      "owner": "Laz/Scott provide source facts; existing library owner implements and verifies",
+      "steps": [
+        "Obtain the existing reference-run names/dates and actual preparation records rather than inventing them.",
+        "Locate and link the genuine runs; reuse existing library and collector work.",
+        "Finish explicit entry creation and on-demand use, with one successful run sufficient and Optiq's immediate-use setting; prove lab-scoped approval options."
+      ],
+      "done": "The known references can be traced to their source runs and used under the configured policy with the actual required calculation inputs."
+    },
+    "empower-native-collection": {
+      "state": "needs-plan",
+      "why": "Investigation identified both collector and API gates and reusable queue/run-management work; the native-collector implementation split and owner pickup still need to be fixed.",
+      "owner": "Existing native collector and run-management owners; agree one combined plan",
+      "steps": [
+        "Define bounded changes to publish native run observations before sample matching and retain explicit incomplete/blocked states.",
+        "Adapt the existing queue for match-status filters, human classification/linking, and evidence-based AI recommendations.",
+        "Plan explicit Create from this run for supported record types, safe repeated collection and bounded historical recovery; then implement and prove each phase."
+      ],
+      "done": "Every relevant observed run is visible, analyst/authorized-agent actions create or link the right record without duplicates, and current matched-sample workflows remain intact."
+    },
+    "inspection-rules": {
+      "state": "needs-plan",
+      "why": "The requested custom-color interaction is clear, but a technical plan and active implementation owner for it have not been established.",
+      "owner": "Existing inspection/COA owners; custom-color pickup unconfirmed",
+      "steps": [
+        "Audit the current saved-color contract and shared report illustration before changing them.",
+        "Design standard swatches plus custom color selection and an in-context preview using that illustration.",
+        "Implement the smallest compatible path and prove saved cap/vial/contents colors through reopen and PDF/digital rendering, retaining existing inspection repairs."
+      ],
+      "done": "The analyst can choose the required color and see the same saved appearance in preview and issued-format outputs."
+    },
+    "portal-price-visibility": {
+      "state": "in-progress",
+      "why": "Claude has active site and sandbox checkout work; authenticated ordering, account pricing and operational accounting are not yet a complete package.",
+      "owner": "Existing Claude website/checkout contributors; package-wide pickup must be confirmed",
+      "steps": [
+        "Confirm package-wide ownership in the existing takeover record and preserve current contributors.",
+        "Reconcile the service/package catalogue and bridge public ordering, authenticated account prices and My Products.",
+        "Run the combined new/saved-product, payment failure/retry and accounting acceptance cases, provide Laz the walkthrough, and prepare the coordinated release."
+      ],
+      "done": "The customer journey works coherently with correct prices and one recoverable order/payment/accounting record per accepted transaction."
+    },
+    "my-products-disabled": {
+      "state": "in-progress",
+      "why": "A redesign and existing ports are underway; the authenticated reorder-to-checkout journey remains incomplete.",
+      "owner": "Existing Claude My Products and portal owners",
+      "steps": [
+        "Complete the current Optiq ports and retain existing availability/access controls and drafts.",
+        "Connect saved-product ordering to the current catalogue, account pricing and checkout.",
+        "Prove the correct company/product/new-lot journey and include the eligible source in the coordinated package."
+      ],
+      "done": "Customers can reorder their own saved products without leaking account data or corrupting saved products, drafts or ordinary orders."
+    },
+    "quickbooks-status-sync": {
+      "state": "needs-plan",
+      "why": "Existing source and a stopped finance handoff exist, but accepted pickup and the exact lower-urgency follow-up scope are not confirmed.",
+      "owner": "Existing finance/QuickBooks takeover owner",
+      "steps": [
+        "Recover the existing source, handoff and activation/recovery boundaries.",
+        "Separate required operational order/payment accounting from optional status-sync enhancements and identify the next bounded increment.",
+        "Confirm pickup and qualify that increment on synthetic/sandbox records before preparing activation."
+      ],
+      "done": "The agreed statuses and recoveries are reliable without duplicate accounting entries; optional enhancements do not hold up unrelated eligible work."
+    },
+    "optiq-billing-rules": {
+      "state": "needs-information",
+      "why": "Public-versus-account display is settled, but actual prices, package contents, discounts and invoice/payment rules still need lab confirmation.",
+      "owner": "Optiq commercial owners via Laz; existing pricing/checkout workers",
+      "steps": [
+        "Obtain one confirmed commercial catalogue and account/volume/payment rules.",
+        "Reconcile conflicting sandbox package contents, vial requirements and turnaround promises.",
+        "Configure and prove the same accepted amounts from website/account quote through order, checkout and accounting."
+      ],
+      "done": "There is one agreed set of commercial inputs and the relevant customer journeys calculate and record them consistently."
+    },
+    "conformity": {
+      "state": "in-progress",
+      "why": "Claude is actively integrating substantial existing source; child naming/label details, combined proof and explicit holds still remain.",
+      "owner": "Active MacBook Claude conformity worker/coordinator; final delivery pickup must be confirmed",
+      "steps": [
+        "Finish the current combined candidate, necessary companions and remaining child naming/identity work while preserving client vial names.",
+        "Reconcile the required main/release-line source and configuration obligations, retaining existing explicit holds.",
+        "Prove the multi-vial order/results/correction/review/report journey under Optiq's intended approval settings, then prepare the exact release and activation package."
+      ],
+      "done": "The exact combined version preserves the right vial names/results through the full workflow and has the required proof and release decisions."
+    },
+    "customer-results-api": {
+      "state": "in-progress",
+      "why": "The Mac mini owner has an existing payload package and local integration demonstration; current review, remote connectivity and production qualification remain.",
+      "owner": "Mac mini Codex — Continue Frontier results API; API + BYOA Delivery Manager",
+      "steps": [
+        "Reuse and verify the existing developer package and reconcile the actual current contract and review heads.",
+        "Finish the remote synthetic connectivity and recovery cases without disturbing the retained local demonstration.",
+        "Qualify real-source admission and prepare the separately approved production/partner activation."
+      ],
+      "done": "The agreed contract and authorized receiver work through normal delivery, correction/withdrawal and recovery with current proof and an approved activation package."
+    },
+    "iso-mode-controls": {
+      "state": "needs-plan",
+      "why": "The master-mode and granular-control decisions are settled; current control coverage and missing integration need an implementation plan.",
+      "owner": "Existing quality/workflow owners; combined control-plan pickup unconfirmed",
+      "steps": [
+        "Inventory existing ISO, method and approval controls rather than recreate them.",
+        "Define the master ISO mode and underlying lab-scoped controls, including granular second approval off for current Optiq scope.",
+        "Implement only missing wiring, prove permitted configuration and workflows, and complete readiness before the audit without inventing a date."
+      ],
+      "done": "The intended master mode and granular settings are demonstrably wired to the real workflows, with readiness evidence and remaining exceptions explicit."
+    },
+    "guided-analysis-training": {
+      "state": "needs-plan",
+      "why": "The training mode and deadline are clear, but practice scenarios, expected task outcomes and implementation pickup are not yet defined; the Data Analysis UI is still settling.",
+      "owner": "Smpltrax training owner to be assigned; Optiq contributes the practice tasks",
+      "steps": [
+        "Separate immediate Scott/Laz access and direct-entry help from the reusable training feature.",
+        "Define dummy-data scenarios, expected task outcomes and progress records using the portal-style walkthrough approach.",
+        "Once the interface is stable enough, build and prove repeatable in-LIMS exercises that develop and demonstrate competence before the audit."
+      ],
+      "done": "New hires can complete the agreed practice tasks in the LIMS without customer-data changes, with progress and outcomes retained before the audit."
+    },
+    "analysis-framework": {
+      "state": "in-progress",
+      "why": "Installed analysis foundations and active integration work exist; the complete configured workflow has not been proven together.",
+      "owner": "Existing analysis integration and release owners",
+      "steps": [
+        "Reconcile existing methods, preparation, native results and current staff permissions.",
+        "Complete the missing result-entry and configured-review connections, preserving the current identity and approval decisions.",
+        "Prove the correct-record-to-analysis-to-review-to-COA journey and prepare release evidence."
+      ],
+      "done": "The complete affected workflow works on the exact candidate under the intended lab settings, with source/result traceability retained."
+    },
+    "sop-documents": {
+      "state": "needs-plan",
+      "why": "Quality tooling and prior plans exist, but current implementation pickup and complete retained approval/training/NCR/CAPA journeys are not confirmed.",
+      "owner": "Existing quality-system owners; pickup and boundaries need reconciliation",
+      "steps": [
+        "Recover the accepted quality plan and map what is installed, implemented and actually proven.",
+        "Choose the first incomplete document/training or quality-issue journey and assign its bounded completion.",
+        "Complete and prove that journey, reusing approved documents and current control settings."
+      ],
+      "done": "The selected quality workflow works from entry to retained completion with the intended roles and records; broader readiness remains accurately scoped."
+    },
+    "coa-oct14-mockups": {
+      "state": "in-progress",
+      "why": "The approved template is installed and substantial proof exists; affected final combinations still need qualification with the current candidate.",
+      "owner": "Existing COA qualification and release owners",
+      "steps": [
+        "Preserve the already approved pane/display logic and identify only cases changed by current work.",
+        "Combine the relevant result mapping, pane selection and renderer on one candidate.",
+        "Prove the affected PDF/digital cases, carrying forward unaffected proof, before release."
+      ],
+      "done": "The current candidate produces the approved presentation for affected cases without reopening the accepted design."
+    },
+    "data-analysis-ion-signal-match": {
+      "state": "in-progress",
+      "why": "This existing Data Analysis component is part of active combined integration and qualification, not a fresh unstarted feature.",
+      "owner": "Existing Data Analysis contributor and combined release owner",
+      "steps": [
+        "Retain the existing source and reconcile it with the current combined Data Analysis candidate.",
+        "Run only proof affected by the combined changes and preserve accepted component behavior.",
+        "Include the eligible component in the independent chromatogram/Data Analysis release with explicit final ownership."
+      ],
+      "done": "The component behaves correctly in the qualified combined workflow and its delivery state is supported by current evidence."
+    },
+    "data-analysis-spectrum-smoothing": {
+      "state": "in-progress",
+      "why": "This existing Data Analysis component is part of active combined integration and qualification, not a fresh unstarted feature.",
+      "owner": "Existing Data Analysis contributor and combined release owner",
+      "steps": [
+        "Retain the existing source and reconcile it with the current combined Data Analysis candidate.",
+        "Run only proof affected by the combined changes and preserve accepted component behavior.",
+        "Include the eligible component in the independent chromatogram/Data Analysis release with explicit final ownership."
+      ],
+      "done": "The component behaves correctly in the qualified combined workflow and its delivery state is supported by current evidence."
+    },
+    "data-analysis-stable-ion-table": {
+      "state": "in-progress",
+      "why": "This existing Data Analysis component is part of active combined integration and qualification, not a fresh unstarted feature.",
+      "owner": "Existing Data Analysis contributor and combined release owner",
+      "steps": [
+        "Retain the existing source and reconcile it with the current combined Data Analysis candidate.",
+        "Run only proof affected by the combined changes and preserve accepted component behavior.",
+        "Include the eligible component in the independent chromatogram/Data Analysis release with explicit final ownership."
+      ],
+      "done": "The component behaves correctly in the qualified combined workflow and its delivery state is supported by current evidence."
+    },
+    "data-analysis-batches": {
+      "state": "in-progress",
+      "why": "This existing Data Analysis component is part of active combined integration and qualification, not a fresh unstarted feature.",
+      "owner": "Existing Data Analysis contributor and combined release owner",
+      "steps": [
+        "Retain the existing source and reconcile it with the current combined Data Analysis candidate.",
+        "Run only proof affected by the combined changes and preserve accepted component behavior.",
+        "Include the eligible component in the independent chromatogram/Data Analysis release with explicit final ownership."
+      ],
+      "done": "The component behaves correctly in the qualified combined workflow and its delivery state is supported by current evidence."
+    }
+  }
+};
