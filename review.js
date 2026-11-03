@@ -1191,6 +1191,13 @@ window.OPTIQ_CALL_DECISIONS = {
   "date": "2026-11-02",
   "evidenceBasis": "2 November call, later owner clarifications and read-only investigations",
   "updates": {
+    "analysis-framework": {
+      "description": "Connect sample preparation, analysis, saved results, configured review and the final certificate through the existing lab workflow.",
+      "detail": "Retain the installed Data Analysis foundations and the complete source-to-result-to-certificate journey. Review requirements follow the lab's granular settings. For the current Optiq scope, no second approval is required; this scope decision does not itself change production configuration. Preserve method, permissions, saved evidence and report traceability while completing the remaining integration.",
+      "nextStep": "Existing analysis owners: prove methods, permitted staff actions, save/reopen, the configured review steps and the final certificate together before release.",
+      "currentBlocker": "Complete integration and runtime proof under the intended lab settings remain.",
+      "question": ""
+    },
     "data-analysis-ion-composite": {
       "title": "Automatic chromatograms for purity and identity",
       "topPriority": true,
