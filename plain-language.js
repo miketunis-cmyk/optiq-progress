@@ -2,7 +2,7 @@
 // Reader-facing wording only. Status, ownership, dates and source history stay in the catalog.
 // Columns: record ID | short title | what it means | what happens next (optional for closed work).
 window.OPTIQ_PLAIN_LANGUAGE = Object.fromEntries(`
-chromatogram-source-selection|Choose report and purity chromatograms independently|Select the report trace separately from the trace used for purity integration and calculation. This additional selection scope needs a plan; active chromatogram work does not establish that these controls exist.|Audit existing coverage, define missing selectors and saved behavior, confirm pickup, and prove both choices independently.
+chromatogram-source-selection|Choose separate charts for the certificate and purity calculation|Let staff choose which instrument chart appears on the certificate and which is used to calculate purity.|Our team will check the current choices and plan any missing controls.
 conformity|Finish the existing Conformity workflow|Claude is integrating the vial screens and results. Preserve client-entered vial names and the existing approved reporting design.|Finish naming, settings, integration and order-to-report checks; confirm release ownership and resolve existing holds before activation.
 inspection-rules|Preview custom vial colors on the certificate|Choose cap, vial and contents colors using standard swatches or a custom color wheel, with a preview of the actual certificate illustration.|Keep the existing inspection controls and receiving repair; assign the color-picker work and prove saved colors on PDF and online certificates.
 verify-results-font|Check a certificate online|Look up an issued test certificate and compare it with the lab’s saved record.|
@@ -71,8 +71,8 @@ submission-matrix-save-parity|Keep test choices in saved order drafts|Restore se
 stale-tab-refresh|Refresh a browser tab using an older version|Offer a clear refresh when an open tab is behind the latest installed version.|
 stable-released-coa-links|Keep certificate links up to date|Open the latest issued version from normal and customer-branded certificate links.|Check the remaining link changes before including them in an approved release.
 coa-automatic-ion-interpretation|Suggest spectrum matches for staff to review|Use the entered molecular mass to suggest matching signals on a certificate’s spectrum chart.|Finish checking the suggestions and saved results; staff review remains required.
-quickbooks-status-sync|Bring invoice and payment statuses from QuickBooks|Keep the existing accounting follow-up; Laz identified it as lower urgency.|Finish its agreed scope without making every status-sync enhancement a prerequisite for the website and checkout release.
-optiq-billing-rules|Confirm the lab’s prices and billing rules|Show public list prices on the website and configured account prices to signed-in customers.|Optiq confirms actual prices, packages, discounts and payment/invoice terms; the existing pricing work applies and verifies them.
+quickbooks-status-sync|Show invoice and payment updates from QuickBooks|Keep invoice and payment information up to date. Laz has said this is less urgent.|Our team will finish the agreed updates alongside the website and checkout work.
+optiq-billing-rules|Confirm the lab’s prices and billing rules|Use the lab’s public prices and each customer’s agreed prices.|Optiq confirms prices, packages, discounts and when payment is due. Our team will apply them and check the totals.
 coa-oct14-mockups|Finish checking the new certificate layout|The new layout is installed; some test and chart combinations still need checking.|Check the remaining examples against the agreed design.
 sample-details-documents|Open the right paperwork from Sample Details|Attachments are installed. Existing checks cover original slips, marked-up paperwork, signed agreements and access.|Reuse passed checks and verify affected document paths in the next complete update and recovery plan.
 inventory-receiving-defaults|Easier receiving of purchased supplies|Start with the usual units, storage locations and quantities, with changes allowed for partial deliveries.|
@@ -97,8 +97,8 @@ white-label-printed-lookup|Find a branded certificate by its printed number|Retu
 data-analysis-demo-review|Updated Data Analysis screens are installed|Use the updated purity and identity controls, chart navigation and spectrum display.|Complete the final check on the installed screens. Newer improvements are listed separately.
 standard-based-net-content|Calculate Net Content from sample and standard|Use the existing single-point work to calculate reviewed quantities with actual preparation adjustments and retained standard evidence.|Finish the complete Data Analysis-to-certificate path. Expose one-off changes and permission-controlled method updates directly in Data Analysis.
 data-analysis-batches|Group Data Analysis work into named batches|Some run controls are delivered; named batches still need work.|Finish named-batch handling and check it with the combined Data Analysis update before release.
-automatic-analysis-evidence|Check automatic analysis and its supporting records|Analysis screens are installed. Current automated work includes stalled items that need diagnosis.|Inspect current jobs, worker state and original records, then prepare the specific recovery; keep restart approval separate.
-white-label-release-emails|Email customers when branded certificates are ready|The email feature is installed but switched off.|Mike or the lab lead: confirm the required lab notice and readiness before these emails are switched on.
+automatic-analysis-evidence|Check automatic analysis and fix stalled work|The analysis screens are installed, but some automatic processing has stalled.|Our team will find the cause and prepare a recovery plan for approval.
+white-label-release-emails|Email customers when branded certificates are ready|The email feature is already installed. The latest recorded check says it is switched off.|Our team will check the remaining preparation and arrange the notice and approval to switch it on.
 measured-microbiology-results|Record measured microbiology results|Optionally include measured endotoxin, yeast and mould results.|
 lc-method-deletion|Remove unused instrument test methods safely|Allow permitted staff to delete unused methods while retaining a record of the deletion.|
 data-analysis-ion-signal-match|Explain spectrum comparisons clearly|Show whether a comparison uses a measured reference or signals from the current instrument run.|Check the combined Data Analysis update and its scientific results before an approved release.
@@ -113,11 +113,34 @@ client-portal-coa-shortcuts|Open test certificates directly from an order|Give c
 client-facing-clarity|Clearer messages and certificate status for clients|Show useful messages and accurate status, with consistent email branding.|Finish the remaining messages and counts, check email setup, and include them in an approved release. Optional notices stay off.
 order-validation-clarity|Explain order errors and prevent duplicate samples|Show missing details together and catch repeated sample-name and lot-number combinations.|Finish checks for saved orders and simultaneous edits before an approved release.
 optiq-blue-accent|Use Optiq blue across the screens|Apply the brand colour to buttons, tabs, menus, date pickers and tables.|Finish checking light and dark mode before including the change in an approved release.
-guided-analysis-training|Practise in the LIMS before the ISO audit|Train new hires through live walkthroughs with dummy data and tasks, recording progress and outcomes.|Wait until Data Analysis is stable enough, then complete and prove the practice workflows before the audit. No calendar date is specified.
-iso-mode-controls|One ISO mode with configurable controls|Provide one lab-level ISO mode with individual controls underneath it. Second approval is granular by workflow; Optiq’s specified default is off.|Reconcile the existing controls and complete the missing integration and proof before the audit, including the separately tracked training walkthroughs.
+guided-analysis-training|Practise entering and reviewing results before the quality audit|Give new staff guided exercises with made-up data and keep a record of their progress.|Once the results screens are ready, our team will finish and check the exercises before the audit. The audit date has not been recorded.
+iso-mode-controls|Manage the lab’s quality controls in one place|Let the lab choose its quality controls, including which steps need a second person’s approval. Optiq has agreed to leave second approval off for now.|Our team will check the existing controls and finish the missing connections and training before the quality audit.
 `.trim().split('\n').map(line => {
   const [id, title, summary, nextStep] = line.split('|');
   return [id, {title, summary, nextStep}];
 }));
 
 Object.assign(window.OPTIQ_PLAIN_LANGUAGE, window.OPTIQ_SCOPE_AUDIT?.readerUpdates || {});
+
+// Only specific, unresolved customer decisions belong in the question panel.
+// Technical coordination, release preparation and duplicate requests stay with our team.
+window.OPTIQ_LAB_QUESTIONS = [
+  {
+    id: 'prices',
+    sourceIds: ['optiq-billing-rules', 'portal-price-visibility'],
+    title: 'What are the final prices and payment terms?',
+    question: 'Please confirm the price of each test and package, what each package includes, any customer or volume discounts, and when customers should pay.'
+  },
+  {
+    id: 'reference-records',
+    sourceIds: ['spectral-reference-library', 'standard-based-net-content', 'net-content-method-inputs'],
+    title: 'Scott: which reference tests and preparation records should we use?',
+    question: 'Please identify the reference materials and test dates, and share any missing approved procedures and records showing how the reference materials and samples were prepared. Our team will find and connect the records already supplied.'
+  },
+  {
+    id: 'measurement-choice',
+    sourceIds: ['net-content-method-inputs'],
+    title: 'Scott: which measurement should be used when several are suitable?',
+    question: 'The earlier discussion left one choice open: should the quantity calculation use the suitable measurement with the strongest instrument signal? Please confirm this or point us to the lab’s approved rule. Our team will apply it.'
+  }
+];

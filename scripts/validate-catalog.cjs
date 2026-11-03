@@ -194,3 +194,20 @@ for (const source of scopeAudit.additions) {
   assert.equal(item.status, 'queued', `Unverified split inherited delivery: ${item.id}`);
 }
 console.log(`PASS: ${scopeAudit.reviewedItemIds.length} pre-audit items retain their history and audit outcome; ${scopeAudit.additions.length} separate requirements/inputs inherit no progress.`);
+
+// Customer questions are explicit and shared by the panel, copy action and filters.
+const questions = context.window.OPTIQ_LAB_QUESTIONS;
+assert.equal(new Set(questions.map(question => question.id)).size, questions.length);
+for (const question of questions) {
+  assert(question.title.endsWith('?') && question.question.trim(), `Question needs reader wording: ${question.id}`);
+  assert(question.sourceIds.length && question.sourceIds.every(id => items.some(item => item.id === id)), `Question needs existing supporting records: ${question.id}`);
+}
+vm.runInNewContext(fs.readFileSync(path.join(root, 'app.js'), 'utf8').split("let selectedStatus=")[0], context);
+for (const id of ['conformity', 'frontier-connection-inputs', 'partner-supply-settlement', 'white-label-release-emails']) {
+  assert(!context.requestNotes(items.find(item => item.id === id)).includes('optiq'), `Internal follow-up mislabelled as customer question: ${id}`);
+}
+for (const id of new Set(questions.flatMap(question => question.sourceIds))) {
+  assert(context.requestNotes(items.find(item => item.id === id)).includes('optiq'), `Customer question missing from filter: ${id}`);
+}
+assert.equal(JSON.stringify(items), catalogBeforeWording, 'Question routing must not change delivery records');
+console.log('PASS: customer questions link to evidence; internal follow-ups stay out of the customer filter; delivery history unchanged.');
