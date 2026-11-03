@@ -29,7 +29,7 @@ scan-intake|Scan and check arriving samples|Scan an order, correct its sample li
 certified-imports|Import certified reference-material values|Export saved lot values and read values from a reference certificate for staff to confirm.|Finish checking the import and export, including staff confirmation before imported values are saved.
 retained-intent|Recover older customer requests|Keep the original details of archived requests so they can be found again.|
 intake-identity|Show peptide names clearly when receiving samples|Make it clear which peptide or mixture the customer submitted.|
-analysis-framework|Connect testing all the way to the certificate|The Data Analysis screens are installed; the full result-entry, review and reporting process still needs work.|Check test methods, staff access, saved results, independent review and final certificates together before approval.
+analysis-framework|Connect testing all the way to the certificate|The Data Analysis screens are installed; the full result-entry, configured review and reporting process still needs work.|Check methods, staff access, saved results, the lab-configured review steps and final certificates together before release.
 purchasing-core|Track purchase orders and buying history|Import earlier purchases and see which orders need attention.|
 reporting-method-drafts|Prepare draft test methods|Use existing report fields to set up a draft method in Analysis Settings.|
 staff-scan-access|Staff scanning and protected editing|Let signed-in staff search and scan labels while protecting saved records and photos.|
