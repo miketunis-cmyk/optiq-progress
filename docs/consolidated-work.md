@@ -44,3 +44,15 @@ See [grouped-page proof](../evidence/consolidated-work-2026-11-04.jpg).
 
 The view validator is the reusable safeguard against dropped/repeated children,
 inherited completion and leaking private ownership details. No scheduler was added.
+
+The ownership follow-up confirms nine bounded queued engineering scopes and one
+qualification-only scope with the existing contributors. Sixty-six remaining items
+still have explicit ownership gaps. Accepted scope is not full-item completion or
+active execution; environment, input, provider and release holds remain. Hermy owns
+follow-through on the unconfirmed assignments in the existing board.
+
+The exporter requires a matching current contributor identity, an explicit accepted
+scope and a native acceptance locator before showing “Confirmed queued owner.”
+Qualification-only acceptance is labeled separately. The validator rejects custody
+alone, stale identities and missing acceptance evidence. Public wording stays
+allowlisted and scoped; it does not export private contributor identities or paths.

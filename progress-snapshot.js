@@ -1,27 +1,31 @@
 'use strict';
 // Public allowlist only; private board histories and worker identities stay in Hermes.
 window.OPTIQ_PROGRESS_SNAPSHOT = {
-  "observedAt": "2026-11-05T07:11:50.006369+00:00",
+  "observedAt": "2026-11-05T07:52:09.353296+00:00",
   "date": "2026-11-04",
   "source": "Hermes smpltrax board; latest task and typed-comment records",
   "items": {
     "conformity": {
       "boardId": "t_a88e1e3c",
-      "revision": "comment:1077",
+      "revision": "comment:1312",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
       "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:49:42.847899+00:00"
     },
     "inspection-rules": {
       "boardId": "t_5739af52",
-      "revision": "comment:1078",
+      "revision": "comment:1235",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
-      "implementation": "Recorded inspection implementation owner",
-      "ownershipDetail": "The existing owner retains the source and checks; release preparation and target verification remain.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "implementation": "Confirmed queued owner · Inspection implementation contributor",
+      "ownershipDetail": "The existing contributor accepted the color-picker integration and its checks. Broader scientific inspection rules and certificate changes are outside that acceptance. This confirms queued responsibility for the stated scope; existing execution and release holds remain.",
+      "acceptedQueuedScope": true,
+      "acceptedOwnershipKind": "implementation",
+      "checkedAt": "2026-11-05T07:37:30.335718+00:00"
     },
     "verify-results-font": {
       "boardId": "t_2f0d7115",
@@ -30,25 +34,31 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "spectral-reference-library": {
       "boardId": "t_76b5a45d",
-      "revision": "comment:1079",
+      "revision": "comment:1301",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier contributor’s completed work is preserved. Hermy must define the remaining integration scope and obtain acceptance from a suitable contributor.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "fentanyl-results": {
       "boardId": "t_aad48e6c",
-      "revision": "comment:1080",
+      "revision": "comment:1267",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier source custodian is retained in the history. Hermy is arranging a current owner for the remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "coa-summary-layout": {
       "boardId": "t_8f5e3647",
@@ -57,7 +67,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "receipt-emails": {
       "boardId": "t_245939b4",
@@ -66,16 +78,20 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "invoice-status": {
       "boardId": "t_e32c613f",
-      "revision": "comment:1081",
+      "revision": "comment:1323",
       "workState": "blocked",
       "coordinator": "Smpltrax · Hermy coordinator",
-      "implementation": "Recorded invoice implementation owner",
-      "ownershipDetail": "The existing owner retains the source; the test environment and final workflow checks remain blocked.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "implementation": "Confirmed queued owner · Invoice implementation contributor",
+      "ownershipDetail": "The existing contributor accepted the invoice-status integration and remaining checks. Confirming the authoritative billing-data source remains a separate ownership gap. This confirms queued responsibility for the stated scope; existing execution and release holds remain.",
+      "acceptedQueuedScope": true,
+      "acceptedOwnershipKind": "implementation",
+      "checkedAt": "2026-11-05T07:37:30.335718+00:00"
     },
     "frozen-sort": {
       "boardId": "t_fdd819d4",
@@ -84,7 +100,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "receiving-tables": {
       "boardId": "t_da65d8df",
@@ -93,7 +111,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "lot-number": {
       "boardId": "t_571040da",
@@ -102,7 +122,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "printed-labels": {
       "boardId": "t_3752d8f2",
@@ -111,7 +133,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "client-scrolling": {
       "boardId": "t_02b0f774",
@@ -120,16 +144,20 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "grid-widths": {
       "boardId": "t_3e02729d",
-      "revision": "comment:1082",
+      "revision": "comment:1269",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "inventory-release": {
       "boardId": "t_8d760814",
@@ -138,7 +166,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "iu-units": {
       "boardId": "t_56cb18bd",
@@ -147,7 +177,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "preview-performance": {
       "boardId": "t_ea44fb6c",
@@ -156,25 +188,31 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "sop-documents": {
       "boardId": "t_59c13391",
-      "revision": "comment:1083",
+      "revision": "comment:1300",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "partner-inventory": {
       "boardId": "t_73bd463f",
-      "revision": "comment:1084",
+      "revision": "comment:1286",
       "workState": "retained",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "manufacturer-profiles": {
       "boardId": "t_1d404773",
@@ -183,25 +221,31 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "client-bulk-white-label": {
       "boardId": "t_2b0c750d",
-      "revision": "comment:1085",
+      "revision": "comment:1252",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "blend-potency": {
       "boardId": "t_027f4e5b",
-      "revision": "comment:1086",
+      "revision": "comment:1246",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "photo-reliability": {
       "boardId": "t_300eaf8a",
@@ -210,25 +254,31 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "scan-intake": {
       "boardId": "t_6bedd59b",
-      "revision": "comment:1087",
+      "revision": "comment:1298",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "certified-imports": {
       "boardId": "t_0d445493",
-      "revision": "comment:1088",
+      "revision": "comment:1233",
       "workState": "blocked",
       "coordinator": "Smpltrax · Hermy coordinator",
-      "implementation": "Accepted CSV qualification owner",
-      "ownershipDetail": "The existing builder owns the remaining export checks; the test environment is on hold.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "implementation": "Confirmed queued owner · CSV qualification contributor",
+      "ownershipDetail": "The existing contributor accepted the remaining save, reopen, CSV download and access checks. The test-environment hold remains; reading supplier certificates is a separate subtask. This confirms queued responsibility for the stated scope; existing execution and release holds remain.",
+      "acceptedQueuedScope": true,
+      "acceptedOwnershipKind": "implementation",
+      "checkedAt": "2026-11-05T07:37:30.335718+00:00"
     },
     "retained-intent": {
       "boardId": "t_aedddd5b",
@@ -237,7 +287,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "intake-identity": {
       "boardId": "t_b80cd3f2",
@@ -246,16 +298,20 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "analysis-framework": {
       "boardId": "t_d6916e44",
-      "revision": "comment:1089",
+      "revision": "comment:1242",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "purchasing-core": {
       "boardId": "t_21e4aa2b",
@@ -264,7 +320,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "reporting-method-drafts": {
       "boardId": "t_17b28229",
@@ -273,7 +331,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "staff-scan-access": {
       "boardId": "t_911272b8",
@@ -282,16 +342,20 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "multi-lab-login": {
       "boardId": "t_8e5b246a",
-      "revision": "comment:1090",
+      "revision": "comment:1278",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "shared-feature-tracker": {
       "boardId": "t_cb2b764f",
@@ -300,7 +364,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "missing-order-recovery": {
       "boardId": "t_1c8395f8",
@@ -309,7 +375,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "net-content-undo": {
       "boardId": "t_88d462e1",
@@ -318,16 +386,20 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "bulk-coa-amendments": {
       "boardId": "t_3452e7fd",
-      "revision": "comment:1091",
+      "revision": "comment:1248",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "pda-peak-default": {
       "boardId": "t_fb990fcd",
@@ -336,7 +408,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "native-empower-charts": {
       "boardId": "t_fb05752d",
@@ -345,25 +419,31 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "empower-native-collection": {
       "boardId": "t_b347c494",
-      "revision": "comment:1092",
+      "revision": "comment:1266",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier source custodian is retained in the history. Hermy is arranging a current owner for the remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "inventory-follow-ups": {
       "boardId": "t_7e722255",
-      "revision": "comment:1093",
+      "revision": "comment:1274",
       "workState": "retained",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "purchasing-status-words": {
       "boardId": "t_d075d156",
@@ -372,7 +452,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "purchase-history-forecast": {
       "boardId": "t_7bce5312",
@@ -381,7 +463,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "water-sample-type": {
       "boardId": "t_84557835",
@@ -390,16 +474,20 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "order-submit-retry": {
       "boardId": "t_7864606b",
-      "revision": "comment:1094",
+      "revision": "comment:1284",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "white-label-attestation": {
       "boardId": "t_4acf6c65",
@@ -408,7 +496,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "white-label-photo-vials": {
       "boardId": "t_45c0cf54",
@@ -417,7 +507,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "white-label-missing-vials": {
       "boardId": "t_966d3bc2",
@@ -426,7 +518,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "white-label-required-lot": {
       "boardId": "t_6f9d1319",
@@ -435,7 +529,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "client-create-invite": {
       "boardId": "t_4cac647f",
@@ -444,25 +540,31 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "public-signup-approval": {
       "boardId": "t_bd782968",
-      "revision": "comment:1095",
+      "revision": "comment:1290",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "portal-price-visibility": {
       "boardId": "t_1d0aeaca",
-      "revision": "comment:1096",
+      "revision": "comment:1289",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "An existing contributor is identified, but the remaining assignment cannot yet be confirmed through an available route. Hermy owns the handoff and next action.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "panel-presets": {
       "boardId": "t_2fd5f2f3",
@@ -471,16 +573,20 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "live-vial-count": {
       "boardId": "t_4a46a73c",
-      "revision": "comment:1097",
+      "revision": "comment:1237",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
-      "implementation": "Release follow-through coordinator",
-      "ownershipDetail": "Earlier implementation is retained; final release pickup and customer acceptance remain open.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "implementation": "Confirmed queued owner · Amount Required implementation contributor",
+      "ownershipDetail": "The existing contributor accepted the amount display, saved-result checks and related repairs. Lab mapping and scientific quantities remain with their existing authorities. This confirms queued responsibility for the stated scope; existing execution and release holds remain.",
+      "acceptedQueuedScope": true,
+      "acceptedOwnershipKind": "implementation",
+      "checkedAt": "2026-11-05T07:37:30.335718+00:00"
     },
     "unresolved-client-orders": {
       "boardId": "t_cf65a423",
@@ -489,7 +595,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "net-content-per-vial": {
       "boardId": "t_d2181b80",
@@ -498,52 +606,64 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "coa-status-language": {
       "boardId": "t_2a5bbb13",
-      "revision": "comment:1098",
+      "revision": "comment:1257",
       "workState": "retained",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "partner-sample-routing": {
       "boardId": "t_0dd4089d",
-      "revision": "comment:1099",
+      "revision": "comment:1287",
       "workState": "retained",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "intake-attention-notices": {
       "boardId": "t_645b1ec1",
-      "revision": "comment:1100",
+      "revision": "comment:1272",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "shared-lims-priorities": {
       "boardId": "t_8819b925",
-      "revision": "comment:1101",
+      "revision": "comment:1299",
       "workState": "retained",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "hubspot-onboarding": {
       "boardId": "t_be4c273d",
-      "revision": "comment:1102",
+      "revision": "comment:1271",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "customer-qr-labels": {
       "boardId": "t_ae9c34ae",
@@ -552,7 +672,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "coa-tamper-evidence": {
       "boardId": "t_f822ee19",
@@ -561,7 +683,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "tablet-sample-type": {
       "boardId": "t_7bd55ea2",
@@ -570,7 +694,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "coa-spectrum-interpretation": {
       "boardId": "t_23329581",
@@ -579,16 +705,20 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "submission-matrix-save-parity": {
       "boardId": "t_dece89ab",
-      "revision": "comment:1103",
+      "revision": "comment:1304",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "stale-tab-refresh": {
       "boardId": "t_15f09497",
@@ -597,61 +727,75 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "stable-released-coa-links": {
       "boardId": "t_e2c13fcc",
-      "revision": "comment:1104",
+      "revision": "comment:1302",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "coa-automatic-ion-interpretation": {
       "boardId": "t_322a64a9",
-      "revision": "comment:1105",
+      "revision": "comment:1255",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "quickbooks-status-sync": {
       "boardId": "t_33ae5c87",
-      "revision": "comment:1106",
+      "revision": "comment:1291",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "An existing contributor is identified, but the remaining assignment cannot yet be confirmed through an available route. Hermy owns the handoff and next action.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "optiq-billing-rules": {
       "boardId": "t_56890ad9",
-      "revision": "comment:1107",
+      "revision": "comment:1282",
       "workState": "blocked",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "coa-oct14-mockups": {
       "boardId": "t_aa7a86bf",
-      "revision": "comment:1108",
+      "revision": "comment:1256",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "sample-details-documents": {
       "boardId": "t_19f0235f",
-      "revision": "comment:1109",
+      "revision": "comment:1294",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "inventory-receiving-defaults": {
       "boardId": "t_00ecb3fc",
@@ -660,7 +804,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "chemical-components-grid-stability": {
       "boardId": "t_a9644b0d",
@@ -669,25 +815,31 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "sample-order-client-messaging": {
       "boardId": "t_90a4ca5b",
-      "revision": "comment:1110",
+      "revision": "comment:1295",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "sample-storage-multi-lab": {
       "boardId": "t_6483169c",
-      "revision": "comment:1111",
+      "revision": "comment:1297",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "reporting-hub-pagination": {
       "boardId": "t_e3eb91a4",
@@ -696,16 +848,20 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "lab-photo-sort": {
       "boardId": "t_7222acff",
-      "revision": "comment:1112",
+      "revision": "comment:1276",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "ordered-test-search": {
       "boardId": "t_84522b0b",
@@ -714,16 +870,20 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "sample-status-audit": {
       "boardId": "t_e95fecda",
-      "revision": "comment:1113",
+      "revision": "comment:1296",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "stacked-filter-views": {
       "boardId": "t_2a055651",
@@ -732,7 +892,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "lab-specific-filter-views": {
       "boardId": "t_aa59b73f",
@@ -741,7 +903,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "custom-filter-view-audit": {
       "boardId": "t_bed4c59b",
@@ -750,61 +914,75 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "trusted-white-label-approval": {
       "boardId": "t_739a4a7c",
-      "revision": "comment:1114",
+      "revision": "comment:1305",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "internal-document-checks": {
       "boardId": "t_9ca98159",
-      "revision": "comment:1115",
+      "revision": "comment:1273",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "result-entry-permission-profiles": {
       "boardId": "t_8b22dfac",
-      "revision": "comment:1116",
+      "revision": "comment:1293",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "customer-results-api": {
       "boardId": "t_638e9300",
-      "revision": "comment:1117",
+      "revision": "comment:1261",
       "workState": "blocked",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Recorded Frontier review owner",
       "ownershipDetail": "The existing review owner is retained. Continued pickup and the remote connection still need confirmation.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "boarding-pass-parity": {
       "boardId": "t_ee681a6f",
-      "revision": "comment:1118",
+      "revision": "comment:1247",
       "workState": "retained",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "abandoned-order-reminders": {
       "boardId": "t_8539a013",
-      "revision": "comment:1119",
+      "revision": "comment:1240",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "public-coa-access-hardening": {
       "boardId": "t_317455f5",
@@ -813,43 +991,53 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "white-label-printed-lookup": {
       "boardId": "t_7e3720ad",
-      "revision": "comment:1120",
+      "revision": "comment:1307",
       "workState": "blocked",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "guided-analysis-training": {
       "boardId": "t_c6eb4bbb",
-      "revision": "comment:1121",
+      "revision": "comment:1316",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
       "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:49:42.847899+00:00"
     },
     "iso-mode-controls": {
       "boardId": "t_03746d05",
-      "revision": "comment:1122",
+      "revision": "comment:1275",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "An existing contributor is identified, but the remaining assignment cannot yet be confirmed through an available route. Hermy owns the handoff and next action.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "chromatogram-source-selection": {
       "boardId": "t_5a3231a5",
-      "revision": "comment:1123",
+      "revision": "comment:1251",
       "workState": "done",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Completed implementation owner retains the work",
       "ownershipDetail": "The bounded implementation is recorded complete. Release and availability remain separate.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "data-analysis-demo-review": {
       "boardId": "t_ee8ac870",
@@ -858,43 +1046,53 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "standard-based-net-content": {
       "boardId": "t_917cbcb5",
-      "revision": "comment:1124",
+      "revision": "comment:1303",
       "workState": "blocked",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier contributor’s completed work is preserved. Hermy must define the remaining integration scope and obtain acceptance from a suitable contributor.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "data-analysis-batches": {
       "boardId": "t_62adccbe",
-      "revision": "comment:1125",
+      "revision": "comment:1234",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
-      "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "implementation": "Confirmed queued owner · Data Analysis batch contributor",
+      "ownershipDetail": "The existing contributor accepted the purity-batch and late-arrival integration and remaining checks. Broader Data Analysis and scientific calculations are outside that acceptance. This confirms queued responsibility for the stated scope; existing execution and release holds remain.",
+      "acceptedQueuedScope": true,
+      "acceptedOwnershipKind": "implementation",
+      "checkedAt": "2026-11-05T07:38:27.943487+00:00"
     },
     "automatic-analysis-evidence": {
       "boardId": "t_dbe253f2",
-      "revision": "comment:1126",
+      "revision": "comment:1245",
       "workState": "retained",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "white-label-release-emails": {
       "boardId": "t_e2b40e2c",
-      "revision": "comment:1127",
+      "revision": "comment:1308",
       "workState": "blocked",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The earlier owner cannot currently be reached through the established route. Hermy is responsible for arranging an accepted handoff while preserving the existing work.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "measured-microbiology-results": {
       "boardId": "t_bc7d26ab",
@@ -903,7 +1101,9 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "lc-method-deletion": {
       "boardId": "t_b22d55c2",
@@ -912,232 +1112,284 @@ window.OPTIQ_PROGRESS_SNAPSHOT = {
       "coordinator": null,
       "implementation": null,
       "ownershipDetail": null,
-      "checkedAt": "2026-11-05T07:11:50.006369+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:52:09.353296+00:00"
     },
     "data-analysis-ion-signal-match": {
       "boardId": "t_b85f092a",
-      "revision": "comment:1128",
+      "revision": "comment:1263",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "data-analysis-spectrum-smoothing": {
       "boardId": "t_767d5053",
-      "revision": "comment:1129",
+      "revision": "comment:1314",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:49:42.847899+00:00"
     },
     "data-analysis-ion-composite": {
       "boardId": "t_c0e442e4",
-      "revision": "comment:1130",
+      "revision": "comment:1262",
       "workState": "blocked",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "data-analysis-stable-ion-table": {
       "boardId": "t_6cb04332",
-      "revision": "comment:1131",
+      "revision": "comment:1265",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "my-products-disabled": {
       "boardId": "t_57dc6ffc",
-      "revision": "comment:1132",
+      "revision": "comment:1238",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
-      "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "implementation": "Confirmed queued owner · My Products contributor",
+      "ownershipDetail": "The existing contributor accepted the remaining Optiq integration and affected checks. Customer draft-policy, shared integration and activation prerequisites remain. This confirms queued responsibility for the stated scope; existing execution and release holds remain.",
+      "acceptedQueuedScope": true,
+      "acceptedOwnershipKind": "implementation",
+      "checkedAt": "2026-11-05T07:37:30.335718+00:00"
     },
     "compact-sample-photo-clarity": {
       "boardId": "t_54e12efa",
-      "revision": "comment:1133",
+      "revision": "comment:1258",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "optiq-dark-branding": {
       "boardId": "t_8e9c0889",
-      "revision": "comment:1134",
+      "revision": "comment:1239",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
-      "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "implementation": "Confirmed queued qualification owner · Branding qualification contributor",
+      "ownershipDetail": "The existing contributor accepted checks that the final website, application and email assets match the approved branding. This is qualification only; new implementation or redesign is not assigned. This confirms queued responsibility for the stated scope; existing execution and release holds remain.",
+      "acceptedQueuedScope": true,
+      "acceptedOwnershipKind": "qualification",
+      "checkedAt": "2026-11-05T07:42:04.989225+00:00"
     },
     "reporting-hub-edit-safety": {
       "boardId": "t_902c2ab2",
-      "revision": "comment:1135",
+      "revision": "comment:1292",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "client-portal-coa-shortcuts": {
       "boardId": "t_bbb050aa",
-      "revision": "comment:1136",
+      "revision": "comment:1322",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
-      "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "implementation": "Confirmed queued owner · Client portal contributor",
+      "ownershipDetail": "The existing My Products contributor accepted certificate-shortcut qualification and focused regression fixes. The exact source, access behavior and integration prerequisites must be confirmed first. This confirms queued responsibility for the stated scope; existing execution and release holds remain.",
+      "acceptedQueuedScope": true,
+      "acceptedOwnershipKind": "implementation",
+      "checkedAt": "2026-11-05T07:48:15.817242+00:00"
     },
     "client-facing-clarity": {
       "boardId": "t_9986b2c9",
-      "revision": "comment:1137",
+      "revision": "comment:1321",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
-      "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "implementation": "Confirmed queued owner · Client portal contributor",
+      "ownershipDetail": "The existing My Products contributor accepted the remaining portal counts, certificate notices and permission-message clarity within the agreed scope. Source and behavior must be bound before work starts. This confirms queued responsibility for the stated scope; existing execution and release holds remain.",
+      "acceptedQueuedScope": true,
+      "acceptedOwnershipKind": "implementation",
+      "checkedAt": "2026-11-05T07:48:15.817242+00:00"
     },
     "order-validation-clarity": {
       "boardId": "t_b01b70a8",
-      "revision": "comment:1138",
+      "revision": "comment:1285",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "optiq-blue-accent": {
       "boardId": "t_6aaf682b",
-      "revision": "comment:1139",
+      "revision": "comment:1283",
       "workState": "retained",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "net-content-method-controls": {
       "boardId": "t_97729fdd",
-      "revision": "comment:1140",
+      "revision": "comment:1318",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
       "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:49:42.847899+00:00"
     },
     "authenticated-order-handoff": {
       "boardId": "t_8e5e7b5b",
-      "revision": "comment:1141",
+      "revision": "comment:1244",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "An existing contributor is identified, but the remaining assignment cannot yet be confirmed through an available route. Hermy owns the handoff and next action.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "account-price-resolution": {
       "boardId": "t_6be776ae",
-      "revision": "comment:1142",
+      "revision": "comment:1241",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "An existing contributor is identified, but the remaining assignment cannot yet be confirmed through an available route. Hermy owns the handoff and next action.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "operational-checkout-accounting": {
       "boardId": "t_03ba602a",
-      "revision": "comment:1143",
+      "revision": "comment:1281",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "An existing contributor is identified, but the remaining assignment cannot yet be confirmed through an available route. Hermy owns the handoff and next action.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "unattended-payment-recovery": {
       "boardId": "t_db8a9ae7",
-      "revision": "comment:1144",
+      "revision": "comment:1306",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "An existing contributor is identified, but the remaining assignment cannot yet be confirmed through an available route. Hermy owns the handoff and next action.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "conformity-child-labels": {
       "boardId": "t_e861e8df",
-      "revision": "comment:1145",
+      "revision": "comment:1313",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
       "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:49:42.847899+00:00"
     },
     "chromatogram-report-inclusion": {
       "boardId": "t_5b8ee170",
-      "revision": "comment:1146",
+      "revision": "comment:1250",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "certified-certificate-extraction": {
       "boardId": "t_9dc95261",
-      "revision": "comment:1147",
+      "revision": "comment:1320",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
-      "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "implementation": "Confirmed queued owner · Reference-value contributor",
+      "ownershipDetail": "The existing CSV contributor accepted the separate certificate-reading and reviewed lot-save work, queued after CSV qualification. Staff confirmation and provider-access boundaries remain. This confirms queued responsibility for the stated scope; existing execution and release holds remain.",
+      "acceptedQueuedScope": true,
+      "acceptedOwnershipKind": "implementation",
+      "checkedAt": "2026-11-05T07:50:17.076284+00:00"
     },
     "partner-supply-settlement": {
       "boardId": "t_3044ede4",
-      "revision": "comment:1148",
+      "revision": "comment:1288",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The required lab or partner inputs remain with their existing owners. Hermy is confirming whether further implementation is needed and who will own it.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "frontier-connection-inputs": {
       "boardId": "t_c3c17b08",
-      "revision": "comment:1149",
+      "revision": "comment:1315",
       "workState": "blocked",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
       "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:49:42.847899+00:00"
     },
     "analyst-access-walkthrough": {
       "boardId": "t_526ed525",
-      "revision": "comment:1150",
+      "revision": "comment:1243",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The current UI coordinator is identified. Hermy is confirming which existing contributor will finish this item’s remaining implementation.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     },
     "library-standard-entry-policy": {
       "boardId": "t_d2cb3af8",
-      "revision": "comment:1151",
+      "revision": "comment:1317",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
       "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:49:42.847899+00:00"
     },
     "net-content-method-inputs": {
       "boardId": "t_87538979",
-      "revision": "comment:1152",
+      "revision": "comment:1280",
       "workState": "waiting",
       "coordinator": "Smpltrax · Hermy coordinator",
       "implementation": "Implementation owner not yet confirmed",
-      "ownershipDetail": "Hermy is responsible for confirming who will finish the remaining work. Earlier contributors and their work remain recorded in the history.",
-      "checkedAt": "2026-11-05T07:11:49.769682+00:00"
+      "ownershipDetail": "The required lab or partner inputs remain with their existing owners. Hermy is confirming whether further implementation is needed and who will own it.",
+      "acceptedQueuedScope": false,
+      "acceptedOwnershipKind": null,
+      "checkedAt": "2026-11-05T07:41:15.588549+00:00"
     }
   }
 };
