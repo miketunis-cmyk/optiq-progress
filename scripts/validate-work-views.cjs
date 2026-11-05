@@ -38,3 +38,19 @@ assert.equal(result[0].visibleMembers.length,1);
 assert.throws(()=>view.project(items,[...groups,groups[0]],'remaining'),/repeated/);
 assert(!JSON.stringify(snapshot).match(/\/Users\/|\.hermes|native_thread|native_session|ssh |[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}/),'Private board details must not enter the public snapshot');
 console.log('PASS: lossless groups, separate views, mixed-status subtasks, child search and public ownership allowlist.',counts);
+
+const hasQueuedAcceptance = require('./ownership-acceptance.cjs');
+const accepted = {responsible_worker:{native_id:'owner'},ownership_reconciliation:{implementation_state:'accepted_queued_bounded_implementation',accepted_owner:{native_id:'owner'},accepted_scope:'Remaining integration checks',acceptance_evidence:{turn_id:'turn',message_id:'message',completed_at:1}}};
+assert(hasQueuedAcceptance(accepted));
+assert(!hasQueuedAcceptance({...accepted,responsible_worker:{native_id:'replacement'}}), 'A superseded owner cannot retain confirmation');
+assert(!hasQueuedAcceptance({...accepted,ownership_reconciliation:{...accepted.ownership_reconciliation,acceptance_evidence:null}}), 'A name without acceptance evidence is insufficient');
+assert(!hasQueuedAcceptance({...accepted,ownership_reconciliation:{...accepted.ownership_reconciliation,implementation_state:'implementation_pickup_unconfirmed'}}), 'An unconfirmed disposition cannot inherit old acceptance');
+assert(!hasQueuedAcceptance({responsible_worker:{native_id:'owner'}}), 'Source custody is not implementation acceptance');
+const qualification = {...accepted,ownership_reconciliation:{...accepted.ownership_reconciliation,implementation_state:'accepted_queued_bounded_qualification'}};
+assert(!hasQueuedAcceptance(qualification), 'Qualification-only acceptance must not become an engineering assignment');
+assert(hasQueuedAcceptance(qualification,'qualification'));
+for (const item of Object.values(snapshot.items)) {
+  assert.equal(item.implementation?.startsWith('Confirmed queued ')||false, item.acceptedQueuedScope);
+  if(item.acceptedOwnershipKind==='qualification')assert(item.implementation.includes('qualification owner'));
+}
+console.log('PASS: queued ownership requires matching identity, explicit scope and recorded acceptance; no delivery credit inherited.');
