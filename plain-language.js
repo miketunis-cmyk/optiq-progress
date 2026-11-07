@@ -144,3 +144,72 @@ window.OPTIQ_LAB_QUESTIONS = [
     question: 'The earlier discussion left one choice open: should the quantity calculation use the suitable measurement with the strongest instrument signal? Please confirm this or point us to the lab’s approved rule. Our team will apply it.'
   }
 ];
+
+
+// Later call wording preserves delivery states and the full source history.
+Object.assign(window.OPTIQ_PLAIN_LANGUAGE, {
+  "data-analysis-ion-composite": {
+    "title": "Automatically prepare purity and identity charts",
+    "summary": "Priority 1: usable chromatograms and cleaned mass spectra on COAs, targeting Monday 9 November. Existing source review is retained; actual cumulative workflow and release clearance remain.",
+    "nextStep": "Prove saved purity and identity sources reach the right PDF and digital COA. Prepare the Laz and Scott walkthrough and usable tutorial after the UI is ready."
+  },
+  "portal-price-visibility": {
+    "title": "Order and pay through the public website",
+    "summary": "Priority 2: public website cart with sticker/list prices. Preserve portal ordering; negotiated customer pricing is later work. Monday is a target.",
+    "nextStep": "Qualify the public order and payment/accounting flow, retries and account path. Prepare the exact Square and QuickBooks transition from sandbox to authorized real accounts."
+  },
+  "authenticated-order-handoff": {
+    "title": "Finish the website checkout journey",
+    "summary": "Prioritize the public website and cart. My Products and negotiated portal pricing follow later. Each website page needs separate Laz, Travis and Kevin review and notes.",
+    "nextStep": "Recover every current page link, prepare three unchecked reviewer fields and notes, and include the requested ICP-MS copy correction. Retain the existing website owner and access conditions."
+  },
+  "coa-oct14-mockups": {
+    "title": "Finish the COA 2.0 component layout",
+    "summary": "The per-component identity and measured-quantity table is wanted, especially for blends. It is less urgent than chromatograms; the current order/slash explanation is a temporary fallback.",
+    "nextStep": "Verify one cumulative PDF and digital certificate with unambiguous analyte-to-quantity pairing. Prepare the requested Monday reissue after report and release approval."
+  },
+  "blend-potency": {
+    "title": "Net Content modal for multiple identities",
+    "summary": "The manual modal source is committed and independently reviewed, with 94 focused checks passed across separate runs. Preview setup and actual save/reopen verification continue.",
+    "nextStep": "Finish the real cell-to-modal journey, blank measured fields, editable analytes and save/reopen/refresh. Preserve scalar entry, current Confirmed Identity and content-only orders without an identity test."
+  },
+  "iso-mode-controls": {
+    "title": "Keep ISO controls optional for the intended workflow",
+    "summary": "The call reports changed endotoxin or sterility entry behavior. Check the exact case against the existing master and granular ISO settings.",
+    "nextStep": "Qualify the accepted non-ISO entry path and ISO-enabled path; prepare a bounded correction only where the actual behavior differs."
+  },
+  "measured-microbiology-results": {
+    "title": "Optional measured microbiology results",
+    "summary": "Optional numeric microbiology entry remains delivered. A new followup requests manual EU/mL selection for liquid samples, before any automatic matrix logic.",
+    "nextStep": "Qualify the lab-approved reporting basis and smallest manual unit choice; verify saved values and PDF/digital output without assuming density or reconstitution conversion."
+  },
+  "iu-units": {
+    "title": "Choose units for the amount in a sample",
+    "summary": "The unit selector remains delivered. New research must establish when compound-specific IU reporting or conversion is scientifically valid.",
+    "nextStep": "Prepare an approved reporting policy and evidence requirements with the existing scientific owners; preserve the current selector."
+  },
+  "inventory-follow-ups": {
+    "title": "Check purchasing through to stock use",
+    "summary": "Qualify the exact lab and current staff-facing artifact behind the inventory feedback. Preserve case/bottle purchasing units and analytical working units such as mL.",
+    "nextStep": "Check the current view and explain the conversion; keep import-readiness evidence separate and retain completed input/layout work."
+  },
+  "standard-based-net-content": {
+    "title": "Calculate how much material is in a sample",
+    "summary": "Automatic measured component calculations remain held. The call adds questions about blend purity methodology, standards, wavelength and rounding.",
+    "nextStep": "Recover the actual approved method/reference evidence and prepare representative reviewed examples before proposing a bounded change."
+  },
+  "chromatogram-source-selection": {
+    "title": "Choose separate charts for the certificate and purity calculation",
+    "summary": "The bounded independent source-selection implementation remains complete. Reuse it in the actual chromatogram-to-COA journey.",
+    "nextStep": "Verify inclusion and correct saved source use in the cumulative candidate; preserve the completed contributor and retained proof."
+  },
+  "coa-status-language": {
+    "title": "Show identity and content clearly",
+    "summary": "The call requests named non-GLP identity results with confirmed/unconfirmed GLP exceptions. Exact lab-approved registry mapping and display policy need qualification.",
+    "nextStep": "Prepare representative approved identity/content and mismatch cases. Clarify purity/rounding methodology; customer-specific tolerance pass/fail was not requested."
+  }
+});
+window.OPTIQ_LAB_QUESTIONS = window.OPTIQ_LAB_QUESTIONS.map(question => question.id === 'prices'
+  ? {...question, title: 'Which public prices and packages should the cart use?',
+    question: 'Confirm the current public list-price catalogue and package inclusions. Negotiated customer pricing remains separate portal work.', previousQuestion: question}
+  : question);

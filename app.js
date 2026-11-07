@@ -84,7 +84,7 @@ function ownershipSummary(r){
 function ownershipDetails(r){
   const o=currentOwnership(r);
   if(!o)return '';
-  return `<section class="ownership-record" aria-label="Current ownership">${ownershipSummary(r)}${o.ownershipDetail?`<p>${escapeHtml(o.ownershipDetail)}</p>`:''}<p>Work record: ${escapeHtml(({waiting:'Waiting for the next step',blocked:'Blocked',done:'Recorded work milestone complete',retained:'Retained for follow-up'})[o.workState]||o.workState)}. This is separate from the delivery status above.</p><p class="row-reference">Ownership reconciled 4 Nov 2026 · Hermes item ${escapeHtml(o.boardId)} · ${escapeHtml(o.revision)}</p></section>`;
+  return `<section class="ownership-record" aria-label="Current ownership">${ownershipSummary(r)}${o.ownershipDetail?`<p>${escapeHtml(o.ownershipDetail)}</p>`:''}<p>Work record: ${escapeHtml(({waiting:'Waiting for the next step',blocked:'Blocked',done:'Recorded work milestone complete',retained:'Retained for follow-up'})[o.workState]||o.workState)}. This is separate from the delivery status above.</p><p class="row-reference">Ownership checked ${escapeHtml(new Date(o.checkedAt).toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric', timeZone:'America/Los_Angeles'}))} · Hermes item ${escapeHtml(o.boardId)} · ${escapeHtml(o.revision)}</p></section>`;
 }
 const executionLabels={
   'needs-start':'Needs to be started',

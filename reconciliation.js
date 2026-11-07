@@ -1545,3 +1545,131 @@ window.OPTIQ_RECONCILIATION.latestUpdates = {
     "currentEvidenceBoundary": "Activation verified, not email receipt. Historical task notes are superseded by this live settings readback."
   }
 };
+
+
+// November 6 call intake: existing work only; no delivery-status or source-ID changes.
+window.OPTIQ_CALL_20261106_UPDATES = {
+  "date": "2026-11-06",
+  "updates": {
+    "data-analysis-ion-composite": {
+      "currentAsOf": "2026-11-06",
+      "evidenceBasis": "6 November call priorities and existing work reconciliation",
+      "currentEvidenceBoundary": "Requested scope and targets are separate from implementation, workflow verification and production release. Original delivery milestones and earlier evidence are retained.",
+      "currentDisposition": "Priority 1: usable chromatograms and cleaned mass spectra on COAs, targeting Monday 9 November. Existing source review is retained; actual cumulative workflow and release clearance remain.",
+      "detail": "Priority 1: usable chromatograms and cleaned mass spectra on COAs, targeting Monday 9 November. Existing source review is retained; actual cumulative workflow and release clearance remain.",
+      "nextStep": "Prove saved purity and identity sources reach the right PDF and digital COA. Prepare the Laz and Scott walkthrough and usable tutorial after the UI is ready.",
+      "currentBlocker": "Integration, exact candidate, actual workflow verification and applicable release approval remain; a call description of finished work is not deployed proof.",
+      "callPriorityAsOf": "2026-11-06"
+    },
+    "portal-price-visibility": {
+      "currentAsOf": "2026-11-06",
+      "evidenceBasis": "6 November call priorities and existing work reconciliation",
+      "currentEvidenceBoundary": "Requested scope and targets are separate from implementation, workflow verification and production release. Original delivery milestones and earlier evidence are retained.",
+      "currentDisposition": "Priority 2: public website cart with sticker/list prices. Preserve portal ordering; negotiated customer pricing is later work. Monday is a target.",
+      "detail": "Priority 2: public website cart with sticker/list prices. Preserve portal ordering; negotiated customer pricing is later work. Monday is a target.",
+      "nextStep": "Qualify the public order and payment/accounting flow, retries and account path. Prepare the exact Square and QuickBooks transition from sandbox to authorized real accounts.",
+      "currentBlocker": "Final public catalogue/package choices, affected workflow checks and normal account/release approvals remain.",
+      "callPriorityAsOf": "2026-11-06"
+    },
+    "authenticated-order-handoff": {
+      "currentAsOf": "2026-11-06",
+      "evidenceBasis": "6 November call priorities and existing work reconciliation",
+      "currentEvidenceBoundary": "Requested scope and targets are separate from implementation, workflow verification and production release. Original delivery milestones and earlier evidence are retained.",
+      "currentDisposition": "Prioritize the public website and cart. My Products and negotiated portal pricing follow later. Each website page needs separate Laz, Travis and Kevin review and notes.",
+      "detail": "Prioritize the public website and cart. My Products and negotiated portal pricing follow later. Each website page needs separate Laz, Travis and Kevin review and notes.",
+      "nextStep": "Recover every current page link, prepare three unchecked reviewer fields and notes, and include the requested ICP-MS copy correction. Retain the existing website owner and access conditions.",
+      "currentBlocker": "Page inventory, actual individual signoffs, current owner access, checkout qualification and release remain; no signoff is assumed.",
+      "callPriorityAsOf": "2026-11-06"
+    },
+    "coa-oct14-mockups": {
+      "currentAsOf": "2026-11-06",
+      "evidenceBasis": "6 November call priorities and existing work reconciliation",
+      "currentEvidenceBoundary": "Requested scope and targets are separate from implementation, workflow verification and production release. Original delivery milestones and earlier evidence are retained.",
+      "currentDisposition": "The per-component identity and measured-quantity table is wanted, especially for blends. It is less urgent than chromatograms; the current order/slash explanation is a temporary fallback.",
+      "detail": "The per-component identity and measured-quantity table is wanted, especially for blends. It is less urgent than chromatograms; the current order/slash explanation is a temporary fallback.",
+      "nextStep": "Verify one cumulative PDF and digital certificate with unambiguous analyte-to-quantity pairing. Prepare the requested Monday reissue after report and release approval.",
+      "currentBlocker": "Actual cumulative report verification and release remain. Installed layout is not the same as the newly requested complete workflow.",
+      "callPriorityAsOf": "2026-11-06"
+    },
+    "blend-potency": {
+      "currentAsOf": "2026-11-06",
+      "evidenceBasis": "6 November call priorities and existing work reconciliation",
+      "currentEvidenceBoundary": "Requested scope and targets are separate from implementation, workflow verification and production release. Original delivery milestones and earlier evidence are retained.",
+      "currentDisposition": "The manual modal source is committed and independently reviewed, with 94 focused checks passed across separate runs. Preview setup and actual save/reopen verification continue.",
+      "detail": "The manual modal source is committed and independently reviewed, with 94 focused checks passed across separate runs. Preview setup and actual save/reopen verification continue.",
+      "nextStep": "Finish the real cell-to-modal journey, blank measured fields, editable analytes and save/reopen/refresh. Preserve scalar entry, current Confirmed Identity and content-only orders without an identity test.",
+      "currentBlocker": "A working browser preview and full workflow are not verified yet. Automatic calculation and new identity policies are separate qualified work.",
+      "callPriorityAsOf": "2026-11-06"
+    },
+    "iso-mode-controls": {
+      "currentAsOf": "2026-11-06",
+      "evidenceBasis": "6 November call priorities and existing work reconciliation",
+      "currentEvidenceBoundary": "Requested scope and targets are separate from implementation, workflow verification and production release. Original delivery milestones and earlier evidence are retained.",
+      "currentDisposition": "The call reports changed endotoxin or sterility entry behavior. Check the exact case against the existing master and granular ISO settings.",
+      "detail": "The call reports changed endotoxin or sterility entry behavior. Check the exact case against the existing master and granular ISO settings.",
+      "nextStep": "Qualify the accepted non-ISO entry path and ISO-enabled path; prepare a bounded correction only where the actual behavior differs.",
+      "currentBlocker": "No blanket disabling of laboratory, method or permission controls; existing stack and release conditions remain.",
+      "callPriorityAsOf": "2026-11-06"
+    },
+    "measured-microbiology-results": {
+      "currentAsOf": "2026-11-06",
+      "evidenceBasis": "6 November call priorities and existing work reconciliation",
+      "currentEvidenceBoundary": "Requested scope and targets are separate from implementation, workflow verification and production release. Original delivery milestones and earlier evidence are retained.",
+      "currentDisposition": "Optional numeric microbiology entry remains delivered. A new followup requests manual EU/mL selection for liquid samples, before any automatic matrix logic.",
+      "detail": "Optional numeric microbiology entry remains delivered. A new followup requests manual EU/mL selection for liquid samples, before any automatic matrix logic.",
+      "nextStep": "Qualify the lab-approved reporting basis and smallest manual unit choice; verify saved values and PDF/digital output without assuming density or reconstitution conversion.",
+      "currentBlocker": "New unit followup is open; existing numeric-entry completion does not prove this new capability.",
+      "callPriorityAsOf": "2026-11-06"
+    },
+    "iu-units": {
+      "currentAsOf": "2026-11-06",
+      "evidenceBasis": "6 November call priorities and existing work reconciliation",
+      "currentEvidenceBoundary": "Requested scope and targets are separate from implementation, workflow verification and production release. Original delivery milestones and earlier evidence are retained.",
+      "currentDisposition": "The unit selector remains delivered. New research must establish when compound-specific IU reporting or conversion is scientifically valid.",
+      "detail": "The unit selector remains delivered. New research must establish when compound-specific IU reporting or conversion is scientifically valid.",
+      "nextStep": "Prepare an approved reporting policy and evidence requirements with the existing scientific owners; preserve the current selector.",
+      "currentBlocker": "A selectable unit is not conversion validation. No universal factor or automatic conversion is assumed.",
+      "callPriorityAsOf": "2026-11-06"
+    },
+    "inventory-follow-ups": {
+      "currentAsOf": "2026-11-06",
+      "evidenceBasis": "6 November call priorities and existing work reconciliation",
+      "currentEvidenceBoundary": "Requested scope and targets are separate from implementation, workflow verification and production release. Original delivery milestones and earlier evidence are retained.",
+      "currentDisposition": "Qualify the exact lab and current staff-facing artifact behind the inventory feedback. Preserve case/bottle purchasing units and analytical working units such as mL.",
+      "detail": "Qualify the exact lab and current staff-facing artifact behind the inventory feedback. Preserve case/bottle purchasing units and analytical working units such as mL.",
+      "nextStep": "Check the current view and explain the conversion; keep import-readiness evidence separate and retain completed input/layout work.",
+      "currentBlocker": "Lab/artifact binding and operational import eligibility remain. No original artifact changes, removal of working-unit math or import approval from the call.",
+      "callPriorityAsOf": "2026-11-06"
+    },
+    "standard-based-net-content": {
+      "currentAsOf": "2026-11-06",
+      "evidenceBasis": "6 November call priorities and existing work reconciliation",
+      "currentEvidenceBoundary": "Requested scope and targets are separate from implementation, workflow verification and production release. Original delivery milestones and earlier evidence are retained.",
+      "currentDisposition": "Automatic measured component calculations remain held. The call adds questions about blend purity methodology, standards, wavelength and rounding.",
+      "detail": "Automatic measured component calculations remain held. The call adds questions about blend purity methodology, standards, wavelength and rounding.",
+      "nextStep": "Recover the actual approved method/reference evidence and prepare representative reviewed examples before proposing a bounded change.",
+      "currentBlocker": "Existing calculator and standard-intake exclusions remain; no new scientific calculation or instrument connection.",
+      "callPriorityAsOf": "2026-11-06"
+    },
+    "chromatogram-source-selection": {
+      "currentAsOf": "2026-11-06",
+      "evidenceBasis": "6 November call priorities and existing work reconciliation",
+      "currentEvidenceBoundary": "Requested scope and targets are separate from implementation, workflow verification and production release. Original delivery milestones and earlier evidence are retained.",
+      "currentDisposition": "The bounded independent source-selection implementation remains complete. Reuse it in the actual chromatogram-to-COA journey.",
+      "detail": "The bounded independent source-selection implementation remains complete. Reuse it in the actual chromatogram-to-COA journey.",
+      "nextStep": "Verify inclusion and correct saved source use in the cumulative candidate; preserve the completed contributor and retained proof.",
+      "currentBlocker": "Source completion is distinct from current release inclusion and real workflow availability.",
+      "callPriorityAsOf": "2026-11-06"
+    },
+    "coa-status-language": {
+      "currentAsOf": "2026-11-06",
+      "evidenceBasis": "6 November call priorities and existing work reconciliation",
+      "currentEvidenceBoundary": "Requested scope and targets are separate from implementation, workflow verification and production release. Original delivery milestones and earlier evidence are retained.",
+      "currentDisposition": "The call requests named non-GLP identity results with confirmed/unconfirmed GLP exceptions. Exact lab-approved registry mapping and display policy need qualification.",
+      "detail": "The call requests named non-GLP identity results with confirmed/unconfirmed GLP exceptions. Exact lab-approved registry mapping and display policy need qualification.",
+      "nextStep": "Prepare representative approved identity/content and mismatch cases. Clarify purity/rounding methodology; customer-specific tolerance pass/fail was not requested.",
+      "currentBlocker": "Do not infer uncertain aliases or silently change the current scalar workflow, released certificates or scientific rules.",
+      "callPriorityAsOf": "2026-11-06"
+    }
+  }
+};
