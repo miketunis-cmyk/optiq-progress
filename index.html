@@ -14,24 +14,25 @@
   <script defer src="data.js?v=20261102-signed-in-audit"></script>
   <script defer src="consolidations.js?v=20261102-signed-in-audit"></script>
   <script defer src="review.js?v=20261102-selection-scope"></script>
-  <script defer src="reconciliation.js?v=20261103-email-readback"></script>
+  <script defer src="reconciliation.js?v=20261106-call"></script>
   <script defer src="ownership.js?v=20261102-signed-in-audit"></script>
   <script defer src="scope-audit.js?v=20261103-customer-questions"></script>
-  <script defer src="catalog.js?v=20261103-email-readback"></script>
-  <script defer src="plain-language.js?v=20261103-email-readback"></script>
+  <script defer src="catalog.js?v=20261106-call"></script>
+  <script defer src="plain-language.js?v=20261106-call"></script>
   <script defer src="work-groups.js?v=20261104-consolidated"></script>
   <script defer src="work-view.js?v=20261104-consolidated"></script>
-  <script defer src="progress-snapshot.js?v=20261104-accepted-owners"></script>
-  <script defer src="app.js?v=20261104-consolidated"></script>
+  <script defer src="progress-snapshot.js?v=20261106-call"></script>
+  <script defer src="app.js?v=20261106-call"></script>
 </head>
 <body>
-  <header class="masthead"><div class="shell masthead-inner"><a class="brand" href="./" aria-label="Optiq progress home"><img class="optiq-logo theme-logo-light" src="assets/optiq.svg" alt="Optiq"><img class="optiq-logo theme-logo-dark" src="assets/optiq-dark.svg" alt="Optiq"><span class="brand-divider" aria-hidden="true"></span><img class="smpltrax-logo theme-logo-light" src="assets/smpltrax.svg" alt="Smpltrax"><img class="smpltrax-logo theme-logo-dark" src="assets/smpltrax-dark.svg" alt="Smpltrax"></a><div class="masthead-actions"><span class="snapshot">Updated <time datetime="2026-11-04">4 Nov 2026</time></span><button id="theme-toggle" class="theme-button" type="button" aria-pressed="false" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 13.2A8.5 8.5 0 0 1 10.8 3.5 8.5 8.5 0 1 0 20.5 13.2Z"/></svg><span>Dark mode</span></button></div></div></header>
+  <header class="masthead"><div class="shell masthead-inner"><a class="brand" href="./" aria-label="Optiq progress home"><img class="optiq-logo theme-logo-light" src="assets/optiq.svg" alt="Optiq"><img class="optiq-logo theme-logo-dark" src="assets/optiq-dark.svg" alt="Optiq"><span class="brand-divider" aria-hidden="true"></span><img class="smpltrax-logo theme-logo-light" src="assets/smpltrax.svg" alt="Smpltrax"><img class="smpltrax-logo theme-logo-dark" src="assets/smpltrax-dark.svg" alt="Smpltrax"></a><div class="masthead-actions"><span class="snapshot">Updated <time datetime="2026-11-06">6 Nov 2026</time></span><button id="theme-toggle" class="theme-button" type="button" aria-pressed="false" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 13.2A8.5 8.5 0 0 1 10.8 3.5 8.5 8.5 0 1 0 20.5 13.2Z"/></svg><span>Dark mode</span></button></div></div></header>
   <main class="shell">
     <div class="intro"><div><p class="eyebrow">OPTIQ PROGRESS</p><h1>What’s done. What’s next.</h1><p class="intro-copy">Automatically preparing the instrument test charts is the first priority and will be released as soon as it is ready. The website, ordering, saved products and payment connections form the next coordinated package. Other work can continue alongside these priorities. The list below shows what is finished, what our team is working on and which answers we still need from the lab.</p></div><button class="print-button" id="print-button" type="button">Print / save PDF</button></div>
     <p class="progress-note">Live software checked <strong>2 November 2026.</strong> The lab is using the <strong>30 October update.</strong> Some newer changes are built but still need checks and approval before the lab can use them. Updating this page does not change the lab’s software.</p>
     <p class="progress-note">The questions below are decisions or records we need from the lab. Our team owns the software work, technical checks and arrangements with other providers. Each request shows what happens next; detailed work records are available when you expand it.</p>
     <p class="progress-note terms-note"><strong>Useful terms:</strong> A <strong>COA</strong> is a Certificate of Analysis — the lab’s test certificate. A <strong>white label</strong> is a certificate with the customer’s branding. <strong>Net Content</strong> is the amount of material in a sample. <strong>Reporting Hub</strong> is the lab’s results table.</p>
-    <p class="progress-note">Related requests are grouped below, with every subtask and earlier record retained. Ownership reconciled from Hermes on <strong>4 November 2026</strong>. Smpltrax’s Hermy coordinator is responsible for follow-through. Each item shows whether the owner of its remaining work is confirmed.</p>
+    <p class="progress-note"><strong>6 November call priorities:</strong> chromatograms first; public website cart at list prices and page review next; COA 2.0 and manual EU/mL qualification follow. My Products is lower priority. New endotoxin-unit and IU-policy followups remain open even though their earlier entry/selector milestones are recorded complete. Monday 9 November is a target, subject to checks and release approval.</p>
+    <p class="progress-note">Related requests are grouped below, with every subtask and earlier record retained. Selected call-related work refreshed from Hermes on <strong>6 November 2026</strong>; untouched ownership records retain their earlier dates. Smpltrax’s Hermy coordinator is responsible for follow-through. Each item shows whether the owner of its remaining work is confirmed.</p>
     <nav id="work-views" class="progress-filters work-views" aria-label="Work views"></nav>
     <section class="summary" aria-label="Filter by progress stage" id="summary"></section><p id="stage-context" class="progress-note stage-context"></p>
     <section class="lab-panel" aria-labelledby="lab-heading"><div class="lab-panel-top"><div><span class="mini-label">NEXT STEPS FOR THE LAB</span><h2 id="lab-heading">What we need from Optiq</h2></div><button id="copy-questions" class="copy-button" type="button">Copy questions</button></div><div id="lab-questions" class="lab-questions"></div><p class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></p></section>

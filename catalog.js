@@ -110,3 +110,10 @@ for (const [id, update] of Object.entries(reconciliation?.latestUpdates || {})) 
   window.OPTIQ_CATALOG = window.OPTIQ_CATALOG.map(request => request.id === id
     ? {...request, ...update, previousReview: request} : request);
 }
+
+
+for (const [id, update] of Object.entries(window.OPTIQ_CALL_20261106_UPDATES?.updates || {})) {
+  if (!catalogIds.has(id)) throw new Error(`Call update has no existing work item: ${id}`);
+  window.OPTIQ_CATALOG = window.OPTIQ_CATALOG.map(request => request.id === id
+    ? {...request, ...update, previousReview: request} : request);
+}
