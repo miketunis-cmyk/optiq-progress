@@ -77,14 +77,15 @@ function previousReviewNotes(r){
   if(!records.length)return '';
   return `<details class="original-notes"><summary>Earlier work-item history (${records.length} dated records)</summary>${records.map(previous=>`<article><h4>${escapeHtml(previous.title)}</h4><p>${escapeHtml(previous.currentAsOf||previous.reviewedOn||'Earlier record')} · ${escapeHtml(statuses[progressStage(previous)].label)}</p><p>${escapeHtml(previous.detail||previous.description||'')}</p><p><strong>Recorded owner:</strong> ${escapeHtml(previous.currentOwner||'Not recorded')}</p><p><strong>Recorded next step:</strong> ${escapeHtml(previous.nextStep||'Not recorded')}</p><p>${escapeHtml(previous.evidence||'')}</p></article>`).join('')}</details>`;
 }
-function ownershipSummary(r){
+function ownershipSummary(r, detailed=false){
+  if(!detailed)return r.status==='complete'?'':'<p class="ownership-summary"><strong>Follow-through:</strong> Smpltrax team</p>';
   const o=currentOwnership(r);
   return o?.coordinator?`<p class="ownership-summary"><strong>Follow-through:</strong> ${escapeHtml(o.coordinator)}<br><span>${escapeHtml(o.implementation)}</span></p>`:'';
 }
 function ownershipDetails(r){
   const o=currentOwnership(r);
   if(!o)return '';
-  return `<section class="ownership-record" aria-label="Current ownership">${ownershipSummary(r)}${o.ownershipDetail?`<p>${escapeHtml(o.ownershipDetail)}</p>`:''}<p>Work record: ${escapeHtml(({waiting:'Waiting for the next step',blocked:'Blocked',done:'Recorded work milestone complete',retained:'Retained for follow-up'})[o.workState]||o.workState)}. This is separate from the delivery status above.</p><p class="row-reference">Ownership reconciled 4 Nov 2026 · Hermes item ${escapeHtml(o.boardId)} · ${escapeHtml(o.revision)}</p></section>`;
+  return `<details class="ownership-record original-notes"><summary>Earlier ownership record · 4 November 2026</summary>${ownershipSummary(r,true)}${o.ownershipDetail?`<p>${escapeHtml(o.ownershipDetail)}</p>`:''}<p>Work record: ${escapeHtml(({waiting:'Waiting for the next step',blocked:'Blocked',done:'Recorded work milestone complete',retained:'Retained for follow-up'})[o.workState]||o.workState)}. This is separate from the delivery status above.</p><p class="row-reference">Ownership reconciled 4 Nov 2026 · Hermes item ${escapeHtml(o.boardId)} · ${escapeHtml(o.revision)}</p></details>`;
 }
 const executionLabels={
   'needs-start':'Needs to be started',
