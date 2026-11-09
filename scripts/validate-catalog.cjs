@@ -223,3 +223,24 @@ assert.equal(emailState.question, null);
 assert.equal(emailState.previousReview.status, 'built', 'Keep the superseded activation hold in history');
 assert(wording[emailState.id].summary.includes('installed and enabled'));
 console.log('PASS: current enabled state supersedes the old hold without claiming verified email delivery.');
+
+// Check the final projection as well as the preserved historical layers above.
+const beforeWeekend = new Map(context.window.OPTIQ_CATALOG.map(row => [row.id,row]));
+vm.runInNewContext(fs.readFileSync(path.join(root,'weekend-update.js'),'utf8'),context);
+const finalItems = context.window.OPTIQ_CATALOG;
+assert.equal(finalItems.length,items.length);
+assert.equal(new Set(finalItems.map(row=>row.id)).size,items.length);
+for(const row of finalItems) {
+  const prior=beforeWeekend.get(row.id);
+  if(row.weekendEvidence) {
+    assert.equal(row.previousReview,prior,`Prior evidence lost: ${row.id}`);
+    assert.equal(row.currentAsOf,'2026-11-09');
+    assert.equal(context.window.OPTIQ_PLAIN_LANGUAGE[row.id].nextStep,row.nextStep);
+    if(row.weekendEvidence.kind==='production')assert.equal(row.weekendEvidence.release,'3ee80fbcd8c3388e3d0b15e3b388fcac1bfda468');
+  } else assert.equal(row,prior);
+}
+assert.equal(finalItems.find(r=>r.id==='chromatogram-report-inclusion').status,'complete');
+assert.equal(finalItems.filter(r=>r.status==='complete').length,42);
+for(const id of ['standard-based-net-content','data-analysis-ion-composite','portal-price-visibility','public-signup-approval','reporting-hub-edit-safety'])assert.notEqual(finalItems.find(r=>r.id===id).status,'complete');
+assert.equal(finalItems.find(r=>r.id==='portal-price-visibility').weekendEvidence.kind,'sandbox');
+console.log('PASS: weekend update preserves all IDs/history, binds installed scope to live evidence and keeps broader scientific/payment/signup work open.');
