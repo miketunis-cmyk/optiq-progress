@@ -244,3 +244,19 @@ assert.equal(finalItems.filter(r=>r.status==='complete').length,42);
 for(const id of ['standard-based-net-content','data-analysis-ion-composite','portal-price-visibility','public-signup-approval','reporting-hub-edit-safety'])assert.notEqual(finalItems.find(r=>r.id===id).status,'complete');
 assert.equal(finalItems.find(r=>r.id==='portal-price-visibility').weekendEvidence.kind,'sandbox');
 console.log('PASS: weekend update preserves all IDs/history, binds installed scope to live evidence and keeps broader scientific/payment/signup work open.');
+
+const beforeTranscript = new Map(context.window.OPTIQ_CATALOG.map(row=>[row.id,row]));
+vm.runInNewContext(fs.readFileSync(path.join(root,'transcript-review.js'),'utf8'),context);
+assert.equal(context.window.OPTIQ_CATALOG.length,beforeTranscript.size);
+assert.equal(new Set(context.window.OPTIQ_CATALOG.map(row=>row.id)).size,beforeTranscript.size);
+for(const row of context.window.OPTIQ_CATALOG) {
+  const prior=beforeTranscript.get(row.id);
+  assert.equal(row.status,prior.status,'Scope review changed delivery status: '+row.id);
+  if(row.transcriptReview) {
+    assert.equal(row.previousReview,prior,'Review history lost: '+row.id);
+    assert.equal(row.currentAsOf,'2026-11-10');
+    assert.equal(context.window.OPTIQ_PLAIN_LANGUAGE[row.id].nextStep,row.nextStep);
+    assert(!/Mammoth|Excelbis|SSH|penetration|100247|Fable/i.test(JSON.stringify([row.currentDisposition,row.nextStep])), 'Internal scope leaked');
+  } else assert.equal(row,prior);
+}
+console.log('PASS: owner review retains every item, status and prior history; public scope stays Optiq-only.');
