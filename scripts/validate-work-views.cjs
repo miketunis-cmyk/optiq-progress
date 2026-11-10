@@ -3,8 +3,8 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const root = path.resolve(__dirname,'..'), c = {window:{}};
-new vm.Script(['data','consolidations','review','reconciliation','ownership','scope-audit','catalog','plain-language','work-groups','work-view','progress-snapshot','weekend-update','app'].map(file=>fs.readFileSync(path.join(root,file+'.js'),'utf8')).join('\n'));
-for (const file of ['data','consolidations','review','reconciliation','ownership','scope-audit','catalog','plain-language','weekend-update','work-groups','work-view','progress-snapshot']) {
+new vm.Script(['data','consolidations','review','reconciliation','ownership','scope-audit','catalog','plain-language','work-groups','work-view','progress-snapshot','weekend-update','transcript-review','app'].map(file=>fs.readFileSync(path.join(root,file+'.js'),'utf8')).join('\n'));
+for (const file of ['data','consolidations','review','reconciliation','ownership','scope-audit','catalog','plain-language','weekend-update','transcript-review','work-groups','work-view','progress-snapshot']) {
   vm.runInNewContext(fs.readFileSync(path.join(root,file+'.js'),'utf8'),c);
 }
 const {OPTIQ_CATALOG:items, OPTIQ_WORK_GROUPS:groups, OPTIQ_WORK_VIEW:view, OPTIQ_PROGRESS_SNAPSHOT:snapshot} = c.window;
