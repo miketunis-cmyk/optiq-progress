@@ -128,7 +128,7 @@ a.tile:hover{filter:brightness(.98)}
 .legend{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:14px;font-size:.875rem;color:var(--muted)}
 .legend span{display:inline-flex;align-items:center;gap:7px}.legend b{color:var(--ink)}
 .dot{width:11px;height:11px;border-radius:3px;display:inline-block}
-.pace{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));position:relative}
+.pace{list-style:none;margin:0;padding:0;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);position:relative}
 .pace::before{content:'';position:absolute;left:8px;right:8px;top:7px;height:4px;border-radius:4px;background:var(--bar-done)}
 .pace li{position:relative;padding:26px 14px 0 0}
 .pace li::before{content:'';position:absolute;top:0;left:0;width:18px;height:18px;border-radius:50%;background:var(--bar-done);border:4px solid var(--canvas);box-shadow:0 0 0 2px var(--bar-done)}
@@ -164,5 +164,5 @@ a.tile:hover{filter:brightness(.98)}
 .fold .release-update{background:var(--surface)}
 footer p a{color:var(--blue)}
 @media(max-width:900px){.dash-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.new-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.step-grid.three{grid-template-columns:1fr}.area-row{grid-template-columns:1fr auto}.area-row .stack-bar{grid-column:1/-1;grid-row:2}}
-@media(max-width:660px){.dash-panel{padding:18px 16px}.tile{padding:14px 15px}.tile-num{font-size:2rem}.new-grid,.step-grid,.promise{grid-template-columns:1fr}.pace{grid-template-columns:1fr;gap:16px}.pace::before{left:7px;right:auto;top:8px;bottom:8px;width:4px;height:auto}.pace li{padding:0 0 0 32px}.fold>summary{padding:16px}.fold>:not(summary){margin-left:12px;margin-right:12px}.steps b{font-size:.68rem}}
+@media(max-width:660px){.dash-panel{padding:18px 16px}.tile{padding:14px 15px}.tile-num{font-size:2rem}.new-grid,.step-grid,.promise{grid-template-columns:1fr}.pace{grid-auto-flow:row;grid-template-columns:1fr;gap:16px}.pace::before{left:7px;right:auto;top:8px;bottom:8px;width:4px;height:auto}.pace li{padding:0 0 0 32px}.fold>summary{padding:16px}.fold>:not(summary){margin-left:12px;margin-right:12px}.steps b{font-size:.68rem}}
 @media print{.dash-panel,.tile,.step-card,.new-grid article,.promise div{break-inside:avoid}.fold>summary{display:none}}
