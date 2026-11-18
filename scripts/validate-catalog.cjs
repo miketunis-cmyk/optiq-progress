@@ -260,3 +260,25 @@ for(const row of context.window.OPTIQ_CATALOG) {
   } else assert.equal(row,prior);
 }
 console.log('PASS: owner review retains every item, status and prior history; public scope stays Optiq-only.');
+
+const beforeNovember = new Map(context.window.OPTIQ_CATALOG.map(row => [row.id, row]));
+vm.runInNewContext(fs.readFileSync(path.join(root, 'november-release.js'), 'utf8'), context);
+const november = context.window.OPTIQ_CATALOG;
+assert.equal(november.length, beforeNovember.size);
+assert.equal(new Set(november.map(row => row.id)).size, beforeNovember.size);
+for (const row of november) {
+  const prior = beforeNovember.get(row.id);
+  assert.equal(row.status, prior.status, `A scoped release milestone changed the status of ${row.id}`);
+  if (row !== prior) {
+    assert.equal(row.previousReview, prior, `Previous review lost: ${row.id}`);
+    assert.equal(context.window.OPTIQ_PLAIN_LANGUAGE[row.id].nextStep, row.nextStep);
+    assert(!row.currentNotes?.includes('signoff') || row.status !== 'complete');
+  }
+}
+const qpcr = november.find(row => row.id === 'reporting-method-drafts');
+assert.equal(qpcr.status, 'complete');
+assert.match(qpcr.detail, /saved with the sample result/);
+assert.match(qpcr.evidence, /12 November/);
+assert.deepEqual(november.filter(row => row.currentNotes?.includes('signoff')).map(row => row.id).sort().join(','),
+  ['analysis-framework', 'conformity', 'data-analysis-ion-signal-match', 'operational-checkout-accounting', 'portal-price-visibility', 'quickbooks-status-sync'].join(','));
+console.log('PASS: qPCR is completed, lab sign-off stays visible on pending rollouts, and original request history is preserved.');
