@@ -30,11 +30,11 @@
   <script defer src="dashboard.js?v=20261114-visual"></script>
 </head>
 <body>
-  <header class="masthead"><div class="shell masthead-inner"><a class="brand" href="./" aria-label="Optiq progress home"><img class="optiq-logo theme-logo-light" src="assets/optiq.svg" alt="Optiq"><img class="optiq-logo theme-logo-dark" src="assets/optiq-dark.svg" alt="Optiq"><span class="brand-divider" aria-hidden="true"></span><img class="smpltrax-logo theme-logo-light" src="assets/smpltrax.svg" alt="Smpltrax"><img class="smpltrax-logo theme-logo-dark" src="assets/smpltrax-dark.svg" alt="Smpltrax"></a><div class="masthead-actions"><span class="snapshot">Updated <time datetime="2026-11-19">19 Nov 2026</time></span><button id="theme-toggle" class="theme-button" type="button" aria-pressed="false" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 13.2A8.5 8.5 0 0 1 10.8 3.5 8.5 8.5 0 1 0 20.5 13.2Z"/></svg><span>Dark mode</span></button></div></div></header>
+  <header class="masthead"><div class="shell masthead-inner"><a class="brand" href="./" aria-label="Optiq progress home"><img class="optiq-logo theme-logo-light" src="assets/optiq.svg" alt="Optiq"><img class="optiq-logo theme-logo-dark" src="assets/optiq-dark.svg" alt="Optiq"><span class="brand-divider" aria-hidden="true"></span><img class="smpltrax-logo theme-logo-light" src="assets/smpltrax.svg" alt="Smpltrax"><img class="smpltrax-logo theme-logo-dark" src="assets/smpltrax-dark.svg" alt="Smpltrax"></a><div class="masthead-actions"><span class="snapshot">Updated <time datetime="2026-11-25">25 Nov 2026</time></span><button id="theme-toggle" class="theme-button" type="button" aria-pressed="false" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 13.2A8.5 8.5 0 0 1 10.8 3.5 8.5 8.5 0 1 0 20.5 13.2Z"/></svg><span>Dark mode</span></button></div></div></header>
   <main class="shell">
-    <div class="intro"><div><p class="eyebrow">OPTIQ PROGRESS</p><h1>Net Content and smoother certificate releases</h1><p class="intro-copy">The latest Optiq update went live <strong>19 November</strong>.</p></div><button class="print-button" id="print-button" type="button">Print / save PDF</button></div>
+    <div class="intro"><div><p class="eyebrow">OPTIQ PROGRESS</p><h1>Archived samples view and steadier certificate dates</h1><p class="intro-copy">The latest Optiq update went live <strong>25 November</strong>.</p></div><button class="print-button" id="print-button" type="button">Print / save PDF</button></div>
     <section class="dash-tiles" aria-label="Headline numbers">
-      <div class="tile tone-green"><span class="tile-num">8</span><span class="tile-label">confirmed installs since 7 Nov</span></div>
+      <div class="tile tone-green"><span class="tile-num">12</span><span class="tile-label">confirmed installs since 7 Nov</span></div>
       <div class="tile tone-green"><span class="tile-num" id="tile-delivered">–</span><span class="tile-label">requests delivered</span></div>
       <div class="tile tone-blue"><span class="tile-num" id="tile-moving">–</span><span class="tile-label">being built or checked</span></div>
       <a class="tile tone-amber" href="#lab-heading"><span class="tile-num" id="tile-questions">–</span><span class="tile-label">answers needed from the lab →</span></a>
@@ -47,23 +47,23 @@
     <section class="dash-panel" aria-labelledby="pace-heading">
       <div class="dash-head"><h2 id="pace-heading">Update pace</h2><span class="release-live">All live at Optiq</span></div>
       <ol class="pace">
-        <li><time>12–13 Nov</time><strong>2 updates</strong><span>Sterility by qPCR, bulk entry and a mixture fix</span></li>
         <li><time datetime="2026-11-14">14 Nov</time><strong>Sample lists and charts</strong><span>Faster sample finding and run comparison</span></li>
         <li><time>15–16 Nov</time><strong>Analysis and results</strong><span>Faster chart previews and clearer test statuses</span></li>
         <li><time datetime="2026-11-17">17 Nov</time><strong>Charts and certificates</strong><span>Faster assigned ions and clearer certificate warnings</span></li>
-        <li class="latest"><time datetime="2026-11-19">19 Nov</time><strong>Latest update</strong><span>Net Content from a standard and smoother certificate releases</span></li>
+        <li><time datetime="2026-11-19">19 Nov</time><strong>Net Content and releases</strong><span>Single-standard Net Content and steadier branded releases</span></li>
+        <li class="latest"><time datetime="2026-11-25">25 Nov</time><strong>Latest update</strong><span>Archived sample view, faster lists and preserved certificate dates</span></li>
       </ol>
     </section>
     <section class="dash-panel" aria-labelledby="new-heading">
       <div class="dash-head"><h2 id="new-heading">New this week</h2><span class="release-live">Live now</span></div>
       <div class="new-grid">
-        <article><span class="tick" aria-hidden="true">✓</span><div><h3>Net Content from one standard</h3><p>Data Analysis calculates Net Content from a single-point standard, blends included.</p></div></article>
-        <article><span class="tick" aria-hidden="true">✓</span><div><h3>One release per order</h3><p>Branded certificates for one order are released together.</p></div></article>
-        <article><span class="tick" aria-hidden="true">✓</span><div><h3>Releases pick up safely</h3><p>A certificate release that stops part-way picks up where it left off.</p></div></article>
-        <article><span class="tick" aria-hidden="true">✓</span><div><h3>Per-vial claims read correctly</h3><p>Label claims given per vial are read as milligrams per vial.</p></div></article>
-        <article><span class="tick" aria-hidden="true">✓</span><div><h3>Simpler single-peptide certificates</h3><p>Certificates for one peptide drop the repeated Net Content entry.</p></div></article>
-        <article><span class="tick" aria-hidden="true">✓</span><div><h3>KLOW accepts either form</h3><p>The KLOW blend accepts TB-500 or Thymosin beta-4.</p></div></article>
-        <article><span class="tick" aria-hidden="true">✓</span><div><h3>Library standards name wavelengths</h3><p>Imported library standards record the wavelength of each channel.</p></div></article>
+        <article><span class="tick" aria-hidden="true">✓</span><div><h3>Active and Archived sample lists</h3><p>Switch cleanly between active work and read-only archived samples in Reporting Hub.</p></div></article>
+        <article><span class="tick" aria-hidden="true">✓</span><div><h3>Faster Archived sample list</h3><p>The Archived view loads your newest samples first and fills in the rest.</p></div></article>
+        <article><span class="tick" aria-hidden="true">✓</span><div><h3>Re-issued certificates keep their date</h3><p>Re-issued certificates preserve the original day they were first issued.</p></div></article>
+        <article><span class="tick" aria-hidden="true">✓</span><div><h3>Unchanged panels keep their date</h3><p>Each unchanged test panel keeps the date its results were first issued.</p></div></article>
+        <article><span class="tick" aria-hidden="true">✓</span><div><h3>Blend summaries handle more names</h3><p>Blend entries now recognize listed names containing without or a plus sign.</p></div></article>
+        <article><span class="tick" aria-hidden="true">✓</span><div><h3>New instruments ready to batch</h3><p>Instruments added in Lab Settings can now be selected directly in batches.</p></div></article>
+        <article><span class="tick" aria-hidden="true">✓</span><div><h3>No-claim vials still show volumes</h3><p>Peptide vials named without a label claim still display their prep volumes.</p></div></article>
       </div>
     </section>
     <section class="dash-panel" aria-labelledby="ready-heading">
@@ -92,7 +92,18 @@
     <section class="work-section" aria-labelledby="work-heading"><div class="work-heading"><div><h2 id="work-heading">Requests and next steps</h2><p id="results-count" role="status" aria-live="polite"></p></div><label class="search"><span class="sr-only">Search requests</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="search" type="search" placeholder="Find a request in this view…" autocomplete="off"></label></div><div class="progress-filters" id="progress-filters" role="group" aria-label="Filter requests by priority or backlog"></div><div class="notes-filter-group"><span class="notes-filter-label">Other filters</span><div class="progress-filters" id="note-filters" role="group" aria-label="Filter by what is needed"></div></div><div class="view-line" id="filter-actions" hidden><button id="reset-filters" type="button" hidden>Clear filters</button></div><div id="request-grid" class="request-table"></div><div id="empty-state" class="empty-state" hidden><h3>No matching requests</h3><p>Try another search or clear the filters.</p><button id="empty-reset" type="button">Clear filters</button></div></section>
     <p class="progress-note"><strong>Labels:</strong> <strong>Planned</strong> is still ahead. <strong>In progress</strong> is partly done. <strong>Recorded complete</strong> is finished. <strong>Needs checking</strong> is awaiting confirmation. <strong>On hold</strong> is outside the current plan.</p>
     </details>
-    <details class="fold"><summary><span>Earlier updates, in detail</span><span class="fold-count">7–17 Nov</span></summary>
+    <details class="fold"><summary><span>Earlier updates, in detail</span><span class="fold-count">7–19 Nov</span></summary>
+    <section class="release-update" aria-labelledby="release-1119-heading">
+      <div class="release-heading"><div><p class="mini-label">19 NOVEMBER</p><h2 id="release-1119-heading">Net Content and smoother certificate releases</h2></div><span class="release-live">Live at Optiq</span></div>
+      <div class="release-cards">
+        <article><h3>Net Content, blends and releases</h3><ul>
+          <li><strong>Net Content from one standard.</strong> Data Analysis calculates Net Content from a single-point standard, blends included.</li>
+          <li><strong>One release per order.</strong> Branded certificates for one order are released together, and partial releases pick up safely.</li>
+          <li><strong>Per-vial claims and simpler single-peptide certificates.</strong> Per-vial label claims read as milligrams per vial, and single-peptide certificates drop the repeated Net Content entry.</li>
+          <li><strong>KLOW blend and library wavelengths.</strong> KLOW accepts TB-500 or Thymosin beta-4, and imported library standards record channel wavelengths.</li>
+        </ul></article>
+      </div>
+    </section>
     <section class="release-update" aria-labelledby="release-1117-heading">
       <div class="release-heading"><div><p class="mini-label">17 NOVEMBER</p><h2 id="release-1117-heading">Faster charts, clearer certificates</h2></div><span class="release-live">Live at Optiq</span></div>
       <div class="release-cards">
@@ -190,7 +201,7 @@
 <article><h3>Website, prices and accounting</h3><p>Send the current preview to the lab reviewers and gather feedback and pricing. Verify sandbox completion before preparing the real Square and QuickBooks connections. Current billing scope is Optiq.</p></article>
 </div></section>
     </details>
-    <footer><p>The bars track requests across the full project. The latest install was on 19 November and was confirmed on 19 November 2026 through <a href="https://optiq.smpltrax.com/health/version" target="_blank" rel="noopener">Optiq’s version record</a>.</p><span>Optiq × Smpltrax</span></footer>
+    <footer><p>The bars track requests across the full project. The latest install was on 25 November and was confirmed on 25 November 2026 through <a href="https://optiq.smpltrax.com/health/version" target="_blank" rel="noopener">Optiq’s version record</a>.</p><span>Optiq × Smpltrax</span></footer>
   </main>
   <template id="approval-preview-template">
 <section class="approval-preview" id="verification-design-preview" aria-labelledby="approval-preview-heading">
